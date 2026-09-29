@@ -11,6 +11,12 @@ from dotenv import load_dotenv
 # ==========================================
 
 load_dotenv()
+if not os.getenv("DATABASE_URL"):
+    load_dotenv(Path(__file__).resolve().parent / ".env")
+if not os.getenv("DATABASE_URL"):
+    load_dotenv(Path(__file__).resolve().parent.parent / ".env")
+if not os.getenv("DATABASE_URL"):
+    load_dotenv(Path(__file__).resolve().parent.parent / "backend" / ".env")
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
