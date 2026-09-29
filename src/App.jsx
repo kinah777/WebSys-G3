@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   ThemeProvider,
@@ -8,6 +8,7 @@ import {
 
 import RootComponent from "./components/RootComponent";
 import RootPage from "./components/RootPage";
+import LoginPage from "./components/LoginPage";
 
 import {
   Route,
@@ -26,6 +27,8 @@ import Setting from "./components/bodyComponents/Settings/Setting";
 import Order from "./components/bodyComponents/order/Order";
 
 function App() {
+  const [authenticated, setAuthenticated] = useState(false);
+
   const theme = createTheme({
     spacing: 4,
 
@@ -93,7 +96,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <RouterProvider router={router} />
+      {authenticated ? (
+        <RouterProvider router={router} />
+      ) : (
+        <LoginPage onLogin={() => setAuthenticated(true)} />
+      )}
     </ThemeProvider>
   );
 }
