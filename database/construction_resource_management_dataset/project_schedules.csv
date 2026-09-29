@@ -1,0 +1,501 @@
+schedule_id,project_id,task_name,start_date,end_date,duration_days,dependency,status
+SCH-0001,PRJ-0498,Finishing,2026-06-17,2026-06-19,3,None,Completed
+SCH-0002,PRJ-0407,Site Preparation,2026-07-26,2026-08-12,18,Foundation,In Progress
+SCH-0003,PRJ-0279,Site Cleanup,2026-08-30,2026-09-02,4,None,In Progress
+SCH-0004,PRJ-0459,Concrete Works,2027-05-17,2027-05-26,10,Excavation,Completed
+SCH-0005,PRJ-0188,Inspection,2026-07-15,2026-08-04,21,None,In Progress
+SCH-0006,PRJ-0025,Roofing,2027-07-21,2027-08-06,17,None,Not Started
+SCH-0007,PRJ-0146,Structural Framing,2027-03-14,2027-04-02,20,None,Completed
+SCH-0008,PRJ-0160,Concrete Works,2027-05-08,2027-06-06,30,None,Completed
+SCH-0009,PRJ-0142,Structural Framing,2026-04-25,2026-05-20,26,Previous Task,Not Started
+SCH-0010,PRJ-0042,Inspection,2027-06-06,2027-06-07,2,Previous Task,Completed
+SCH-0011,PRJ-0196,Foundation,2027-02-24,2027-03-21,26,None,Not Started
+SCH-0012,PRJ-0264,Painting,2027-01-18,2027-02-17,31,Excavation,Completed
+SCH-0013,PRJ-0486,Site Cleanup,2026-06-06,2026-06-27,22,None,Completed
+SCH-0014,PRJ-0228,Site Preparation,2027-04-07,2027-04-25,19,Previous Task,In Progress
+SCH-0015,PRJ-0165,Site Cleanup,2027-03-11,2027-03-31,21,Foundation,Not Started
+SCH-0016,PRJ-0498,Site Cleanup,2026-07-03,2026-07-13,11,Excavation,Completed
+SCH-0017,PRJ-0308,Structural Framing,2026-11-21,2026-12-19,29,Previous Task,In Progress
+SCH-0018,PRJ-0370,Structural Framing,2026-07-02,2026-07-07,6,None,Not Started
+SCH-0019,PRJ-0310,Concrete Works,2027-05-20,2027-05-30,11,None,Completed
+SCH-0020,PRJ-0465,Site Preparation,2026-03-28,2026-04-26,30,Excavation,In Progress
+SCH-0021,PRJ-0022,Finishing,2027-02-15,2027-03-11,25,Excavation,Not Started
+SCH-0022,PRJ-0306,Inspection,2026-10-25,2026-10-27,3,None,Completed
+SCH-0023,PRJ-0359,Painting,2026-08-10,2026-08-13,4,Foundation,Not Started
+SCH-0024,PRJ-0041,Inspection,2027-03-21,2027-03-28,8,Previous Task,In Progress
+SCH-0025,PRJ-0194,Electrical Installation,2027-06-08,2027-06-12,5,Foundation,Completed
+SCH-0026,PRJ-0174,Electrical Installation,2027-10-19,2027-10-21,3,Previous Task,In Progress
+SCH-0027,PRJ-0124,Excavation,2026-10-07,2026-10-29,23,None,Completed
+SCH-0028,PRJ-0336,Concrete Works,2026-09-08,2026-09-10,3,Excavation,Completed
+SCH-0029,PRJ-0345,Site Preparation,2027-11-23,2027-11-28,6,Foundation,Not Started
+SCH-0030,PRJ-0308,Site Preparation,2026-12-25,2027-01-16,23,Excavation,In Progress
+SCH-0031,PRJ-0488,Site Cleanup,2026-03-31,2026-04-12,13,Foundation,In Progress
+SCH-0032,PRJ-0246,Site Preparation,2027-11-11,2027-12-04,24,Previous Task,Completed
+SCH-0033,PRJ-0459,Roofing,2027-04-15,2027-04-18,4,None,In Progress
+SCH-0034,PRJ-0200,Finishing,2027-07-18,2027-07-21,4,Foundation,Completed
+SCH-0035,PRJ-0125,Plumbing Installation,2027-10-21,2027-10-30,10,Excavation,In Progress
+SCH-0036,PRJ-0209,Plumbing Installation,2027-08-20,2027-09-17,29,Previous Task,Not Started
+SCH-0037,PRJ-0168,Finishing,2028-01-08,2028-02-02,26,Excavation,Not Started
+SCH-0038,PRJ-0187,Foundation,2026-03-24,2026-03-25,2,Excavation,Not Started
+SCH-0039,PRJ-0379,Site Preparation,2027-05-03,2027-05-13,11,Previous Task,In Progress
+SCH-0040,PRJ-0249,Roofing,2028-01-27,2028-02-26,31,None,Not Started
+SCH-0041,PRJ-0465,Plumbing Installation,2026-03-13,2026-03-30,18,None,In Progress
+SCH-0042,PRJ-0476,Structural Framing,2026-12-23,2027-01-05,14,None,In Progress
+SCH-0043,PRJ-0203,Site Preparation,2027-04-26,2027-05-10,15,Foundation,Not Started
+SCH-0044,PRJ-0067,Inspection,2026-11-14,2026-12-01,18,None,Completed
+SCH-0045,PRJ-0325,Site Preparation,2028-02-07,2028-02-16,10,None,Not Started
+SCH-0046,PRJ-0441,Site Preparation,2027-09-20,2027-10-09,20,None,Not Started
+SCH-0047,PRJ-0031,Inspection,2027-10-26,2027-11-03,9,None,Not Started
+SCH-0048,PRJ-0187,Finishing,2026-03-12,2026-03-13,2,Foundation,In Progress
+SCH-0049,PRJ-0081,Roofing,2026-11-02,2026-11-09,8,Foundation,Completed
+SCH-0050,PRJ-0240,Electrical Installation,2028-01-04,2028-01-24,21,Previous Task,Not Started
+SCH-0051,PRJ-0295,Foundation,2027-10-24,2027-11-20,28,Excavation,Not Started
+SCH-0052,PRJ-0026,Painting,2027-07-12,2027-08-04,24,Excavation,Not Started
+SCH-0053,PRJ-0069,Roofing,2027-05-13,2027-05-25,13,Foundation,Completed
+SCH-0054,PRJ-0165,Concrete Works,2027-03-23,2027-04-18,27,Previous Task,Not Started
+SCH-0055,PRJ-0164,Painting,2027-03-19,2027-04-12,25,Foundation,Completed
+SCH-0056,PRJ-0147,Painting,2026-06-21,2026-06-29,9,None,Not Started
+SCH-0057,PRJ-0286,Painting,2026-09-27,2026-10-18,22,None,Completed
+SCH-0058,PRJ-0281,Electrical Installation,2026-12-17,2026-12-30,14,Foundation,Completed
+SCH-0059,PRJ-0109,Concrete Works,2028-01-29,2028-02-27,30,Foundation,In Progress
+SCH-0060,PRJ-0208,Foundation,2027-10-05,2027-11-02,29,Foundation,Not Started
+SCH-0061,PRJ-0064,Roofing,2026-10-27,2026-11-16,21,None,In Progress
+SCH-0062,PRJ-0359,Site Preparation,2026-07-15,2026-07-28,14,Previous Task,In Progress
+SCH-0063,PRJ-0053,Foundation,2027-04-17,2027-05-14,28,Foundation,Completed
+SCH-0064,PRJ-0217,Site Preparation,2026-11-16,2026-12-01,16,Foundation,In Progress
+SCH-0065,PRJ-0443,Plumbing Installation,2026-11-08,2026-11-13,6,Excavation,Not Started
+SCH-0066,PRJ-0068,Excavation,2026-06-05,2026-06-17,13,Foundation,Completed
+SCH-0067,PRJ-0187,Electrical Installation,2026-02-26,2026-03-01,4,Previous Task,Completed
+SCH-0068,PRJ-0003,Structural Framing,2027-11-05,2027-11-20,16,None,In Progress
+SCH-0069,PRJ-0255,Plumbing Installation,2026-05-08,2026-05-19,12,None,In Progress
+SCH-0070,PRJ-0270,Site Preparation,2026-08-27,2026-09-15,20,Foundation,Not Started
+SCH-0071,PRJ-0092,Excavation,2027-07-22,2027-08-01,11,Previous Task,Not Started
+SCH-0072,PRJ-0303,Roofing,2026-10-02,2026-10-12,11,Foundation,Not Started
+SCH-0073,PRJ-0364,Site Cleanup,2026-05-03,2026-05-12,10,Foundation,Not Started
+SCH-0074,PRJ-0050,Electrical Installation,2027-02-13,2027-03-11,27,Excavation,Completed
+SCH-0075,PRJ-0028,Roofing,2027-05-09,2027-06-02,25,None,Completed
+SCH-0076,PRJ-0478,Inspection,2027-06-05,2027-06-08,4,Excavation,In Progress
+SCH-0077,PRJ-0494,Concrete Works,2027-08-13,2027-09-12,31,Excavation,Completed
+SCH-0078,PRJ-0110,Plumbing Installation,2027-10-30,2027-11-10,12,None,Completed
+SCH-0079,PRJ-0121,Electrical Installation,2026-04-15,2026-05-14,30,Excavation,In Progress
+SCH-0080,PRJ-0322,Roofing,2027-05-01,2027-05-19,19,Excavation,Completed
+SCH-0081,PRJ-0489,Inspection,2027-04-09,2027-04-21,13,Excavation,Not Started
+SCH-0082,PRJ-0396,Site Cleanup,2027-08-10,2027-08-18,9,Excavation,In Progress
+SCH-0083,PRJ-0411,Painting,2026-09-22,2026-09-25,4,Foundation,Not Started
+SCH-0084,PRJ-0439,Inspection,2026-09-13,2026-10-09,27,None,Completed
+SCH-0085,PRJ-0096,Finishing,2027-12-25,2027-12-26,2,Foundation,In Progress
+SCH-0086,PRJ-0251,Structural Framing,2026-08-23,2026-08-30,8,Previous Task,Completed
+SCH-0087,PRJ-0362,Roofing,2026-05-13,2026-06-05,24,Previous Task,Completed
+SCH-0088,PRJ-0069,Plumbing Installation,2027-04-10,2027-04-29,20,Foundation,In Progress
+SCH-0089,PRJ-0021,Painting,2027-12-12,2028-01-09,29,Previous Task,In Progress
+SCH-0090,PRJ-0123,Plumbing Installation,2027-10-19,2027-10-25,7,Excavation,In Progress
+SCH-0091,PRJ-0317,Foundation,2027-08-10,2027-08-31,22,Foundation,Not Started
+SCH-0092,PRJ-0225,Structural Framing,2026-05-15,2026-06-14,31,Previous Task,Not Started
+SCH-0093,PRJ-0370,Electrical Installation,2026-07-17,2026-08-14,29,Previous Task,Not Started
+SCH-0094,PRJ-0070,Foundation,2026-12-31,2027-01-22,23,None,Completed
+SCH-0095,PRJ-0049,Site Preparation,2026-10-27,2026-11-19,24,None,In Progress
+SCH-0096,PRJ-0316,Foundation,2027-08-11,2027-08-19,9,Foundation,In Progress
+SCH-0097,PRJ-0071,Roofing,2027-05-24,2027-06-03,11,None,Completed
+SCH-0098,PRJ-0303,Finishing,2026-10-28,2026-11-02,6,None,Completed
+SCH-0099,PRJ-0248,Electrical Installation,2027-08-17,2027-09-13,28,None,In Progress
+SCH-0100,PRJ-0432,Electrical Installation,2027-01-22,2027-02-14,24,Previous Task,In Progress
+SCH-0101,PRJ-0030,Plumbing Installation,2027-03-21,2027-04-01,12,None,Not Started
+SCH-0102,PRJ-0283,Site Preparation,2028-01-11,2028-01-15,5,None,Completed
+SCH-0103,PRJ-0427,Concrete Works,2027-05-25,2027-06-20,27,Previous Task,Not Started
+SCH-0104,PRJ-0345,Plumbing Installation,2027-11-22,2027-11-28,7,Previous Task,Not Started
+SCH-0105,PRJ-0253,Roofing,2026-12-20,2027-01-04,16,Previous Task,Not Started
+SCH-0106,PRJ-0481,Site Cleanup,2027-06-29,2027-07-13,15,None,In Progress
+SCH-0107,PRJ-0206,Roofing,2027-05-08,2027-06-01,25,None,In Progress
+SCH-0108,PRJ-0002,Electrical Installation,2027-04-04,2027-04-22,19,None,Not Started
+SCH-0109,PRJ-0194,Finishing,2027-05-31,2027-06-11,12,Foundation,Not Started
+SCH-0110,PRJ-0320,Concrete Works,2027-11-23,2027-12-19,27,Previous Task,Completed
+SCH-0111,PRJ-0148,Site Preparation,2027-06-12,2027-07-06,25,Excavation,Completed
+SCH-0112,PRJ-0153,Foundation,2027-02-17,2027-02-19,3,Excavation,In Progress
+SCH-0113,PRJ-0010,Plumbing Installation,2027-02-23,2027-03-16,22,Excavation,In Progress
+SCH-0114,PRJ-0260,Roofing,2026-07-04,2026-07-18,15,Excavation,Not Started
+SCH-0115,PRJ-0191,Site Preparation,2026-04-22,2026-05-22,31,Excavation,Not Started
+SCH-0116,PRJ-0008,Site Cleanup,2027-04-15,2027-04-23,9,Excavation,Not Started
+SCH-0117,PRJ-0413,Electrical Installation,2027-05-10,2027-06-01,23,Excavation,In Progress
+SCH-0118,PRJ-0485,Excavation,2026-05-13,2026-06-06,25,Foundation,Completed
+SCH-0119,PRJ-0230,Finishing,2027-03-13,2027-03-24,12,Excavation,Completed
+SCH-0120,PRJ-0301,Painting,2026-06-19,2026-06-23,5,Previous Task,Completed
+SCH-0121,PRJ-0358,Inspection,2026-11-13,2026-12-02,20,Excavation,Completed
+SCH-0122,PRJ-0295,Concrete Works,2027-10-10,2027-11-02,24,None,In Progress
+SCH-0123,PRJ-0307,Plumbing Installation,2026-07-01,2026-07-18,18,None,Completed
+SCH-0124,PRJ-0379,Electrical Installation,2027-05-14,2027-06-12,30,Foundation,Not Started
+SCH-0125,PRJ-0444,Site Cleanup,2027-11-30,2027-12-20,21,Previous Task,Not Started
+SCH-0126,PRJ-0422,Plumbing Installation,2026-11-21,2026-12-16,26,Foundation,Not Started
+SCH-0127,PRJ-0066,Structural Framing,2026-01-23,2026-02-16,25,Foundation,In Progress
+SCH-0128,PRJ-0052,Foundation,2026-03-29,2026-04-02,5,None,Completed
+SCH-0129,PRJ-0444,Finishing,2027-11-07,2027-11-18,12,Foundation,Completed
+SCH-0130,PRJ-0478,Concrete Works,2027-04-15,2027-04-23,9,None,Not Started
+SCH-0131,PRJ-0359,Inspection,2026-06-02,2026-06-08,7,Excavation,In Progress
+SCH-0132,PRJ-0380,Foundation,2028-02-02,2028-03-03,31,Previous Task,Not Started
+SCH-0133,PRJ-0419,Site Cleanup,2027-04-23,2027-05-10,18,Foundation,In Progress
+SCH-0134,PRJ-0154,Inspection,2027-01-16,2027-02-12,28,Previous Task,In Progress
+SCH-0135,PRJ-0204,Site Cleanup,2027-06-10,2027-06-25,16,Excavation,Not Started
+SCH-0136,PRJ-0434,Painting,2027-02-09,2027-03-06,26,Previous Task,Not Started
+SCH-0137,PRJ-0105,Inspection,2027-09-05,2027-09-22,18,Excavation,Not Started
+SCH-0138,PRJ-0169,Concrete Works,2028-01-15,2028-02-02,19,None,In Progress
+SCH-0139,PRJ-0268,Site Cleanup,2026-10-27,2026-11-09,14,None,Completed
+SCH-0140,PRJ-0103,Concrete Works,2026-07-16,2026-08-09,25,Foundation,In Progress
+SCH-0141,PRJ-0157,Finishing,2026-07-24,2026-08-17,25,Foundation,In Progress
+SCH-0142,PRJ-0013,Electrical Installation,2026-11-17,2026-12-09,23,Excavation,Completed
+SCH-0143,PRJ-0228,Finishing,2027-04-18,2027-04-27,10,Excavation,Not Started
+SCH-0144,PRJ-0453,Structural Framing,2027-03-02,2027-03-20,19,None,Completed
+SCH-0145,PRJ-0440,Structural Framing,2027-07-28,2027-08-02,6,Excavation,Not Started
+SCH-0146,PRJ-0026,Finishing,2027-07-02,2027-07-04,3,Previous Task,In Progress
+SCH-0147,PRJ-0043,Foundation,2027-10-08,2027-10-21,14,None,Not Started
+SCH-0148,PRJ-0215,Electrical Installation,2027-07-16,2027-07-28,13,Excavation,Completed
+SCH-0149,PRJ-0260,Electrical Installation,2026-08-04,2026-08-13,10,Excavation,Completed
+SCH-0150,PRJ-0475,Electrical Installation,2026-07-27,2026-08-09,14,Foundation,In Progress
+SCH-0151,PRJ-0455,Excavation,2027-03-30,2027-04-11,13,Previous Task,In Progress
+SCH-0152,PRJ-0241,Site Preparation,2026-03-16,2026-03-25,10,None,Not Started
+SCH-0153,PRJ-0198,Electrical Installation,2026-11-10,2026-11-25,16,Excavation,Completed
+SCH-0154,PRJ-0439,Inspection,2026-09-29,2026-10-09,11,None,In Progress
+SCH-0155,PRJ-0037,Electrical Installation,2026-11-21,2026-12-04,14,Foundation,In Progress
+SCH-0156,PRJ-0055,Concrete Works,2026-08-23,2026-08-29,7,Foundation,In Progress
+SCH-0157,PRJ-0036,Finishing,2026-06-22,2026-07-09,18,Excavation,In Progress
+SCH-0158,PRJ-0003,Structural Framing,2027-11-15,2027-12-11,27,Previous Task,Completed
+SCH-0159,PRJ-0209,Site Preparation,2027-10-11,2027-10-25,15,Previous Task,In Progress
+SCH-0160,PRJ-0421,Site Preparation,2026-12-25,2027-01-22,29,None,In Progress
+SCH-0161,PRJ-0011,Structural Framing,2027-09-04,2027-09-18,15,None,Completed
+SCH-0162,PRJ-0153,Structural Framing,2026-12-20,2026-12-25,6,Excavation,Not Started
+SCH-0163,PRJ-0089,Site Cleanup,2027-08-16,2027-09-11,27,Foundation,Completed
+SCH-0164,PRJ-0025,Site Cleanup,2027-07-08,2027-07-28,21,Previous Task,Not Started
+SCH-0165,PRJ-0312,Concrete Works,2027-05-20,2027-06-17,29,None,Not Started
+SCH-0166,PRJ-0138,Site Preparation,2028-01-16,2028-02-04,20,Excavation,Completed
+SCH-0167,PRJ-0034,Finishing,2027-10-23,2027-11-08,17,Excavation,Completed
+SCH-0168,PRJ-0450,Concrete Works,2028-03-03,2028-03-08,6,Foundation,Not Started
+SCH-0169,PRJ-0285,Structural Framing,2027-05-30,2027-06-03,5,Foundation,In Progress
+SCH-0170,PRJ-0313,Site Preparation,2027-12-02,2027-12-19,18,Foundation,In Progress
+SCH-0171,PRJ-0469,Structural Framing,2026-04-23,2026-05-08,16,Foundation,In Progress
+SCH-0172,PRJ-0385,Concrete Works,2027-11-18,2027-12-04,17,None,Completed
+SCH-0173,PRJ-0165,Inspection,2027-04-23,2027-05-14,22,Previous Task,Completed
+SCH-0174,PRJ-0129,Electrical Installation,2027-02-25,2027-02-26,2,None,Not Started
+SCH-0175,PRJ-0337,Foundation,2027-05-25,2027-05-26,2,Foundation,In Progress
+SCH-0176,PRJ-0076,Site Preparation,2026-05-06,2026-06-03,29,Previous Task,Not Started
+SCH-0177,PRJ-0182,Foundation,2026-05-27,2026-06-16,21,Foundation,Completed
+SCH-0178,PRJ-0144,Site Preparation,2027-06-22,2027-07-19,28,Excavation,Not Started
+SCH-0179,PRJ-0433,Site Preparation,2026-11-18,2026-11-23,6,Previous Task,Not Started
+SCH-0180,PRJ-0289,Inspection,2027-10-17,2027-11-01,16,Excavation,In Progress
+SCH-0181,PRJ-0147,Roofing,2026-07-17,2026-07-31,15,Foundation,Completed
+SCH-0182,PRJ-0188,Concrete Works,2026-06-28,2026-07-20,23,None,Completed
+SCH-0183,PRJ-0461,Concrete Works,2026-02-28,2026-03-24,25,Previous Task,Not Started
+SCH-0184,PRJ-0002,Site Cleanup,2027-05-12,2027-05-29,18,Previous Task,Completed
+SCH-0185,PRJ-0164,Painting,2027-05-22,2027-06-12,22,Excavation,Completed
+SCH-0186,PRJ-0264,Finishing,2027-01-06,2027-01-10,5,Excavation,Not Started
+SCH-0187,PRJ-0126,Structural Framing,2027-10-24,2027-11-18,26,Previous Task,In Progress
+SCH-0188,PRJ-0016,Electrical Installation,2026-09-13,2026-10-04,22,Excavation,Completed
+SCH-0189,PRJ-0319,Foundation,2028-03-25,2028-04-03,10,Excavation,In Progress
+SCH-0190,PRJ-0430,Painting,2028-02-18,2028-02-28,11,Previous Task,Not Started
+SCH-0191,PRJ-0435,Site Cleanup,2027-01-10,2027-01-17,8,None,In Progress
+SCH-0192,PRJ-0207,Finishing,2027-11-09,2027-12-06,28,Previous Task,Completed
+SCH-0193,PRJ-0495,Inspection,2028-01-26,2028-02-25,31,None,In Progress
+SCH-0194,PRJ-0048,Excavation,2026-12-19,2027-01-18,31,Excavation,Completed
+SCH-0195,PRJ-0257,Foundation,2026-12-21,2026-12-31,11,Excavation,In Progress
+SCH-0196,PRJ-0421,Concrete Works,2026-12-08,2026-12-27,20,Excavation,Completed
+SCH-0197,PRJ-0281,Site Preparation,2026-12-16,2027-01-12,28,Excavation,Not Started
+SCH-0198,PRJ-0121,Site Cleanup,2026-04-08,2026-04-23,16,Previous Task,Not Started
+SCH-0199,PRJ-0335,Roofing,2027-01-18,2027-01-22,5,None,Not Started
+SCH-0200,PRJ-0453,Roofing,2026-12-27,2027-01-04,9,None,Not Started
+SCH-0201,PRJ-0363,Electrical Installation,2027-02-26,2027-03-12,15,Foundation,Completed
+SCH-0202,PRJ-0278,Roofing,2027-01-23,2027-02-13,22,None,Completed
+SCH-0203,PRJ-0455,Roofing,2027-04-06,2027-04-15,10,Excavation,Completed
+SCH-0204,PRJ-0166,Excavation,2027-07-16,2027-07-25,10,Excavation,In Progress
+SCH-0205,PRJ-0255,Structural Framing,2026-06-05,2026-06-16,12,None,Completed
+SCH-0206,PRJ-0277,Site Preparation,2027-08-10,2027-09-01,23,Excavation,Completed
+SCH-0207,PRJ-0108,Excavation,2026-10-17,2026-11-03,18,Foundation,Completed
+SCH-0208,PRJ-0034,Finishing,2027-09-17,2027-10-03,17,None,Completed
+SCH-0209,PRJ-0298,Painting,2028-01-17,2028-01-29,13,Excavation,Not Started
+SCH-0210,PRJ-0208,Painting,2027-11-24,2027-12-01,8,Foundation,Completed
+SCH-0211,PRJ-0263,Structural Framing,2028-02-16,2028-03-01,15,None,Not Started
+SCH-0212,PRJ-0492,Roofing,2026-12-15,2027-01-06,23,Excavation,Not Started
+SCH-0213,PRJ-0078,Plumbing Installation,2026-07-30,2026-08-18,20,None,Not Started
+SCH-0214,PRJ-0059,Inspection,2026-11-26,2026-12-22,27,None,Completed
+SCH-0215,PRJ-0436,Excavation,2027-01-06,2027-01-30,25,None,Not Started
+SCH-0216,PRJ-0476,Painting,2027-02-27,2027-03-20,22,Excavation,Completed
+SCH-0217,PRJ-0402,Painting,2027-12-05,2027-12-09,5,Previous Task,Not Started
+SCH-0218,PRJ-0333,Plumbing Installation,2028-02-12,2028-02-13,2,Excavation,Completed
+SCH-0219,PRJ-0390,Excavation,2026-08-08,2026-08-10,3,None,In Progress
+SCH-0220,PRJ-0301,Roofing,2026-06-09,2026-06-17,9,Previous Task,Completed
+SCH-0221,PRJ-0285,Painting,2027-05-14,2027-05-27,14,Previous Task,Not Started
+SCH-0222,PRJ-0141,Inspection,2026-08-30,2026-09-16,18,Excavation,Completed
+SCH-0223,PRJ-0156,Roofing,2026-12-23,2027-01-21,30,None,Not Started
+SCH-0224,PRJ-0366,Plumbing Installation,2026-05-06,2026-05-08,3,Excavation,In Progress
+SCH-0225,PRJ-0236,Plumbing Installation,2027-06-17,2027-07-07,21,Previous Task,Not Started
+SCH-0226,PRJ-0174,Roofing,2027-09-23,2027-10-16,24,None,In Progress
+SCH-0227,PRJ-0227,Excavation,2026-10-05,2026-10-29,25,Previous Task,Completed
+SCH-0228,PRJ-0461,Electrical Installation,2026-02-01,2026-02-05,5,Foundation,In Progress
+SCH-0229,PRJ-0324,Electrical Installation,2026-12-23,2027-01-14,23,Excavation,Completed
+SCH-0230,PRJ-0464,Foundation,2027-01-07,2027-01-19,13,None,Completed
+SCH-0231,PRJ-0245,Inspection,2026-10-19,2026-11-08,21,Previous Task,Completed
+SCH-0232,PRJ-0141,Concrete Works,2026-08-30,2026-09-26,28,Foundation,Not Started
+SCH-0233,PRJ-0160,Painting,2027-05-15,2027-06-01,18,Previous Task,Not Started
+SCH-0234,PRJ-0498,Excavation,2026-05-25,2026-06-04,11,Foundation,In Progress
+SCH-0235,PRJ-0487,Site Cleanup,2027-10-02,2027-10-23,22,None,Not Started
+SCH-0236,PRJ-0480,Electrical Installation,2026-10-24,2026-11-14,22,None,Not Started
+SCH-0237,PRJ-0206,Excavation,2027-06-07,2027-06-22,16,Foundation,Completed
+SCH-0238,PRJ-0385,Painting,2027-10-11,2027-11-07,28,None,Completed
+SCH-0239,PRJ-0020,Roofing,2027-11-27,2027-12-18,22,Excavation,Completed
+SCH-0240,PRJ-0229,Foundation,2026-08-20,2026-08-22,3,Previous Task,Completed
+SCH-0241,PRJ-0499,Inspection,2027-02-03,2027-03-01,27,Foundation,In Progress
+SCH-0242,PRJ-0219,Concrete Works,2026-07-17,2026-07-27,11,Excavation,In Progress
+SCH-0243,PRJ-0295,Structural Framing,2027-09-08,2027-09-09,2,Excavation,Completed
+SCH-0244,PRJ-0439,Site Preparation,2026-11-06,2026-11-16,11,None,In Progress
+SCH-0245,PRJ-0112,Electrical Installation,2027-07-23,2027-08-12,21,Excavation,Not Started
+SCH-0246,PRJ-0389,Inspection,2026-04-05,2026-04-22,18,Previous Task,Not Started
+SCH-0247,PRJ-0182,Electrical Installation,2026-06-03,2026-06-19,17,Excavation,Completed
+SCH-0248,PRJ-0470,Site Cleanup,2027-10-06,2027-10-26,21,Previous Task,Completed
+SCH-0249,PRJ-0225,Painting,2026-04-14,2026-04-18,5,Excavation,Completed
+SCH-0250,PRJ-0397,Site Cleanup,2027-09-26,2027-10-03,8,None,Not Started
+SCH-0251,PRJ-0290,Painting,2026-03-02,2026-03-13,12,Foundation,Completed
+SCH-0252,PRJ-0339,Foundation,2026-06-04,2026-06-25,22,Previous Task,Not Started
+SCH-0253,PRJ-0090,Plumbing Installation,2026-06-04,2026-06-07,4,Foundation,Not Started
+SCH-0254,PRJ-0282,Site Cleanup,2026-09-15,2026-10-06,22,Foundation,Completed
+SCH-0255,PRJ-0127,Plumbing Installation,2027-03-11,2027-03-25,15,None,In Progress
+SCH-0256,PRJ-0467,Concrete Works,2028-01-03,2028-01-13,11,Excavation,In Progress
+SCH-0257,PRJ-0364,Foundation,2026-04-17,2026-04-30,14,None,In Progress
+SCH-0258,PRJ-0381,Electrical Installation,2026-05-22,2026-06-10,20,Foundation,Completed
+SCH-0259,PRJ-0043,Concrete Works,2027-11-08,2027-11-24,17,None,In Progress
+SCH-0260,PRJ-0033,Electrical Installation,2026-05-19,2026-05-20,2,None,Not Started
+SCH-0261,PRJ-0460,Painting,2027-07-22,2027-07-25,4,None,In Progress
+SCH-0262,PRJ-0290,Inspection,2026-04-30,2026-05-03,4,Foundation,Not Started
+SCH-0263,PRJ-0117,Concrete Works,2027-10-09,2027-11-03,26,Foundation,Completed
+SCH-0264,PRJ-0246,Site Preparation,2027-09-29,2027-10-22,24,Foundation,Completed
+SCH-0265,PRJ-0105,Roofing,2027-10-06,2027-10-22,17,Foundation,Not Started
+SCH-0266,PRJ-0377,Site Cleanup,2027-08-06,2027-08-25,20,Previous Task,Completed
+SCH-0267,PRJ-0208,Inspection,2027-10-21,2027-11-12,23,Previous Task,Not Started
+SCH-0268,PRJ-0395,Foundation,2026-06-05,2026-07-01,27,Excavation,Completed
+SCH-0269,PRJ-0179,Finishing,2028-02-06,2028-02-07,2,Excavation,Completed
+SCH-0270,PRJ-0420,Painting,2026-11-21,2026-11-25,5,Previous Task,In Progress
+SCH-0271,PRJ-0194,Excavation,2027-07-23,2027-08-07,16,Excavation,In Progress
+SCH-0272,PRJ-0212,Site Preparation,2026-11-18,2026-11-21,4,Previous Task,In Progress
+SCH-0273,PRJ-0383,Structural Framing,2027-09-24,2027-10-24,31,Foundation,Not Started
+SCH-0274,PRJ-0416,Foundation,2026-03-22,2026-03-27,6,Previous Task,Completed
+SCH-0275,PRJ-0358,Finishing,2026-09-04,2026-09-13,10,None,Not Started
+SCH-0276,PRJ-0461,Roofing,2026-01-31,2026-02-24,25,Excavation,Completed
+SCH-0277,PRJ-0114,Electrical Installation,2027-06-22,2027-07-08,17,None,Not Started
+SCH-0278,PRJ-0243,Excavation,2027-03-19,2027-04-08,21,Foundation,Not Started
+SCH-0279,PRJ-0326,Plumbing Installation,2027-12-03,2027-12-12,10,None,In Progress
+SCH-0280,PRJ-0151,Foundation,2026-04-09,2026-04-29,21,Previous Task,Not Started
+SCH-0281,PRJ-0398,Roofing,2027-06-25,2027-06-28,4,Foundation,In Progress
+SCH-0282,PRJ-0465,Concrete Works,2026-03-10,2026-03-24,15,Previous Task,In Progress
+SCH-0283,PRJ-0417,Painting,2027-11-07,2027-11-11,5,Excavation,Not Started
+SCH-0284,PRJ-0251,Plumbing Installation,2026-10-28,2026-11-02,6,Previous Task,Not Started
+SCH-0285,PRJ-0291,Electrical Installation,2026-10-25,2026-11-20,27,Excavation,Completed
+SCH-0286,PRJ-0325,Finishing,2028-01-26,2028-02-07,13,Previous Task,Completed
+SCH-0287,PRJ-0094,Roofing,2026-05-26,2026-06-17,23,Excavation,In Progress
+SCH-0288,PRJ-0416,Finishing,2026-03-29,2026-04-08,11,None,Not Started
+SCH-0289,PRJ-0111,Site Preparation,2027-08-13,2027-08-24,12,Previous Task,Completed
+SCH-0290,PRJ-0411,Excavation,2026-08-02,2026-08-13,12,Previous Task,In Progress
+SCH-0291,PRJ-0400,Inspection,2027-09-27,2027-10-27,31,Foundation,Completed
+SCH-0292,PRJ-0205,Foundation,2026-05-23,2026-05-28,6,Previous Task,Completed
+SCH-0293,PRJ-0001,Structural Framing,2027-11-24,2027-12-10,17,Previous Task,Not Started
+SCH-0294,PRJ-0130,Plumbing Installation,2026-11-06,2026-11-15,10,None,In Progress
+SCH-0295,PRJ-0352,Finishing,2027-03-07,2027-03-17,11,Previous Task,Not Started
+SCH-0296,PRJ-0184,Concrete Works,2027-03-08,2027-03-12,5,Excavation,Completed
+SCH-0297,PRJ-0265,Electrical Installation,2027-05-31,2027-06-19,20,Previous Task,Not Started
+SCH-0298,PRJ-0069,Concrete Works,2027-06-11,2027-06-12,2,None,Completed
+SCH-0299,PRJ-0165,Roofing,2027-03-27,2027-04-04,9,Excavation,Completed
+SCH-0300,PRJ-0223,Painting,2026-05-18,2026-05-22,5,Previous Task,Not Started
+SCH-0301,PRJ-0358,Electrical Installation,2026-10-13,2026-11-08,27,None,Not Started
+SCH-0302,PRJ-0052,Painting,2026-06-13,2026-07-06,24,Excavation,Not Started
+SCH-0303,PRJ-0044,Finishing,2026-09-12,2026-09-19,8,None,In Progress
+SCH-0304,PRJ-0048,Structural Framing,2026-10-21,2026-10-30,10,Excavation,In Progress
+SCH-0305,PRJ-0274,Inspection,2026-04-08,2026-04-14,7,None,Not Started
+SCH-0306,PRJ-0249,Painting,2028-01-26,2028-01-29,4,Excavation,Not Started
+SCH-0307,PRJ-0024,Plumbing Installation,2028-02-03,2028-02-25,23,Foundation,In Progress
+SCH-0308,PRJ-0155,Roofing,2027-10-15,2027-10-26,12,None,In Progress
+SCH-0309,PRJ-0329,Site Preparation,2028-03-01,2028-03-22,22,Previous Task,In Progress
+SCH-0310,PRJ-0421,Structural Framing,2027-01-08,2027-01-30,23,Previous Task,Completed
+SCH-0311,PRJ-0037,Foundation,2026-11-15,2026-11-24,10,Previous Task,Not Started
+SCH-0312,PRJ-0207,Foundation,2027-10-21,2027-10-23,3,Previous Task,Not Started
+SCH-0313,PRJ-0095,Electrical Installation,2028-02-09,2028-02-23,15,Foundation,Completed
+SCH-0314,PRJ-0010,Foundation,2027-02-23,2027-03-06,12,Previous Task,In Progress
+SCH-0315,PRJ-0380,Concrete Works,2027-11-17,2027-11-21,5,Previous Task,Not Started
+SCH-0316,PRJ-0207,Site Preparation,2027-12-08,2027-12-24,17,None,In Progress
+SCH-0317,PRJ-0039,Site Cleanup,2026-10-30,2026-11-10,12,Previous Task,Not Started
+SCH-0318,PRJ-0049,Structural Framing,2026-11-15,2026-11-29,15,Previous Task,Completed
+SCH-0319,PRJ-0266,Foundation,2026-11-30,2026-12-05,6,Previous Task,In Progress
+SCH-0320,PRJ-0020,Structural Framing,2027-09-18,2027-09-29,12,Previous Task,Not Started
+SCH-0321,PRJ-0341,Electrical Installation,2027-01-14,2027-01-16,3,Excavation,Not Started
+SCH-0322,PRJ-0336,Inspection,2026-07-22,2026-07-26,5,None,Not Started
+SCH-0323,PRJ-0059,Concrete Works,2026-12-13,2026-12-20,8,Foundation,Not Started
+SCH-0324,PRJ-0115,Structural Framing,2027-06-08,2027-06-12,5,Previous Task,Completed
+SCH-0325,PRJ-0090,Painting,2026-06-12,2026-06-18,7,Excavation,Not Started
+SCH-0326,PRJ-0408,Structural Framing,2027-09-23,2027-09-29,7,Foundation,In Progress
+SCH-0327,PRJ-0427,Concrete Works,2027-05-27,2027-06-18,23,Foundation,Not Started
+SCH-0328,PRJ-0111,Painting,2027-07-12,2027-07-18,7,Excavation,In Progress
+SCH-0329,PRJ-0396,Roofing,2027-08-25,2027-09-14,21,Excavation,Not Started
+SCH-0330,PRJ-0089,Painting,2027-09-13,2027-10-02,20,Excavation,In Progress
+SCH-0331,PRJ-0099,Site Cleanup,2027-07-01,2027-07-07,7,None,Completed
+SCH-0332,PRJ-0415,Structural Framing,2027-02-05,2027-02-17,13,Excavation,In Progress
+SCH-0333,PRJ-0326,Inspection,2028-01-19,2028-02-04,17,Previous Task,In Progress
+SCH-0334,PRJ-0339,Inspection,2026-07-09,2026-07-27,19,Foundation,Not Started
+SCH-0335,PRJ-0319,Structural Framing,2028-02-18,2028-03-16,28,Foundation,In Progress
+SCH-0336,PRJ-0428,Electrical Installation,2028-03-09,2028-03-12,4,Previous Task,In Progress
+SCH-0337,PRJ-0492,Electrical Installation,2027-02-02,2027-02-14,13,None,In Progress
+SCH-0338,PRJ-0250,Plumbing Installation,2028-03-05,2028-04-03,30,Previous Task,In Progress
+SCH-0339,PRJ-0404,Inspection,2027-10-10,2027-11-07,29,None,Completed
+SCH-0340,PRJ-0470,Concrete Works,2027-11-08,2027-11-22,15,None,In Progress
+SCH-0341,PRJ-0243,Structural Framing,2027-05-01,2027-05-13,13,Previous Task,In Progress
+SCH-0342,PRJ-0435,Electrical Installation,2027-01-28,2027-02-20,24,Previous Task,In Progress
+SCH-0343,PRJ-0450,Concrete Works,2028-02-26,2028-03-22,26,Excavation,In Progress
+SCH-0344,PRJ-0369,Structural Framing,2026-02-22,2026-03-16,23,Foundation,Not Started
+SCH-0345,PRJ-0288,Site Cleanup,2027-07-29,2027-08-21,24,Excavation,Not Started
+SCH-0346,PRJ-0391,Finishing,2027-05-07,2027-06-05,30,Foundation,Completed
+SCH-0347,PRJ-0128,Structural Framing,2027-11-12,2027-11-22,11,Excavation,In Progress
+SCH-0348,PRJ-0473,Concrete Works,2026-06-28,2026-07-03,6,None,In Progress
+SCH-0349,PRJ-0244,Inspection,2027-05-21,2027-05-27,7,Excavation,Completed
+SCH-0350,PRJ-0358,Site Cleanup,2026-09-29,2026-10-06,8,Previous Task,In Progress
+SCH-0351,PRJ-0139,Concrete Works,2027-12-07,2027-12-29,23,Excavation,Completed
+SCH-0352,PRJ-0169,Plumbing Installation,2027-12-26,2028-01-19,25,Previous Task,Completed
+SCH-0353,PRJ-0296,Excavation,2027-02-23,2027-03-09,15,Excavation,Completed
+SCH-0354,PRJ-0276,Finishing,2026-06-14,2026-06-24,11,Excavation,Completed
+SCH-0355,PRJ-0328,Finishing,2027-10-21,2027-11-10,21,None,In Progress
+SCH-0356,PRJ-0050,Structural Framing,2027-01-02,2027-01-30,29,None,Not Started
+SCH-0357,PRJ-0202,Inspection,2026-05-29,2026-06-15,18,Previous Task,Completed
+SCH-0358,PRJ-0237,Structural Framing,2027-10-05,2027-10-06,2,None,In Progress
+SCH-0359,PRJ-0413,Foundation,2027-04-01,2027-04-17,17,Excavation,Not Started
+SCH-0360,PRJ-0242,Site Preparation,2027-12-16,2027-12-22,7,None,In Progress
+SCH-0361,PRJ-0275,Roofing,2027-01-10,2027-01-24,15,None,Completed
+SCH-0362,PRJ-0459,Site Cleanup,2027-04-07,2027-04-20,14,Foundation,Completed
+SCH-0363,PRJ-0107,Excavation,2026-02-14,2026-02-19,6,Foundation,In Progress
+SCH-0364,PRJ-0402,Concrete Works,2027-09-24,2027-10-13,20,Excavation,In Progress
+SCH-0365,PRJ-0095,Concrete Works,2028-01-17,2028-02-07,22,Previous Task,Completed
+SCH-0366,PRJ-0297,Plumbing Installation,2027-08-16,2027-08-22,7,Foundation,In Progress
+SCH-0367,PRJ-0385,Structural Framing,2027-10-12,2027-10-19,8,None,In Progress
+SCH-0368,PRJ-0072,Finishing,2026-05-07,2026-06-06,31,Foundation,Not Started
+SCH-0369,PRJ-0111,Finishing,2027-07-24,2027-08-20,28,Foundation,Completed
+SCH-0370,PRJ-0434,Inspection,2027-03-01,2027-03-04,4,None,Not Started
+SCH-0371,PRJ-0329,Plumbing Installation,2028-02-12,2028-03-06,24,Foundation,Completed
+SCH-0372,PRJ-0236,Plumbing Installation,2027-04-24,2027-05-14,21,Excavation,Completed
+SCH-0373,PRJ-0014,Painting,2026-08-04,2026-08-26,23,Previous Task,Not Started
+SCH-0374,PRJ-0169,Excavation,2027-11-20,2027-12-10,21,None,Not Started
+SCH-0375,PRJ-0490,Foundation,2026-06-07,2026-06-11,5,Foundation,Completed
+SCH-0376,PRJ-0015,Site Cleanup,2026-01-26,2026-02-08,14,Previous Task,Completed
+SCH-0377,PRJ-0309,Finishing,2027-02-28,2027-03-24,25,None,Not Started
+SCH-0378,PRJ-0100,Concrete Works,2026-10-12,2026-10-20,9,Foundation,Not Started
+SCH-0379,PRJ-0244,Roofing,2027-08-04,2027-08-18,15,Previous Task,Completed
+SCH-0380,PRJ-0141,Excavation,2026-08-08,2026-09-03,27,Foundation,Not Started
+SCH-0381,PRJ-0423,Site Cleanup,2027-06-13,2027-07-01,19,Foundation,Not Started
+SCH-0382,PRJ-0373,Plumbing Installation,2027-06-13,2027-06-16,4,Excavation,Completed
+SCH-0383,PRJ-0111,Concrete Works,2027-06-08,2027-06-11,4,None,Not Started
+SCH-0384,PRJ-0206,Finishing,2027-04-01,2027-04-11,11,None,Not Started
+SCH-0385,PRJ-0025,Foundation,2027-06-08,2027-06-29,22,None,Not Started
+SCH-0386,PRJ-0272,Plumbing Installation,2027-03-02,2027-03-29,28,Excavation,Not Started
+SCH-0387,PRJ-0207,Site Cleanup,2027-12-25,2027-12-27,3,None,Completed
+SCH-0388,PRJ-0309,Concrete Works,2027-01-30,2027-02-07,9,Previous Task,Not Started
+SCH-0389,PRJ-0489,Concrete Works,2027-07-16,2027-07-23,8,Foundation,In Progress
+SCH-0390,PRJ-0284,Foundation,2027-08-03,2027-09-01,30,None,Not Started
+SCH-0391,PRJ-0164,Plumbing Installation,2027-03-08,2027-03-11,4,None,Completed
+SCH-0392,PRJ-0245,Excavation,2026-10-12,2026-11-03,23,Excavation,Completed
+SCH-0393,PRJ-0052,Painting,2026-04-08,2026-05-08,31,Excavation,Not Started
+SCH-0394,PRJ-0041,Roofing,2027-04-20,2027-05-16,27,None,Completed
+SCH-0395,PRJ-0453,Roofing,2026-12-17,2027-01-12,27,None,Not Started
+SCH-0396,PRJ-0449,Site Cleanup,2027-06-11,2027-07-07,27,None,Completed
+SCH-0397,PRJ-0350,Site Preparation,2026-03-30,2026-04-29,31,Previous Task,In Progress
+SCH-0398,PRJ-0464,Site Preparation,2027-03-03,2027-03-25,23,Previous Task,Completed
+SCH-0399,PRJ-0285,Concrete Works,2027-07-18,2027-07-21,4,None,Not Started
+SCH-0400,PRJ-0068,Inspection,2026-07-18,2026-08-02,16,Foundation,In Progress
+SCH-0401,PRJ-0070,Site Cleanup,2027-02-01,2027-03-03,31,None,Completed
+SCH-0402,PRJ-0110,Painting,2027-10-31,2027-11-16,17,Foundation,In Progress
+SCH-0403,PRJ-0195,Plumbing Installation,2027-04-22,2027-05-20,29,Previous Task,Completed
+SCH-0404,PRJ-0037,Excavation,2026-10-29,2026-11-16,19,None,Completed
+SCH-0405,PRJ-0256,Excavation,2027-01-19,2027-02-08,21,Excavation,Not Started
+SCH-0406,PRJ-0401,Foundation,2026-10-25,2026-11-04,11,Previous Task,Completed
+SCH-0407,PRJ-0078,Concrete Works,2026-07-15,2026-07-27,13,None,Not Started
+SCH-0408,PRJ-0364,Electrical Installation,2026-04-15,2026-04-18,4,Previous Task,In Progress
+SCH-0409,PRJ-0027,Inspection,2026-09-04,2026-09-24,21,Excavation,Completed
+SCH-0410,PRJ-0095,Plumbing Installation,2028-01-25,2028-01-28,4,Foundation,In Progress
+SCH-0411,PRJ-0173,Foundation,2026-11-11,2026-11-22,12,Excavation,Completed
+SCH-0412,PRJ-0160,Foundation,2027-04-07,2027-04-08,2,Foundation,In Progress
+SCH-0413,PRJ-0250,Excavation,2028-02-29,2028-03-26,27,Excavation,Completed
+SCH-0414,PRJ-0278,Finishing,2027-01-19,2027-02-11,24,Foundation,Completed
+SCH-0415,PRJ-0270,Plumbing Installation,2026-08-16,2026-08-30,15,Foundation,Completed
+SCH-0416,PRJ-0292,Site Preparation,2026-03-24,2026-04-01,9,None,In Progress
+SCH-0417,PRJ-0055,Site Cleanup,2026-10-18,2026-11-08,22,Foundation,In Progress
+SCH-0418,PRJ-0232,Plumbing Installation,2026-11-11,2026-12-03,23,Previous Task,In Progress
+SCH-0419,PRJ-0187,Concrete Works,2026-06-02,2026-06-19,18,Previous Task,Not Started
+SCH-0420,PRJ-0230,Excavation,2027-04-29,2027-05-23,25,Excavation,Not Started
+SCH-0421,PRJ-0200,Inspection,2027-06-04,2027-06-09,6,Foundation,In Progress
+SCH-0422,PRJ-0188,Plumbing Installation,2026-06-17,2026-06-26,10,None,In Progress
+SCH-0423,PRJ-0012,Excavation,2026-08-15,2026-08-17,3,Foundation,Completed
+SCH-0424,PRJ-0472,Structural Framing,2026-02-18,2026-02-22,5,None,In Progress
+SCH-0425,PRJ-0261,Foundation,2026-11-05,2026-11-19,15,Foundation,Not Started
+SCH-0426,PRJ-0404,Roofing,2027-12-07,2027-12-24,18,None,Not Started
+SCH-0427,PRJ-0002,Plumbing Installation,2027-05-29,2027-06-25,28,Excavation,Completed
+SCH-0428,PRJ-0307,Concrete Works,2026-04-09,2026-05-01,23,None,In Progress
+SCH-0429,PRJ-0070,Site Preparation,2027-02-07,2027-02-12,6,Excavation,In Progress
+SCH-0430,PRJ-0087,Site Cleanup,2026-11-24,2026-12-11,18,None,Not Started
+SCH-0431,PRJ-0180,Foundation,2027-02-25,2027-03-03,7,Previous Task,Not Started
+SCH-0432,PRJ-0283,Foundation,2028-01-01,2028-01-07,7,Previous Task,In Progress
+SCH-0433,PRJ-0007,Roofing,2026-05-20,2026-05-29,10,Foundation,Not Started
+SCH-0434,PRJ-0270,Finishing,2026-07-26,2026-08-07,13,Foundation,Not Started
+SCH-0435,PRJ-0001,Site Preparation,2027-11-20,2027-11-23,4,Foundation,In Progress
+SCH-0436,PRJ-0310,Electrical Installation,2027-04-05,2027-04-13,9,None,Completed
+SCH-0437,PRJ-0060,Inspection,2027-08-25,2027-09-06,13,None,In Progress
+SCH-0438,PRJ-0100,Roofing,2026-10-24,2026-11-18,26,Previous Task,Not Started
+SCH-0439,PRJ-0393,Finishing,2027-07-09,2027-07-26,18,Previous Task,Not Started
+SCH-0440,PRJ-0406,Excavation,2027-03-05,2027-03-15,11,Foundation,In Progress
+SCH-0441,PRJ-0285,Roofing,2027-05-01,2027-05-21,21,Previous Task,Not Started
+SCH-0442,PRJ-0066,Excavation,2026-03-17,2026-03-18,2,None,In Progress
+SCH-0443,PRJ-0053,Site Cleanup,2027-05-13,2027-05-23,11,Foundation,Not Started
+SCH-0444,PRJ-0155,Electrical Installation,2027-10-08,2027-10-28,21,Previous Task,Completed
+SCH-0445,PRJ-0390,Inspection,2026-06-05,2026-07-05,31,Foundation,In Progress
+SCH-0446,PRJ-0241,Roofing,2026-04-01,2026-04-15,15,Foundation,Completed
+SCH-0447,PRJ-0453,Painting,2027-02-24,2027-03-01,6,None,Not Started
+SCH-0448,PRJ-0044,Inspection,2026-10-25,2026-11-11,18,Previous Task,Not Started
+SCH-0449,PRJ-0198,Electrical Installation,2026-10-02,2026-10-27,26,Excavation,Completed
+SCH-0450,PRJ-0329,Inspection,2028-03-21,2028-03-22,2,Previous Task,In Progress
+SCH-0451,PRJ-0286,Excavation,2026-12-08,2027-01-02,26,Previous Task,Not Started
+SCH-0452,PRJ-0114,Site Cleanup,2027-07-23,2027-08-12,21,Excavation,In Progress
+SCH-0453,PRJ-0477,Site Cleanup,2027-06-04,2027-07-01,28,Excavation,Completed
+SCH-0454,PRJ-0295,Electrical Installation,2027-08-03,2027-08-14,12,Foundation,In Progress
+SCH-0455,PRJ-0469,Electrical Installation,2026-06-20,2026-07-16,27,Foundation,Completed
+SCH-0456,PRJ-0394,Concrete Works,2027-01-29,2027-02-16,19,Previous Task,Completed
+SCH-0457,PRJ-0459,Plumbing Installation,2027-06-23,2027-06-24,2,Excavation,Completed
+SCH-0458,PRJ-0327,Concrete Works,2027-03-19,2027-04-11,24,Foundation,Not Started
+SCH-0459,PRJ-0267,Painting,2027-05-26,2027-06-21,27,Excavation,Not Started
+SCH-0460,PRJ-0194,Site Preparation,2027-06-04,2027-06-28,25,Excavation,In Progress
+SCH-0461,PRJ-0216,Structural Framing,2027-09-18,2027-09-26,9,Excavation,In Progress
+SCH-0462,PRJ-0191,Site Preparation,2026-04-06,2026-05-05,30,None,In Progress
+SCH-0463,PRJ-0163,Plumbing Installation,2026-05-21,2026-06-05,16,None,Not Started
+SCH-0464,PRJ-0215,Excavation,2027-08-28,2027-09-15,19,Foundation,Completed
+SCH-0465,PRJ-0461,Foundation,2026-03-16,2026-03-18,3,Foundation,Not Started
+SCH-0466,PRJ-0326,Concrete Works,2027-10-28,2027-11-14,18,Previous Task,In Progress
+SCH-0467,PRJ-0371,Finishing,2028-02-20,2028-03-11,21,Previous Task,Completed
+SCH-0468,PRJ-0314,Concrete Works,2026-08-20,2026-08-30,11,Foundation,In Progress
+SCH-0469,PRJ-0397,Foundation,2027-08-25,2027-09-22,29,Foundation,Not Started
+SCH-0470,PRJ-0273,Foundation,2026-02-22,2026-03-16,23,Previous Task,Completed
+SCH-0471,PRJ-0073,Structural Framing,2026-05-30,2026-06-05,7,Foundation,Completed
+SCH-0472,PRJ-0003,Concrete Works,2028-02-03,2028-02-05,3,None,In Progress
+SCH-0473,PRJ-0364,Excavation,2026-04-01,2026-04-11,11,Foundation,In Progress
+SCH-0474,PRJ-0127,Excavation,2027-02-15,2027-03-07,21,Foundation,Completed
+SCH-0475,PRJ-0174,Concrete Works,2027-09-18,2027-10-03,16,None,In Progress
+SCH-0476,PRJ-0090,Plumbing Installation,2026-06-29,2026-07-18,20,None,Not Started
+SCH-0477,PRJ-0143,Roofing,2026-07-19,2026-07-31,13,None,Not Started
+SCH-0478,PRJ-0391,Inspection,2027-03-14,2027-03-22,9,Previous Task,Completed
+SCH-0479,PRJ-0407,Finishing,2026-07-24,2026-08-15,23,Foundation,In Progress
+SCH-0480,PRJ-0093,Excavation,2027-10-26,2027-11-23,29,Foundation,Completed
+SCH-0481,PRJ-0276,Plumbing Installation,2026-06-13,2026-06-30,18,Previous Task,Not Started
+SCH-0482,PRJ-0144,Foundation,2027-04-07,2027-05-07,31,Excavation,In Progress
+SCH-0483,PRJ-0095,Finishing,2028-03-04,2028-03-24,21,None,In Progress
+SCH-0484,PRJ-0081,Concrete Works,2026-08-18,2026-09-03,17,Previous Task,Completed
+SCH-0485,PRJ-0072,Concrete Works,2026-02-17,2026-02-18,2,None,In Progress
+SCH-0486,PRJ-0238,Foundation,2026-03-28,2026-04-27,31,None,In Progress
+SCH-0487,PRJ-0351,Foundation,2026-01-31,2026-02-19,20,Excavation,In Progress
+SCH-0488,PRJ-0310,Site Preparation,2027-04-17,2027-05-03,17,Excavation,Not Started
+SCH-0489,PRJ-0065,Site Preparation,2026-04-19,2026-05-14,26,Previous Task,Not Started
+SCH-0490,PRJ-0430,Foundation,2028-01-17,2028-02-05,20,None,In Progress
+SCH-0491,PRJ-0273,Electrical Installation,2026-04-26,2026-05-23,28,None,Not Started
+SCH-0492,PRJ-0078,Excavation,2026-07-05,2026-07-19,15,None,Not Started
+SCH-0493,PRJ-0296,Structural Framing,2027-03-22,2027-04-12,22,Previous Task,In Progress
+SCH-0494,PRJ-0317,Finishing,2027-06-24,2027-07-10,17,Excavation,Not Started
+SCH-0495,PRJ-0310,Site Preparation,2027-03-29,2027-03-30,2,None,Not Started
+SCH-0496,PRJ-0363,Electrical Installation,2027-02-03,2027-02-24,22,Excavation,Not Started
+SCH-0497,PRJ-0193,Electrical Installation,2026-11-10,2026-11-16,7,Excavation,Completed
+SCH-0498,PRJ-0368,Site Cleanup,2026-06-24,2026-07-03,10,Excavation,Not Started
+SCH-0499,PRJ-0264,Electrical Installation,2027-03-06,2027-03-18,13,Foundation,Not Started
+SCH-0500,PRJ-0373,Finishing,2027-08-02,2027-08-21,20,Previous Task,Not Started

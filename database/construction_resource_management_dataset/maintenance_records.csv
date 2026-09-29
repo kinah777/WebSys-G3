@@ -1,0 +1,501 @@
+maintenance_id,equipment_id,maintenance_date,maintenance_type,maintenance_cost,duration_days,maintenance_status
+MAIN-0001,EQ-0337,2026-03-20,Oil Change,79193.56,5,In Progress
+MAIN-0002,EQ-0044,2027-06-30,Parts Replacement,23097.43,4,In Progress
+MAIN-0003,EQ-0326,2026-06-14,Routine Inspection,28495.76,4,Scheduled
+MAIN-0004,EQ-0020,2026-10-09,Repair,12574.0,3,Completed
+MAIN-0005,EQ-0175,2027-05-29,Engine Service,93009.88,7,Scheduled
+MAIN-0006,EQ-0331,2027-04-13,Safety Inspection,23111.31,1,In Progress
+MAIN-0007,EQ-0285,2027-12-04,Routine Inspection,50364.49,5,In Progress
+MAIN-0008,EQ-0207,2026-11-16,Safety Inspection,68056.24,2,In Progress
+MAIN-0009,EQ-0325,2026-04-20,Repair,87760.9,7,Completed
+MAIN-0010,EQ-0262,2026-12-06,Parts Replacement,20077.87,5,Scheduled
+MAIN-0011,EQ-0393,2027-07-07,Safety Inspection,33203.65,6,Completed
+MAIN-0012,EQ-0369,2026-05-24,Routine Inspection,36808.01,3,Completed
+MAIN-0013,EQ-0308,2026-07-15,Oil Change,58769.39,4,Scheduled
+MAIN-0014,EQ-0346,2027-08-01,Repair,25914.59,4,Scheduled
+MAIN-0015,EQ-0265,2026-11-18,Engine Service,89744.13,1,Scheduled
+MAIN-0016,EQ-0028,2027-04-25,Safety Inspection,8395.64,3,Scheduled
+MAIN-0017,EQ-0235,2027-07-27,Safety Inspection,28631.39,1,In Progress
+MAIN-0018,EQ-0459,2026-12-21,Repair,68561.71,3,In Progress
+MAIN-0019,EQ-0173,2026-08-13,Safety Inspection,32641.44,3,Scheduled
+MAIN-0020,EQ-0231,2027-06-13,Safety Inspection,59754.67,4,Completed
+MAIN-0021,EQ-0240,2027-12-17,Parts Replacement,87578.2,5,In Progress
+MAIN-0022,EQ-0475,2026-06-18,Safety Inspection,71864.92,6,Scheduled
+MAIN-0023,EQ-0500,2026-04-19,Routine Inspection,74286.45,4,Scheduled
+MAIN-0024,EQ-0348,2027-11-14,Routine Inspection,92631.11,1,In Progress
+MAIN-0025,EQ-0159,2027-05-22,Routine Inspection,98729.51,7,Scheduled
+MAIN-0026,EQ-0152,2027-02-17,Routine Inspection,69120.18,3,In Progress
+MAIN-0027,EQ-0252,2027-07-05,Safety Inspection,2546.79,3,Scheduled
+MAIN-0028,EQ-0483,2026-01-24,Safety Inspection,98571.55,5,Completed
+MAIN-0029,EQ-0210,2027-05-11,Routine Inspection,52659.85,3,Completed
+MAIN-0030,EQ-0077,2027-03-20,Oil Change,77189.5,3,Completed
+MAIN-0031,EQ-0031,2027-12-14,Repair,56732.14,4,Completed
+MAIN-0032,EQ-0043,2026-04-28,Routine Inspection,97986.54,5,Completed
+MAIN-0033,EQ-0239,2026-01-15,Oil Change,24976.56,3,Completed
+MAIN-0034,EQ-0398,2026-02-18,Safety Inspection,29241.29,3,Scheduled
+MAIN-0035,EQ-0403,2026-01-30,Engine Service,25183.12,3,Completed
+MAIN-0036,EQ-0338,2027-03-10,Parts Replacement,57063.17,5,Completed
+MAIN-0037,EQ-0337,2026-09-20,Parts Replacement,81317.27,6,Scheduled
+MAIN-0038,EQ-0387,2026-08-07,Safety Inspection,77804.08,3,Scheduled
+MAIN-0039,EQ-0263,2026-04-14,Engine Service,44788.74,5,In Progress
+MAIN-0040,EQ-0257,2027-08-28,Parts Replacement,15130.49,4,In Progress
+MAIN-0041,EQ-0083,2026-10-18,Engine Service,3210.79,7,In Progress
+MAIN-0042,EQ-0063,2026-04-18,Safety Inspection,19973.28,1,In Progress
+MAIN-0043,EQ-0219,2026-10-23,Oil Change,14454.04,1,Completed
+MAIN-0044,EQ-0473,2027-01-01,Safety Inspection,38516.59,3,Scheduled
+MAIN-0045,EQ-0262,2026-05-08,Oil Change,46907.93,5,Scheduled
+MAIN-0046,EQ-0460,2027-05-02,Routine Inspection,3135.82,3,Scheduled
+MAIN-0047,EQ-0463,2027-04-17,Repair,20583.23,7,Scheduled
+MAIN-0048,EQ-0182,2027-01-26,Safety Inspection,47430.62,1,In Progress
+MAIN-0049,EQ-0170,2026-08-04,Engine Service,14669.16,1,In Progress
+MAIN-0050,EQ-0344,2026-06-08,Oil Change,13223.74,7,Completed
+MAIN-0051,EQ-0133,2026-04-22,Safety Inspection,7579.69,5,Scheduled
+MAIN-0052,EQ-0328,2026-05-21,Routine Inspection,38538.9,4,Scheduled
+MAIN-0053,EQ-0127,2027-02-16,Safety Inspection,58722.7,1,Scheduled
+MAIN-0054,EQ-0185,2026-05-12,Oil Change,8463.35,6,Completed
+MAIN-0055,EQ-0136,2026-06-17,Safety Inspection,86596.31,7,Completed
+MAIN-0056,EQ-0335,2026-09-08,Safety Inspection,75657.91,7,Scheduled
+MAIN-0057,EQ-0287,2026-09-29,Safety Inspection,14472.83,7,Completed
+MAIN-0058,EQ-0062,2026-05-07,Engine Service,11758.11,6,Completed
+MAIN-0059,EQ-0343,2027-09-29,Parts Replacement,71826.85,3,Completed
+MAIN-0060,EQ-0377,2026-05-26,Engine Service,79418.51,1,In Progress
+MAIN-0061,EQ-0141,2026-12-04,Repair,21755.76,7,Completed
+MAIN-0062,EQ-0275,2026-06-07,Engine Service,53466.81,6,In Progress
+MAIN-0063,EQ-0320,2027-01-13,Routine Inspection,53851.9,3,In Progress
+MAIN-0064,EQ-0298,2027-11-04,Repair,96781.22,2,Scheduled
+MAIN-0065,EQ-0069,2026-07-19,Repair,55960.89,5,Scheduled
+MAIN-0066,EQ-0423,2026-12-23,Parts Replacement,6540.38,2,In Progress
+MAIN-0067,EQ-0378,2027-10-06,Repair,87713.62,2,In Progress
+MAIN-0068,EQ-0266,2026-01-31,Repair,3773.82,7,Completed
+MAIN-0069,EQ-0162,2026-02-16,Engine Service,71891.07,5,Scheduled
+MAIN-0070,EQ-0300,2027-12-04,Safety Inspection,82306.64,7,Scheduled
+MAIN-0071,EQ-0185,2026-09-23,Repair,91294.82,3,Scheduled
+MAIN-0072,EQ-0144,2027-12-22,Safety Inspection,47862.74,4,Completed
+MAIN-0073,EQ-0130,2026-10-20,Repair,56983.88,3,In Progress
+MAIN-0074,EQ-0126,2026-02-04,Repair,43286.66,7,Scheduled
+MAIN-0075,EQ-0025,2027-03-22,Routine Inspection,39266.68,5,In Progress
+MAIN-0076,EQ-0474,2026-05-19,Engine Service,30467.49,4,Scheduled
+MAIN-0077,EQ-0492,2027-11-19,Engine Service,37051.29,3,Scheduled
+MAIN-0078,EQ-0255,2027-04-19,Parts Replacement,23559.12,7,In Progress
+MAIN-0079,EQ-0181,2027-10-30,Repair,65669.24,4,Scheduled
+MAIN-0080,EQ-0299,2026-04-14,Oil Change,13007.06,7,Completed
+MAIN-0081,EQ-0013,2027-04-25,Oil Change,86111.11,3,Completed
+MAIN-0082,EQ-0375,2026-07-22,Parts Replacement,44071.32,1,Completed
+MAIN-0083,EQ-0031,2027-08-11,Parts Replacement,85589.0,7,Scheduled
+MAIN-0084,EQ-0073,2027-10-10,Safety Inspection,26034.36,1,Completed
+MAIN-0085,EQ-0289,2026-05-27,Engine Service,95267.72,3,In Progress
+MAIN-0086,EQ-0481,2026-04-17,Safety Inspection,48215.49,2,Scheduled
+MAIN-0087,EQ-0352,2027-02-08,Routine Inspection,22543.06,3,Scheduled
+MAIN-0088,EQ-0333,2026-08-25,Safety Inspection,68359.35,6,In Progress
+MAIN-0089,EQ-0153,2026-09-10,Safety Inspection,63827.52,5,In Progress
+MAIN-0090,EQ-0133,2026-10-01,Oil Change,46532.99,5,Completed
+MAIN-0091,EQ-0080,2027-12-04,Oil Change,43310.59,7,Completed
+MAIN-0092,EQ-0303,2026-09-28,Parts Replacement,41999.81,3,Completed
+MAIN-0093,EQ-0475,2026-11-10,Parts Replacement,70166.28,3,In Progress
+MAIN-0094,EQ-0320,2026-12-29,Engine Service,73571.55,1,Scheduled
+MAIN-0095,EQ-0230,2026-07-17,Safety Inspection,11810.27,6,Completed
+MAIN-0096,EQ-0349,2027-11-06,Oil Change,44505.44,1,In Progress
+MAIN-0097,EQ-0118,2026-05-16,Oil Change,93245.74,3,Scheduled
+MAIN-0098,EQ-0083,2026-08-07,Parts Replacement,96534.09,4,In Progress
+MAIN-0099,EQ-0469,2026-05-13,Engine Service,39358.83,4,Completed
+MAIN-0100,EQ-0471,2026-10-05,Safety Inspection,4009.52,6,Completed
+MAIN-0101,EQ-0021,2026-10-12,Safety Inspection,92378.55,3,In Progress
+MAIN-0102,EQ-0188,2026-04-12,Routine Inspection,17173.69,4,Scheduled
+MAIN-0103,EQ-0259,2026-03-23,Routine Inspection,96517.57,3,Scheduled
+MAIN-0104,EQ-0481,2026-05-20,Safety Inspection,87075.42,2,In Progress
+MAIN-0105,EQ-0368,2027-09-10,Oil Change,4748.24,7,In Progress
+MAIN-0106,EQ-0150,2027-11-27,Safety Inspection,34512.49,3,Scheduled
+MAIN-0107,EQ-0407,2027-06-23,Safety Inspection,94789.91,4,Completed
+MAIN-0108,EQ-0252,2027-05-09,Repair,19073.48,5,Scheduled
+MAIN-0109,EQ-0163,2027-12-17,Repair,22485.27,7,Scheduled
+MAIN-0110,EQ-0420,2027-10-17,Engine Service,20159.11,7,Scheduled
+MAIN-0111,EQ-0367,2027-03-28,Parts Replacement,96375.61,5,Completed
+MAIN-0112,EQ-0395,2027-08-16,Oil Change,8901.36,3,Scheduled
+MAIN-0113,EQ-0022,2026-01-13,Oil Change,38556.19,4,Completed
+MAIN-0114,EQ-0388,2026-06-19,Routine Inspection,26488.51,6,In Progress
+MAIN-0115,EQ-0129,2027-12-15,Parts Replacement,39151.25,5,In Progress
+MAIN-0116,EQ-0404,2027-01-27,Repair,22441.03,4,Scheduled
+MAIN-0117,EQ-0185,2027-01-01,Engine Service,25614.01,1,Completed
+MAIN-0118,EQ-0093,2026-01-05,Parts Replacement,57211.68,2,Scheduled
+MAIN-0119,EQ-0285,2027-04-10,Oil Change,4001.8,7,In Progress
+MAIN-0120,EQ-0186,2026-02-22,Engine Service,62646.98,7,Scheduled
+MAIN-0121,EQ-0240,2027-04-06,Oil Change,11439.58,2,In Progress
+MAIN-0122,EQ-0244,2026-07-17,Repair,94192.81,6,Completed
+MAIN-0123,EQ-0265,2026-12-15,Routine Inspection,89478.62,7,Scheduled
+MAIN-0124,EQ-0351,2027-12-08,Engine Service,67314.32,3,In Progress
+MAIN-0125,EQ-0328,2027-12-15,Routine Inspection,53023.05,4,In Progress
+MAIN-0126,EQ-0367,2026-01-19,Routine Inspection,61142.06,4,Scheduled
+MAIN-0127,EQ-0089,2026-01-29,Parts Replacement,65865.68,4,Scheduled
+MAIN-0128,EQ-0447,2026-06-10,Routine Inspection,52722.22,7,Completed
+MAIN-0129,EQ-0178,2026-07-04,Oil Change,60024.69,6,In Progress
+MAIN-0130,EQ-0166,2027-08-07,Engine Service,77470.15,2,Scheduled
+MAIN-0131,EQ-0108,2026-03-19,Repair,81258.41,7,In Progress
+MAIN-0132,EQ-0265,2027-04-21,Repair,12383.79,3,Completed
+MAIN-0133,EQ-0405,2027-09-28,Routine Inspection,20572.37,2,Scheduled
+MAIN-0134,EQ-0420,2027-07-19,Parts Replacement,54304.47,7,Completed
+MAIN-0135,EQ-0443,2026-01-04,Parts Replacement,29017.93,1,Completed
+MAIN-0136,EQ-0173,2026-01-13,Oil Change,95519.62,6,Completed
+MAIN-0137,EQ-0063,2026-08-15,Routine Inspection,5660.85,5,In Progress
+MAIN-0138,EQ-0280,2027-03-10,Engine Service,65312.97,5,In Progress
+MAIN-0139,EQ-0401,2027-05-12,Repair,34726.84,5,Completed
+MAIN-0140,EQ-0487,2026-01-06,Parts Replacement,34539.17,7,Scheduled
+MAIN-0141,EQ-0156,2026-12-10,Routine Inspection,30370.92,7,Completed
+MAIN-0142,EQ-0091,2026-09-12,Engine Service,41817.85,3,In Progress
+MAIN-0143,EQ-0202,2026-05-12,Engine Service,18620.16,4,Completed
+MAIN-0144,EQ-0054,2027-07-08,Routine Inspection,29515.23,6,Scheduled
+MAIN-0145,EQ-0021,2026-11-12,Oil Change,65478.8,3,In Progress
+MAIN-0146,EQ-0166,2026-02-17,Safety Inspection,95488.6,3,Completed
+MAIN-0147,EQ-0075,2026-04-19,Engine Service,87797.43,3,In Progress
+MAIN-0148,EQ-0100,2026-10-30,Parts Replacement,87112.11,7,In Progress
+MAIN-0149,EQ-0463,2026-10-21,Routine Inspection,43148.74,6,Completed
+MAIN-0150,EQ-0230,2026-09-20,Routine Inspection,44720.36,6,In Progress
+MAIN-0151,EQ-0345,2027-12-13,Engine Service,56800.34,6,In Progress
+MAIN-0152,EQ-0460,2027-01-04,Parts Replacement,32151.88,3,In Progress
+MAIN-0153,EQ-0039,2026-03-30,Routine Inspection,40133.87,7,Completed
+MAIN-0154,EQ-0235,2027-10-19,Oil Change,97855.37,3,Scheduled
+MAIN-0155,EQ-0259,2027-04-04,Parts Replacement,24378.86,5,Completed
+MAIN-0156,EQ-0276,2027-09-18,Repair,22446.01,4,Scheduled
+MAIN-0157,EQ-0038,2026-06-13,Repair,57924.11,7,Scheduled
+MAIN-0158,EQ-0221,2026-09-30,Repair,67903.07,5,In Progress
+MAIN-0159,EQ-0076,2026-09-22,Oil Change,98670.05,4,In Progress
+MAIN-0160,EQ-0008,2026-10-04,Engine Service,1271.55,1,Completed
+MAIN-0161,EQ-0322,2027-08-27,Oil Change,39508.85,1,In Progress
+MAIN-0162,EQ-0430,2027-04-03,Repair,39997.31,5,Scheduled
+MAIN-0163,EQ-0222,2027-12-15,Parts Replacement,14816.62,1,Scheduled
+MAIN-0164,EQ-0343,2026-06-12,Engine Service,95330.09,3,Completed
+MAIN-0165,EQ-0061,2026-05-25,Repair,39549.83,4,Scheduled
+MAIN-0166,EQ-0038,2026-06-08,Oil Change,1481.11,5,Completed
+MAIN-0167,EQ-0235,2027-11-07,Parts Replacement,86389.75,3,In Progress
+MAIN-0168,EQ-0059,2027-01-12,Oil Change,15044.29,3,Scheduled
+MAIN-0169,EQ-0175,2027-02-02,Engine Service,2952.37,5,In Progress
+MAIN-0170,EQ-0402,2026-01-01,Repair,91770.46,7,In Progress
+MAIN-0171,EQ-0109,2027-02-22,Safety Inspection,60969.14,6,Scheduled
+MAIN-0172,EQ-0016,2026-07-27,Repair,8244.3,2,In Progress
+MAIN-0173,EQ-0208,2026-12-13,Safety Inspection,19715.77,5,In Progress
+MAIN-0174,EQ-0166,2027-03-21,Safety Inspection,93684.91,3,In Progress
+MAIN-0175,EQ-0456,2027-11-27,Parts Replacement,99798.58,4,In Progress
+MAIN-0176,EQ-0411,2027-03-28,Routine Inspection,73900.34,7,Scheduled
+MAIN-0177,EQ-0219,2026-02-15,Routine Inspection,50373.25,4,Scheduled
+MAIN-0178,EQ-0426,2026-10-12,Oil Change,25504.54,4,Scheduled
+MAIN-0179,EQ-0027,2026-10-12,Safety Inspection,59534.06,6,In Progress
+MAIN-0180,EQ-0250,2026-11-13,Repair,20500.55,5,Completed
+MAIN-0181,EQ-0043,2027-11-08,Safety Inspection,64056.04,7,Completed
+MAIN-0182,EQ-0123,2027-05-31,Safety Inspection,46384.73,2,Scheduled
+MAIN-0183,EQ-0465,2027-01-02,Engine Service,71079.42,7,Completed
+MAIN-0184,EQ-0427,2026-01-07,Safety Inspection,33178.41,3,In Progress
+MAIN-0185,EQ-0224,2027-03-16,Routine Inspection,52828.78,3,In Progress
+MAIN-0186,EQ-0371,2027-05-27,Repair,7639.79,2,Completed
+MAIN-0187,EQ-0260,2027-01-06,Oil Change,63148.97,3,Scheduled
+MAIN-0188,EQ-0372,2027-09-11,Parts Replacement,50556.42,2,Completed
+MAIN-0189,EQ-0107,2027-12-27,Repair,68918.89,2,Scheduled
+MAIN-0190,EQ-0325,2026-06-14,Oil Change,21290.48,2,In Progress
+MAIN-0191,EQ-0446,2027-08-23,Parts Replacement,89808.3,7,Scheduled
+MAIN-0192,EQ-0063,2026-11-18,Parts Replacement,78762.57,1,Completed
+MAIN-0193,EQ-0358,2026-05-06,Oil Change,86255.4,2,In Progress
+MAIN-0194,EQ-0357,2026-01-07,Repair,72119.09,5,Completed
+MAIN-0195,EQ-0473,2026-12-26,Engine Service,45884.55,7,Completed
+MAIN-0196,EQ-0037,2027-01-08,Safety Inspection,27325.94,6,Completed
+MAIN-0197,EQ-0333,2027-12-14,Engine Service,39668.19,3,Completed
+MAIN-0198,EQ-0214,2027-07-16,Parts Replacement,83944.67,5,Scheduled
+MAIN-0199,EQ-0457,2026-04-12,Engine Service,68876.6,6,Completed
+MAIN-0200,EQ-0190,2027-03-27,Safety Inspection,40666.49,7,In Progress
+MAIN-0201,EQ-0485,2027-04-06,Engine Service,93289.12,7,Completed
+MAIN-0202,EQ-0369,2027-03-20,Engine Service,40686.2,3,Completed
+MAIN-0203,EQ-0499,2027-02-08,Routine Inspection,56651.74,2,Scheduled
+MAIN-0204,EQ-0257,2027-11-19,Safety Inspection,92904.23,7,In Progress
+MAIN-0205,EQ-0072,2027-08-24,Engine Service,31774.26,3,Scheduled
+MAIN-0206,EQ-0037,2027-05-18,Repair,7140.28,5,In Progress
+MAIN-0207,EQ-0276,2027-06-16,Engine Service,53392.75,5,In Progress
+MAIN-0208,EQ-0257,2027-05-15,Oil Change,47333.95,3,In Progress
+MAIN-0209,EQ-0142,2026-05-26,Oil Change,1489.74,1,In Progress
+MAIN-0210,EQ-0359,2027-07-22,Repair,69541.82,4,In Progress
+MAIN-0211,EQ-0088,2027-09-02,Parts Replacement,47273.91,6,Scheduled
+MAIN-0212,EQ-0331,2027-06-23,Engine Service,78727.09,3,Scheduled
+MAIN-0213,EQ-0032,2027-01-25,Engine Service,14829.57,4,Completed
+MAIN-0214,EQ-0104,2027-08-22,Routine Inspection,25329.64,7,Scheduled
+MAIN-0215,EQ-0132,2026-09-11,Routine Inspection,20204.08,5,In Progress
+MAIN-0216,EQ-0098,2027-08-04,Oil Change,24939.63,1,Scheduled
+MAIN-0217,EQ-0056,2026-04-25,Parts Replacement,27021.67,1,Completed
+MAIN-0218,EQ-0182,2026-09-15,Parts Replacement,53645.93,3,In Progress
+MAIN-0219,EQ-0256,2026-11-24,Repair,14209.54,3,Completed
+MAIN-0220,EQ-0079,2027-08-07,Engine Service,11329.86,1,Completed
+MAIN-0221,EQ-0099,2027-02-26,Parts Replacement,46288.45,3,Completed
+MAIN-0222,EQ-0233,2027-12-26,Parts Replacement,21900.97,1,Completed
+MAIN-0223,EQ-0491,2027-08-09,Parts Replacement,20772.17,5,Completed
+MAIN-0224,EQ-0365,2026-04-02,Safety Inspection,24912.05,3,Completed
+MAIN-0225,EQ-0490,2027-03-11,Parts Replacement,43770.59,2,In Progress
+MAIN-0226,EQ-0105,2027-07-10,Safety Inspection,80755.77,3,In Progress
+MAIN-0227,EQ-0454,2027-07-05,Engine Service,66765.16,1,Completed
+MAIN-0228,EQ-0335,2027-07-01,Oil Change,33375.05,6,Completed
+MAIN-0229,EQ-0463,2026-02-17,Safety Inspection,13144.02,5,In Progress
+MAIN-0230,EQ-0299,2026-04-24,Safety Inspection,43784.33,3,Completed
+MAIN-0231,EQ-0479,2027-09-10,Repair,63748.24,4,In Progress
+MAIN-0232,EQ-0486,2026-06-22,Parts Replacement,20396.69,7,In Progress
+MAIN-0233,EQ-0480,2027-07-04,Repair,14601.43,5,Completed
+MAIN-0234,EQ-0429,2026-04-30,Engine Service,96644.06,4,Scheduled
+MAIN-0235,EQ-0223,2027-05-08,Parts Replacement,72961.7,5,Scheduled
+MAIN-0236,EQ-0047,2026-01-05,Oil Change,65842.91,7,Completed
+MAIN-0237,EQ-0417,2026-03-20,Parts Replacement,76141.21,6,In Progress
+MAIN-0238,EQ-0161,2027-11-24,Oil Change,83831.75,2,In Progress
+MAIN-0239,EQ-0490,2027-11-08,Engine Service,16725.7,2,Scheduled
+MAIN-0240,EQ-0398,2027-01-10,Safety Inspection,8447.92,1,In Progress
+MAIN-0241,EQ-0141,2026-12-27,Safety Inspection,79854.46,2,Completed
+MAIN-0242,EQ-0418,2026-10-05,Engine Service,69174.17,2,Scheduled
+MAIN-0243,EQ-0049,2027-02-05,Repair,43077.27,2,In Progress
+MAIN-0244,EQ-0406,2026-08-30,Parts Replacement,22001.62,6,Completed
+MAIN-0245,EQ-0019,2027-06-19,Oil Change,29506.94,6,Scheduled
+MAIN-0246,EQ-0197,2026-05-12,Repair,24817.65,5,Scheduled
+MAIN-0247,EQ-0489,2026-10-11,Routine Inspection,24266.74,6,Completed
+MAIN-0248,EQ-0161,2026-11-17,Parts Replacement,75915.04,7,Completed
+MAIN-0249,EQ-0034,2027-11-20,Repair,89502.87,1,Scheduled
+MAIN-0250,EQ-0453,2026-10-17,Parts Replacement,30455.05,7,Completed
+MAIN-0251,EQ-0026,2027-05-15,Repair,37538.18,7,In Progress
+MAIN-0252,EQ-0308,2026-08-06,Safety Inspection,86844.83,2,In Progress
+MAIN-0253,EQ-0028,2027-08-22,Safety Inspection,94085.75,5,In Progress
+MAIN-0254,EQ-0406,2027-04-22,Routine Inspection,14831.67,3,Scheduled
+MAIN-0255,EQ-0155,2026-07-27,Routine Inspection,3380.8,5,Scheduled
+MAIN-0256,EQ-0240,2027-05-11,Routine Inspection,67258.19,2,Scheduled
+MAIN-0257,EQ-0347,2026-12-03,Safety Inspection,69256.51,2,Completed
+MAIN-0258,EQ-0244,2027-10-07,Safety Inspection,22840.56,4,Completed
+MAIN-0259,EQ-0176,2026-09-21,Engine Service,40385.86,4,Scheduled
+MAIN-0260,EQ-0228,2027-01-01,Engine Service,94754.35,3,Completed
+MAIN-0261,EQ-0159,2027-07-25,Routine Inspection,29521.95,1,Scheduled
+MAIN-0262,EQ-0466,2027-02-03,Engine Service,43371.08,3,In Progress
+MAIN-0263,EQ-0127,2027-08-18,Oil Change,80065.08,5,In Progress
+MAIN-0264,EQ-0446,2026-05-11,Parts Replacement,27359.34,4,In Progress
+MAIN-0265,EQ-0027,2026-05-23,Routine Inspection,35228.83,6,Scheduled
+MAIN-0266,EQ-0107,2026-09-18,Oil Change,64022.18,5,Scheduled
+MAIN-0267,EQ-0224,2026-06-11,Engine Service,62254.28,6,In Progress
+MAIN-0268,EQ-0498,2027-09-20,Safety Inspection,88646.21,5,Scheduled
+MAIN-0269,EQ-0457,2026-10-22,Engine Service,47842.27,2,In Progress
+MAIN-0270,EQ-0453,2027-08-02,Routine Inspection,83303.3,5,In Progress
+MAIN-0271,EQ-0443,2026-02-14,Oil Change,45542.3,1,In Progress
+MAIN-0272,EQ-0308,2026-04-23,Oil Change,98653.3,3,In Progress
+MAIN-0273,EQ-0125,2027-08-04,Safety Inspection,78963.72,3,Completed
+MAIN-0274,EQ-0342,2026-03-31,Repair,80402.08,1,In Progress
+MAIN-0275,EQ-0046,2027-03-08,Safety Inspection,19510.34,2,Scheduled
+MAIN-0276,EQ-0427,2027-12-25,Engine Service,85781.12,6,In Progress
+MAIN-0277,EQ-0167,2027-09-05,Routine Inspection,5539.96,6,Completed
+MAIN-0278,EQ-0428,2026-09-15,Oil Change,39993.53,2,Completed
+MAIN-0279,EQ-0137,2026-10-25,Repair,21816.26,2,In Progress
+MAIN-0280,EQ-0399,2027-07-31,Engine Service,59235.71,3,Scheduled
+MAIN-0281,EQ-0081,2027-12-08,Safety Inspection,1738.09,1,Completed
+MAIN-0282,EQ-0323,2026-06-03,Oil Change,92064.99,4,Completed
+MAIN-0283,EQ-0368,2027-05-28,Oil Change,32594.87,4,In Progress
+MAIN-0284,EQ-0025,2027-10-05,Parts Replacement,90343.46,4,In Progress
+MAIN-0285,EQ-0164,2027-11-16,Engine Service,11535.93,5,Scheduled
+MAIN-0286,EQ-0097,2027-07-08,Repair,22586.69,1,Scheduled
+MAIN-0287,EQ-0302,2026-02-14,Routine Inspection,66894.55,2,In Progress
+MAIN-0288,EQ-0500,2026-05-24,Repair,51933.42,7,Completed
+MAIN-0289,EQ-0331,2027-05-03,Engine Service,88586.17,3,Completed
+MAIN-0290,EQ-0190,2027-07-19,Engine Service,12938.96,2,In Progress
+MAIN-0291,EQ-0337,2026-11-13,Engine Service,65768.03,2,Completed
+MAIN-0292,EQ-0141,2027-03-08,Safety Inspection,22443.21,2,In Progress
+MAIN-0293,EQ-0147,2027-01-23,Repair,65202.22,7,In Progress
+MAIN-0294,EQ-0212,2027-06-26,Repair,93889.17,7,Scheduled
+MAIN-0295,EQ-0172,2026-10-31,Safety Inspection,41671.04,2,Completed
+MAIN-0296,EQ-0062,2027-04-22,Repair,50012.95,3,Scheduled
+MAIN-0297,EQ-0419,2027-06-12,Repair,11714.3,6,Completed
+MAIN-0298,EQ-0203,2027-08-06,Safety Inspection,39273.87,6,In Progress
+MAIN-0299,EQ-0185,2027-08-17,Engine Service,33393.68,4,Scheduled
+MAIN-0300,EQ-0022,2027-10-18,Oil Change,70828.57,4,In Progress
+MAIN-0301,EQ-0162,2026-06-07,Oil Change,57367.52,4,In Progress
+MAIN-0302,EQ-0140,2027-06-13,Repair,64105.33,1,Scheduled
+MAIN-0303,EQ-0289,2026-06-13,Oil Change,97105.43,2,Completed
+MAIN-0304,EQ-0048,2026-09-29,Repair,35959.53,5,In Progress
+MAIN-0305,EQ-0189,2026-07-22,Engine Service,64476.23,2,Completed
+MAIN-0306,EQ-0204,2027-02-28,Routine Inspection,28028.56,3,Scheduled
+MAIN-0307,EQ-0480,2027-03-16,Repair,22186.37,2,In Progress
+MAIN-0308,EQ-0434,2027-04-29,Routine Inspection,54967.2,2,Completed
+MAIN-0309,EQ-0080,2026-07-03,Parts Replacement,56396.91,1,Scheduled
+MAIN-0310,EQ-0318,2026-07-25,Repair,64199.05,2,Completed
+MAIN-0311,EQ-0457,2027-11-19,Oil Change,61004.97,2,In Progress
+MAIN-0312,EQ-0327,2027-01-14,Routine Inspection,9607.97,6,In Progress
+MAIN-0313,EQ-0484,2026-11-09,Parts Replacement,40018.18,2,In Progress
+MAIN-0314,EQ-0134,2026-01-27,Engine Service,80720.82,6,In Progress
+MAIN-0315,EQ-0342,2027-08-29,Repair,20615.52,1,In Progress
+MAIN-0316,EQ-0240,2027-07-06,Oil Change,66263.85,6,Completed
+MAIN-0317,EQ-0385,2027-05-26,Engine Service,46332.83,5,Scheduled
+MAIN-0318,EQ-0026,2027-03-25,Parts Replacement,16427.08,3,Completed
+MAIN-0319,EQ-0221,2027-02-06,Engine Service,61149.06,6,In Progress
+MAIN-0320,EQ-0114,2027-03-18,Safety Inspection,82138.52,6,In Progress
+MAIN-0321,EQ-0325,2026-11-13,Oil Change,52286.01,5,Scheduled
+MAIN-0322,EQ-0450,2027-11-30,Safety Inspection,36242.12,6,Scheduled
+MAIN-0323,EQ-0272,2026-12-01,Repair,58348.86,3,In Progress
+MAIN-0324,EQ-0219,2026-06-19,Parts Replacement,48195.69,2,Completed
+MAIN-0325,EQ-0195,2027-08-03,Oil Change,21860.8,7,Scheduled
+MAIN-0326,EQ-0168,2027-04-04,Safety Inspection,81647.15,4,Scheduled
+MAIN-0327,EQ-0324,2026-11-08,Safety Inspection,82962.97,4,In Progress
+MAIN-0328,EQ-0420,2027-09-13,Safety Inspection,17399.04,1,In Progress
+MAIN-0329,EQ-0350,2026-10-04,Engine Service,18506.74,7,In Progress
+MAIN-0330,EQ-0349,2026-09-04,Repair,64165.32,4,Completed
+MAIN-0331,EQ-0204,2026-04-18,Routine Inspection,35990.37,3,In Progress
+MAIN-0332,EQ-0374,2027-01-31,Routine Inspection,55137.78,4,In Progress
+MAIN-0333,EQ-0203,2026-06-22,Parts Replacement,81561.79,4,In Progress
+MAIN-0334,EQ-0383,2027-06-17,Safety Inspection,52655.98,4,In Progress
+MAIN-0335,EQ-0496,2026-06-23,Repair,97214.47,5,Completed
+MAIN-0336,EQ-0456,2026-01-20,Oil Change,68337.9,7,In Progress
+MAIN-0337,EQ-0347,2027-09-30,Repair,9255.09,4,In Progress
+MAIN-0338,EQ-0363,2026-11-28,Engine Service,80200.2,2,In Progress
+MAIN-0339,EQ-0154,2026-10-07,Routine Inspection,85159.34,5,Scheduled
+MAIN-0340,EQ-0357,2027-11-03,Oil Change,87013.87,5,Scheduled
+MAIN-0341,EQ-0279,2026-01-29,Routine Inspection,40109.16,6,Scheduled
+MAIN-0342,EQ-0138,2027-04-26,Engine Service,58976.08,7,Scheduled
+MAIN-0343,EQ-0331,2026-07-28,Engine Service,96590.06,5,Scheduled
+MAIN-0344,EQ-0324,2027-09-17,Parts Replacement,80898.24,1,In Progress
+MAIN-0345,EQ-0449,2026-06-11,Oil Change,93107.61,1,Scheduled
+MAIN-0346,EQ-0198,2026-08-09,Routine Inspection,50616.25,3,Scheduled
+MAIN-0347,EQ-0016,2026-01-07,Safety Inspection,16175.67,5,Scheduled
+MAIN-0348,EQ-0187,2026-06-05,Oil Change,8246.42,2,Scheduled
+MAIN-0349,EQ-0417,2027-02-09,Safety Inspection,76226.17,2,In Progress
+MAIN-0350,EQ-0035,2026-10-26,Routine Inspection,59771.06,2,Scheduled
+MAIN-0351,EQ-0086,2027-05-12,Routine Inspection,19175.51,1,In Progress
+MAIN-0352,EQ-0305,2027-03-13,Engine Service,19542.48,7,Scheduled
+MAIN-0353,EQ-0094,2027-09-30,Repair,60835.12,7,Scheduled
+MAIN-0354,EQ-0051,2027-11-11,Engine Service,49109.83,3,Completed
+MAIN-0355,EQ-0463,2027-08-13,Safety Inspection,69236.54,1,In Progress
+MAIN-0356,EQ-0003,2027-12-08,Routine Inspection,65959.67,6,In Progress
+MAIN-0357,EQ-0041,2027-04-20,Engine Service,87013.13,7,Scheduled
+MAIN-0358,EQ-0421,2026-06-28,Repair,85143.66,5,Scheduled
+MAIN-0359,EQ-0132,2026-08-12,Parts Replacement,91057.39,4,Scheduled
+MAIN-0360,EQ-0191,2026-03-16,Repair,29183.14,4,Completed
+MAIN-0361,EQ-0223,2027-09-26,Routine Inspection,12243.09,6,Scheduled
+MAIN-0362,EQ-0460,2027-12-08,Parts Replacement,45767.41,2,Completed
+MAIN-0363,EQ-0073,2027-06-30,Oil Change,90705.25,7,Completed
+MAIN-0364,EQ-0028,2026-02-17,Parts Replacement,24504.13,6,In Progress
+MAIN-0365,EQ-0267,2026-01-10,Parts Replacement,93376.11,2,Completed
+MAIN-0366,EQ-0322,2028-01-01,Parts Replacement,64509.74,2,Scheduled
+MAIN-0367,EQ-0086,2026-04-26,Engine Service,66940.5,1,Scheduled
+MAIN-0368,EQ-0192,2027-09-07,Safety Inspection,22254.8,3,In Progress
+MAIN-0369,EQ-0039,2027-07-14,Oil Change,14744.4,6,Completed
+MAIN-0370,EQ-0096,2027-12-30,Engine Service,39053.66,3,Scheduled
+MAIN-0371,EQ-0336,2026-02-13,Oil Change,9737.53,1,Scheduled
+MAIN-0372,EQ-0224,2027-04-24,Parts Replacement,35285.92,3,Scheduled
+MAIN-0373,EQ-0271,2026-08-09,Oil Change,89163.2,4,In Progress
+MAIN-0374,EQ-0014,2026-04-14,Safety Inspection,75988.32,4,Completed
+MAIN-0375,EQ-0259,2026-04-24,Routine Inspection,80517.27,4,In Progress
+MAIN-0376,EQ-0275,2027-02-26,Safety Inspection,14434.24,5,Scheduled
+MAIN-0377,EQ-0092,2026-11-24,Routine Inspection,33976.18,5,Completed
+MAIN-0378,EQ-0448,2026-09-20,Oil Change,43798.71,2,Scheduled
+MAIN-0379,EQ-0088,2026-06-25,Routine Inspection,61864.38,3,Scheduled
+MAIN-0380,EQ-0248,2027-12-04,Repair,21662.86,7,Scheduled
+MAIN-0381,EQ-0145,2027-11-21,Routine Inspection,36740.39,2,Scheduled
+MAIN-0382,EQ-0312,2027-06-19,Repair,78151.33,1,In Progress
+MAIN-0383,EQ-0176,2026-01-29,Engine Service,32912.84,3,Scheduled
+MAIN-0384,EQ-0271,2026-09-23,Parts Replacement,32671.09,5,Completed
+MAIN-0385,EQ-0212,2027-05-17,Engine Service,7166.19,7,Completed
+MAIN-0386,EQ-0259,2026-09-14,Engine Service,45756.34,4,Scheduled
+MAIN-0387,EQ-0376,2026-01-08,Parts Replacement,65850.04,2,Scheduled
+MAIN-0388,EQ-0334,2027-04-06,Engine Service,27987.57,3,Scheduled
+MAIN-0389,EQ-0174,2027-06-07,Oil Change,32871.14,6,Scheduled
+MAIN-0390,EQ-0044,2027-05-25,Oil Change,44744.73,4,In Progress
+MAIN-0391,EQ-0305,2027-03-30,Oil Change,93054.89,2,In Progress
+MAIN-0392,EQ-0096,2027-08-02,Routine Inspection,12662.68,6,In Progress
+MAIN-0393,EQ-0465,2026-08-30,Oil Change,2077.33,1,Scheduled
+MAIN-0394,EQ-0385,2026-06-11,Routine Inspection,82815.29,3,Scheduled
+MAIN-0395,EQ-0219,2026-07-20,Engine Service,53882.18,1,In Progress
+MAIN-0396,EQ-0306,2026-02-10,Repair,3917.55,3,Scheduled
+MAIN-0397,EQ-0206,2026-11-19,Routine Inspection,7548.18,4,In Progress
+MAIN-0398,EQ-0366,2026-10-07,Engine Service,80395.23,6,Scheduled
+MAIN-0399,EQ-0236,2026-02-20,Safety Inspection,39894.82,5,Completed
+MAIN-0400,EQ-0481,2027-03-27,Parts Replacement,44127.39,5,In Progress
+MAIN-0401,EQ-0208,2026-07-19,Safety Inspection,66079.02,2,Completed
+MAIN-0402,EQ-0425,2026-02-27,Engine Service,74089.33,5,Scheduled
+MAIN-0403,EQ-0158,2027-10-12,Repair,54759.45,1,Scheduled
+MAIN-0404,EQ-0278,2027-11-05,Parts Replacement,12926.56,1,Scheduled
+MAIN-0405,EQ-0052,2026-10-08,Repair,70171.4,4,In Progress
+MAIN-0406,EQ-0206,2027-04-21,Engine Service,42193.2,1,In Progress
+MAIN-0407,EQ-0441,2026-12-13,Oil Change,27529.46,4,In Progress
+MAIN-0408,EQ-0015,2026-04-09,Engine Service,4862.04,2,Scheduled
+MAIN-0409,EQ-0231,2027-03-09,Repair,33779.51,4,Completed
+MAIN-0410,EQ-0389,2026-02-11,Oil Change,88546.69,6,Scheduled
+MAIN-0411,EQ-0285,2026-01-05,Repair,70692.89,3,Scheduled
+MAIN-0412,EQ-0157,2027-04-08,Parts Replacement,87523.59,4,Completed
+MAIN-0413,EQ-0337,2026-05-20,Repair,86341.74,6,Scheduled
+MAIN-0414,EQ-0031,2027-09-25,Repair,63974.99,6,In Progress
+MAIN-0415,EQ-0094,2027-06-29,Repair,52889.31,5,Completed
+MAIN-0416,EQ-0402,2026-08-30,Repair,71166.6,4,Scheduled
+MAIN-0417,EQ-0235,2026-06-25,Parts Replacement,61160.71,2,Scheduled
+MAIN-0418,EQ-0322,2026-12-14,Safety Inspection,47787.18,6,In Progress
+MAIN-0419,EQ-0009,2026-06-17,Safety Inspection,90213.02,1,In Progress
+MAIN-0420,EQ-0125,2027-08-13,Parts Replacement,40687.51,4,Scheduled
+MAIN-0421,EQ-0366,2027-09-13,Parts Replacement,31525.14,4,Completed
+MAIN-0422,EQ-0274,2026-10-20,Repair,14396.2,4,Scheduled
+MAIN-0423,EQ-0300,2027-07-25,Oil Change,32590.42,7,Completed
+MAIN-0424,EQ-0408,2027-11-25,Repair,13956.2,2,In Progress
+MAIN-0425,EQ-0040,2027-07-21,Safety Inspection,55732.85,6,Completed
+MAIN-0426,EQ-0208,2026-06-20,Oil Change,47858.79,3,Scheduled
+MAIN-0427,EQ-0426,2026-08-29,Repair,89600.46,4,In Progress
+MAIN-0428,EQ-0081,2026-02-27,Routine Inspection,41690.13,2,Scheduled
+MAIN-0429,EQ-0139,2026-03-02,Routine Inspection,26918.52,2,Scheduled
+MAIN-0430,EQ-0192,2027-02-12,Safety Inspection,20428.27,6,Completed
+MAIN-0431,EQ-0091,2027-03-02,Oil Change,40714.0,7,In Progress
+MAIN-0432,EQ-0285,2027-03-06,Oil Change,88802.53,2,Completed
+MAIN-0433,EQ-0236,2026-02-02,Repair,28317.86,3,Completed
+MAIN-0434,EQ-0410,2026-05-01,Safety Inspection,90868.25,6,Completed
+MAIN-0435,EQ-0105,2026-10-05,Repair,93467.52,1,Scheduled
+MAIN-0436,EQ-0054,2027-04-24,Repair,27248.64,5,Completed
+MAIN-0437,EQ-0151,2027-08-05,Repair,48327.07,3,Scheduled
+MAIN-0438,EQ-0392,2026-03-24,Safety Inspection,55867.14,6,Completed
+MAIN-0439,EQ-0092,2027-10-03,Repair,38477.98,5,Scheduled
+MAIN-0440,EQ-0461,2027-01-11,Routine Inspection,16980.58,1,Scheduled
+MAIN-0441,EQ-0466,2027-02-22,Repair,75490.68,6,In Progress
+MAIN-0442,EQ-0089,2026-09-15,Safety Inspection,39352.12,2,In Progress
+MAIN-0443,EQ-0306,2027-05-29,Engine Service,18179.41,4,In Progress
+MAIN-0444,EQ-0105,2026-11-27,Oil Change,65529.6,5,In Progress
+MAIN-0445,EQ-0271,2027-05-23,Repair,76702.69,5,Scheduled
+MAIN-0446,EQ-0185,2026-09-03,Routine Inspection,7054.37,3,Scheduled
+MAIN-0447,EQ-0134,2027-01-13,Safety Inspection,8454.15,5,Scheduled
+MAIN-0448,EQ-0439,2026-10-12,Engine Service,88460.89,2,In Progress
+MAIN-0449,EQ-0460,2026-08-29,Routine Inspection,34620.83,4,In Progress
+MAIN-0450,EQ-0088,2026-09-24,Repair,74274.87,1,Scheduled
+MAIN-0451,EQ-0371,2027-05-31,Routine Inspection,14891.09,4,Completed
+MAIN-0452,EQ-0463,2026-09-02,Safety Inspection,48361.68,6,In Progress
+MAIN-0453,EQ-0423,2027-01-29,Oil Change,31545.31,6,Scheduled
+MAIN-0454,EQ-0419,2027-10-13,Routine Inspection,92170.7,6,Completed
+MAIN-0455,EQ-0007,2027-03-12,Engine Service,73901.75,5,Completed
+MAIN-0456,EQ-0059,2026-01-28,Engine Service,81091.26,5,In Progress
+MAIN-0457,EQ-0212,2026-09-06,Safety Inspection,45141.52,3,In Progress
+MAIN-0458,EQ-0053,2026-05-31,Routine Inspection,52368.4,4,In Progress
+MAIN-0459,EQ-0490,2027-12-18,Safety Inspection,4660.43,3,Scheduled
+MAIN-0460,EQ-0218,2026-03-21,Repair,44339.3,3,In Progress
+MAIN-0461,EQ-0005,2026-04-15,Routine Inspection,90138.8,3,Scheduled
+MAIN-0462,EQ-0072,2026-07-15,Routine Inspection,42116.17,1,Completed
+MAIN-0463,EQ-0390,2026-02-23,Oil Change,91126.08,4,Scheduled
+MAIN-0464,EQ-0286,2027-09-28,Parts Replacement,42146.77,7,In Progress
+MAIN-0465,EQ-0493,2026-08-21,Safety Inspection,14232.76,2,Scheduled
+MAIN-0466,EQ-0284,2027-02-05,Routine Inspection,27163.08,6,In Progress
+MAIN-0467,EQ-0281,2026-10-30,Oil Change,37820.64,7,Completed
+MAIN-0468,EQ-0317,2027-02-09,Engine Service,62170.76,7,In Progress
+MAIN-0469,EQ-0386,2027-04-09,Parts Replacement,87634.54,2,Scheduled
+MAIN-0470,EQ-0477,2026-03-05,Safety Inspection,7677.43,1,Completed
+MAIN-0471,EQ-0430,2026-10-04,Oil Change,26481.43,1,In Progress
+MAIN-0472,EQ-0244,2026-08-17,Engine Service,17788.41,6,In Progress
+MAIN-0473,EQ-0470,2027-03-10,Routine Inspection,72121.89,3,In Progress
+MAIN-0474,EQ-0189,2026-06-23,Parts Replacement,70758.44,7,Completed
+MAIN-0475,EQ-0379,2027-09-06,Safety Inspection,86846.9,3,Completed
+MAIN-0476,EQ-0500,2026-11-28,Safety Inspection,47583.26,4,Scheduled
+MAIN-0477,EQ-0459,2027-05-17,Safety Inspection,76723.84,5,Scheduled
+MAIN-0478,EQ-0304,2026-08-24,Routine Inspection,34661.41,4,Completed
+MAIN-0479,EQ-0295,2027-04-26,Safety Inspection,82258.67,6,In Progress
+MAIN-0480,EQ-0435,2026-08-02,Engine Service,44914.23,1,Completed
+MAIN-0481,EQ-0160,2027-10-03,Routine Inspection,4995.76,5,Scheduled
+MAIN-0482,EQ-0310,2026-10-07,Safety Inspection,67592.62,1,Completed
+MAIN-0483,EQ-0003,2026-10-15,Oil Change,57410.25,2,Completed
+MAIN-0484,EQ-0499,2027-03-21,Safety Inspection,3516.25,2,In Progress
+MAIN-0485,EQ-0183,2027-07-19,Safety Inspection,41571.67,6,Completed
+MAIN-0486,EQ-0218,2026-01-16,Parts Replacement,42495.24,3,Completed
+MAIN-0487,EQ-0347,2027-04-25,Engine Service,2692.02,4,Completed
+MAIN-0488,EQ-0433,2026-03-25,Oil Change,9620.18,1,In Progress
+MAIN-0489,EQ-0149,2026-05-13,Engine Service,17354.26,2,Completed
+MAIN-0490,EQ-0160,2027-11-03,Repair,91572.75,5,Scheduled
+MAIN-0491,EQ-0449,2026-05-14,Repair,35178.01,3,Scheduled
+MAIN-0492,EQ-0257,2026-12-24,Parts Replacement,63687.05,3,Completed
+MAIN-0493,EQ-0192,2026-09-04,Repair,16590.28,3,In Progress
+MAIN-0494,EQ-0126,2027-04-27,Engine Service,76614.71,5,Completed
+MAIN-0495,EQ-0020,2027-04-03,Safety Inspection,89556.43,6,Completed
+MAIN-0496,EQ-0397,2026-11-27,Engine Service,89709.09,4,Completed
+MAIN-0497,EQ-0287,2026-12-28,Safety Inspection,92128.0,2,Completed
+MAIN-0498,EQ-0039,2026-06-24,Oil Change,94373.58,7,In Progress
+MAIN-0499,EQ-0283,2026-10-25,Engine Service,46338.55,5,In Progress
+MAIN-0500,EQ-0027,2026-03-26,Safety Inspection,49685.61,3,Scheduled

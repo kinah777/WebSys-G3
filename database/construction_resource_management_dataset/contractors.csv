@@ -1,0 +1,501 @@
+contractor_id,contractor_name,specialization,contact_person,phone,rating,status
+CON-0001,Solid Engineering 001,Painting,Kevin Villanueva,09889385047,3.3,Active
+CON-0002,Solid Contracting 002,Road Works,Mark Cruz,09545062150,3.7,Active
+CON-0003,Global Construction 003,General Construction,James Ramos,09195537862,4.9,Active
+CON-0004,Metro Construction 004,General Construction,Joshua Gonzales,09744666787,3.5,Active
+CON-0005,Metro Construction 005,Electrical,James Fernandez,09567248132,4.5,Active
+CON-0006,Solid Engineering 006,Electrical,Anthony Bautista,09304595238,4.9,Active
+CON-0007,Metro Engineering 007,Equipment Rental,David Gonzales,09321841455,4.2,Active
+CON-0008,Solid Construction 008,Equipment Rental,Daniel Gonzales,09950901243,3.3,Active
+CON-0009,Metro Construction 009,Concrete Works,Anthony Castillo,09725887408,4.4,Active
+CON-0010,ABC Builders 010,Concrete Works,David Navarro,09844128379,3.8,Active
+CON-0011,Solid Engineering 011,Equipment Rental,Angel Torres,09178442874,3.2,Active
+CON-0012,ABC Contracting 012,Structural Works,Brian Castillo,09751089619,4.9,Inactive
+CON-0013,Solid Builders 013,General Construction,Joseph Fernandez,09765352581,3.8,Active
+CON-0014,Solid Contracting 014,Plumbing,Miguel Reyes,09723293073,3.4,Active
+CON-0015,Pacific Engineering 015,Painting,Kevin Dela Cruz,09196258788,3.6,Inactive
+CON-0016,Global Construction 016,Road Works,Robert Navarro,09147418754,5.0,Active
+CON-0017,Metro Contracting 017,Equipment Rental,Christopher Torres,09758130257,4.7,Active
+CON-0018,Pacific Contracting 018,Equipment Rental,Daniel Navarro,09891207316,5.0,Active
+CON-0019,Pacific Engineering 019,General Construction,Mark Dela Cruz,09158591050,3.5,Active
+CON-0020,Global Contracting 020,Plumbing,Kevin Gonzales,09224579869,5.0,Active
+CON-0021,ABC Engineering 021,Painting,Miguel Villanueva,09591515743,4.0,Inactive
+CON-0022,Prime Builders 022,Painting,Michael Bautista,09405067716,3.4,Active
+CON-0023,Solid Contracting 023,Structural Works,Jose Santos,09664804742,4.5,Active
+CON-0024,Global Builders 024,Structural Works,Brian Garcia,09452893605,3.1,Inactive
+CON-0025,Solid Builders 025,Equipment Rental,Andrew Garcia,09998697433,3.6,Active
+CON-0026,ABC Engineering 026,Concrete Works,Kevin Torres,09738021964,4.3,Active
+CON-0027,ABC Engineering 027,Painting,Jose Dela Cruz,09326953436,4.7,Inactive
+CON-0028,Metro Contracting 028,General Construction,Michael Rivera,09199375888,3.8,Active
+CON-0029,Prime Engineering 029,Electrical,James Bautista,09274956229,3.8,Active
+CON-0030,Metro Construction 030,Electrical,Christopher Villanueva,09960175026,3.9,Active
+CON-0031,Solid Construction 031,Painting,Robert Castillo,09650457212,3.4,Active
+CON-0032,Global Engineering 032,Road Works,Jose Gonzales,09196875511,4.5,Active
+CON-0033,Pacific Construction 033,Equipment Rental,William Cruz,09143420070,4.0,Active
+CON-0034,Solid Construction 034,Plumbing,Brian Fernandez,09775984454,4.3,Active
+CON-0035,Metro Engineering 035,Equipment Rental,Michael Villanueva,09422544807,3.3,Active
+CON-0036,Solid Contracting 036,Structural Works,Carlos Gonzales,09417270985,4.1,Inactive
+CON-0037,ABC Builders 037,Electrical,Carlos Gonzales,09543476209,3.2,Inactive
+CON-0038,Solid Contracting 038,Painting,Joseph Cruz,09925328186,4.0,Active
+CON-0039,Solid Engineering 039,Plumbing,Daniel Rivera,09148596177,3.2,Inactive
+CON-0040,Metro Contracting 040,Concrete Works,Kevin Torres,09466504998,4.9,Active
+CON-0041,Prime Construction 041,Electrical,Angel Torres,09823067158,3.2,Inactive
+CON-0042,ABC Builders 042,Equipment Rental,Robert Santos,09284399429,4.3,Active
+CON-0043,Solid Engineering 043,Concrete Works,Christopher Castillo,09841592991,4.3,Inactive
+CON-0044,Solid Engineering 044,Road Works,Michael Dela Cruz,09245077501,3.0,Active
+CON-0045,ABC Construction 045,General Construction,Mark Villanueva,09796453883,3.3,Active
+CON-0046,Global Construction 046,Electrical,Christopher Aquino,09259091651,3.9,Active
+CON-0047,ABC Construction 047,Plumbing,Kevin Villanueva,09606257674,3.0,Active
+CON-0048,Pacific Construction 048,Structural Works,Christopher Rivera,09154677276,3.7,Active
+CON-0049,Solid Engineering 049,Equipment Rental,Brian Flores,09139746932,4.0,Active
+CON-0050,Pacific Engineering 050,Structural Works,John Fernandez,09120422206,3.8,Active
+CON-0051,Pacific Builders 051,Road Works,William Villanueva,09225564160,4.0,Inactive
+CON-0052,Metro Engineering 052,Equipment Rental,James Mendoza,09409249220,4.5,Active
+CON-0053,Metro Engineering 053,Structural Works,Carlos Ramos,09730993734,4.8,Active
+CON-0054,Pacific Engineering 054,Plumbing,Christopher Rivera,09547601168,4.7,Inactive
+CON-0055,Solid Contracting 055,Concrete Works,Daniel Bautista,09403286126,4.4,Active
+CON-0056,Solid Engineering 056,Plumbing,Daniel Bautista,09267840982,4.2,Active
+CON-0057,Global Engineering 057,Road Works,Anthony Bautista,09697892214,3.1,Active
+CON-0058,Metro Contracting 058,Painting,Daniel Mendoza,09989003129,4.7,Inactive
+CON-0059,ABC Builders 059,Painting,William Garcia,09763103142,3.5,Inactive
+CON-0060,Prime Engineering 060,Road Works,Matthew Castillo,09926108943,3.1,Inactive
+CON-0061,Metro Construction 061,Electrical,John Aquino,09957905637,3.9,Active
+CON-0062,ABC Builders 062,General Construction,Carlos Garcia,09279364596,4.3,Active
+CON-0063,Metro Construction 063,Road Works,Kevin Fernandez,09635143260,4.5,Active
+CON-0064,Prime Contracting 064,Painting,David Garcia,09316778095,3.9,Active
+CON-0065,ABC Construction 065,Concrete Works,Matthew Flores,09642264030,3.3,Active
+CON-0066,Metro Engineering 066,Painting,Anthony Dela Cruz,09908749062,4.5,Active
+CON-0067,Prime Construction 067,Equipment Rental,William Gonzales,09592582348,4.9,Inactive
+CON-0068,Solid Contracting 068,General Construction,Kevin Dela Cruz,09926944269,3.0,Inactive
+CON-0069,ABC Builders 069,Painting,Matthew Rivera,09929328811,3.3,Active
+CON-0070,Global Builders 070,Plumbing,Jose Reyes,09778183455,5.0,Inactive
+CON-0071,Pacific Contracting 071,Equipment Rental,Joshua Flores,09874759532,4.5,Active
+CON-0072,ABC Contracting 072,Plumbing,Joshua Aquino,09791360184,3.4,Inactive
+CON-0073,Pacific Engineering 073,Painting,Joshua Bautista,09423766892,3.2,Inactive
+CON-0074,Metro Engineering 074,Plumbing,Carlos Flores,09329495689,3.2,Inactive
+CON-0075,Metro Contracting 075,Plumbing,James Santos,09955341340,4.1,Active
+CON-0076,Prime Contracting 076,Equipment Rental,Carlos Garcia,09885964167,3.1,Active
+CON-0077,Metro Contracting 077,Electrical,John Garcia,09581827565,3.6,Inactive
+CON-0078,ABC Engineering 078,Painting,Anthony Ramos,09476171636,3.6,Inactive
+CON-0079,Solid Construction 079,Equipment Rental,Carlos Ramos,09212986551,3.7,Inactive
+CON-0080,Prime Contracting 080,Concrete Works,Robert Dela Cruz,09864118082,3.9,Active
+CON-0081,ABC Builders 081,General Construction,William Dela Cruz,09611372846,3.4,Active
+CON-0082,Metro Engineering 082,Equipment Rental,Joseph Villanueva,09783394952,3.8,Active
+CON-0083,Solid Engineering 083,Equipment Rental,Daniel Dela Cruz,09643083464,3.3,Inactive
+CON-0084,Global Construction 084,Electrical,Mark Aquino,09608261670,3.1,Active
+CON-0085,Pacific Contracting 085,Electrical,Angel Gonzales,09218472553,3.2,Inactive
+CON-0086,Metro Builders 086,Plumbing,Robert Castillo,09427410286,5.0,Active
+CON-0087,Metro Engineering 087,General Construction,David Dela Cruz,09941590785,4.2,Active
+CON-0088,Metro Contracting 088,Structural Works,Daniel Villanueva,09102239566,3.2,Active
+CON-0089,ABC Builders 089,Equipment Rental,Brian Flores,09707484447,3.9,Active
+CON-0090,Global Engineering 090,Plumbing,David Fernandez,09783394004,3.9,Active
+CON-0091,Solid Engineering 091,Plumbing,Matthew Cruz,09958791185,4.2,Inactive
+CON-0092,Global Engineering 092,Structural Works,Joshua Navarro,09680888371,3.1,Inactive
+CON-0093,Global Contracting 093,Electrical,Daniel Santos,09714174731,4.3,Inactive
+CON-0094,Metro Builders 094,Electrical,Mark Reyes,09712295241,4.0,Active
+CON-0095,Pacific Builders 095,Electrical,Miguel Mendoza,09120372732,3.5,Active
+CON-0096,Prime Engineering 096,Electrical,Miguel Navarro,09531427170,4.2,Active
+CON-0097,ABC Contracting 097,Equipment Rental,Daniel Gonzales,09125830942,4.7,Active
+CON-0098,Global Contracting 098,Electrical,Robert Garcia,09681731069,3.3,Active
+CON-0099,Prime Contracting 099,Electrical,David Flores,09537309736,4.4,Active
+CON-0100,Pacific Contracting 100,Plumbing,James Reyes,09420001194,3.8,Active
+CON-0101,Prime Engineering 101,Painting,Joseph Rivera,09988780552,4.8,Active
+CON-0102,Prime Construction 102,Structural Works,Brian Fernandez,09907872588,4.0,Active
+CON-0103,Metro Builders 103,Painting,Kevin Gonzales,09170285223,4.0,Active
+CON-0104,Solid Construction 104,General Construction,Joseph Garcia,09364479890,4.5,Inactive
+CON-0105,Prime Contracting 105,Equipment Rental,Kevin Cruz,09782683973,4.0,Active
+CON-0106,Metro Construction 106,Structural Works,Miguel Gonzales,09696090185,3.9,Active
+CON-0107,Global Contracting 107,Plumbing,James Reyes,09617743557,3.5,Active
+CON-0108,Solid Engineering 108,Painting,Mark Fernandez,09402055699,3.1,Inactive
+CON-0109,Pacific Builders 109,Road Works,Michael Rivera,09849932764,3.2,Active
+CON-0110,Solid Contracting 110,Equipment Rental,Mark Fernandez,09961201669,3.6,Inactive
+CON-0111,Metro Contracting 111,Concrete Works,Joseph Ramos,09811114540,5.0,Active
+CON-0112,Prime Engineering 112,Painting,James Dela Cruz,09794113197,4.8,Inactive
+CON-0113,Global Builders 113,General Construction,Daniel Gonzales,09696775664,4.8,Inactive
+CON-0114,Global Engineering 114,Electrical,Michael Santos,09993443242,4.6,Active
+CON-0115,Solid Builders 115,Painting,Joshua Castillo,09515270762,3.4,Inactive
+CON-0116,ABC Builders 116,Concrete Works,Andrew Bautista,09577361628,3.0,Inactive
+CON-0117,ABC Contracting 117,Painting,Mark Cruz,09976474860,4.2,Active
+CON-0118,Solid Construction 118,Structural Works,Brian Castillo,09139509449,3.6,Inactive
+CON-0119,Solid Construction 119,General Construction,Mark Rivera,09219127926,4.7,Inactive
+CON-0120,Pacific Engineering 120,Plumbing,Miguel Bautista,09808496105,4.5,Inactive
+CON-0121,Solid Construction 121,Electrical,Jose Dela Cruz,09900982881,3.1,Active
+CON-0122,Pacific Construction 122,Road Works,Mark Santos,09844087852,4.4,Inactive
+CON-0123,Metro Engineering 123,General Construction,William Reyes,09446817822,3.9,Active
+CON-0124,Metro Builders 124,Concrete Works,Brian Castillo,09655400377,4.5,Inactive
+CON-0125,Prime Builders 125,Road Works,William Aquino,09439562230,3.0,Active
+CON-0126,Metro Builders 126,General Construction,Anthony Gonzales,09179929734,4.8,Active
+CON-0127,Prime Contracting 127,Road Works,Michael Garcia,09129928143,4.0,Active
+CON-0128,Pacific Contracting 128,Road Works,Anthony Garcia,09608498927,3.5,Active
+CON-0129,ABC Contracting 129,Structural Works,Michael Aquino,09920444599,3.2,Active
+CON-0130,Pacific Builders 130,Electrical,John Reyes,09505224939,3.6,Inactive
+CON-0131,ABC Construction 131,General Construction,Kevin Reyes,09423702101,4.2,Active
+CON-0132,ABC Builders 132,General Construction,Miguel Reyes,09416664467,4.7,Active
+CON-0133,ABC Engineering 133,Structural Works,Angel Santos,09586846620,3.8,Active
+CON-0134,Pacific Builders 134,Painting,James Aquino,09655353112,3.7,Active
+CON-0135,ABC Builders 135,General Construction,Angel Cruz,09736607029,4.6,Active
+CON-0136,Pacific Construction 136,Road Works,Andrew Gonzales,09616898564,4.4,Active
+CON-0137,Prime Construction 137,Plumbing,John Reyes,09237096167,3.6,Active
+CON-0138,Pacific Contracting 138,Road Works,Jose Dela Cruz,09258279275,3.9,Inactive
+CON-0139,Metro Contracting 139,Painting,James Fernandez,09729685061,4.3,Active
+CON-0140,ABC Construction 140,General Construction,William Castillo,09309816802,5.0,Inactive
+CON-0141,Prime Builders 141,Painting,Mark Villanueva,09846016035,4.4,Active
+CON-0142,Pacific Contracting 142,Painting,Angel Flores,09549570641,3.7,Active
+CON-0143,Global Builders 143,Concrete Works,Anthony Santos,09785870900,3.4,Active
+CON-0144,Global Construction 144,Structural Works,Brian Navarro,09966800964,4.5,Active
+CON-0145,Global Construction 145,General Construction,Andrew Santos,09179168231,3.7,Inactive
+CON-0146,ABC Construction 146,Road Works,Kevin Bautista,09777890337,4.2,Active
+CON-0147,ABC Builders 147,Structural Works,Mark Flores,09286988502,3.4,Active
+CON-0148,Solid Construction 148,Painting,Miguel Ramos,09291707402,3.4,Active
+CON-0149,Metro Builders 149,General Construction,David Rivera,09803160442,4.6,Active
+CON-0150,Metro Construction 150,Road Works,Kevin Ramos,09496898624,4.6,Inactive
+CON-0151,Prime Engineering 151,Electrical,Robert Dela Cruz,09240439719,4.6,Active
+CON-0152,Pacific Engineering 152,Painting,Matthew Gonzales,09783053289,3.5,Active
+CON-0153,Pacific Construction 153,Road Works,David Navarro,09365398542,3.1,Active
+CON-0154,Prime Engineering 154,Structural Works,Michael Villanueva,09949326796,4.3,Active
+CON-0155,Prime Engineering 155,Painting,Brian Fernandez,09598503197,3.4,Inactive
+CON-0156,Metro Engineering 156,Concrete Works,Brian Torres,09724044455,3.8,Inactive
+CON-0157,Solid Builders 157,Structural Works,Anthony Bautista,09585417273,4.7,Active
+CON-0158,Prime Contracting 158,Equipment Rental,Joshua Mendoza,09501694717,3.5,Active
+CON-0159,Prime Builders 159,Road Works,Kevin Fernandez,09477500732,3.5,Active
+CON-0160,Global Contracting 160,Equipment Rental,Kevin Aquino,09564399416,3.8,Active
+CON-0161,Metro Contracting 161,Equipment Rental,James Mendoza,09574259410,3.5,Inactive
+CON-0162,ABC Contracting 162,Electrical,Christopher Fernandez,09650605130,4.1,Active
+CON-0163,Metro Construction 163,Electrical,Robert Cruz,09486801418,3.1,Active
+CON-0164,Metro Construction 164,Painting,Joseph Flores,09900164591,4.6,Inactive
+CON-0165,Metro Construction 165,Plumbing,Miguel Torres,09109163182,4.5,Active
+CON-0166,Metro Engineering 166,Equipment Rental,Jose Santos,09606810427,4.3,Active
+CON-0167,Global Construction 167,Structural Works,Mark Villanueva,09350958360,4.0,Inactive
+CON-0168,Global Engineering 168,Painting,Michael Navarro,09301698698,3.9,Inactive
+CON-0169,Global Construction 169,Concrete Works,Kevin Santos,09502331243,3.3,Active
+CON-0170,Metro Builders 170,Concrete Works,Andrew Navarro,09342118734,3.8,Inactive
+CON-0171,Global Contracting 171,Painting,Jose Santos,09709431623,4.6,Active
+CON-0172,Prime Contracting 172,Equipment Rental,Joshua Bautista,09519442371,3.1,Active
+CON-0173,Prime Engineering 173,Electrical,Matthew Aquino,09786124569,4.8,Active
+CON-0174,Prime Builders 174,Plumbing,John Villanueva,09128817630,3.4,Active
+CON-0175,Global Contracting 175,Structural Works,Anthony Flores,09808207780,4.0,Active
+CON-0176,ABC Contracting 176,General Construction,Daniel Navarro,09541158894,3.8,Active
+CON-0177,Prime Engineering 177,Concrete Works,Michael Rivera,09321705882,3.3,Active
+CON-0178,Metro Engineering 178,Concrete Works,Daniel Flores,09730814687,3.4,Inactive
+CON-0179,Solid Engineering 179,Road Works,Mark Santos,09253214356,3.9,Active
+CON-0180,Pacific Construction 180,Painting,Jose Villanueva,09594140885,3.9,Active
+CON-0181,Solid Builders 181,Road Works,Kevin Castillo,09851959157,4.7,Active
+CON-0182,Global Construction 182,Equipment Rental,Anthony Mendoza,09763289534,4.5,Active
+CON-0183,Global Construction 183,Electrical,Joshua Reyes,09357370819,4.8,Active
+CON-0184,Metro Contracting 184,Electrical,Mark Villanueva,09541606556,5.0,Inactive
+CON-0185,ABC Contracting 185,Electrical,Robert Fernandez,09923065067,4.6,Active
+CON-0186,Global Construction 186,Road Works,Mark Fernandez,09147926645,3.9,Active
+CON-0187,Solid Engineering 187,Equipment Rental,Matthew Rivera,09308739262,3.8,Active
+CON-0188,Metro Builders 188,Plumbing,Matthew Aquino,09620506264,3.9,Active
+CON-0189,Pacific Construction 189,Concrete Works,David Villanueva,09980926449,3.6,Active
+CON-0190,Prime Builders 190,Electrical,Daniel Flores,09233306531,4.1,Active
+CON-0191,Prime Builders 191,General Construction,Joseph Dela Cruz,09573152913,3.7,Active
+CON-0192,Solid Builders 192,Structural Works,Kevin Reyes,09998186261,4.3,Inactive
+CON-0193,Solid Builders 193,Equipment Rental,Christopher Aquino,09156280451,4.2,Active
+CON-0194,Global Construction 194,Structural Works,Andrew Ramos,09314733002,3.2,Active
+CON-0195,ABC Builders 195,Painting,Mark Cruz,09336832921,4.9,Active
+CON-0196,Solid Construction 196,Plumbing,John Gonzales,09650292797,3.2,Active
+CON-0197,Metro Construction 197,Structural Works,Miguel Rivera,09559432973,3.2,Active
+CON-0198,ABC Contracting 198,Painting,Daniel Santos,09531793991,4.3,Active
+CON-0199,Global Construction 199,Concrete Works,Anthony Cruz,09806480997,4.6,Inactive
+CON-0200,Pacific Contracting 200,General Construction,Michael Bautista,09541411867,3.6,Inactive
+CON-0201,Global Builders 201,Plumbing,Joseph Garcia,09744102442,3.6,Inactive
+CON-0202,Solid Engineering 202,Plumbing,Matthew Mendoza,09782205574,4.5,Inactive
+CON-0203,Metro Engineering 203,Electrical,Matthew Santos,09753407677,4.8,Active
+CON-0204,Global Construction 204,General Construction,Anthony Santos,09761799351,4.5,Active
+CON-0205,Metro Construction 205,Equipment Rental,Anthony Cruz,09164341850,3.3,Active
+CON-0206,Metro Construction 206,Plumbing,Joshua Bautista,09789384018,3.1,Inactive
+CON-0207,Pacific Engineering 207,Painting,David Torres,09440954543,4.3,Active
+CON-0208,Pacific Engineering 208,Road Works,James Ramos,09886916528,3.7,Active
+CON-0209,Prime Builders 209,Structural Works,Anthony Rivera,09659926223,3.6,Active
+CON-0210,Solid Builders 210,Electrical,Brian Cruz,09306658203,3.1,Active
+CON-0211,Prime Construction 211,Electrical,Daniel Bautista,09353736066,4.0,Active
+CON-0212,Solid Engineering 212,Road Works,Daniel Bautista,09362986175,3.8,Inactive
+CON-0213,Prime Contracting 213,Road Works,Jose Aquino,09782474359,3.4,Active
+CON-0214,ABC Contracting 214,Equipment Rental,Joshua Mendoza,09605424753,3.9,Inactive
+CON-0215,Pacific Engineering 215,Plumbing,Brian Santos,09918115357,3.8,Active
+CON-0216,Metro Construction 216,Plumbing,Joseph Rivera,09597841726,3.6,Active
+CON-0217,Global Engineering 217,Electrical,Matthew Dela Cruz,09867578697,3.9,Active
+CON-0218,Prime Builders 218,General Construction,Carlos Castillo,09627694409,3.8,Active
+CON-0219,Global Contracting 219,Equipment Rental,Brian Flores,09788320816,5.0,Active
+CON-0220,Global Builders 220,Electrical,Joshua Mendoza,09308550942,4.5,Active
+CON-0221,Solid Contracting 221,Concrete Works,Andrew Reyes,09798905354,3.8,Active
+CON-0222,Solid Construction 222,Structural Works,Brian Reyes,09973087834,3.7,Inactive
+CON-0223,Solid Builders 223,Plumbing,Joseph Aquino,09831289574,3.3,Active
+CON-0224,Pacific Construction 224,General Construction,Robert Cruz,09791916428,4.4,Active
+CON-0225,Global Builders 225,Structural Works,William Mendoza,09990936811,3.9,Inactive
+CON-0226,Metro Engineering 226,Road Works,William Cruz,09217332137,4.3,Active
+CON-0227,Prime Contracting 227,Structural Works,Joshua Flores,09106893748,5.0,Active
+CON-0228,ABC Builders 228,Electrical,William Fernandez,09547581039,4.3,Inactive
+CON-0229,Global Construction 229,Plumbing,Andrew Mendoza,09855964923,3.3,Active
+CON-0230,Prime Builders 230,Concrete Works,Jose Bautista,09299327335,3.4,Inactive
+CON-0231,Prime Construction 231,Road Works,William Aquino,09773061511,4.8,Active
+CON-0232,Solid Construction 232,Electrical,Christopher Cruz,09505582930,3.2,Active
+CON-0233,Metro Builders 233,Structural Works,Brian Villanueva,09822418424,4.5,Active
+CON-0234,ABC Contracting 234,General Construction,Jose Reyes,09203983146,3.4,Active
+CON-0235,Global Contracting 235,Concrete Works,Brian Navarro,09748939011,3.9,Active
+CON-0236,Solid Contracting 236,Painting,Anthony Castillo,09814122368,3.8,Inactive
+CON-0237,ABC Contracting 237,Painting,Robert Santos,09590613316,4.7,Active
+CON-0238,Solid Construction 238,General Construction,Angel Garcia,09669758914,3.6,Inactive
+CON-0239,Prime Contracting 239,Concrete Works,Angel Villanueva,09652884702,3.8,Active
+CON-0240,ABC Contracting 240,General Construction,Andrew Reyes,09967108597,4.5,Inactive
+CON-0241,Global Construction 241,Concrete Works,Joshua Cruz,09474020739,3.9,Active
+CON-0242,Solid Builders 242,Equipment Rental,Christopher Bautista,09864441874,3.3,Inactive
+CON-0243,Pacific Builders 243,Plumbing,Brian Cruz,09423570275,4.7,Inactive
+CON-0244,Global Construction 244,Concrete Works,Robert Villanueva,09811506547,4.1,Active
+CON-0245,Prime Construction 245,Electrical,Robert Gonzales,09868546986,3.1,Active
+CON-0246,Global Contracting 246,Structural Works,Joseph Villanueva,09820052632,3.2,Active
+CON-0247,Pacific Engineering 247,Electrical,Matthew Ramos,09718445315,4.5,Inactive
+CON-0248,ABC Contracting 248,Equipment Rental,Joshua Gonzales,09968063877,3.5,Active
+CON-0249,ABC Contracting 249,Electrical,Robert Cruz,09465327609,4.5,Active
+CON-0250,Solid Builders 250,Painting,David Navarro,09508231386,4.2,Active
+CON-0251,Metro Builders 251,Structural Works,Joshua Gonzales,09443214044,4.5,Inactive
+CON-0252,Prime Construction 252,Electrical,Joshua Santos,09677987641,4.7,Active
+CON-0253,Prime Contracting 253,Structural Works,Brian Aquino,09258296773,4.2,Active
+CON-0254,Solid Builders 254,Painting,Christopher Fernandez,09839378623,3.2,Inactive
+CON-0255,Pacific Engineering 255,Structural Works,Brian Flores,09856065079,4.9,Active
+CON-0256,Metro Construction 256,Structural Works,Anthony Reyes,09933265252,3.4,Active
+CON-0257,Solid Engineering 257,Road Works,Daniel Santos,09688349223,3.8,Active
+CON-0258,Solid Engineering 258,Painting,Joshua Rivera,09177119592,4.1,Active
+CON-0259,Metro Construction 259,Equipment Rental,Robert Dela Cruz,09447268058,4.5,Inactive
+CON-0260,ABC Contracting 260,Concrete Works,Daniel Dela Cruz,09574469049,4.4,Active
+CON-0261,Prime Construction 261,Structural Works,Mark Santos,09488936964,4.5,Inactive
+CON-0262,ABC Construction 262,Equipment Rental,William Mendoza,09160485496,3.2,Active
+CON-0263,Prime Builders 263,Electrical,Carlos Navarro,09737150229,3.9,Active
+CON-0264,Solid Engineering 264,Structural Works,John Garcia,09358616542,3.8,Active
+CON-0265,Solid Construction 265,Equipment Rental,Michael Aquino,09978530356,4.3,Active
+CON-0266,Solid Engineering 266,Painting,James Garcia,09225227973,3.2,Active
+CON-0267,Solid Construction 267,General Construction,Jose Villanueva,09393909769,4.4,Active
+CON-0268,Pacific Construction 268,Equipment Rental,Brian Gonzales,09420365200,4.1,Active
+CON-0269,Metro Builders 269,Plumbing,Joshua Santos,09522835822,4.1,Inactive
+CON-0270,Pacific Engineering 270,Electrical,Carlos Garcia,09909073286,4.5,Inactive
+CON-0271,ABC Construction 271,Plumbing,James Aquino,09959544263,3.6,Active
+CON-0272,Prime Construction 272,Plumbing,Michael Torres,09908601398,3.1,Active
+CON-0273,Pacific Contracting 273,Painting,Miguel Mendoza,09554247901,5.0,Inactive
+CON-0274,ABC Construction 274,Road Works,John Fernandez,09940527063,3.6,Inactive
+CON-0275,Global Construction 275,Concrete Works,Matthew Fernandez,09478082887,4.2,Inactive
+CON-0276,Prime Builders 276,General Construction,Anthony Reyes,09301942549,3.3,Active
+CON-0277,Prime Construction 277,Painting,Joseph Dela Cruz,09882869895,4.2,Active
+CON-0278,Pacific Contracting 278,Road Works,Joshua Mendoza,09529560480,3.9,Active
+CON-0279,Solid Engineering 279,Plumbing,Miguel Bautista,09175761121,4.3,Active
+CON-0280,Solid Construction 280,Painting,Jose Fernandez,09749554418,3.3,Active
+CON-0281,Metro Engineering 281,Equipment Rental,James Ramos,09183241401,3.5,Inactive
+CON-0282,ABC Engineering 282,Electrical,Matthew Cruz,09489574448,4.8,Active
+CON-0283,Prime Construction 283,Road Works,James Garcia,09504968149,5.0,Active
+CON-0284,Global Builders 284,Electrical,Daniel Fernandez,09882035603,4.8,Inactive
+CON-0285,Global Builders 285,Painting,Jose Flores,09692213965,3.5,Active
+CON-0286,ABC Construction 286,Painting,Joshua Mendoza,09470626564,4.6,Inactive
+CON-0287,Pacific Engineering 287,Concrete Works,Jose Dela Cruz,09378164668,3.0,Inactive
+CON-0288,Solid Construction 288,Plumbing,David Rivera,09709413742,4.5,Active
+CON-0289,Solid Contracting 289,Structural Works,Angel Gonzales,09858906506,3.9,Active
+CON-0290,Metro Engineering 290,Road Works,Joseph Gonzales,09658984263,4.9,Active
+CON-0291,Metro Builders 291,Road Works,William Navarro,09196787722,4.3,Active
+CON-0292,Solid Construction 292,Electrical,Daniel Reyes,09190822582,4.5,Inactive
+CON-0293,Global Builders 293,Equipment Rental,Carlos Dela Cruz,09615026653,4.0,Inactive
+CON-0294,Solid Builders 294,Equipment Rental,James Bautista,09992706183,4.5,Inactive
+CON-0295,Global Contracting 295,Structural Works,Carlos Reyes,09752162382,3.9,Active
+CON-0296,Solid Construction 296,Plumbing,Michael Castillo,09243149972,4.0,Active
+CON-0297,Global Engineering 297,Equipment Rental,Daniel Castillo,09221583552,3.7,Inactive
+CON-0298,Prime Builders 298,Road Works,Christopher Villanueva,09415191584,3.5,Active
+CON-0299,Solid Engineering 299,Structural Works,Christopher Fernandez,09986618025,4.8,Active
+CON-0300,Pacific Engineering 300,General Construction,Andrew Santos,09760920570,3.9,Active
+CON-0301,Metro Builders 301,General Construction,Andrew Mendoza,09531717324,3.7,Active
+CON-0302,Global Engineering 302,Structural Works,Michael Fernandez,09652245387,4.8,Active
+CON-0303,ABC Engineering 303,General Construction,David Torres,09342767911,3.9,Active
+CON-0304,Metro Contracting 304,Equipment Rental,Daniel Torres,09216710352,5.0,Inactive
+CON-0305,Global Construction 305,Plumbing,Andrew Gonzales,09106238675,3.7,Inactive
+CON-0306,Prime Builders 306,Structural Works,Christopher Reyes,09243538161,3.8,Inactive
+CON-0307,Metro Builders 307,Plumbing,Mark Villanueva,09814299118,5.0,Active
+CON-0308,Global Engineering 308,Concrete Works,David Navarro,09906476640,4.5,Active
+CON-0309,Pacific Engineering 309,Plumbing,Robert Garcia,09951169063,3.0,Active
+CON-0310,Metro Builders 310,Structural Works,John Navarro,09561349329,5.0,Inactive
+CON-0311,ABC Engineering 311,Concrete Works,Christopher Flores,09621762558,3.2,Active
+CON-0312,Prime Construction 312,Plumbing,Anthony Torres,09923267499,3.2,Active
+CON-0313,Solid Construction 313,Equipment Rental,Mark Villanueva,09858556609,4.6,Active
+CON-0314,Solid Construction 314,Structural Works,Jose Dela Cruz,09346299407,3.2,Active
+CON-0315,ABC Contracting 315,Structural Works,David Gonzales,09118963722,4.2,Active
+CON-0316,ABC Engineering 316,Equipment Rental,Carlos Flores,09851789855,4.3,Active
+CON-0317,Prime Contracting 317,Equipment Rental,Brian Reyes,09647461968,3.9,Active
+CON-0318,Metro Builders 318,Road Works,Andrew Torres,09476909699,4.4,Active
+CON-0319,Metro Builders 319,Plumbing,John Santos,09155974840,4.3,Active
+CON-0320,Prime Contracting 320,Concrete Works,Joseph Garcia,09562683433,3.4,Active
+CON-0321,Metro Contracting 321,Road Works,Robert Garcia,09818276952,3.0,Inactive
+CON-0322,Prime Contracting 322,Painting,Andrew Fernandez,09749306508,3.7,Inactive
+CON-0323,Metro Construction 323,Equipment Rental,Michael Garcia,09240107634,4.3,Inactive
+CON-0324,ABC Builders 324,Structural Works,Mark Aquino,09205911113,3.1,Inactive
+CON-0325,Pacific Contracting 325,Road Works,Brian Bautista,09672903058,4.4,Active
+CON-0326,Prime Construction 326,Equipment Rental,Miguel Torres,09915351389,4.7,Inactive
+CON-0327,Metro Contracting 327,Concrete Works,Robert Gonzales,09172701447,4.0,Inactive
+CON-0328,Pacific Builders 328,Plumbing,Angel Torres,09848082615,4.9,Active
+CON-0329,ABC Builders 329,Structural Works,Joshua Villanueva,09835184880,4.1,Inactive
+CON-0330,ABC Construction 330,Concrete Works,Carlos Rivera,09703978257,4.6,Active
+CON-0331,Pacific Contracting 331,Structural Works,Daniel Santos,09271801968,4.1,Inactive
+CON-0332,Solid Builders 332,Concrete Works,Carlos Fernandez,09377921559,3.6,Active
+CON-0333,Metro Contracting 333,Electrical,Daniel Ramos,09148976013,4.1,Active
+CON-0334,ABC Construction 334,Road Works,David Torres,09948923178,3.1,Active
+CON-0335,Prime Builders 335,General Construction,Andrew Castillo,09448495661,3.2,Inactive
+CON-0336,Pacific Contracting 336,Plumbing,William Flores,09448574326,5.0,Inactive
+CON-0337,ABC Contracting 337,Structural Works,Joseph Mendoza,09374864174,4.9,Inactive
+CON-0338,Solid Builders 338,Equipment Rental,Joseph Bautista,09977082820,3.9,Active
+CON-0339,Metro Construction 339,Equipment Rental,David Aquino,09348810825,4.5,Active
+CON-0340,Metro Construction 340,Concrete Works,Michael Villanueva,09294898680,3.9,Active
+CON-0341,Prime Engineering 341,Plumbing,Christopher Santos,09433032005,3.3,Active
+CON-0342,Global Construction 342,Electrical,David Cruz,09557838178,3.5,Inactive
+CON-0343,Global Builders 343,Plumbing,James Garcia,09505740335,3.8,Active
+CON-0344,ABC Builders 344,Plumbing,Anthony Cruz,09387393957,3.3,Inactive
+CON-0345,Pacific Builders 345,General Construction,Robert Navarro,09859624835,3.2,Active
+CON-0346,Global Engineering 346,Plumbing,Christopher Navarro,09614223965,3.3,Active
+CON-0347,Pacific Contracting 347,Electrical,James Reyes,09210397096,4.1,Active
+CON-0348,Pacific Engineering 348,Plumbing,James Ramos,09125770743,3.5,Active
+CON-0349,Prime Contracting 349,Road Works,Anthony Rivera,09837409683,4.8,Active
+CON-0350,Global Construction 350,Electrical,Anthony Garcia,09402595772,3.7,Inactive
+CON-0351,Metro Builders 351,Painting,Michael Reyes,09749083785,3.3,Active
+CON-0352,Pacific Contracting 352,Plumbing,William Dela Cruz,09816479341,4.4,Inactive
+CON-0353,Metro Contracting 353,Electrical,Joseph Villanueva,09810529016,3.7,Active
+CON-0354,Solid Builders 354,General Construction,David Dela Cruz,09443872264,3.3,Active
+CON-0355,Solid Engineering 355,Electrical,Robert Gonzales,09880296481,3.6,Active
+CON-0356,Metro Construction 356,Plumbing,Joshua Castillo,09442862704,4.0,Active
+CON-0357,Solid Engineering 357,Painting,David Ramos,09511441988,3.8,Active
+CON-0358,Pacific Engineering 358,Structural Works,Joshua Cruz,09723805279,4.4,Inactive
+CON-0359,Pacific Construction 359,Electrical,Anthony Castillo,09103077456,3.4,Active
+CON-0360,Metro Engineering 360,Plumbing,Robert Reyes,09475109063,3.7,Active
+CON-0361,Metro Engineering 361,Plumbing,Miguel Gonzales,09360379610,3.4,Active
+CON-0362,ABC Construction 362,Electrical,David Rivera,09887140291,3.1,Active
+CON-0363,Metro Builders 363,Electrical,Jose Cruz,09611988629,4.7,Active
+CON-0364,ABC Construction 364,Painting,David Cruz,09363115935,3.2,Inactive
+CON-0365,Global Construction 365,Plumbing,Brian Dela Cruz,09903273909,4.1,Active
+CON-0366,Global Engineering 366,Painting,Kevin Santos,09407915944,3.2,Active
+CON-0367,Solid Builders 367,Plumbing,Carlos Mendoza,09111668973,3.8,Active
+CON-0368,Solid Engineering 368,Road Works,Jose Fernandez,09428601463,4.4,Active
+CON-0369,Prime Contracting 369,Electrical,Carlos Rivera,09234360915,4.5,Active
+CON-0370,Pacific Builders 370,Structural Works,Joshua Mendoza,09983157977,4.5,Inactive
+CON-0371,Pacific Builders 371,Concrete Works,Brian Navarro,09800831233,4.3,Active
+CON-0372,Prime Builders 372,Painting,William Bautista,09389823921,3.2,Active
+CON-0373,Metro Contracting 373,General Construction,Anthony Flores,09274762655,4.1,Active
+CON-0374,Prime Builders 374,Road Works,Mark Bautista,09785464921,4.9,Active
+CON-0375,Metro Builders 375,General Construction,Jose Villanueva,09149049185,3.1,Active
+CON-0376,Metro Builders 376,Painting,Christopher Rivera,09637102932,3.4,Active
+CON-0377,Solid Contracting 377,Plumbing,Robert Navarro,09537320614,4.8,Inactive
+CON-0378,ABC Construction 378,General Construction,Jose Rivera,09612124417,4.2,Active
+CON-0379,Metro Construction 379,Plumbing,Kevin Cruz,09772111616,3.2,Inactive
+CON-0380,Prime Construction 380,Plumbing,Daniel Fernandez,09654373758,5.0,Inactive
+CON-0381,Solid Contracting 381,Concrete Works,David Navarro,09412288779,3.7,Active
+CON-0382,ABC Engineering 382,Structural Works,Mark Cruz,09263639767,4.1,Active
+CON-0383,ABC Builders 383,Plumbing,Christopher Cruz,09635702961,3.2,Active
+CON-0384,Prime Contracting 384,Plumbing,Michael Torres,09719024641,3.7,Active
+CON-0385,ABC Construction 385,Concrete Works,Joseph Villanueva,09374906146,4.5,Active
+CON-0386,Solid Construction 386,Electrical,Jose Villanueva,09142512277,3.7,Active
+CON-0387,Global Engineering 387,Plumbing,Kevin Castillo,09650270404,4.7,Active
+CON-0388,Metro Builders 388,Equipment Rental,Carlos Aquino,09382208801,4.8,Inactive
+CON-0389,ABC Builders 389,Structural Works,Miguel Santos,09265959933,4.7,Active
+CON-0390,Global Construction 390,Equipment Rental,Michael Ramos,09516851266,4.7,Inactive
+CON-0391,ABC Contracting 391,Concrete Works,Kevin Aquino,09217165692,3.2,Inactive
+CON-0392,ABC Engineering 392,Equipment Rental,Mark Rivera,09452961097,3.1,Active
+CON-0393,Pacific Engineering 393,Structural Works,Brian Garcia,09398902947,3.9,Inactive
+CON-0394,Prime Engineering 394,Plumbing,Mark Navarro,09710107160,3.1,Inactive
+CON-0395,Global Builders 395,Painting,William Villanueva,09329158874,3.1,Active
+CON-0396,Solid Engineering 396,Road Works,Joseph Mendoza,09189755462,3.3,Active
+CON-0397,Global Builders 397,Road Works,Kevin Gonzales,09663476031,3.4,Active
+CON-0398,Prime Builders 398,Electrical,William Navarro,09908716628,3.6,Active
+CON-0399,Metro Engineering 399,Concrete Works,Brian Mendoza,09848065282,3.9,Inactive
+CON-0400,Pacific Engineering 400,General Construction,Miguel Bautista,09183546470,4.4,Inactive
+CON-0401,Pacific Construction 401,Painting,Matthew Santos,09261604880,4.8,Active
+CON-0402,Global Contracting 402,Electrical,William Torres,09659088455,4.4,Active
+CON-0403,Prime Engineering 403,Electrical,John Bautista,09900697371,5.0,Active
+CON-0404,Solid Construction 404,Equipment Rental,Mark Castillo,09325231389,4.9,Inactive
+CON-0405,Pacific Builders 405,Painting,Andrew Santos,09424210400,4.8,Inactive
+CON-0406,ABC Engineering 406,Concrete Works,William Gonzales,09477666117,3.7,Inactive
+CON-0407,Global Contracting 407,Electrical,Daniel Aquino,09559973407,3.7,Inactive
+CON-0408,Pacific Construction 408,Equipment Rental,Joshua Flores,09808246120,4.4,Active
+CON-0409,Solid Contracting 409,Electrical,Michael Garcia,09196248006,4.3,Inactive
+CON-0410,Global Builders 410,Concrete Works,Angel Garcia,09780242454,3.9,Inactive
+CON-0411,ABC Contracting 411,Equipment Rental,Mark Ramos,09934168821,3.9,Active
+CON-0412,ABC Construction 412,Concrete Works,Robert Castillo,09952283874,4.8,Active
+CON-0413,Solid Engineering 413,General Construction,Andrew Ramos,09644989272,3.6,Inactive
+CON-0414,Metro Contracting 414,Equipment Rental,Anthony Santos,09545126826,3.1,Active
+CON-0415,Prime Contracting 415,Painting,Matthew Mendoza,09714381587,5.0,Active
+CON-0416,Pacific Engineering 416,Structural Works,Angel Rivera,09989648687,3.1,Inactive
+CON-0417,Global Construction 417,Equipment Rental,Daniel Rivera,09441584059,4.0,Active
+CON-0418,Prime Builders 418,Plumbing,Carlos Garcia,09778004684,4.2,Active
+CON-0419,Solid Contracting 419,Plumbing,Matthew Bautista,09200131180,3.2,Active
+CON-0420,ABC Construction 420,General Construction,Angel Cruz,09713958957,3.8,Inactive
+CON-0421,Solid Construction 421,Concrete Works,Andrew Mendoza,09357399415,4.3,Active
+CON-0422,Metro Construction 422,Structural Works,Joshua Torres,09807872562,3.1,Active
+CON-0423,Prime Builders 423,Electrical,Robert Aquino,09739836790,3.2,Active
+CON-0424,Metro Contracting 424,Plumbing,Michael Cruz,09630691582,4.7,Active
+CON-0425,Global Builders 425,Concrete Works,James Gonzales,09179001593,4.0,Inactive
+CON-0426,ABC Construction 426,Equipment Rental,Joshua Navarro,09780271060,4.8,Active
+CON-0427,Prime Contracting 427,General Construction,Daniel Reyes,09225850205,5.0,Active
+CON-0428,Global Builders 428,Plumbing,Carlos Torres,09230560149,3.4,Active
+CON-0429,Pacific Builders 429,Plumbing,Mark Castillo,09223253165,4.8,Active
+CON-0430,Metro Construction 430,Structural Works,Michael Dela Cruz,09387323147,3.5,Active
+CON-0431,ABC Contracting 431,Road Works,Kevin Villanueva,09568217996,4.0,Active
+CON-0432,Prime Contracting 432,Plumbing,Mark Torres,09521793625,3.2,Inactive
+CON-0433,Metro Construction 433,Structural Works,Brian Gonzales,09579058222,3.8,Inactive
+CON-0434,Metro Contracting 434,Electrical,Angel Rivera,09560971296,3.4,Active
+CON-0435,Metro Builders 435,Concrete Works,Daniel Reyes,09649065195,3.5,Active
+CON-0436,Metro Contracting 436,Equipment Rental,James Garcia,09293170703,4.6,Active
+CON-0437,Prime Contracting 437,Structural Works,Michael Bautista,09805399640,3.7,Active
+CON-0438,Metro Builders 438,General Construction,Matthew Santos,09869660954,3.7,Active
+CON-0439,Pacific Contracting 439,Structural Works,Miguel Cruz,09514025061,3.6,Active
+CON-0440,Pacific Construction 440,Electrical,Miguel Torres,09869084355,4.2,Inactive
+CON-0441,ABC Engineering 441,Equipment Rental,Matthew Navarro,09312762389,3.4,Active
+CON-0442,Global Builders 442,Road Works,William Garcia,09233243500,3.9,Inactive
+CON-0443,Metro Engineering 443,Structural Works,Jose Santos,09406056061,3.0,Inactive
+CON-0444,ABC Engineering 444,Road Works,David Rivera,09139737245,4.8,Inactive
+CON-0445,ABC Contracting 445,General Construction,Michael Villanueva,09202134123,4.7,Active
+CON-0446,Solid Contracting 446,Road Works,Matthew Castillo,09529866466,3.2,Active
+CON-0447,Global Builders 447,Equipment Rental,Christopher Aquino,09629716164,4.7,Active
+CON-0448,Metro Builders 448,General Construction,Anthony Reyes,09986327205,3.0,Active
+CON-0449,Metro Engineering 449,Structural Works,Daniel Cruz,09305256154,4.4,Active
+CON-0450,Pacific Builders 450,General Construction,Joseph Reyes,09218974458,3.1,Active
+CON-0451,ABC Contracting 451,Painting,Angel Rivera,09389815857,4.4,Active
+CON-0452,Pacific Engineering 452,Electrical,David Navarro,09258915379,4.5,Active
+CON-0453,Solid Engineering 453,Electrical,Carlos Fernandez,09358260082,4.2,Inactive
+CON-0454,Global Contracting 454,Painting,Brian Ramos,09198568826,3.5,Active
+CON-0455,Solid Builders 455,Painting,Miguel Ramos,09808112095,4.3,Active
+CON-0456,Solid Builders 456,Electrical,Brian Reyes,09328143806,3.0,Active
+CON-0457,Global Engineering 457,Structural Works,Brian Garcia,09465555552,3.4,Inactive
+CON-0458,Pacific Contracting 458,Road Works,Kevin Dela Cruz,09641715005,3.2,Active
+CON-0459,Prime Contracting 459,Equipment Rental,Kevin Fernandez,09317991841,4.6,Active
+CON-0460,ABC Contracting 460,Equipment Rental,Daniel Flores,09719809183,4.3,Active
+CON-0461,Global Builders 461,Electrical,Anthony Santos,09594830511,3.4,Active
+CON-0462,Global Engineering 462,Painting,Joseph Garcia,09690884707,3.2,Active
+CON-0463,Prime Construction 463,Equipment Rental,Carlos Gonzales,09645382272,3.7,Active
+CON-0464,Metro Contracting 464,Electrical,John Rivera,09885980740,4.9,Active
+CON-0465,Metro Construction 465,Equipment Rental,Daniel Torres,09668613679,4.2,Inactive
+CON-0466,Global Builders 466,General Construction,Anthony Garcia,09335771983,3.2,Active
+CON-0467,Pacific Contracting 467,Structural Works,Michael Garcia,09395772367,3.5,Inactive
+CON-0468,Solid Engineering 468,Equipment Rental,Joshua Garcia,09336103257,4.5,Inactive
+CON-0469,Metro Engineering 469,Structural Works,Daniel Bautista,09473268212,4.3,Inactive
+CON-0470,Pacific Contracting 470,General Construction,Robert Mendoza,09640349998,4.8,Inactive
+CON-0471,Global Contracting 471,Structural Works,Daniel Navarro,09831693296,3.1,Active
+CON-0472,Metro Engineering 472,Plumbing,James Villanueva,09559478337,3.7,Active
+CON-0473,Metro Builders 473,Plumbing,James Castillo,09608771260,4.2,Active
+CON-0474,Prime Engineering 474,Electrical,John Santos,09709098013,4.4,Active
+CON-0475,Prime Construction 475,Plumbing,Robert Garcia,09427064197,4.6,Active
+CON-0476,Global Engineering 476,Painting,Miguel Torres,09812329472,4.0,Active
+CON-0477,Global Builders 477,Painting,Christopher Navarro,09656016860,4.5,Inactive
+CON-0478,Global Builders 478,Road Works,Carlos Santos,09258806824,5.0,Active
+CON-0479,Solid Construction 479,Painting,Brian Santos,09362387930,4.2,Inactive
+CON-0480,Global Contracting 480,Structural Works,Michael Bautista,09505636313,4.3,Active
+CON-0481,Solid Engineering 481,Plumbing,Joseph Castillo,09455618641,3.8,Active
+CON-0482,Metro Contracting 482,Structural Works,John Fernandez,09853590274,3.7,Inactive
+CON-0483,ABC Engineering 483,Concrete Works,Jose Castillo,09409676308,3.2,Active
+CON-0484,Global Construction 484,Concrete Works,David Fernandez,09411150812,4.2,Inactive
+CON-0485,Prime Contracting 485,Concrete Works,Christopher Cruz,09958762678,3.6,Active
+CON-0486,ABC Construction 486,Road Works,Jose Garcia,09157115850,4.0,Active
+CON-0487,Global Contracting 487,General Construction,John Torres,09247874417,3.7,Active
+CON-0488,Pacific Construction 488,Electrical,Joseph Dela Cruz,09887109809,3.4,Inactive
+CON-0489,ABC Contracting 489,Structural Works,John Villanueva,09480783468,3.5,Inactive
+CON-0490,Solid Engineering 490,Equipment Rental,Joshua Garcia,09380526766,4.8,Inactive
+CON-0491,Metro Construction 491,Equipment Rental,Matthew Dela Cruz,09833710528,4.5,Active
+CON-0492,Prime Engineering 492,Structural Works,Christopher Flores,09191910073,3.6,Inactive
+CON-0493,Global Construction 493,Equipment Rental,William Garcia,09248831220,4.1,Inactive
+CON-0494,Metro Contracting 494,Concrete Works,Andrew Gonzales,09600956992,3.8,Active
+CON-0495,Global Builders 495,General Construction,William Cruz,09911594694,3.3,Active
+CON-0496,Prime Contracting 496,Plumbing,Angel Flores,09157483870,4.5,Active
+CON-0497,Prime Engineering 497,General Construction,Kevin Fernandez,09594158268,4.7,Active
+CON-0498,ABC Contracting 498,Electrical,Matthew Garcia,09982551497,3.6,Active
+CON-0499,Solid Contracting 499,General Construction,Robert Fernandez,09893885429,4.4,Inactive
+CON-0500,Prime Construction 500,Concrete Works,David Ramos,09825506692,4.3,Active
