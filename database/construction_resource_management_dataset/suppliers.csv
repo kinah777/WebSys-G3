@@ -1,0 +1,501 @@
+supplier_id,name,contact_person,phone,location,supplier_rating,status
+SUP-0001,Reliable Builders Inc. 001,Michael Fernandez,09461016148,Biñan,3.2,Inactive
+SUP-0002,Central Hardware Supply 002,Joshua Mendoza,09526972789,Dasmarinas,3.2,Active
+SUP-0003,Central Hardware Supply 003,Christopher Garcia,09100880981,Quezon City,3.4,Inactive
+SUP-0004,Central Hardware Supply 004,Daniel Bautista,09342245638,Calamba,4.2,Active
+SUP-0005,Central Hardware Supply 005,Carlos Ramos,09475087671,Makati,3.9,Inactive
+SUP-0006,Prime Construction Supply 006,Carlos Villanueva,09449359982,Calamba,4.9,Inactive
+SUP-0007,BuildPro Supplies 007,Joshua Villanueva,09629363665,Imus,3.2,Active
+SUP-0008,Reliable Builders Inc. 008,Andrew Mendoza,09106736599,Biñan,4.8,Inactive
+SUP-0009,Central Hardware Supply 009,Robert Torres,09365603228,Antipolo,3.2,Active
+SUP-0010,Stronghold Materials 010,Angel Aquino,09539967390,Quezon City,3.9,Inactive
+SUP-0011,Prime Construction Supply 011,Andrew Gonzales,09722292864,Laguna,4.1,Active
+SUP-0012,Central Hardware Supply 012,Christopher Castillo,09809465411,Dasmarinas,3.4,Inactive
+SUP-0013,BuildPro Supplies 013,David Rivera,09504661498,Cavite City,4.4,Active
+SUP-0014,Central Hardware Supply 014,Joshua Mendoza,09756738678,Laguna,3.7,Active
+SUP-0015,Metro Builders Depot 015,Matthew Aquino,09319193678,Taguig,4.2,Inactive
+SUP-0016,Alpha Construction Trading 016,Daniel Navarro,09450201211,Pasig,4.2,Inactive
+SUP-0017,Reliable Builders Inc. 017,James Aquino,09892608419,Taguig,4.8,Inactive
+SUP-0018,Alpha Construction Trading 018,James Aquino,09387888518,Biñan,4.0,Inactive
+SUP-0019,Reliable Builders Inc. 019,William Flores,09167569640,Antipolo,3.9,Inactive
+SUP-0020,Reliable Builders Inc. 020,Brian Santos,09703910915,Manila,4.1,Inactive
+SUP-0021,Stronghold Materials 021,Christopher Villanueva,09373707633,Bacoor,3.7,Inactive
+SUP-0022,Alpha Construction Trading 022,Christopher Rivera,09396137576,Quezon City,4.9,Active
+SUP-0023,Alpha Construction Trading 023,Carlos Flores,09220843803,Imus,3.9,Active
+SUP-0024,Stronghold Materials 024,Carlos Navarro,09321467715,Imus,4.5,Inactive
+SUP-0025,Central Hardware Supply 025,Robert Rivera,09414571238,Antipolo,4.2,Active
+SUP-0026,Pacific Construction Trading 026,Christopher Navarro,09110604622,Antipolo,4.2,Inactive
+SUP-0027,Central Hardware Supply 027,Joshua Santos,09450756034,Makati,3.2,Active
+SUP-0028,Metro Builders Depot 028,Joshua Dela Cruz,09592504899,Manila,3.8,Active
+SUP-0029,Central Hardware Supply 029,Angel Reyes,09119411302,Laguna,4.1,Active
+SUP-0030,Central Hardware Supply 030,Joseph Castillo,09658435365,Quezon City,4.5,Active
+SUP-0031,Central Hardware Supply 031,Miguel Bautista,09814817198,Antipolo,3.1,Active
+SUP-0032,Pacific Construction Trading 032,Miguel Ramos,09764489816,Santa Rosa,4.5,Active
+SUP-0033,Prime Construction Supply 033,Miguel Castillo,09546670196,Laguna,3.5,Active
+SUP-0034,Stronghold Materials 034,Andrew Santos,09150727105,Manila,3.4,Inactive
+SUP-0035,Golden Hammer Supply 035,Joshua Rivera,09209331091,Santa Rosa,4.8,Inactive
+SUP-0036,Golden Hammer Supply 036,Mark Santos,09483794405,Imus,3.6,Inactive
+SUP-0037,Pacific Construction Trading 037,Jose Bautista,09986339543,Dasmarinas,5.0,Inactive
+SUP-0038,Pacific Construction Trading 038,William Aquino,09711476881,Manila,4.0,Active
+SUP-0039,BuildPro Supplies 039,Robert Fernandez,09606917907,Makati,3.8,Inactive
+SUP-0040,BuildPro Supplies 040,James Garcia,09777556202,Antipolo,3.4,Active
+SUP-0041,Prime Construction Supply 041,John Ramos,09391395622,Taguig,3.6,Active
+SUP-0042,Metro Builders Depot 042,Angel Reyes,09522404300,Dasmarinas,3.5,Active
+SUP-0043,Reliable Builders Inc. 043,Miguel Rivera,09978857902,Cavite City,3.3,Active
+SUP-0044,Reliable Builders Inc. 044,David Dela Cruz,09225444347,Cavite City,4.8,Inactive
+SUP-0045,Alpha Construction Trading 045,William Villanueva,09247024266,Cavite City,4.9,Active
+SUP-0046,Metro Builders Depot 046,Daniel Garcia,09753896330,Manila,3.7,Active
+SUP-0047,Pacific Construction Trading 047,Kevin Santos,09377690895,Dasmarinas,3.6,Active
+SUP-0048,Pacific Construction Trading 048,Miguel Flores,09835227852,Antipolo,3.7,Inactive
+SUP-0049,SolidCore Materials 049,Angel Gonzales,09450316416,Makati,3.2,Active
+SUP-0050,Central Hardware Supply 050,Anthony Navarro,09106556957,Dasmarinas,4.7,Active
+SUP-0051,Pacific Construction Trading 051,Matthew Castillo,09334248982,Quezon City,3.3,Inactive
+SUP-0052,BuildPro Supplies 052,James Ramos,09523469229,Makati,4.3,Active
+SUP-0053,Prime Construction Supply 053,Brian Ramos,09936231141,Biñan,3.3,Active
+SUP-0054,Stronghold Materials 054,Daniel Gonzales,09929359146,Taguig,4.1,Inactive
+SUP-0055,SolidCore Materials 055,Angel Castillo,09696662282,Cavite City,4.4,Active
+SUP-0056,Central Hardware Supply 056,Matthew Mendoza,09294287831,Santa Rosa,4.3,Active
+SUP-0057,Golden Hammer Supply 057,David Navarro,09208880800,Imus,3.2,Inactive
+SUP-0058,Golden Hammer Supply 058,Brian Castillo,09760295153,Quezon City,3.9,Active
+SUP-0059,Golden Hammer Supply 059,John Fernandez,09783685858,Manila,3.7,Inactive
+SUP-0060,Prime Construction Supply 060,Joseph Aquino,09587594775,Taguig,3.5,Active
+SUP-0061,Golden Hammer Supply 061,Mark Castillo,09929333768,Makati,3.6,Inactive
+SUP-0062,Pacific Construction Trading 062,Robert Aquino,09227863848,Cavite City,4.2,Inactive
+SUP-0063,Alpha Construction Trading 063,Kevin Bautista,09379127209,Taguig,4.7,Inactive
+SUP-0064,SolidCore Materials 064,John Navarro,09348429506,Dasmarinas,4.0,Active
+SUP-0065,SolidCore Materials 065,Mark Garcia,09668923329,Pasig,3.8,Active
+SUP-0066,SolidCore Materials 066,Anthony Fernandez,09745185020,Makati,3.9,Active
+SUP-0067,Central Hardware Supply 067,Brian Fernandez,09674395925,Makati,4.6,Inactive
+SUP-0068,Prime Construction Supply 068,Andrew Mendoza,09615309123,Bacoor,4.0,Active
+SUP-0069,Pacific Construction Trading 069,Miguel Gonzales,09297519631,Cavite City,4.4,Active
+SUP-0070,Metro Builders Depot 070,Robert Aquino,09842502678,Taguig,3.8,Inactive
+SUP-0071,SolidCore Materials 071,Matthew Ramos,09618221003,Antipolo,4.6,Inactive
+SUP-0072,BuildPro Supplies 072,Robert Fernandez,09706154167,Laguna,3.2,Active
+SUP-0073,Stronghold Materials 073,Mark Flores,09399806241,Laguna,3.8,Active
+SUP-0074,Stronghold Materials 074,Kevin Rivera,09274574609,Santa Rosa,4.6,Inactive
+SUP-0075,Prime Construction Supply 075,Christopher Ramos,09325378563,Laguna,3.8,Inactive
+SUP-0076,Alpha Construction Trading 076,Jose Torres,09503802726,Biñan,4.6,Active
+SUP-0077,Golden Hammer Supply 077,John Santos,09840338262,Manila,3.2,Inactive
+SUP-0078,Alpha Construction Trading 078,Miguel Navarro,09615063822,Pasig,4.2,Inactive
+SUP-0079,SolidCore Materials 079,Matthew Mendoza,09202219858,Calamba,3.2,Inactive
+SUP-0080,Reliable Builders Inc. 080,Carlos Flores,09408689865,Makati,4.3,Active
+SUP-0081,Pacific Construction Trading 081,Carlos Fernandez,09419482003,Santa Rosa,4.5,Inactive
+SUP-0082,Alpha Construction Trading 082,Kevin Castillo,09570342322,Makati,4.1,Active
+SUP-0083,Stronghold Materials 083,Matthew Castillo,09909852292,Bacoor,3.3,Inactive
+SUP-0084,Prime Construction Supply 084,Jose Reyes,09292360970,Makati,3.1,Inactive
+SUP-0085,Alpha Construction Trading 085,Kevin Cruz,09980470108,Makati,3.6,Inactive
+SUP-0086,SolidCore Materials 086,Angel Aquino,09187992381,Dasmarinas,3.0,Active
+SUP-0087,Alpha Construction Trading 087,Carlos Flores,09382063522,Cavite City,4.6,Active
+SUP-0088,SolidCore Materials 088,William Villanueva,09916633730,Laguna,3.3,Active
+SUP-0089,Central Hardware Supply 089,Robert Cruz,09295662827,Calamba,3.4,Active
+SUP-0090,SolidCore Materials 090,Carlos Fernandez,09466917992,Antipolo,3.9,Inactive
+SUP-0091,Prime Construction Supply 091,Michael Ramos,09754719022,Dasmarinas,4.7,Active
+SUP-0092,Pacific Construction Trading 092,Matthew Santos,09981613093,Manila,4.5,Inactive
+SUP-0093,Alpha Construction Trading 093,Daniel Garcia,09578131746,Dasmarinas,4.2,Active
+SUP-0094,Golden Hammer Supply 094,David Gonzales,09554148187,Santa Rosa,3.4,Active
+SUP-0095,Prime Construction Supply 095,Matthew Fernandez,09678168142,Antipolo,3.0,Inactive
+SUP-0096,Stronghold Materials 096,James Navarro,09309550241,Makati,4.3,Active
+SUP-0097,Prime Construction Supply 097,Robert Ramos,09945319144,Santa Rosa,3.2,Active
+SUP-0098,Central Hardware Supply 098,David Villanueva,09430040079,Makati,4.3,Active
+SUP-0099,Golden Hammer Supply 099,Robert Ramos,09876859667,Imus,3.1,Active
+SUP-0100,Central Hardware Supply 100,Matthew Garcia,09639328154,Calamba,3.2,Active
+SUP-0101,Golden Hammer Supply 101,John Dela Cruz,09421410504,Pasig,4.4,Active
+SUP-0102,Reliable Builders Inc. 102,Michael Navarro,09848569845,Antipolo,4.6,Active
+SUP-0103,SolidCore Materials 103,Joshua Rivera,09250174497,Dasmarinas,3.2,Inactive
+SUP-0104,Golden Hammer Supply 104,Carlos Rivera,09710261100,Pasig,3.4,Active
+SUP-0105,Alpha Construction Trading 105,John Santos,09772840271,Cavite City,4.1,Active
+SUP-0106,Prime Construction Supply 106,Andrew Flores,09583573331,Biñan,3.5,Inactive
+SUP-0107,Golden Hammer Supply 107,Joshua Rivera,09357063230,Santa Rosa,4.0,Active
+SUP-0108,Golden Hammer Supply 108,Andrew Garcia,09208729236,Imus,3.6,Active
+SUP-0109,Alpha Construction Trading 109,John Dela Cruz,09645523224,Pasig,3.9,Active
+SUP-0110,Stronghold Materials 110,James Mendoza,09684869609,Santa Rosa,3.8,Inactive
+SUP-0111,Reliable Builders Inc. 111,William Santos,09468417378,Pasig,3.6,Inactive
+SUP-0112,Prime Construction Supply 112,Joshua Torres,09375333978,Quezon City,4.6,Inactive
+SUP-0113,Reliable Builders Inc. 113,Michael Reyes,09212574430,Santa Rosa,5.0,Active
+SUP-0114,Golden Hammer Supply 114,Mark Navarro,09674895555,Laguna,4.6,Active
+SUP-0115,Reliable Builders Inc. 115,Joseph Reyes,09500833163,Quezon City,3.1,Inactive
+SUP-0116,Central Hardware Supply 116,Miguel Santos,09245351271,Dasmarinas,5.0,Active
+SUP-0117,Pacific Construction Trading 117,David Villanueva,09550647757,Pasig,3.8,Inactive
+SUP-0118,Prime Construction Supply 118,Joseph Torres,09826313554,Taguig,3.9,Inactive
+SUP-0119,Alpha Construction Trading 119,Anthony Navarro,09952816146,Pasig,4.9,Inactive
+SUP-0120,Reliable Builders Inc. 120,Jose Reyes,09549241856,Dasmarinas,3.8,Inactive
+SUP-0121,Alpha Construction Trading 121,James Mendoza,09285900374,Bacoor,4.1,Active
+SUP-0122,Alpha Construction Trading 122,Carlos Aquino,09921692491,Taguig,4.7,Active
+SUP-0123,Prime Construction Supply 123,Anthony Navarro,09677283947,Calamba,4.8,Active
+SUP-0124,Stronghold Materials 124,Robert Aquino,09385488676,Pasig,3.0,Active
+SUP-0125,Central Hardware Supply 125,Miguel Garcia,09947006402,Quezon City,4.5,Active
+SUP-0126,BuildPro Supplies 126,Mark Flores,09323622397,Santa Rosa,4.0,Inactive
+SUP-0127,Prime Construction Supply 127,Carlos Villanueva,09320703798,Bacoor,3.9,Inactive
+SUP-0128,Golden Hammer Supply 128,Carlos Ramos,09886299090,Pasig,3.4,Active
+SUP-0129,Stronghold Materials 129,Kevin Santos,09990561573,Taguig,3.2,Inactive
+SUP-0130,BuildPro Supplies 130,Angel Santos,09768606852,Quezon City,4.9,Active
+SUP-0131,SolidCore Materials 131,Carlos Gonzales,09124902282,Makati,4.1,Active
+SUP-0132,Metro Builders Depot 132,Andrew Torres,09945597785,Makati,4.9,Active
+SUP-0133,Prime Construction Supply 133,Daniel Ramos,09191260018,Santa Rosa,3.1,Inactive
+SUP-0134,Golden Hammer Supply 134,Kevin Aquino,09243828265,Manila,3.5,Active
+SUP-0135,Prime Construction Supply 135,James Reyes,09859431922,Calamba,4.0,Inactive
+SUP-0136,Pacific Construction Trading 136,Robert Bautista,09271327357,Taguig,3.7,Active
+SUP-0137,Central Hardware Supply 137,Michael Reyes,09767206152,Dasmarinas,4.4,Active
+SUP-0138,Prime Construction Supply 138,David Dela Cruz,09906007366,Taguig,4.1,Active
+SUP-0139,BuildPro Supplies 139,Jose Villanueva,09262160092,Calamba,3.8,Active
+SUP-0140,Alpha Construction Trading 140,William Bautista,09296851498,Makati,3.7,Active
+SUP-0141,Pacific Construction Trading 141,David Mendoza,09410969170,Manila,3.5,Inactive
+SUP-0142,SolidCore Materials 142,Daniel Gonzales,09207029277,Quezon City,4.1,Inactive
+SUP-0143,BuildPro Supplies 143,John Bautista,09428005325,Imus,4.1,Active
+SUP-0144,Reliable Builders Inc. 144,Mark Reyes,09609910484,Manila,3.3,Active
+SUP-0145,Stronghold Materials 145,Daniel Reyes,09262614360,Antipolo,3.1,Inactive
+SUP-0146,Golden Hammer Supply 146,Anthony Rivera,09961771921,Imus,4.4,Active
+SUP-0147,Alpha Construction Trading 147,Andrew Bautista,09539450487,Bacoor,4.2,Active
+SUP-0148,Golden Hammer Supply 148,Kevin Villanueva,09749522748,Cavite City,3.1,Active
+SUP-0149,Stronghold Materials 149,Anthony Dela Cruz,09458134077,Antipolo,4.1,Active
+SUP-0150,BuildPro Supplies 150,Kevin Bautista,09760711935,Dasmarinas,3.2,Active
+SUP-0151,Stronghold Materials 151,Daniel Mendoza,09200420837,Quezon City,3.4,Active
+SUP-0152,Alpha Construction Trading 152,John Fernandez,09607465413,Quezon City,4.3,Active
+SUP-0153,Metro Builders Depot 153,Daniel Garcia,09126791708,Antipolo,4.6,Active
+SUP-0154,Pacific Construction Trading 154,William Garcia,09632552285,Quezon City,4.1,Inactive
+SUP-0155,Prime Construction Supply 155,Brian Santos,09588325075,Taguig,3.6,Active
+SUP-0156,BuildPro Supplies 156,David Ramos,09915588814,Taguig,3.6,Active
+SUP-0157,Metro Builders Depot 157,Andrew Dela Cruz,09199689379,Biñan,3.8,Active
+SUP-0158,Golden Hammer Supply 158,Daniel Bautista,09731052193,Taguig,4.5,Active
+SUP-0159,BuildPro Supplies 159,Jose Torres,09427588870,Calamba,4.6,Active
+SUP-0160,Metro Builders Depot 160,Joshua Santos,09323600426,Biñan,3.4,Inactive
+SUP-0161,Golden Hammer Supply 161,Matthew Garcia,09341215349,Makati,3.9,Active
+SUP-0162,Stronghold Materials 162,Angel Flores,09873308960,Bacoor,3.0,Inactive
+SUP-0163,Metro Builders Depot 163,Joseph Castillo,09988157617,Calamba,3.7,Inactive
+SUP-0164,Golden Hammer Supply 164,Robert Rivera,09139787918,Makati,3.2,Inactive
+SUP-0165,Prime Construction Supply 165,Matthew Cruz,09283319438,Antipolo,3.9,Active
+SUP-0166,Pacific Construction Trading 166,Angel Gonzales,09374125495,Dasmarinas,4.1,Inactive
+SUP-0167,Reliable Builders Inc. 167,David Bautista,09597796336,Imus,5.0,Active
+SUP-0168,Central Hardware Supply 168,Carlos Torres,09434966161,Dasmarinas,3.5,Inactive
+SUP-0169,SolidCore Materials 169,Kevin Cruz,09706186445,Quezon City,4.1,Active
+SUP-0170,Pacific Construction Trading 170,Angel Dela Cruz,09192077688,Imus,3.6,Active
+SUP-0171,Reliable Builders Inc. 171,Jose Fernandez,09984634188,Antipolo,4.8,Active
+SUP-0172,Reliable Builders Inc. 172,Angel Dela Cruz,09995077335,Pasig,4.6,Active
+SUP-0173,Pacific Construction Trading 173,Miguel Torres,09647459629,Imus,3.5,Active
+SUP-0174,Central Hardware Supply 174,Daniel Garcia,09340519718,Santa Rosa,4.9,Active
+SUP-0175,Golden Hammer Supply 175,Joseph Gonzales,09301317633,Makati,4.4,Active
+SUP-0176,Metro Builders Depot 176,Michael Mendoza,09313998737,Calamba,4.5,Inactive
+SUP-0177,Metro Builders Depot 177,James Castillo,09453103733,Manila,4.8,Active
+SUP-0178,BuildPro Supplies 178,John Santos,09119513871,Bacoor,4.0,Active
+SUP-0179,Pacific Construction Trading 179,Joshua Aquino,09356917100,Santa Rosa,3.2,Active
+SUP-0180,BuildPro Supplies 180,Carlos Fernandez,09713898237,Antipolo,4.6,Active
+SUP-0181,Prime Construction Supply 181,Joseph Garcia,09536147256,Antipolo,3.0,Inactive
+SUP-0182,Prime Construction Supply 182,Joshua Dela Cruz,09980897770,Pasig,3.3,Active
+SUP-0183,SolidCore Materials 183,Kevin Aquino,09894582515,Calamba,4.2,Active
+SUP-0184,BuildPro Supplies 184,Miguel Navarro,09422338978,Bacoor,5.0,Active
+SUP-0185,Central Hardware Supply 185,William Villanueva,09377039590,Imus,3.5,Active
+SUP-0186,BuildPro Supplies 186,Angel Fernandez,09397780844,Biñan,3.4,Active
+SUP-0187,Prime Construction Supply 187,Robert Ramos,09578533665,Quezon City,4.9,Inactive
+SUP-0188,Prime Construction Supply 188,Matthew Cruz,09810981155,Santa Rosa,4.1,Active
+SUP-0189,Pacific Construction Trading 189,Matthew Fernandez,09251957685,Antipolo,4.1,Active
+SUP-0190,Metro Builders Depot 190,James Bautista,09782816023,Taguig,4.6,Inactive
+SUP-0191,BuildPro Supplies 191,Michael Castillo,09318456311,Cavite City,4.5,Active
+SUP-0192,Reliable Builders Inc. 192,William Santos,09579401780,Cavite City,3.8,Inactive
+SUP-0193,Alpha Construction Trading 193,Angel Torres,09404280775,Santa Rosa,4.8,Active
+SUP-0194,Reliable Builders Inc. 194,William Aquino,09259203528,Calamba,3.1,Active
+SUP-0195,Central Hardware Supply 195,David Torres,09791449380,Calamba,3.0,Active
+SUP-0196,Central Hardware Supply 196,Michael Fernandez,09263431603,Makati,4.3,Inactive
+SUP-0197,Stronghold Materials 197,Angel Flores,09101211822,Makati,4.9,Active
+SUP-0198,Metro Builders Depot 198,John Fernandez,09472213267,Bacoor,4.8,Active
+SUP-0199,Pacific Construction Trading 199,Matthew Dela Cruz,09602048377,Pasig,4.6,Active
+SUP-0200,SolidCore Materials 200,William Flores,09271551118,Pasig,3.7,Active
+SUP-0201,BuildPro Supplies 201,James Flores,09193619467,Makati,4.2,Inactive
+SUP-0202,Metro Builders Depot 202,Miguel Navarro,09215086733,Bacoor,3.2,Active
+SUP-0203,Prime Construction Supply 203,Daniel Navarro,09471462666,Santa Rosa,3.0,Inactive
+SUP-0204,Reliable Builders Inc. 204,Robert Reyes,09165318142,Dasmarinas,4.2,Active
+SUP-0205,BuildPro Supplies 205,Joseph Gonzales,09538514565,Manila,3.1,Active
+SUP-0206,Central Hardware Supply 206,Anthony Fernandez,09253893259,Dasmarinas,3.2,Active
+SUP-0207,Metro Builders Depot 207,Mark Dela Cruz,09709668786,Calamba,5.0,Inactive
+SUP-0208,Reliable Builders Inc. 208,Michael Castillo,09196176452,Makati,3.1,Active
+SUP-0209,Central Hardware Supply 209,Andrew Santos,09634464106,Calamba,3.9,Active
+SUP-0210,SolidCore Materials 210,Joseph Flores,09509992924,Calamba,3.1,Active
+SUP-0211,Metro Builders Depot 211,David Aquino,09549856928,Pasig,4.7,Active
+SUP-0212,Reliable Builders Inc. 212,James Garcia,09767909542,Quezon City,3.7,Active
+SUP-0213,Golden Hammer Supply 213,Brian Bautista,09885859825,Taguig,4.0,Active
+SUP-0214,Pacific Construction Trading 214,Anthony Castillo,09699506853,Imus,3.2,Active
+SUP-0215,Central Hardware Supply 215,Daniel Mendoza,09441289180,Antipolo,3.2,Inactive
+SUP-0216,Metro Builders Depot 216,Kevin Mendoza,09523313146,Dasmarinas,5.0,Inactive
+SUP-0217,Reliable Builders Inc. 217,William Rivera,09476971843,Calamba,4.6,Active
+SUP-0218,Metro Builders Depot 218,Joseph Cruz,09767224411,Dasmarinas,4.8,Active
+SUP-0219,Central Hardware Supply 219,Kevin Fernandez,09389440522,Antipolo,4.2,Active
+SUP-0220,Stronghold Materials 220,Michael Mendoza,09720817231,Manila,4.3,Active
+SUP-0221,BuildPro Supplies 221,John Gonzales,09216880122,Antipolo,4.0,Inactive
+SUP-0222,Alpha Construction Trading 222,Brian Flores,09256309347,Makati,3.5,Active
+SUP-0223,SolidCore Materials 223,Christopher Reyes,09429894892,Calamba,3.8,Inactive
+SUP-0224,Reliable Builders Inc. 224,Miguel Dela Cruz,09218608583,Makati,3.2,Inactive
+SUP-0225,Reliable Builders Inc. 225,Joseph Castillo,09275693103,Cavite City,3.5,Active
+SUP-0226,BuildPro Supplies 226,Joshua Torres,09960099249,Taguig,4.3,Active
+SUP-0227,Prime Construction Supply 227,Robert Villanueva,09931194352,Pasig,4.1,Active
+SUP-0228,Central Hardware Supply 228,David Aquino,09367445075,Manila,4.7,Active
+SUP-0229,SolidCore Materials 229,Christopher Ramos,09462240948,Biñan,4.2,Active
+SUP-0230,Central Hardware Supply 230,Carlos Mendoza,09877405890,Quezon City,4.1,Active
+SUP-0231,Alpha Construction Trading 231,William Santos,09535028428,Imus,3.5,Active
+SUP-0232,Golden Hammer Supply 232,Robert Garcia,09146968041,Makati,3.2,Active
+SUP-0233,Pacific Construction Trading 233,Mark Torres,09188327860,Antipolo,4.5,Active
+SUP-0234,BuildPro Supplies 234,Robert Rivera,09154715416,Taguig,4.2,Inactive
+SUP-0235,Reliable Builders Inc. 235,James Ramos,09633296706,Makati,3.2,Inactive
+SUP-0236,Central Hardware Supply 236,Joshua Reyes,09162764682,Pasig,3.3,Inactive
+SUP-0237,SolidCore Materials 237,Robert Aquino,09691372740,Laguna,4.2,Inactive
+SUP-0238,BuildPro Supplies 238,Michael Cruz,09967140722,Taguig,3.1,Active
+SUP-0239,SolidCore Materials 239,Christopher Villanueva,09973264983,Quezon City,3.5,Inactive
+SUP-0240,Stronghold Materials 240,Robert Aquino,09918113517,Biñan,4.1,Active
+SUP-0241,Prime Construction Supply 241,Joshua Dela Cruz,09916644671,Cavite City,4.4,Inactive
+SUP-0242,BuildPro Supplies 242,Carlos Torres,09205787377,Santa Rosa,4.3,Inactive
+SUP-0243,Stronghold Materials 243,Carlos Navarro,09491549162,Manila,4.3,Active
+SUP-0244,SolidCore Materials 244,Kevin Navarro,09339934992,Cavite City,4.1,Inactive
+SUP-0245,Prime Construction Supply 245,James Villanueva,09278743421,Bacoor,4.1,Active
+SUP-0246,Central Hardware Supply 246,James Villanueva,09247748824,Antipolo,3.9,Active
+SUP-0247,SolidCore Materials 247,Kevin Garcia,09546141624,Quezon City,3.9,Inactive
+SUP-0248,Central Hardware Supply 248,Robert Villanueva,09996348457,Makati,3.3,Active
+SUP-0249,Alpha Construction Trading 249,Jose Rivera,09369846581,Dasmarinas,4.0,Active
+SUP-0250,Central Hardware Supply 250,Mark Villanueva,09463835270,Laguna,3.5,Active
+SUP-0251,Reliable Builders Inc. 251,Miguel Garcia,09107488394,Makati,4.6,Inactive
+SUP-0252,BuildPro Supplies 252,Miguel Castillo,09942219606,Cavite City,3.9,Inactive
+SUP-0253,BuildPro Supplies 253,James Mendoza,09799362244,Taguig,4.3,Active
+SUP-0254,SolidCore Materials 254,David Bautista,09524408656,Makati,3.3,Active
+SUP-0255,Reliable Builders Inc. 255,Jose Reyes,09947549530,Imus,4.2,Active
+SUP-0256,Central Hardware Supply 256,Andrew Aquino,09378723623,Imus,4.3,Active
+SUP-0257,Reliable Builders Inc. 257,Kevin Castillo,09171181802,Imus,4.2,Active
+SUP-0258,SolidCore Materials 258,Jose Castillo,09848378142,Calamba,4.9,Active
+SUP-0259,Prime Construction Supply 259,Matthew Reyes,09890059107,Quezon City,4.7,Active
+SUP-0260,Metro Builders Depot 260,Joshua Cruz,09104737159,Dasmarinas,4.9,Active
+SUP-0261,SolidCore Materials 261,Andrew Reyes,09973349521,Biñan,4.0,Active
+SUP-0262,Metro Builders Depot 262,Christopher Bautista,09854643224,Calamba,4.4,Inactive
+SUP-0263,Central Hardware Supply 263,Anthony Dela Cruz,09409837223,Bacoor,4.7,Inactive
+SUP-0264,Prime Construction Supply 264,Anthony Santos,09110972456,Taguig,4.8,Inactive
+SUP-0265,Reliable Builders Inc. 265,Angel Cruz,09974076774,Manila,3.6,Active
+SUP-0266,BuildPro Supplies 266,David Garcia,09495460140,Quezon City,3.8,Inactive
+SUP-0267,Golden Hammer Supply 267,Miguel Rivera,09849778765,Taguig,3.8,Active
+SUP-0268,SolidCore Materials 268,Angel Navarro,09349830241,Taguig,4.1,Active
+SUP-0269,BuildPro Supplies 269,Matthew Santos,09980667345,Quezon City,4.8,Active
+SUP-0270,Stronghold Materials 270,William Torres,09925393292,Makati,4.0,Inactive
+SUP-0271,Reliable Builders Inc. 271,Robert Navarro,09607298616,Pasig,4.1,Active
+SUP-0272,Prime Construction Supply 272,David Cruz,09582153143,Dasmarinas,3.7,Active
+SUP-0273,Metro Builders Depot 273,Anthony Castillo,09921495018,Santa Rosa,4.0,Active
+SUP-0274,Golden Hammer Supply 274,Andrew Torres,09266177088,Imus,4.7,Inactive
+SUP-0275,BuildPro Supplies 275,Angel Aquino,09272632082,Pasig,4.5,Active
+SUP-0276,Metro Builders Depot 276,Christopher Flores,09567219082,Antipolo,4.5,Active
+SUP-0277,Pacific Construction Trading 277,William Aquino,09603116571,Makati,3.1,Active
+SUP-0278,Stronghold Materials 278,Robert Santos,09594664874,Pasig,3.1,Inactive
+SUP-0279,Stronghold Materials 279,Robert Castillo,09512611145,Antipolo,3.5,Inactive
+SUP-0280,Stronghold Materials 280,Miguel Ramos,09616635640,Biñan,4.4,Active
+SUP-0281,Prime Construction Supply 281,Brian Navarro,09429526663,Pasig,4.1,Active
+SUP-0282,Stronghold Materials 282,Christopher Cruz,09423963056,Bacoor,4.7,Inactive
+SUP-0283,Stronghold Materials 283,Daniel Rivera,09153483663,Makati,4.1,Active
+SUP-0284,Pacific Construction Trading 284,Joshua Fernandez,09532531814,Makati,4.8,Active
+SUP-0285,Central Hardware Supply 285,Carlos Flores,09149062746,Dasmarinas,3.8,Active
+SUP-0286,Metro Builders Depot 286,James Aquino,09800834134,Imus,4.4,Active
+SUP-0287,Stronghold Materials 287,Michael Bautista,09463201016,Pasig,4.5,Active
+SUP-0288,Stronghold Materials 288,William Dela Cruz,09484544028,Santa Rosa,3.3,Inactive
+SUP-0289,Reliable Builders Inc. 289,Carlos Villanueva,09752170882,Manila,3.8,Inactive
+SUP-0290,BuildPro Supplies 290,Joseph Fernandez,09661905788,Imus,4.2,Active
+SUP-0291,Metro Builders Depot 291,John Navarro,09937703414,Cavite City,4.6,Active
+SUP-0292,BuildPro Supplies 292,Andrew Santos,09837987225,Bacoor,4.9,Inactive
+SUP-0293,Metro Builders Depot 293,Brian Bautista,09720311933,Imus,4.5,Active
+SUP-0294,Alpha Construction Trading 294,Kevin Gonzales,09376351483,Antipolo,3.0,Active
+SUP-0295,Golden Hammer Supply 295,William Aquino,09162033292,Calamba,3.9,Inactive
+SUP-0296,Stronghold Materials 296,Brian Navarro,09469648413,Taguig,3.3,Active
+SUP-0297,Alpha Construction Trading 297,James Ramos,09992465817,Antipolo,4.1,Active
+SUP-0298,Metro Builders Depot 298,Brian Bautista,09532117948,Calamba,4.7,Active
+SUP-0299,SolidCore Materials 299,Daniel Reyes,09858240572,Makati,3.4,Inactive
+SUP-0300,Metro Builders Depot 300,Brian Garcia,09214264220,Antipolo,3.2,Active
+SUP-0301,Golden Hammer Supply 301,Brian Gonzales,09751489939,Quezon City,4.9,Active
+SUP-0302,Reliable Builders Inc. 302,Daniel Reyes,09936914980,Taguig,3.3,Inactive
+SUP-0303,Golden Hammer Supply 303,Robert Flores,09387982781,Laguna,4.1,Inactive
+SUP-0304,Central Hardware Supply 304,Anthony Reyes,09502435111,Makati,4.9,Active
+SUP-0305,Alpha Construction Trading 305,James Bautista,09727617273,Laguna,4.6,Active
+SUP-0306,BuildPro Supplies 306,Daniel Gonzales,09710571363,Antipolo,4.1,Active
+SUP-0307,Pacific Construction Trading 307,Daniel Rivera,09388447450,Dasmarinas,4.7,Active
+SUP-0308,Reliable Builders Inc. 308,Miguel Santos,09176721925,Dasmarinas,3.9,Active
+SUP-0309,SolidCore Materials 309,Michael Rivera,09308325394,Dasmarinas,4.8,Active
+SUP-0310,Golden Hammer Supply 310,James Reyes,09412679306,Santa Rosa,3.4,Active
+SUP-0311,Reliable Builders Inc. 311,Kevin Mendoza,09372521236,Taguig,3.8,Active
+SUP-0312,Prime Construction Supply 312,Kevin Mendoza,09704732915,Taguig,4.6,Active
+SUP-0313,SolidCore Materials 313,Miguel Santos,09679746759,Pasig,4.9,Active
+SUP-0314,Reliable Builders Inc. 314,Matthew Torres,09165353918,Makati,4.8,Inactive
+SUP-0315,Alpha Construction Trading 315,Miguel Navarro,09216743341,Calamba,4.2,Inactive
+SUP-0316,Alpha Construction Trading 316,Anthony Dela Cruz,09596087332,Calamba,3.3,Active
+SUP-0317,Metro Builders Depot 317,Miguel Cruz,09271868828,Santa Rosa,3.2,Active
+SUP-0318,SolidCore Materials 318,Andrew Reyes,09420474498,Antipolo,4.1,Active
+SUP-0319,BuildPro Supplies 319,David Gonzales,09871511738,Imus,3.9,Inactive
+SUP-0320,Golden Hammer Supply 320,Daniel Aquino,09278460662,Bacoor,4.3,Active
+SUP-0321,SolidCore Materials 321,Jose Villanueva,09384299976,Santa Rosa,4.5,Inactive
+SUP-0322,Golden Hammer Supply 322,James Aquino,09876085519,Manila,4.0,Inactive
+SUP-0323,Reliable Builders Inc. 323,Christopher Santos,09549571247,Calamba,4.0,Active
+SUP-0324,Reliable Builders Inc. 324,James Mendoza,09147883353,Bacoor,3.0,Inactive
+SUP-0325,Prime Construction Supply 325,Jose Mendoza,09738899863,Manila,3.3,Active
+SUP-0326,Golden Hammer Supply 326,Christopher Ramos,09765394079,Manila,3.6,Inactive
+SUP-0327,Alpha Construction Trading 327,John Ramos,09286136069,Makati,3.7,Active
+SUP-0328,SolidCore Materials 328,Mark Mendoza,09107044325,Makati,3.5,Active
+SUP-0329,BuildPro Supplies 329,David Castillo,09800053921,Antipolo,3.7,Active
+SUP-0330,Prime Construction Supply 330,Angel Ramos,09462543159,Taguig,3.7,Inactive
+SUP-0331,BuildPro Supplies 331,Anthony Rivera,09723731541,Bacoor,4.6,Inactive
+SUP-0332,Pacific Construction Trading 332,Mark Bautista,09910731994,Antipolo,3.5,Active
+SUP-0333,Pacific Construction Trading 333,Anthony Rivera,09275246883,Santa Rosa,3.9,Active
+SUP-0334,Central Hardware Supply 334,James Castillo,09705945411,Calamba,4.5,Inactive
+SUP-0335,SolidCore Materials 335,Robert Dela Cruz,09992980918,Antipolo,3.5,Active
+SUP-0336,Prime Construction Supply 336,Daniel Reyes,09577096795,Antipolo,3.7,Inactive
+SUP-0337,Reliable Builders Inc. 337,Matthew Dela Cruz,09160603959,Quezon City,3.3,Active
+SUP-0338,Reliable Builders Inc. 338,Mark Cruz,09616600942,Dasmarinas,3.6,Active
+SUP-0339,Pacific Construction Trading 339,Daniel Cruz,09115985298,Imus,3.4,Active
+SUP-0340,Prime Construction Supply 340,Jose Bautista,09581183137,Cavite City,4.2,Active
+SUP-0341,Alpha Construction Trading 341,David Mendoza,09524689817,Dasmarinas,3.2,Active
+SUP-0342,Prime Construction Supply 342,Brian Castillo,09349236017,Calamba,3.8,Active
+SUP-0343,Pacific Construction Trading 343,Brian Navarro,09262290463,Biñan,4.7,Inactive
+SUP-0344,Reliable Builders Inc. 344,Joseph Rivera,09210472590,Makati,4.4,Inactive
+SUP-0345,Reliable Builders Inc. 345,Robert Aquino,09968282987,Antipolo,3.5,Active
+SUP-0346,Alpha Construction Trading 346,Jose Mendoza,09808502926,Calamba,4.8,Active
+SUP-0347,Golden Hammer Supply 347,David Torres,09165588902,Pasig,3.3,Active
+SUP-0348,Prime Construction Supply 348,Andrew Ramos,09456337216,Cavite City,3.0,Active
+SUP-0349,Pacific Construction Trading 349,Mark Dela Cruz,09207768794,Santa Rosa,4.3,Active
+SUP-0350,SolidCore Materials 350,John Fernandez,09574182214,Dasmarinas,4.8,Active
+SUP-0351,Metro Builders Depot 351,Joseph Aquino,09750112695,Makati,3.7,Inactive
+SUP-0352,Pacific Construction Trading 352,David Dela Cruz,09200313598,Bacoor,4.1,Inactive
+SUP-0353,Pacific Construction Trading 353,Matthew Garcia,09734260115,Makati,4.5,Active
+SUP-0354,Pacific Construction Trading 354,Miguel Villanueva,09628966211,Manila,3.9,Inactive
+SUP-0355,Reliable Builders Inc. 355,Jose Bautista,09324379394,Pasig,4.5,Inactive
+SUP-0356,Alpha Construction Trading 356,Miguel Gonzales,09480416158,Quezon City,3.7,Inactive
+SUP-0357,BuildPro Supplies 357,Daniel Navarro,09601727285,Calamba,4.1,Active
+SUP-0358,Reliable Builders Inc. 358,Joseph Reyes,09658093774,Cavite City,4.3,Active
+SUP-0359,Central Hardware Supply 359,Carlos Bautista,09990714291,Calamba,4.1,Active
+SUP-0360,Reliable Builders Inc. 360,Brian Dela Cruz,09534361625,Antipolo,3.3,Inactive
+SUP-0361,Central Hardware Supply 361,Joseph Rivera,09617817389,Makati,4.3,Active
+SUP-0362,Golden Hammer Supply 362,Christopher Bautista,09937668367,Biñan,4.7,Inactive
+SUP-0363,Golden Hammer Supply 363,Michael Rivera,09281218634,Bacoor,3.3,Active
+SUP-0364,Golden Hammer Supply 364,James Garcia,09672608950,Makati,3.7,Inactive
+SUP-0365,Reliable Builders Inc. 365,Daniel Flores,09580201106,Makati,4.1,Active
+SUP-0366,Alpha Construction Trading 366,Joseph Mendoza,09793765080,Manila,3.2,Active
+SUP-0367,Metro Builders Depot 367,Anthony Torres,09193619024,Taguig,4.1,Active
+SUP-0368,Alpha Construction Trading 368,James Santos,09750134068,Calamba,4.3,Active
+SUP-0369,Metro Builders Depot 369,Kevin Reyes,09244288223,Imus,3.8,Active
+SUP-0370,Golden Hammer Supply 370,John Castillo,09562040314,Pasig,3.4,Active
+SUP-0371,Pacific Construction Trading 371,John Santos,09870062349,Pasig,4.2,Active
+SUP-0372,Prime Construction Supply 372,Jose Ramos,09363722073,Cavite City,4.5,Inactive
+SUP-0373,Alpha Construction Trading 373,Daniel Dela Cruz,09272144551,Taguig,4.7,Active
+SUP-0374,Prime Construction Supply 374,Jose Ramos,09510514576,Laguna,3.0,Active
+SUP-0375,Reliable Builders Inc. 375,James Fernandez,09254152993,Dasmarinas,4.0,Active
+SUP-0376,Golden Hammer Supply 376,Joshua Torres,09529747212,Quezon City,4.8,Inactive
+SUP-0377,Reliable Builders Inc. 377,John Villanueva,09568072450,Laguna,3.3,Active
+SUP-0378,SolidCore Materials 378,Carlos Castillo,09111084635,Manila,4.1,Active
+SUP-0379,Stronghold Materials 379,Daniel Bautista,09391388729,Imus,3.2,Active
+SUP-0380,Metro Builders Depot 380,Anthony Garcia,09320746286,Laguna,4.8,Active
+SUP-0381,Prime Construction Supply 381,James Torres,09403991650,Calamba,3.2,Active
+SUP-0382,Pacific Construction Trading 382,David Bautista,09868172281,Quezon City,3.8,Active
+SUP-0383,Pacific Construction Trading 383,Robert Bautista,09593670730,Makati,3.9,Inactive
+SUP-0384,Reliable Builders Inc. 384,Carlos Castillo,09611754789,Imus,4.8,Active
+SUP-0385,Reliable Builders Inc. 385,Mark Torres,09748975104,Taguig,3.4,Active
+SUP-0386,Pacific Construction Trading 386,William Cruz,09608289487,Cavite City,4.7,Active
+SUP-0387,Central Hardware Supply 387,Miguel Aquino,09121230901,Quezon City,4.7,Active
+SUP-0388,Alpha Construction Trading 388,Angel Bautista,09285151238,Taguig,4.4,Active
+SUP-0389,Metro Builders Depot 389,Christopher Ramos,09578133290,Taguig,3.5,Active
+SUP-0390,Prime Construction Supply 390,Brian Mendoza,09335175546,Taguig,3.7,Active
+SUP-0391,SolidCore Materials 391,Carlos Rivera,09714824024,Taguig,3.9,Active
+SUP-0392,Metro Builders Depot 392,Andrew Flores,09929691979,Bacoor,3.7,Active
+SUP-0393,Reliable Builders Inc. 393,David Gonzales,09700663963,Santa Rosa,3.1,Inactive
+SUP-0394,Stronghold Materials 394,Daniel Bautista,09653747656,Imus,4.5,Active
+SUP-0395,Prime Construction Supply 395,James Santos,09739542236,Cavite City,3.5,Active
+SUP-0396,Golden Hammer Supply 396,Brian Torres,09287240259,Quezon City,3.8,Active
+SUP-0397,SolidCore Materials 397,Matthew Santos,09996820381,Antipolo,3.1,Active
+SUP-0398,Stronghold Materials 398,Miguel Cruz,09381159559,Biñan,3.9,Active
+SUP-0399,Stronghold Materials 399,William Garcia,09415250617,Pasig,3.9,Inactive
+SUP-0400,Pacific Construction Trading 400,Joseph Bautista,09590739130,Manila,3.8,Active
+SUP-0401,Prime Construction Supply 401,Miguel Aquino,09799891975,Laguna,3.7,Active
+SUP-0402,Pacific Construction Trading 402,William Aquino,09241061328,Biñan,4.8,Active
+SUP-0403,Reliable Builders Inc. 403,Miguel Cruz,09494861038,Biñan,3.6,Inactive
+SUP-0404,Prime Construction Supply 404,Carlos Castillo,09976684882,Bacoor,4.5,Inactive
+SUP-0405,BuildPro Supplies 405,John Dela Cruz,09586202611,Dasmarinas,4.8,Active
+SUP-0406,Alpha Construction Trading 406,Robert Santos,09934373594,Bacoor,3.6,Active
+SUP-0407,Stronghold Materials 407,Miguel Rivera,09121940697,Taguig,5.0,Active
+SUP-0408,Reliable Builders Inc. 408,William Reyes,09462345909,Manila,3.5,Active
+SUP-0409,Stronghold Materials 409,Joseph Gonzales,09735805629,Bacoor,3.5,Active
+SUP-0410,Reliable Builders Inc. 410,Brian Aquino,09814974518,Pasig,3.0,Active
+SUP-0411,Stronghold Materials 411,Robert Dela Cruz,09296533829,Calamba,3.4,Active
+SUP-0412,Stronghold Materials 412,Jose Torres,09933332667,Quezon City,4.2,Inactive
+SUP-0413,Stronghold Materials 413,Carlos Fernandez,09562683847,Cavite City,3.4,Active
+SUP-0414,Alpha Construction Trading 414,John Rivera,09605440548,Antipolo,3.4,Active
+SUP-0415,SolidCore Materials 415,Christopher Mendoza,09847727591,Bacoor,4.4,Inactive
+SUP-0416,Stronghold Materials 416,Joshua Santos,09896599377,Laguna,3.6,Inactive
+SUP-0417,Golden Hammer Supply 417,James Flores,09713108415,Makati,3.3,Active
+SUP-0418,Stronghold Materials 418,John Torres,09795689887,Laguna,4.1,Inactive
+SUP-0419,Prime Construction Supply 419,Miguel Rivera,09833144457,Calamba,3.9,Active
+SUP-0420,Reliable Builders Inc. 420,Mark Mendoza,09165704672,Antipolo,3.1,Active
+SUP-0421,Alpha Construction Trading 421,James Villanueva,09305791053,Antipolo,4.2,Active
+SUP-0422,Central Hardware Supply 422,Angel Cruz,09822525060,Santa Rosa,4.6,Active
+SUP-0423,Stronghold Materials 423,Robert Dela Cruz,09549553756,Calamba,3.6,Active
+SUP-0424,SolidCore Materials 424,Kevin Cruz,09591281062,Calamba,4.8,Active
+SUP-0425,Central Hardware Supply 425,William Flores,09755783483,Taguig,3.3,Inactive
+SUP-0426,Pacific Construction Trading 426,Daniel Santos,09321455851,Calamba,4.4,Inactive
+SUP-0427,SolidCore Materials 427,Michael Ramos,09450936348,Taguig,4.4,Inactive
+SUP-0428,Alpha Construction Trading 428,James Garcia,09403092603,Cavite City,4.6,Inactive
+SUP-0429,Reliable Builders Inc. 429,Kevin Santos,09508431375,Santa Rosa,3.4,Inactive
+SUP-0430,Golden Hammer Supply 430,Miguel Aquino,09303850875,Manila,3.7,Inactive
+SUP-0431,Central Hardware Supply 431,Daniel Torres,09349108379,Bacoor,4.8,Inactive
+SUP-0432,Pacific Construction Trading 432,Anthony Reyes,09848800417,Makati,4.6,Inactive
+SUP-0433,Prime Construction Supply 433,Kevin Garcia,09544835436,Dasmarinas,4.0,Active
+SUP-0434,Reliable Builders Inc. 434,Joshua Torres,09812238383,Pasig,4.4,Active
+SUP-0435,Central Hardware Supply 435,Jose Reyes,09210548322,Imus,4.3,Active
+SUP-0436,Alpha Construction Trading 436,David Fernandez,09200022937,Cavite City,3.0,Active
+SUP-0437,BuildPro Supplies 437,Robert Villanueva,09158410707,Santa Rosa,5.0,Active
+SUP-0438,Pacific Construction Trading 438,John Aquino,09151458111,Pasig,3.1,Inactive
+SUP-0439,Central Hardware Supply 439,John Fernandez,09787862511,Laguna,4.9,Active
+SUP-0440,Stronghold Materials 440,Daniel Rivera,09261300328,Bacoor,3.3,Active
+SUP-0441,Central Hardware Supply 441,Daniel Flores,09994344884,Taguig,4.7,Active
+SUP-0442,BuildPro Supplies 442,James Aquino,09258167718,Bacoor,4.0,Inactive
+SUP-0443,Golden Hammer Supply 443,Jose Mendoza,09788897655,Biñan,3.9,Active
+SUP-0444,Prime Construction Supply 444,Michael Gonzales,09679645463,Manila,3.8,Inactive
+SUP-0445,Prime Construction Supply 445,Angel Rivera,09218303468,Makati,4.6,Active
+SUP-0446,Reliable Builders Inc. 446,David Santos,09698578119,Manila,4.1,Active
+SUP-0447,SolidCore Materials 447,Angel Garcia,09589937103,Manila,4.3,Active
+SUP-0448,Reliable Builders Inc. 448,Mark Torres,09401303803,Taguig,3.4,Inactive
+SUP-0449,Reliable Builders Inc. 449,Daniel Torres,09458638224,Bacoor,4.4,Active
+SUP-0450,BuildPro Supplies 450,Michael Mendoza,09111759643,Calamba,4.5,Inactive
+SUP-0451,Metro Builders Depot 451,Christopher Mendoza,09806124235,Cavite City,3.4,Inactive
+SUP-0452,BuildPro Supplies 452,Jose Cruz,09267729318,Pasig,3.9,Active
+SUP-0453,BuildPro Supplies 453,Daniel Torres,09711899923,Dasmarinas,3.8,Inactive
+SUP-0454,BuildPro Supplies 454,Anthony Rivera,09796885499,Antipolo,3.9,Active
+SUP-0455,Pacific Construction Trading 455,Anthony Rivera,09441713055,Makati,4.7,Inactive
+SUP-0456,Pacific Construction Trading 456,John Castillo,09481027822,Pasig,4.4,Active
+SUP-0457,Pacific Construction Trading 457,Carlos Cruz,09851525130,Bacoor,4.6,Active
+SUP-0458,Pacific Construction Trading 458,James Ramos,09529612494,Laguna,4.4,Inactive
+SUP-0459,Central Hardware Supply 459,David Garcia,09478255806,Laguna,4.4,Active
+SUP-0460,Stronghold Materials 460,Anthony Fernandez,09496681764,Taguig,4.9,Active
+SUP-0461,Reliable Builders Inc. 461,David Bautista,09236551103,Pasig,3.9,Active
+SUP-0462,Reliable Builders Inc. 462,Kevin Fernandez,09537821049,Taguig,4.2,Active
+SUP-0463,Golden Hammer Supply 463,Jose Flores,09708755367,Laguna,4.0,Inactive
+SUP-0464,Metro Builders Depot 464,David Reyes,09375492405,Makati,4.2,Active
+SUP-0465,Metro Builders Depot 465,Daniel Gonzales,09705242004,Santa Rosa,3.3,Active
+SUP-0466,Reliable Builders Inc. 466,Joshua Cruz,09587161920,Santa Rosa,4.2,Active
+SUP-0467,SolidCore Materials 467,Andrew Rivera,09755275455,Santa Rosa,4.8,Inactive
+SUP-0468,Metro Builders Depot 468,Jose Ramos,09331215530,Cavite City,4.5,Inactive
+SUP-0469,Stronghold Materials 469,Joshua Fernandez,09598206872,Calamba,4.0,Inactive
+SUP-0470,Metro Builders Depot 470,Andrew Gonzales,09113268555,Taguig,3.2,Active
+SUP-0471,Central Hardware Supply 471,Daniel Reyes,09661843260,Laguna,4.6,Inactive
+SUP-0472,SolidCore Materials 472,Robert Navarro,09314900911,Santa Rosa,4.1,Active
+SUP-0473,Alpha Construction Trading 473,Michael Dela Cruz,09235350239,Imus,3.0,Active
+SUP-0474,Prime Construction Supply 474,Christopher Flores,09153333127,Biñan,5.0,Inactive
+SUP-0475,Stronghold Materials 475,Joshua Dela Cruz,09762433952,Calamba,4.5,Active
+SUP-0476,Pacific Construction Trading 476,Anthony Reyes,09405204948,Calamba,4.9,Active
+SUP-0477,SolidCore Materials 477,Christopher Garcia,09117912889,Pasig,4.0,Inactive
+SUP-0478,Stronghold Materials 478,Matthew Dela Cruz,09782435711,Laguna,4.1,Active
+SUP-0479,BuildPro Supplies 479,Jose Gonzales,09791948631,Cavite City,4.7,Active
+SUP-0480,Pacific Construction Trading 480,Daniel Dela Cruz,09418741838,Manila,3.7,Inactive
+SUP-0481,Metro Builders Depot 481,John Fernandez,09296120509,Pasig,3.7,Active
+SUP-0482,BuildPro Supplies 482,Jose Villanueva,09558086339,Imus,4.2,Active
+SUP-0483,Alpha Construction Trading 483,Joseph Rivera,09234327630,Santa Rosa,4.9,Inactive
+SUP-0484,BuildPro Supplies 484,Andrew Rivera,09673322422,Makati,4.8,Active
+SUP-0485,Stronghold Materials 485,Andrew Ramos,09774253538,Manila,3.9,Active
+SUP-0486,Reliable Builders Inc. 486,Robert Fernandez,09562367655,Santa Rosa,3.7,Active
+SUP-0487,Metro Builders Depot 487,Christopher Santos,09432452044,Pasig,4.6,Active
+SUP-0488,Stronghold Materials 488,Joseph Garcia,09863238508,Makati,3.6,Active
+SUP-0489,SolidCore Materials 489,Brian Navarro,09534547817,Quezon City,3.0,Active
+SUP-0490,Stronghold Materials 490,Brian Bautista,09789732649,Makati,3.1,Active
+SUP-0491,BuildPro Supplies 491,Anthony Gonzales,09192514659,Antipolo,4.2,Inactive
+SUP-0492,Metro Builders Depot 492,John Dela Cruz,09846261080,Cavite City,4.7,Inactive
+SUP-0493,Alpha Construction Trading 493,Angel Cruz,09734351958,Pasig,4.0,Active
+SUP-0494,SolidCore Materials 494,Kevin Reyes,09303879206,Taguig,4.5,Active
+SUP-0495,Pacific Construction Trading 495,Joseph Aquino,09407746385,Bacoor,4.2,Active
+SUP-0496,Stronghold Materials 496,William Santos,09576667771,Calamba,4.9,Active
+SUP-0497,Metro Builders Depot 497,Anthony Navarro,09170532937,Manila,4.4,Active
+SUP-0498,Reliable Builders Inc. 498,Matthew Cruz,09934718475,Antipolo,4.2,Active
+SUP-0499,BuildPro Supplies 499,Miguel Castillo,09196452534,Dasmarinas,4.4,Inactive
+SUP-0500,Metro Builders Depot 500,Miguel Castillo,09184242563,Taguig,3.7,Active

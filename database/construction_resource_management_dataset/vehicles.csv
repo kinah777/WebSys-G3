@@ -1,0 +1,501 @@
+vehicle_id,vehicle_type,plate_number,driver,status,daily_operating_cost
+VEH-0001,Water Truck,JKS-5740,David Ramos,Maintenance,12250.71
+VEH-0002,Fuel Truck,JKS-1212,Christopher Mendoza,In Use,9826.43
+VEH-0003,Fuel Truck,ABC-3120,Carlos Flores,In Use,11146.59
+VEH-0004,Concrete Mixer Truck,NDE-8758,Michael Santos,Maintenance,6180.12
+VEH-0005,Flatbed Truck,XYZ-6344,Anthony Navarro,Maintenance,12015.29
+VEH-0006,Water Truck,NDE-4184,David Navarro,Available,10913.47
+VEH-0007,Flatbed Truck,XYZ-9005,Jose Villanueva,Available,5388.44
+VEH-0008,Pickup Truck,JKS-3430,Angel Navarro,Available,8409.3
+VEH-0009,Delivery Truck,NDE-2096,Kevin Rivera,Available,12077.94
+VEH-0010,Service Van,XYZ-6960,John Villanueva,Available,4126.67
+VEH-0011,Dump Truck,NDE-6835,Angel Villanueva,Available,11971.58
+VEH-0012,Water Truck,JKS-6147,Angel Bautista,Available,14408.16
+VEH-0013,Pickup Truck,NDE-1992,Mark Fernandez,In Use,4475.17
+VEH-0014,Fuel Truck,JKS-1178,Christopher Torres,Available,3016.83
+VEH-0015,Dump Truck,ABC-7904,Michael Castillo,Maintenance,11861.16
+VEH-0016,Concrete Mixer Truck,JKS-7259,Miguel Mendoza,Maintenance,11618.46
+VEH-0017,Pickup Truck,NDE-8470,Joseph Bautista,Maintenance,4986.68
+VEH-0018,Concrete Mixer Truck,NDE-1277,Robert Reyes,In Use,8736.05
+VEH-0019,Water Truck,XYZ-6165,Joshua Santos,Maintenance,10048.6
+VEH-0020,Fuel Truck,XYZ-6351,Angel Reyes,In Use,5536.2
+VEH-0021,Dump Truck,ABC-3160,Brian Cruz,Available,2958.76
+VEH-0022,Pickup Truck,XYZ-4850,Michael Castillo,In Use,5734.21
+VEH-0023,Fuel Truck,NDE-2139,Brian Rivera,Available,8345.51
+VEH-0024,Fuel Truck,XYZ-9980,Michael Bautista,Maintenance,3226.85
+VEH-0025,Service Van,XYZ-4920,John Santos,Available,10000.64
+VEH-0026,Flatbed Truck,JKS-1694,John Ramos,Available,14299.52
+VEH-0027,Concrete Mixer Truck,NDE-6291,Joshua Rivera,Available,8143.46
+VEH-0028,Service Van,JKS-1385,William Cruz,Available,3801.74
+VEH-0029,Dump Truck,XYZ-4760,Jose Villanueva,Available,5891.34
+VEH-0030,Pickup Truck,NDE-9341,Daniel Rivera,Available,3131.58
+VEH-0031,Dump Truck,NDE-5352,Miguel Castillo,Maintenance,3238.09
+VEH-0032,Flatbed Truck,NDE-6480,Mark Navarro,In Use,6496.85
+VEH-0033,Service Van,JKS-1472,Kevin Fernandez,Maintenance,3864.26
+VEH-0034,Pickup Truck,ABC-7348,Robert Bautista,Available,11636.63
+VEH-0035,Service Van,XYZ-5970,Andrew Aquino,Available,10069.62
+VEH-0036,Flatbed Truck,NDE-4552,Carlos Santos,In Use,1173.04
+VEH-0037,Concrete Mixer Truck,NDE-4380,Brian Rivera,In Use,7410.38
+VEH-0038,Fuel Truck,XYZ-9055,Brian Flores,Available,2087.44
+VEH-0039,Pickup Truck,ABC-1511,Angel Reyes,Available,14255.02
+VEH-0040,Dump Truck,NDE-8291,Joshua Mendoza,Available,1749.53
+VEH-0041,Flatbed Truck,XYZ-7933,Andrew Cruz,In Use,6844.82
+VEH-0042,Dump Truck,NDE-1573,Robert Flores,Available,4678.16
+VEH-0043,Flatbed Truck,ABC-1497,Brian Mendoza,Available,2576.21
+VEH-0044,Flatbed Truck,JKS-5475,Joseph Santos,Maintenance,1885.97
+VEH-0045,Concrete Mixer Truck,XYZ-2067,Joshua Rivera,Available,1520.26
+VEH-0046,Fuel Truck,JKS-7757,Daniel Santos,Available,10192.54
+VEH-0047,Service Van,NDE-8850,Mark Torres,Available,10397.4
+VEH-0048,Flatbed Truck,XYZ-8339,James Reyes,Maintenance,8825.22
+VEH-0049,Delivery Truck,XYZ-1774,Christopher Castillo,Available,9372.69
+VEH-0050,Delivery Truck,JKS-9922,Daniel Castillo,In Use,11166.78
+VEH-0051,Concrete Mixer Truck,NDE-6681,William Mendoza,Maintenance,6209.54
+VEH-0052,Water Truck,NDE-3418,Brian Gonzales,In Use,14459.41
+VEH-0053,Pickup Truck,NDE-3255,Matthew Castillo,Maintenance,7310.76
+VEH-0054,Concrete Mixer Truck,ABC-6627,Carlos Dela Cruz,In Use,8562.95
+VEH-0055,Concrete Mixer Truck,XYZ-4372,Joshua Cruz,Maintenance,13330.12
+VEH-0056,Dump Truck,ABC-1066,Joseph Mendoza,Available,10576.15
+VEH-0057,Water Truck,JKS-2915,Matthew Castillo,Maintenance,8323.69
+VEH-0058,Fuel Truck,XYZ-6752,William Garcia,Available,9966.57
+VEH-0059,Delivery Truck,XYZ-4085,James Fernandez,Available,7932.84
+VEH-0060,Pickup Truck,NDE-4962,Joshua Flores,Available,8587.54
+VEH-0061,Pickup Truck,XYZ-1385,James Santos,In Use,2695.06
+VEH-0062,Concrete Mixer Truck,ABC-2098,Joseph Aquino,Available,6906.85
+VEH-0063,Water Truck,JKS-1173,Angel Flores,In Use,6428.46
+VEH-0064,Flatbed Truck,NDE-8020,Angel Villanueva,Available,10507.64
+VEH-0065,Dump Truck,JKS-6236,Andrew Santos,In Use,10808.84
+VEH-0066,Fuel Truck,ABC-7925,Jose Castillo,Maintenance,14924.94
+VEH-0067,Fuel Truck,ABC-8986,Michael Villanueva,In Use,8612.29
+VEH-0068,Pickup Truck,XYZ-2540,Kevin Rivera,In Use,4379.3
+VEH-0069,Delivery Truck,ABC-6289,Christopher Aquino,Available,9592.04
+VEH-0070,Pickup Truck,ABC-3103,Jose Santos,Maintenance,1967.39
+VEH-0071,Concrete Mixer Truck,JKS-5501,Jose Rivera,Available,4544.86
+VEH-0072,Pickup Truck,JKS-3849,Kevin Flores,Available,1557.43
+VEH-0073,Water Truck,JKS-2796,David Cruz,Available,7750.05
+VEH-0074,Flatbed Truck,ABC-7345,Daniel Rivera,Available,5231.87
+VEH-0075,Flatbed Truck,NDE-9083,Anthony Aquino,Available,2421.53
+VEH-0076,Concrete Mixer Truck,XYZ-1387,Kevin Villanueva,In Use,12120.72
+VEH-0077,Fuel Truck,ABC-9604,Andrew Garcia,Maintenance,7631.21
+VEH-0078,Service Van,JKS-7918,Michael Cruz,Available,4678.86
+VEH-0079,Water Truck,JKS-7575,Carlos Ramos,Available,2694.15
+VEH-0080,Concrete Mixer Truck,ABC-4060,Mark Aquino,In Use,8803.16
+VEH-0081,Delivery Truck,ABC-4039,Jose Gonzales,Available,8835.33
+VEH-0082,Flatbed Truck,XYZ-3414,Christopher Dela Cruz,Maintenance,1156.71
+VEH-0083,Dump Truck,ABC-2847,Carlos Torres,Available,5246.82
+VEH-0084,Concrete Mixer Truck,NDE-4992,Brian Bautista,Available,10296.51
+VEH-0085,Delivery Truck,JKS-4508,Robert Mendoza,Maintenance,8742.46
+VEH-0086,Pickup Truck,XYZ-3080,Carlos Dela Cruz,Available,7687.64
+VEH-0087,Pickup Truck,XYZ-5047,William Castillo,Available,12591.66
+VEH-0088,Fuel Truck,ABC-8075,John Navarro,Maintenance,1387.31
+VEH-0089,Water Truck,JKS-8369,Angel Ramos,Available,7711.12
+VEH-0090,Fuel Truck,XYZ-4954,Angel Fernandez,In Use,7959.87
+VEH-0091,Pickup Truck,JKS-1506,William Cruz,Available,10862.64
+VEH-0092,Concrete Mixer Truck,ABC-7054,Joseph Rivera,In Use,7503.1
+VEH-0093,Water Truck,NDE-9770,Angel Navarro,In Use,12975.3
+VEH-0094,Delivery Truck,JKS-7325,Jose Dela Cruz,Maintenance,5719.05
+VEH-0095,Delivery Truck,NDE-9728,Carlos Cruz,In Use,9807.7
+VEH-0096,Service Van,NDE-9413,Anthony Navarro,In Use,13701.05
+VEH-0097,Flatbed Truck,NDE-6019,Mark Navarro,Maintenance,4899.31
+VEH-0098,Fuel Truck,XYZ-3281,Christopher Bautista,In Use,10976.69
+VEH-0099,Water Truck,XYZ-8580,Jose Fernandez,Available,2640.95
+VEH-0100,Service Van,XYZ-4370,Angel Navarro,Available,13421.83
+VEH-0101,Delivery Truck,NDE-5024,Joshua Villanueva,In Use,14054.77
+VEH-0102,Delivery Truck,NDE-3397,Joseph Cruz,In Use,2742.01
+VEH-0103,Fuel Truck,JKS-1053,Michael Bautista,In Use,13989.28
+VEH-0104,Delivery Truck,NDE-9374,Jose Gonzales,Available,4719.82
+VEH-0105,Fuel Truck,JKS-2770,Brian Gonzales,Maintenance,5383.99
+VEH-0106,Concrete Mixer Truck,XYZ-3013,Andrew Reyes,Available,12860.45
+VEH-0107,Service Van,ABC-9986,Miguel Torres,Available,11974.19
+VEH-0108,Fuel Truck,XYZ-1654,Jose Reyes,Available,2560.05
+VEH-0109,Service Van,NDE-8041,Anthony Ramos,Available,9656.37
+VEH-0110,Service Van,NDE-4872,David Santos,In Use,11672.92
+VEH-0111,Concrete Mixer Truck,JKS-4328,Miguel Santos,Available,2276.49
+VEH-0112,Service Van,JKS-3040,Robert Ramos,Maintenance,4093.63
+VEH-0113,Delivery Truck,XYZ-3843,Anthony Torres,Available,1044.36
+VEH-0114,Service Van,JKS-7335,Kevin Bautista,Available,2405.13
+VEH-0115,Pickup Truck,JKS-8276,Kevin Dela Cruz,Maintenance,12908.21
+VEH-0116,Fuel Truck,ABC-9868,Joseph Bautista,Maintenance,7113.1
+VEH-0117,Water Truck,NDE-1339,Brian Fernandez,Maintenance,12735.07
+VEH-0118,Flatbed Truck,NDE-3367,Michael Rivera,Available,12032.98
+VEH-0119,Flatbed Truck,XYZ-6148,Andrew Rivera,In Use,4482.72
+VEH-0120,Service Van,XYZ-7216,Angel Villanueva,Available,10610.89
+VEH-0121,Flatbed Truck,ABC-8409,James Rivera,In Use,6033.29
+VEH-0122,Dump Truck,JKS-8148,Kevin Gonzales,Available,7123.07
+VEH-0123,Water Truck,XYZ-5409,Andrew Torres,Maintenance,3213.37
+VEH-0124,Flatbed Truck,XYZ-1594,Joshua Castillo,Available,11649.94
+VEH-0125,Pickup Truck,XYZ-2513,Angel Reyes,In Use,2109.58
+VEH-0126,Service Van,JKS-3441,Christopher Dela Cruz,Maintenance,4899.19
+VEH-0127,Concrete Mixer Truck,XYZ-7708,Christopher Mendoza,Available,4245.42
+VEH-0128,Pickup Truck,ABC-3882,Christopher Villanueva,Maintenance,13528.91
+VEH-0129,Flatbed Truck,ABC-4201,Angel Cruz,Available,11819.71
+VEH-0130,Service Van,XYZ-9748,Robert Aquino,In Use,11124.92
+VEH-0131,Concrete Mixer Truck,XYZ-5024,James Navarro,Available,11728.89
+VEH-0132,Dump Truck,ABC-7452,David Mendoza,Available,7566.94
+VEH-0133,Concrete Mixer Truck,XYZ-7016,Jose Torres,Maintenance,4441.04
+VEH-0134,Concrete Mixer Truck,ABC-5066,Daniel Reyes,Available,14759.99
+VEH-0135,Concrete Mixer Truck,ABC-5705,Kevin Fernandez,Maintenance,10485.36
+VEH-0136,Fuel Truck,JKS-9602,Kevin Fernandez,In Use,12009.39
+VEH-0137,Fuel Truck,NDE-9576,William Mendoza,Maintenance,2767.36
+VEH-0138,Dump Truck,XYZ-2202,Angel Castillo,In Use,2617.51
+VEH-0139,Fuel Truck,JKS-7159,Christopher Castillo,Available,5403.63
+VEH-0140,Flatbed Truck,ABC-4531,William Dela Cruz,Maintenance,13112.76
+VEH-0141,Concrete Mixer Truck,NDE-7493,Anthony Dela Cruz,Available,13607.05
+VEH-0142,Delivery Truck,NDE-8975,Joshua Aquino,Maintenance,6201.94
+VEH-0143,Flatbed Truck,JKS-3136,William Reyes,Available,14268.16
+VEH-0144,Pickup Truck,NDE-7128,John Castillo,Maintenance,13731.49
+VEH-0145,Fuel Truck,ABC-5816,Andrew Fernandez,Maintenance,1567.34
+VEH-0146,Delivery Truck,ABC-6775,Matthew Bautista,In Use,13907.79
+VEH-0147,Concrete Mixer Truck,ABC-2659,David Torres,Available,1345.57
+VEH-0148,Flatbed Truck,NDE-1395,Kevin Rivera,In Use,12179.16
+VEH-0149,Delivery Truck,NDE-6350,Christopher Castillo,Available,12217.14
+VEH-0150,Pickup Truck,JKS-8987,William Fernandez,Available,10328.48
+VEH-0151,Pickup Truck,XYZ-7191,Matthew Aquino,In Use,3015.32
+VEH-0152,Flatbed Truck,ABC-7289,Joseph Rivera,Available,1586.48
+VEH-0153,Service Van,ABC-3178,Mark Gonzales,Available,6846.25
+VEH-0154,Concrete Mixer Truck,JKS-9962,Jose Torres,Available,1007.94
+VEH-0155,Pickup Truck,XYZ-1613,Joseph Villanueva,Available,4067.32
+VEH-0156,Concrete Mixer Truck,JKS-2871,Michael Aquino,In Use,9635.18
+VEH-0157,Water Truck,JKS-5228,Jose Navarro,In Use,8373.93
+VEH-0158,Service Van,XYZ-4706,James Gonzales,Maintenance,4810.64
+VEH-0159,Service Van,JKS-7630,John Flores,In Use,2490.96
+VEH-0160,Concrete Mixer Truck,XYZ-4587,Anthony Aquino,Available,13964.72
+VEH-0161,Water Truck,JKS-7551,William Navarro,In Use,2135.81
+VEH-0162,Concrete Mixer Truck,JKS-2086,Matthew Reyes,Maintenance,6682.95
+VEH-0163,Fuel Truck,XYZ-7786,Brian Santos,In Use,14126.32
+VEH-0164,Pickup Truck,NDE-4861,Brian Villanueva,Maintenance,9237.93
+VEH-0165,Fuel Truck,JKS-4852,Christopher Ramos,Available,5705.56
+VEH-0166,Water Truck,JKS-2357,Robert Cruz,Available,12146.72
+VEH-0167,Dump Truck,XYZ-9853,William Villanueva,Available,14081.24
+VEH-0168,Concrete Mixer Truck,ABC-1034,Brian Mendoza,Available,2868.77
+VEH-0169,Water Truck,NDE-2433,John Mendoza,In Use,5621.98
+VEH-0170,Dump Truck,ABC-1647,Angel Santos,Available,12053.6
+VEH-0171,Fuel Truck,JKS-2761,Joseph Flores,Available,12645.23
+VEH-0172,Service Van,XYZ-2064,Kevin Torres,Available,10008.5
+VEH-0173,Pickup Truck,JKS-4666,Christopher Reyes,Maintenance,12930.19
+VEH-0174,Concrete Mixer Truck,JKS-8413,Andrew Fernandez,In Use,5111.15
+VEH-0175,Fuel Truck,JKS-4852-1,Christopher Navarro,Available,4369.54
+VEH-0176,Concrete Mixer Truck,XYZ-1602,Michael Reyes,Available,3067.52
+VEH-0177,Delivery Truck,XYZ-3446,Michael Flores,In Use,10628.16
+VEH-0178,Flatbed Truck,JKS-8132,William Garcia,In Use,14124.11
+VEH-0179,Flatbed Truck,JKS-1554,Andrew Mendoza,Maintenance,3680.84
+VEH-0180,Pickup Truck,ABC-1514,Joseph Rivera,Available,12375.26
+VEH-0181,Delivery Truck,JKS-6301,Kevin Dela Cruz,In Use,11433.94
+VEH-0182,Fuel Truck,NDE-4014,James Mendoza,In Use,6821.21
+VEH-0183,Delivery Truck,NDE-3427,John Dela Cruz,Available,8178.98
+VEH-0184,Delivery Truck,NDE-4313,Daniel Gonzales,Available,11792.04
+VEH-0185,Water Truck,NDE-7111,Matthew Santos,Available,7759.18
+VEH-0186,Flatbed Truck,XYZ-3421,Matthew Fernandez,In Use,8432.17
+VEH-0187,Flatbed Truck,JKS-1645,Kevin Flores,Maintenance,1623.19
+VEH-0188,Water Truck,ABC-7673,Jose Cruz,Maintenance,12613.74
+VEH-0189,Fuel Truck,JKS-4783,Matthew Ramos,Maintenance,4705.81
+VEH-0190,Dump Truck,XYZ-5163,Joshua Torres,Available,8430.4
+VEH-0191,Dump Truck,XYZ-8360,Anthony Rivera,Available,7020.15
+VEH-0192,Pickup Truck,NDE-9769,Miguel Gonzales,Available,8024.53
+VEH-0193,Service Van,ABC-9136,Jose Bautista,In Use,11915.45
+VEH-0194,Flatbed Truck,JKS-6383,Daniel Bautista,Available,10591.18
+VEH-0195,Pickup Truck,NDE-5023,Brian Santos,Available,2818.28
+VEH-0196,Service Van,XYZ-5789,Joseph Gonzales,Available,13683.36
+VEH-0197,Flatbed Truck,XYZ-6921,Robert Flores,In Use,14970.39
+VEH-0198,Pickup Truck,ABC-3548,Robert Santos,Available,1923.75
+VEH-0199,Service Van,XYZ-2857,Kevin Navarro,Available,8006.48
+VEH-0200,Delivery Truck,ABC-8884,Angel Torres,Available,5987.63
+VEH-0201,Pickup Truck,NDE-3890,Joshua Bautista,In Use,11154.41
+VEH-0202,Pickup Truck,ABC-3658,David Navarro,Available,8309.21
+VEH-0203,Flatbed Truck,JKS-6757,James Navarro,Maintenance,12097.31
+VEH-0204,Fuel Truck,ABC-9395,Joshua Bautista,Available,3662.01
+VEH-0205,Delivery Truck,ABC-4715,Brian Aquino,Maintenance,5511.0
+VEH-0206,Water Truck,XYZ-1687,John Aquino,Available,1052.1
+VEH-0207,Water Truck,ABC-7103,Matthew Gonzales,Available,14574.17
+VEH-0208,Delivery Truck,ABC-3196,Robert Fernandez,Available,9300.4
+VEH-0209,Delivery Truck,JKS-6582,Robert Reyes,In Use,4444.53
+VEH-0210,Fuel Truck,NDE-1637,Robert Reyes,In Use,10307.53
+VEH-0211,Concrete Mixer Truck,NDE-7219,David Torres,In Use,12896.32
+VEH-0212,Pickup Truck,NDE-2230,Brian Flores,In Use,6696.19
+VEH-0213,Dump Truck,NDE-6369,Daniel Cruz,Available,14039.74
+VEH-0214,Pickup Truck,NDE-2857,Robert Torres,In Use,5456.36
+VEH-0215,Pickup Truck,XYZ-4478,Jose Cruz,Available,1687.1
+VEH-0216,Service Van,ABC-9993,Jose Flores,In Use,2406.1
+VEH-0217,Fuel Truck,ABC-6110,William Cruz,In Use,4766.67
+VEH-0218,Dump Truck,XYZ-2126,Robert Santos,Available,13479.63
+VEH-0219,Dump Truck,JKS-6916,Joshua Garcia,In Use,3223.3
+VEH-0220,Flatbed Truck,ABC-6473,Daniel Mendoza,Available,9831.74
+VEH-0221,Dump Truck,JKS-4578,David Mendoza,Available,14855.06
+VEH-0222,Dump Truck,NDE-4072,Brian Ramos,Available,7016.12
+VEH-0223,Fuel Truck,XYZ-9647,Christopher Castillo,Available,6663.29
+VEH-0224,Fuel Truck,NDE-5413,Anthony Garcia,Maintenance,4569.99
+VEH-0225,Delivery Truck,ABC-2877,Joshua Bautista,In Use,10678.2
+VEH-0226,Concrete Mixer Truck,ABC-5076,David Reyes,Available,14974.03
+VEH-0227,Dump Truck,ABC-7467,David Bautista,In Use,14431.6
+VEH-0228,Dump Truck,XYZ-2814,James Gonzales,Available,5779.0
+VEH-0229,Delivery Truck,XYZ-3408,Robert Castillo,In Use,14681.5
+VEH-0230,Fuel Truck,NDE-8264,Mark Dela Cruz,Available,6448.95
+VEH-0231,Flatbed Truck,XYZ-9026,Brian Torres,Maintenance,1685.07
+VEH-0232,Dump Truck,JKS-8595,Daniel Reyes,Available,11476.54
+VEH-0233,Service Van,XYZ-7773,Robert Flores,Available,4968.25
+VEH-0234,Concrete Mixer Truck,JKS-1225,Brian Fernandez,Available,9210.78
+VEH-0235,Water Truck,NDE-4675,Kevin Bautista,In Use,12752.55
+VEH-0236,Fuel Truck,NDE-3628,Brian Ramos,Maintenance,13667.29
+VEH-0237,Dump Truck,XYZ-8961,Joshua Ramos,Available,2537.54
+VEH-0238,Water Truck,NDE-2619,Joseph Fernandez,In Use,11449.64
+VEH-0239,Dump Truck,ABC-2755,Anthony Flores,In Use,12335.94
+VEH-0240,Concrete Mixer Truck,JKS-9656,James Dela Cruz,Available,5583.27
+VEH-0241,Fuel Truck,NDE-1023,Brian Bautista,Available,2518.53
+VEH-0242,Service Van,JKS-5115,Joseph Bautista,Maintenance,10377.71
+VEH-0243,Water Truck,ABC-7224,Brian Bautista,Available,5546.01
+VEH-0244,Water Truck,NDE-8723,Anthony Navarro,Maintenance,4186.09
+VEH-0245,Dump Truck,ABC-2690,Jose Dela Cruz,Available,6750.29
+VEH-0246,Dump Truck,XYZ-8652,William Cruz,Available,10533.45
+VEH-0247,Delivery Truck,XYZ-4616,Mark Bautista,In Use,2355.99
+VEH-0248,Service Van,ABC-7703,Robert Torres,Maintenance,13503.44
+VEH-0249,Pickup Truck,NDE-4878,Angel Garcia,Available,12275.82
+VEH-0250,Flatbed Truck,ABC-8798,Joseph Mendoza,Available,13967.2
+VEH-0251,Delivery Truck,XYZ-7747,Matthew Garcia,Available,8051.81
+VEH-0252,Flatbed Truck,NDE-1001,William Castillo,In Use,11546.58
+VEH-0253,Concrete Mixer Truck,ABC-2597,Jose Santos,In Use,3695.62
+VEH-0254,Concrete Mixer Truck,XYZ-1740,Daniel Bautista,Available,3767.03
+VEH-0255,Service Van,JKS-2003,Kevin Ramos,Available,1440.87
+VEH-0256,Flatbed Truck,NDE-5908,William Dela Cruz,Available,12670.68
+VEH-0257,Concrete Mixer Truck,JKS-7194,James Mendoza,In Use,1491.81
+VEH-0258,Concrete Mixer Truck,JKS-2778,Michael Mendoza,Available,2024.98
+VEH-0259,Fuel Truck,ABC-8120,Anthony Mendoza,In Use,10991.76
+VEH-0260,Water Truck,JKS-3578,Angel Bautista,Maintenance,6948.41
+VEH-0261,Delivery Truck,NDE-6172,Joseph Bautista,Available,3747.78
+VEH-0262,Service Van,JKS-9772,Kevin Cruz,Available,12152.43
+VEH-0263,Concrete Mixer Truck,ABC-4764,Miguel Garcia,Maintenance,6524.5
+VEH-0264,Concrete Mixer Truck,ABC-9486,Daniel Ramos,Available,4366.76
+VEH-0265,Dump Truck,ABC-4956,Miguel Cruz,In Use,8351.06
+VEH-0266,Pickup Truck,NDE-5278,Matthew Dela Cruz,Available,1616.26
+VEH-0267,Delivery Truck,XYZ-3289,Anthony Cruz,Available,9747.76
+VEH-0268,Pickup Truck,JKS-9957,Michael Navarro,Maintenance,3304.88
+VEH-0269,Service Van,NDE-1490,John Santos,Available,11854.26
+VEH-0270,Dump Truck,ABC-2370,Matthew Mendoza,Available,2156.86
+VEH-0271,Flatbed Truck,JKS-2609,Kevin Castillo,Available,12024.52
+VEH-0272,Dump Truck,XYZ-6789,Matthew Rivera,Available,12125.65
+VEH-0273,Service Van,NDE-5273,Daniel Cruz,Available,9404.88
+VEH-0274,Delivery Truck,NDE-9046,Carlos Cruz,Available,3460.15
+VEH-0275,Service Van,ABC-6146,Joshua Villanueva,Available,8100.01
+VEH-0276,Delivery Truck,ABC-1723,Angel Reyes,Available,10268.52
+VEH-0277,Flatbed Truck,JKS-6658,Matthew Cruz,In Use,11134.59
+VEH-0278,Service Van,XYZ-7638,Joshua Garcia,Available,6781.61
+VEH-0279,Service Van,XYZ-6269,Andrew Reyes,In Use,5341.77
+VEH-0280,Concrete Mixer Truck,JKS-1686,Miguel Reyes,Maintenance,1742.51
+VEH-0281,Flatbed Truck,XYZ-7720,Angel Aquino,In Use,12011.33
+VEH-0282,Dump Truck,XYZ-3060,Michael Reyes,In Use,12227.91
+VEH-0283,Pickup Truck,JKS-5142,Carlos Garcia,Available,4662.51
+VEH-0284,Service Van,XYZ-9969,Brian Villanueva,Available,8219.29
+VEH-0285,Fuel Truck,XYZ-9656,Michael Rivera,In Use,4391.18
+VEH-0286,Pickup Truck,XYZ-7554,Angel Flores,Available,8304.13
+VEH-0287,Service Van,JKS-5875,Daniel Santos,Available,13312.25
+VEH-0288,Concrete Mixer Truck,NDE-9656,William Bautista,Available,5334.19
+VEH-0289,Service Van,ABC-8568,John Rivera,In Use,14236.34
+VEH-0290,Fuel Truck,XYZ-6811,Andrew Flores,Available,3612.25
+VEH-0291,Flatbed Truck,NDE-6569,Miguel Mendoza,In Use,3683.41
+VEH-0292,Dump Truck,ABC-8697,Joshua Flores,Maintenance,12089.31
+VEH-0293,Service Van,ABC-4700,Robert Castillo,Available,8785.26
+VEH-0294,Concrete Mixer Truck,NDE-6432,David Aquino,Available,10431.49
+VEH-0295,Water Truck,ABC-5746,John Flores,Available,3864.96
+VEH-0296,Flatbed Truck,XYZ-6817,Mark Fernandez,In Use,9219.7
+VEH-0297,Pickup Truck,JKS-4635,David Garcia,Available,2324.05
+VEH-0298,Delivery Truck,JKS-3027,Miguel Reyes,Available,4375.35
+VEH-0299,Pickup Truck,XYZ-9070,Mark Dela Cruz,Maintenance,10016.4
+VEH-0300,Flatbed Truck,ABC-7662,John Cruz,Available,13853.83
+VEH-0301,Delivery Truck,NDE-7378,Robert Aquino,Maintenance,11904.79
+VEH-0302,Dump Truck,ABC-4028,Mark Santos,Available,9205.26
+VEH-0303,Water Truck,JKS-2835,Miguel Dela Cruz,Available,4421.4
+VEH-0304,Fuel Truck,NDE-8737,Brian Torres,In Use,12522.57
+VEH-0305,Pickup Truck,JKS-1050,Angel Bautista,Maintenance,6150.67
+VEH-0306,Water Truck,XYZ-1949,Michael Flores,Available,12319.19
+VEH-0307,Service Van,ABC-9834,Christopher Ramos,Available,6558.03
+VEH-0308,Delivery Truck,NDE-1432,Jose Dela Cruz,Maintenance,3725.88
+VEH-0309,Concrete Mixer Truck,XYZ-9287,David Cruz,Available,7318.09
+VEH-0310,Water Truck,NDE-7852,Michael Cruz,In Use,14072.89
+VEH-0311,Service Van,XYZ-9514,Miguel Gonzales,Available,12614.16
+VEH-0312,Dump Truck,NDE-4893,Brian Rivera,Maintenance,7095.2
+VEH-0313,Dump Truck,ABC-2908,David Gonzales,Available,14143.83
+VEH-0314,Flatbed Truck,ABC-9523,Mark Castillo,Maintenance,6569.62
+VEH-0315,Pickup Truck,ABC-7328,David Aquino,Available,5485.29
+VEH-0316,Flatbed Truck,ABC-3875,Mark Torres,In Use,5981.13
+VEH-0317,Fuel Truck,XYZ-8147,Jose Garcia,Maintenance,9769.3
+VEH-0318,Delivery Truck,JKS-3336,Angel Bautista,In Use,5065.61
+VEH-0319,Dump Truck,ABC-4966,Christopher Santos,Maintenance,11923.41
+VEH-0320,Water Truck,NDE-4889,Brian Fernandez,Available,6704.4
+VEH-0321,Flatbed Truck,XYZ-7132,Angel Garcia,Available,2434.65
+VEH-0322,Water Truck,JKS-1295,Angel Reyes,In Use,14904.67
+VEH-0323,Pickup Truck,NDE-5681,Jose Mendoza,Available,11005.14
+VEH-0324,Delivery Truck,NDE-3713,Joshua Gonzales,Maintenance,13174.12
+VEH-0325,Service Van,JKS-2468,Carlos Flores,Available,8493.7
+VEH-0326,Water Truck,JKS-5066,David Navarro,Available,5121.71
+VEH-0327,Service Van,XYZ-3869,Mark Garcia,Available,12748.61
+VEH-0328,Flatbed Truck,NDE-3314,William Rivera,Available,6709.47
+VEH-0329,Dump Truck,JKS-3539,Joshua Garcia,Maintenance,11693.08
+VEH-0330,Dump Truck,JKS-3849-1,Mark Flores,Available,8279.91
+VEH-0331,Flatbed Truck,NDE-6927,Anthony Fernandez,Available,10201.63
+VEH-0332,Dump Truck,NDE-1050,Andrew Gonzales,Available,14742.37
+VEH-0333,Fuel Truck,NDE-1490-1,Miguel Dela Cruz,Maintenance,9267.17
+VEH-0334,Water Truck,XYZ-8113,Joseph Cruz,Maintenance,9020.79
+VEH-0335,Water Truck,JKS-2192,Mark Santos,Maintenance,12322.39
+VEH-0336,Pickup Truck,XYZ-4117,Carlos Navarro,In Use,14726.64
+VEH-0337,Pickup Truck,NDE-4146,Joseph Rivera,Available,4368.41
+VEH-0338,Service Van,NDE-1664,James Mendoza,Maintenance,11532.66
+VEH-0339,Dump Truck,ABC-9419,William Rivera,Maintenance,1876.47
+VEH-0340,Dump Truck,ABC-7343,Carlos Bautista,Available,2137.0
+VEH-0341,Flatbed Truck,NDE-1417,John Cruz,Maintenance,8389.37
+VEH-0342,Service Van,ABC-5801,Angel Cruz,In Use,1760.53
+VEH-0343,Fuel Truck,XYZ-9549,Mark Aquino,Maintenance,9777.69
+VEH-0344,Dump Truck,NDE-4612,Joseph Torres,Available,13540.06
+VEH-0345,Delivery Truck,JKS-5612,Joshua Mendoza,Available,11000.42
+VEH-0346,Delivery Truck,XYZ-7606,William Dela Cruz,Available,5823.71
+VEH-0347,Pickup Truck,JKS-8768,Joshua Reyes,Available,8915.9
+VEH-0348,Pickup Truck,NDE-1372,Joshua Fernandez,In Use,1940.21
+VEH-0349,Flatbed Truck,XYZ-4320,Kevin Ramos,Available,14121.38
+VEH-0350,Water Truck,NDE-3805,Mark Castillo,Maintenance,2521.99
+VEH-0351,Pickup Truck,JKS-1174,Mark Mendoza,Available,2100.32
+VEH-0352,Concrete Mixer Truck,ABC-7223,Robert Ramos,Maintenance,4331.62
+VEH-0353,Water Truck,XYZ-8663,Brian Castillo,Maintenance,2697.7
+VEH-0354,Flatbed Truck,JKS-2217,Miguel Flores,In Use,4704.38
+VEH-0355,Dump Truck,XYZ-6292,John Dela Cruz,Maintenance,5116.23
+VEH-0356,Dump Truck,ABC-8064,Joseph Flores,Available,4311.11
+VEH-0357,Flatbed Truck,NDE-2664,Joshua Villanueva,Available,13987.58
+VEH-0358,Delivery Truck,JKS-9411,Daniel Mendoza,Available,1196.19
+VEH-0359,Concrete Mixer Truck,ABC-9053,Jose Mendoza,Available,9795.72
+VEH-0360,Service Van,JKS-3811,Jose Navarro,Maintenance,11981.52
+VEH-0361,Delivery Truck,XYZ-7979,Anthony Ramos,Available,12873.07
+VEH-0362,Concrete Mixer Truck,NDE-7691,James Navarro,Available,9013.96
+VEH-0363,Delivery Truck,ABC-9074,Jose Gonzales,Maintenance,10530.43
+VEH-0364,Pickup Truck,JKS-8836,John Rivera,Maintenance,4303.3
+VEH-0365,Fuel Truck,XYZ-1253,Andrew Santos,Maintenance,8568.69
+VEH-0366,Pickup Truck,XYZ-3956,Anthony Castillo,In Use,10434.36
+VEH-0367,Pickup Truck,JKS-6997,James Navarro,Maintenance,14118.82
+VEH-0368,Service Van,JKS-3463,Michael Fernandez,Available,2018.55
+VEH-0369,Concrete Mixer Truck,NDE-7519,Kevin Reyes,In Use,4293.07
+VEH-0370,Service Van,ABC-3594,David Reyes,In Use,12177.39
+VEH-0371,Flatbed Truck,JKS-5108,Carlos Flores,Available,5173.92
+VEH-0372,Water Truck,ABC-2376,Christopher Castillo,Maintenance,9764.92
+VEH-0373,Delivery Truck,ABC-8231,Michael Castillo,Available,4293.93
+VEH-0374,Fuel Truck,JKS-7397,Brian Bautista,Available,1367.05
+VEH-0375,Delivery Truck,NDE-7233,Michael Cruz,Maintenance,7928.58
+VEH-0376,Delivery Truck,JKS-9879,David Gonzales,Maintenance,11059.56
+VEH-0377,Concrete Mixer Truck,XYZ-6244,Carlos Bautista,Maintenance,14918.69
+VEH-0378,Dump Truck,NDE-9591,James Rivera,Available,10552.74
+VEH-0379,Flatbed Truck,NDE-1849,Joseph Santos,In Use,11577.94
+VEH-0380,Fuel Truck,JKS-6437,Kevin Reyes,Available,10422.16
+VEH-0381,Concrete Mixer Truck,NDE-9876,Daniel Navarro,In Use,4756.51
+VEH-0382,Concrete Mixer Truck,JKS-8547,Jose Rivera,Available,2964.96
+VEH-0383,Service Van,XYZ-5040,David Torres,Maintenance,12624.32
+VEH-0384,Flatbed Truck,XYZ-9948,Jose Garcia,In Use,6668.61
+VEH-0385,Service Van,ABC-6371,Daniel Navarro,Maintenance,3490.58
+VEH-0386,Water Truck,JKS-3747,Jose Mendoza,Maintenance,14244.91
+VEH-0387,Flatbed Truck,XYZ-6625,Carlos Castillo,Available,4129.75
+VEH-0388,Pickup Truck,JKS-7049,Andrew Santos,Maintenance,8265.09
+VEH-0389,Fuel Truck,NDE-1256,Angel Navarro,Maintenance,11822.05
+VEH-0390,Service Van,NDE-4673,James Bautista,In Use,9793.79
+VEH-0391,Pickup Truck,ABC-2854,Brian Villanueva,Available,1656.46
+VEH-0392,Water Truck,XYZ-5409-1,John Cruz,In Use,3942.6
+VEH-0393,Service Van,ABC-6328,Christopher Aquino,Available,5574.75
+VEH-0394,Water Truck,XYZ-2756,Mark Mendoza,In Use,9671.31
+VEH-0395,Flatbed Truck,JKS-8796,Carlos Garcia,Available,12183.25
+VEH-0396,Delivery Truck,NDE-1750,James Torres,Available,10759.76
+VEH-0397,Pickup Truck,NDE-2427,John Castillo,Available,7392.86
+VEH-0398,Pickup Truck,JKS-1985,Angel Dela Cruz,Maintenance,1094.17
+VEH-0399,Water Truck,XYZ-4850-1,Carlos Fernandez,In Use,6630.71
+VEH-0400,Concrete Mixer Truck,NDE-8014,William Reyes,In Use,13096.48
+VEH-0401,Fuel Truck,JKS-9829,Kevin Torres,In Use,13076.3
+VEH-0402,Concrete Mixer Truck,JKS-6535,Carlos Navarro,In Use,8578.89
+VEH-0403,Water Truck,JKS-6959,Matthew Flores,Available,8028.44
+VEH-0404,Service Van,ABC-2359,William Navarro,Available,2905.75
+VEH-0405,Dump Truck,ABC-1702,David Flores,In Use,9948.31
+VEH-0406,Flatbed Truck,ABC-4873,David Garcia,In Use,13158.79
+VEH-0407,Pickup Truck,XYZ-1091,Matthew Navarro,Maintenance,1473.05
+VEH-0408,Flatbed Truck,JKS-3984,Robert Flores,In Use,4981.08
+VEH-0409,Fuel Truck,JKS-9038,David Villanueva,Available,6923.01
+VEH-0410,Delivery Truck,NDE-7771,David Santos,Available,6128.12
+VEH-0411,Concrete Mixer Truck,NDE-5717,Mark Cruz,Available,12275.39
+VEH-0412,Concrete Mixer Truck,ABC-3190,Mark Cruz,Available,3802.54
+VEH-0413,Concrete Mixer Truck,ABC-5994,Angel Cruz,Available,6280.19
+VEH-0414,Dump Truck,ABC-9512,Anthony Gonzales,In Use,7853.53
+VEH-0415,Flatbed Truck,JKS-6652,James Mendoza,Maintenance,6656.36
+VEH-0416,Pickup Truck,JKS-3899,Daniel Castillo,Maintenance,7499.66
+VEH-0417,Service Van,NDE-5352-1,Brian Dela Cruz,Maintenance,3166.57
+VEH-0418,Dump Truck,NDE-3333,Angel Cruz,Maintenance,6353.78
+VEH-0419,Flatbed Truck,ABC-7430,John Mendoza,Maintenance,14444.91
+VEH-0420,Delivery Truck,XYZ-2037,Kevin Bautista,Available,7200.58
+VEH-0421,Flatbed Truck,XYZ-1479,Matthew Mendoza,Available,3172.68
+VEH-0422,Flatbed Truck,JKS-3804,Robert Gonzales,In Use,10201.46
+VEH-0423,Pickup Truck,NDE-4871,Miguel Dela Cruz,Available,13553.89
+VEH-0424,Water Truck,NDE-5006,Jose Bautista,In Use,8783.22
+VEH-0425,Service Van,NDE-7846,Robert Villanueva,Maintenance,11319.61
+VEH-0426,Delivery Truck,XYZ-3647,Joshua Flores,Available,14186.58
+VEH-0427,Water Truck,NDE-5159,Jose Villanueva,Available,3526.45
+VEH-0428,Delivery Truck,JKS-1044,Daniel Mendoza,Maintenance,1978.35
+VEH-0429,Dump Truck,NDE-5038,Angel Aquino,Maintenance,11062.7
+VEH-0430,Flatbed Truck,JKS-6355,David Fernandez,Available,2829.36
+VEH-0431,Dump Truck,ABC-3207,Andrew Rivera,Available,8671.71
+VEH-0432,Concrete Mixer Truck,ABC-1728,Joseph Villanueva,Maintenance,8260.74
+VEH-0433,Delivery Truck,NDE-4450,Andrew Fernandez,In Use,3585.19
+VEH-0434,Fuel Truck,ABC-1662,Mark Santos,In Use,14691.86
+VEH-0435,Flatbed Truck,JKS-2343,Jose Navarro,Available,7443.01
+VEH-0436,Water Truck,XYZ-4441,Jose Cruz,Available,11905.23
+VEH-0437,Concrete Mixer Truck,NDE-1393,Michael Flores,Available,7691.56
+VEH-0438,Flatbed Truck,ABC-4216,James Gonzales,Maintenance,2157.07
+VEH-0439,Delivery Truck,ABC-2886,David Rivera,Available,9866.07
+VEH-0440,Concrete Mixer Truck,ABC-4395,Daniel Garcia,Maintenance,6741.56
+VEH-0441,Concrete Mixer Truck,ABC-2886-1,Angel Cruz,Available,2577.93
+VEH-0442,Fuel Truck,ABC-3121,Daniel Reyes,Available,9645.11
+VEH-0443,Dump Truck,JKS-3228,Matthew Fernandez,Maintenance,14053.63
+VEH-0444,Flatbed Truck,XYZ-1606,Christopher Bautista,Maintenance,6323.97
+VEH-0445,Flatbed Truck,ABC-3930,Kevin Flores,Available,3094.84
+VEH-0446,Service Van,XYZ-2645,Michael Flores,Available,12057.72
+VEH-0447,Fuel Truck,XYZ-6523,James Navarro,Available,3101.79
+VEH-0448,Service Van,JKS-3110,James Bautista,In Use,14923.94
+VEH-0449,Water Truck,JKS-2081,James Bautista,In Use,2794.85
+VEH-0450,Delivery Truck,ABC-2592,Anthony Aquino,Available,2986.31
+VEH-0451,Flatbed Truck,JKS-6882,Miguel Navarro,In Use,6423.16
+VEH-0452,Concrete Mixer Truck,XYZ-1443,Joseph Cruz,Available,1359.04
+VEH-0453,Delivery Truck,ABC-7921,Robert Castillo,Available,7710.35
+VEH-0454,Delivery Truck,NDE-1988,Daniel Reyes,Maintenance,11063.77
+VEH-0455,Pickup Truck,JKS-7982,Jose Santos,Maintenance,4194.82
+VEH-0456,Concrete Mixer Truck,NDE-9700,Robert Navarro,In Use,4654.87
+VEH-0457,Concrete Mixer Truck,ABC-4634,Christopher Reyes,Available,1821.07
+VEH-0458,Dump Truck,NDE-7644,Brian Aquino,In Use,6924.65
+VEH-0459,Service Van,ABC-7076,Kevin Castillo,In Use,4990.61
+VEH-0460,Concrete Mixer Truck,XYZ-5116,Brian Garcia,Available,12714.78
+VEH-0461,Service Van,JKS-8113,James Garcia,Available,8769.18
+VEH-0462,Pickup Truck,ABC-1634,Mark Santos,Maintenance,8753.81
+VEH-0463,Pickup Truck,JKS-7531,Joseph Cruz,Maintenance,3266.24
+VEH-0464,Dump Truck,ABC-9468,Robert Castillo,Maintenance,2503.63
+VEH-0465,Dump Truck,ABC-6615,John Aquino,Available,3736.8
+VEH-0466,Dump Truck,JKS-8421,Robert Ramos,Available,7467.25
+VEH-0467,Flatbed Truck,NDE-2305,John Flores,In Use,14579.57
+VEH-0468,Service Van,JKS-5919,Mark Rivera,Available,2598.88
+VEH-0469,Flatbed Truck,ABC-1285,Jose Gonzales,Available,5885.07
+VEH-0470,Water Truck,JKS-7978,William Torres,Maintenance,1415.58
+VEH-0471,Pickup Truck,ABC-6468,Mark Bautista,Maintenance,3192.18
+VEH-0472,Delivery Truck,NDE-8167,Joshua Gonzales,Available,2105.07
+VEH-0473,Pickup Truck,XYZ-3264,Brian Santos,Available,1806.13
+VEH-0474,Service Van,JKS-7796,William Garcia,In Use,14511.13
+VEH-0475,Dump Truck,ABC-2908-1,John Aquino,Maintenance,10331.51
+VEH-0476,Pickup Truck,NDE-1611,James Torres,Available,8614.29
+VEH-0477,Pickup Truck,NDE-1049,Matthew Ramos,Available,5433.32
+VEH-0478,Concrete Mixer Truck,ABC-5186,Angel Fernandez,Available,12309.65
+VEH-0479,Service Van,JKS-7471,Angel Fernandez,Maintenance,9944.34
+VEH-0480,Pickup Truck,XYZ-8589,Jose Aquino,Available,12391.31
+VEH-0481,Fuel Truck,NDE-2672,William Rivera,Available,3078.16
+VEH-0482,Delivery Truck,NDE-1804,Brian Villanueva,In Use,4475.39
+VEH-0483,Concrete Mixer Truck,NDE-8158,Daniel Bautista,In Use,9160.1
+VEH-0484,Pickup Truck,JKS-1240,Michael Torres,Available,13367.95
+VEH-0485,Concrete Mixer Truck,ABC-4511,Kevin Reyes,Maintenance,12477.39
+VEH-0486,Concrete Mixer Truck,ABC-2458,William Reyes,Available,10250.58
+VEH-0487,Dump Truck,NDE-2557,Miguel Cruz,Available,6171.28
+VEH-0488,Delivery Truck,XYZ-2834,Michael Aquino,Available,11233.39
+VEH-0489,Service Van,ABC-2156,Miguel Rivera,In Use,5257.6
+VEH-0490,Concrete Mixer Truck,XYZ-2970,Kevin Castillo,Available,8995.23
+VEH-0491,Delivery Truck,NDE-8170,James Mendoza,Available,12366.18
+VEH-0492,Service Van,ABC-7861,Brian Navarro,Maintenance,10332.18
+VEH-0493,Concrete Mixer Truck,XYZ-7230,Jose Cruz,In Use,9339.53
+VEH-0494,Pickup Truck,ABC-3585,Carlos Villanueva,In Use,12080.49
+VEH-0495,Fuel Truck,XYZ-8591,Joshua Villanueva,Available,4739.88
+VEH-0496,Water Truck,XYZ-2931,Joseph Cruz,Maintenance,2574.9
+VEH-0497,Fuel Truck,ABC-9099,Miguel Ramos,Available,7825.1
+VEH-0498,Flatbed Truck,NDE-7183,Andrew Garcia,Maintenance,9134.47
+VEH-0499,Fuel Truck,XYZ-5798,John Gonzales,In Use,12691.21
+VEH-0500,Fuel Truck,JKS-9958,Anthony Torres,Maintenance,1358.69

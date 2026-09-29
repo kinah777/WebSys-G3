@@ -1,0 +1,501 @@
+project_id,project_name,project_type,location,start_date,end_date,budget,priority,status,completion_percentage
+PRJ-0001,Residential Building Project 001,Warehouse,Pasig,2027-10-17,2028-01-12,11548931.54,Low,Planning,75
+PRJ-0002,Residential Building Project 002,Commercial Building,Pasig,2027-03-09,2027-04-24,12016714.22,Low,Ongoing,91
+PRJ-0003,Hospital Project 003,Bridge Construction,Dasmarinas,2027-10-28,2028-09-01,29668651.35,Low,Ongoing,89
+PRJ-0004,Warehouse Project 004,Road Construction,Pasig,2027-03-09,2027-09-29,47882047.07,High,Planning,11
+PRJ-0005,School Building Project 005,School Building,Santa Rosa,2027-01-25,2027-04-14,13593782.93,Low,Completed,68
+PRJ-0006,Commercial Building Project 006,Renovation,Taguig,2026-05-08,2026-12-17,41555530.88,High,Ongoing,90
+PRJ-0007,Bridge Construction Project 007,Warehouse,Quezon City,2026-03-13,2026-05-05,42838227.19,Low,Completed,35
+PRJ-0008,School Building Project 008,Road Construction,Cavite City,2027-04-10,2028-03-30,18085899.66,High,Planning,77
+PRJ-0009,Renovation Project 009,Bridge Construction,Makati,2027-10-13,2028-02-07,23381880.49,High,Ongoing,87
+PRJ-0010,Bridge Construction Project 010,Residential Building,Antipolo,2026-11-29,2027-01-26,16114925.88,High,Planning,27
+PRJ-0011,Bridge Construction Project 011,Office Building,Imus,2027-08-04,2028-02-11,44291816.12,Critical,Ongoing,33
+PRJ-0012,Renovation Project 012,Renovation,Taguig,2026-05-23,2026-10-26,37477183.68,Critical,Completed,46
+PRJ-0013,Renovation Project 013,Office Building,Quezon City,2026-08-13,2026-11-21,37911216.8,Low,Ongoing,80
+PRJ-0014,Drainage Project Project 014,Commercial Building,Imus,2026-06-13,2027-02-14,19390154.68,Critical,On Hold,70
+PRJ-0015,Renovation Project 015,Warehouse,Antipolo,2026-01-12,2026-04-10,32227609.03,Low,On Hold,55
+PRJ-0016,Residential Building Project 016,Warehouse,Bacoor,2026-06-11,2027-02-28,38217128.85,Low,On Hold,81
+PRJ-0017,Bridge Construction Project 017,Road Construction,Cavite City,2027-06-04,2028-05-10,38244284.6,Low,On Hold,62
+PRJ-0018,School Building Project 018,Warehouse,Pasig,2026-01-20,2026-04-17,3367295.74,Low,Planning,93
+PRJ-0019,Renovation Project 019,Road Construction,Makati,2027-05-13,2027-07-17,33157665.73,Medium,On Hold,67
+PRJ-0020,Bridge Construction Project 020,Renovation,Antipolo,2027-09-14,2028-05-17,36631587.92,Medium,On Hold,51
+PRJ-0021,School Building Project 021,Office Building,Bacoor,2027-11-19,2028-11-15,22848564.0,Medium,Ongoing,8
+PRJ-0022,Drainage Project Project 022,Renovation,Pasig,2026-12-13,2027-01-22,29627785.66,Low,Planning,90
+PRJ-0023,Bridge Construction Project 023,Commercial Building,Manila,2027-10-09,2027-12-08,43051952.31,Low,Ongoing,35
+PRJ-0024,Bridge Construction Project 024,Renovation,Makati,2027-11-17,2028-08-21,36305952.01,Critical,Ongoing,100
+PRJ-0025,Bridge Construction Project 025,Commercial Building,Quezon City,2027-04-30,2027-12-24,33119646.1,High,Completed,52
+PRJ-0026,Commercial Building Project 026,Residential Building,Imus,2027-04-24,2027-06-20,36546572.63,Low,Ongoing,24
+PRJ-0027,Office Building Project 027,Road Construction,Imus,2026-07-14,2027-05-14,9582657.77,Critical,Ongoing,9
+PRJ-0028,Commercial Building Project 028,Residential Building,Biñan,2027-03-30,2028-02-04,49964482.19,Low,Planning,96
+PRJ-0029,Hospital Project 029,Office Building,Dasmarinas,2026-08-31,2026-12-24,11080491.31,Critical,Planning,21
+PRJ-0030,Hospital Project 030,Warehouse,Antipolo,2027-01-24,2027-02-24,39363903.16,High,Completed,89
+PRJ-0031,Road Construction Project 031,Bridge Construction,Taguig,2027-07-24,2028-04-28,11276194.47,Low,Planning,95
+PRJ-0032,Residential Building Project 032,Drainage Project,Dasmarinas,2026-11-18,2027-01-16,25391093.95,Medium,Planning,65
+PRJ-0033,Commercial Building Project 033,Drainage Project,Quezon City,2026-03-24,2026-07-27,33923021.4,Medium,Completed,15
+PRJ-0034,Drainage Project Project 034,Drainage Project,Manila,2027-08-07,2028-01-10,31159384.76,Critical,On Hold,33
+PRJ-0035,Bridge Construction Project 035,Warehouse,Imus,2026-07-29,2027-02-04,6978474.97,High,Completed,40
+PRJ-0036,Office Building Project 036,Drainage Project,Santa Rosa,2026-03-16,2026-04-19,49806774.17,Low,Ongoing,64
+PRJ-0037,School Building Project 037,Commercial Building,Pasig,2026-09-29,2027-01-04,18791590.89,Medium,Completed,69
+PRJ-0038,Drainage Project Project 038,Renovation,Manila,2027-12-22,2028-06-23,33559228.58,High,Planning,17
+PRJ-0039,Commercial Building Project 039,Renovation,Makati,2026-09-28,2026-12-26,13981236.51,Medium,On Hold,26
+PRJ-0040,Warehouse Project 040,Renovation,Dasmarinas,2027-12-05,2028-11-23,12930501.98,Low,Planning,81
+PRJ-0041,Residential Building Project 041,Residential Building,Cavite City,2027-03-10,2027-08-28,38670401.54,High,Ongoing,94
+PRJ-0042,Hospital Project 042,Renovation,Manila,2027-03-29,2028-02-04,6037757.09,Medium,Planning,47
+PRJ-0043,Road Construction Project 043,Hospital,Makati,2027-08-20,2028-06-27,2570528.48,High,Planning,45
+PRJ-0044,Commercial Building Project 044,School Building,Antipolo,2026-08-04,2027-01-08,28214234.2,Critical,Ongoing,30
+PRJ-0045,Hospital Project 045,Residential Building,Makati,2026-06-16,2026-10-14,36959941.35,High,Completed,85
+PRJ-0046,Road Construction Project 046,Commercial Building,Imus,2026-09-12,2027-02-25,43672255.75,Critical,Ongoing,25
+PRJ-0047,Warehouse Project 047,Bridge Construction,Pasig,2027-04-17,2027-11-12,1671389.52,Medium,Completed,42
+PRJ-0048,Warehouse Project 048,School Building,Biñan,2026-10-13,2026-12-17,25715580.94,High,Planning,14
+PRJ-0049,Drainage Project Project 049,Warehouse,Manila,2026-09-25,2027-01-24,5865926.09,Critical,On Hold,93
+PRJ-0050,Drainage Project Project 050,Renovation,Quezon City,2026-11-18,2027-07-29,19567173.95,Medium,On Hold,5
+PRJ-0051,Residential Building Project 051,Renovation,Antipolo,2027-12-27,2028-09-05,27153373.86,Medium,On Hold,55
+PRJ-0052,Drainage Project Project 052,School Building,Biñan,2026-03-13,2026-09-28,42476756.34,High,On Hold,85
+PRJ-0053,Hospital Project 053,Warehouse,Bacoor,2027-02-23,2027-09-08,6800746.05,Critical,Completed,86
+PRJ-0054,Drainage Project Project 054,Warehouse,Imus,2026-06-28,2027-06-08,27622892.05,Low,On Hold,36
+PRJ-0055,Drainage Project Project 055,Drainage Project,Biñan,2026-08-04,2027-04-11,16451336.87,Critical,Completed,86
+PRJ-0056,Office Building Project 056,Road Construction,Biñan,2026-08-07,2027-05-25,4697379.07,High,Planning,96
+PRJ-0057,Bridge Construction Project 057,Bridge Construction,Makati,2026-08-29,2027-03-05,1709056.69,Medium,Completed,78
+PRJ-0058,Hospital Project 058,Drainage Project,Pasig,2026-03-16,2026-12-04,36058122.82,Critical,Completed,51
+PRJ-0059,Residential Building Project 059,Commercial Building,Antipolo,2026-09-07,2026-12-21,21544736.6,Medium,Completed,6
+PRJ-0060,Commercial Building Project 060,Office Building,Makati,2027-07-25,2027-12-29,40170121.79,High,Completed,78
+PRJ-0061,Renovation Project 061,Office Building,Makati,2027-06-01,2028-02-04,37310944.39,Critical,Completed,33
+PRJ-0062,Warehouse Project 062,Renovation,Dasmarinas,2026-09-11,2027-09-02,31524047.63,High,Completed,9
+PRJ-0063,Bridge Construction Project 063,Warehouse,Cavite City,2028-01-01,2028-06-25,16325623.64,Low,Ongoing,19
+PRJ-0064,Road Construction Project 064,Bridge Construction,Quezon City,2026-08-25,2027-04-08,21035960.85,High,Completed,53
+PRJ-0065,Hospital Project 065,Hospital,Antipolo,2026-03-05,2026-07-18,29411931.0,Low,Completed,61
+PRJ-0066,Warehouse Project 066,Hospital,Laguna,2026-01-07,2026-08-05,44636256.33,Critical,Ongoing,62
+PRJ-0067,Hospital Project 067,Office Building,Manila,2026-08-13,2027-01-29,19748431.56,Critical,Ongoing,59
+PRJ-0068,Renovation Project 068,Residential Building,Imus,2026-05-11,2027-04-24,29798692.39,Low,Planning,82
+PRJ-0069,Office Building Project 069,Road Construction,Manila,2027-03-15,2027-06-22,13377737.54,High,Ongoing,58
+PRJ-0070,Hospital Project 070,Warehouse,Antipolo,2026-12-01,2027-06-21,47584603.93,Critical,On Hold,10
+PRJ-0071,Renovation Project 071,Residential Building,Cavite City,2027-04-27,2027-06-05,11598997.2,Low,Planning,96
+PRJ-0072,Bridge Construction Project 072,Residential Building,Santa Rosa,2026-02-01,2026-07-07,8042926.12,Medium,Completed,85
+PRJ-0073,Bridge Construction Project 073,Office Building,Calamba,2026-04-28,2027-03-12,13184062.98,High,Ongoing,77
+PRJ-0074,Road Construction Project 074,Warehouse,Quezon City,2027-09-14,2027-12-11,29144894.26,High,Completed,50
+PRJ-0075,Drainage Project Project 075,Bridge Construction,Quezon City,2026-07-23,2026-09-29,35011053.62,High,Planning,72
+PRJ-0076,Renovation Project 076,Hospital,Biñan,2026-02-12,2026-09-07,18843258.37,High,Planning,53
+PRJ-0077,Hospital Project 077,School Building,Biñan,2027-05-17,2027-08-09,44632963.23,Critical,Ongoing,55
+PRJ-0078,Warehouse Project 078,Drainage Project,Antipolo,2026-06-30,2027-04-23,46021074.02,Critical,Completed,55
+PRJ-0079,School Building Project 079,Bridge Construction,Laguna,2027-08-30,2028-02-13,46763782.99,High,Completed,31
+PRJ-0080,Drainage Project Project 080,Hospital,Cavite City,2027-04-21,2028-03-07,1920649.89,High,Ongoing,62
+PRJ-0081,Warehouse Project 081,School Building,Taguig,2026-08-06,2027-03-05,44075839.0,High,Planning,66
+PRJ-0082,Bridge Construction Project 082,Hospital,Dasmarinas,2026-07-15,2026-09-26,27981222.47,Medium,Completed,82
+PRJ-0083,Office Building Project 083,Residential Building,Quezon City,2027-12-30,2028-10-06,15064661.28,Critical,Ongoing,39
+PRJ-0084,School Building Project 084,Office Building,Bacoor,2027-11-11,2028-10-03,26780635.59,Critical,On Hold,45
+PRJ-0085,Warehouse Project 085,Warehouse,Taguig,2027-12-21,2028-09-08,11911633.04,Medium,On Hold,15
+PRJ-0086,Bridge Construction Project 086,Bridge Construction,Calamba,2027-07-03,2027-11-04,24467830.07,High,Planning,24
+PRJ-0087,School Building Project 087,Road Construction,Taguig,2026-10-31,2027-03-26,1200344.18,Medium,On Hold,5
+PRJ-0088,Warehouse Project 088,Road Construction,Biñan,2026-02-25,2027-01-04,43488829.26,Critical,Planning,1
+PRJ-0089,Office Building Project 089,Office Building,Dasmarinas,2027-08-11,2028-02-02,17364943.66,Low,On Hold,61
+PRJ-0090,Hospital Project 090,Office Building,Quezon City,2026-04-27,2026-06-29,29062547.25,Low,Ongoing,19
+PRJ-0091,Commercial Building Project 091,Bridge Construction,Quezon City,2027-07-31,2028-02-01,28124615.21,Critical,Ongoing,99
+PRJ-0092,Office Building Project 092,Office Building,Taguig,2027-06-20,2028-01-30,43078249.96,Critical,On Hold,72
+PRJ-0093,Drainage Project Project 093,Commercial Building,Antipolo,2027-09-28,2027-11-27,10785501.34,Medium,On Hold,84
+PRJ-0094,Bridge Construction Project 094,Road Construction,Bacoor,2026-03-25,2026-07-13,4215711.01,Low,Completed,57
+PRJ-0095,Office Building Project 095,Warehouse,Manila,2027-12-07,2028-11-05,11958073.61,High,Completed,9
+PRJ-0096,Warehouse Project 096,Drainage Project,Biñan,2027-12-05,2028-05-02,40293331.17,Medium,Completed,14
+PRJ-0097,Road Construction Project 097,Warehouse,Laguna,2027-07-12,2027-12-04,7540696.13,Low,Ongoing,39
+PRJ-0098,Warehouse Project 098,Office Building,Quezon City,2027-09-02,2028-07-19,23700549.53,High,Completed,34
+PRJ-0099,Office Building Project 099,Office Building,Quezon City,2027-05-28,2028-03-29,30102814.77,Critical,On Hold,77
+PRJ-0100,Commercial Building Project 100,Bridge Construction,Biñan,2026-09-14,2026-10-27,41879951.39,Low,On Hold,73
+PRJ-0101,Office Building Project 101,Renovation,Biñan,2026-02-11,2026-06-10,22390355.52,High,Ongoing,74
+PRJ-0102,Office Building Project 102,Commercial Building,Dasmarinas,2027-03-23,2028-03-12,17724072.29,High,On Hold,85
+PRJ-0103,School Building Project 103,Hospital,Calamba,2026-04-18,2026-08-08,25025716.54,Critical,Planning,58
+PRJ-0104,Warehouse Project 104,School Building,Quezon City,2026-04-01,2026-10-09,48524143.98,Critical,Planning,84
+PRJ-0105,Hospital Project 105,Residential Building,Pasig,2027-07-10,2028-04-01,26162749.93,Critical,Completed,97
+PRJ-0106,Warehouse Project 106,Renovation,Makati,2026-02-22,2026-07-06,46419801.66,Critical,Completed,15
+PRJ-0107,Drainage Project Project 107,Bridge Construction,Calamba,2026-01-30,2027-01-17,8339719.11,Low,Completed,11
+PRJ-0108,Office Building Project 108,Commercial Building,Biñan,2026-08-19,2026-11-15,41691087.1,Critical,On Hold,65
+PRJ-0109,Hospital Project 109,Office Building,Dasmarinas,2027-12-24,2028-06-10,12564679.85,Medium,Completed,24
+PRJ-0110,Road Construction Project 110,Commercial Building,Taguig,2027-09-06,2028-06-22,38747419.07,Critical,On Hold,100
+PRJ-0111,Residential Building Project 111,Warehouse,Calamba,2027-06-04,2027-11-17,15278514.56,Critical,Ongoing,57
+PRJ-0112,School Building Project 112,School Building,Bacoor,2027-07-06,2028-04-08,38262197.54,Critical,Completed,41
+PRJ-0113,Drainage Project Project 113,Hospital,Pasig,2026-07-13,2026-12-12,42872642.31,Critical,Planning,40
+PRJ-0114,Hospital Project 114,Road Construction,Dasmarinas,2027-04-30,2027-12-11,48258809.7,Medium,On Hold,12
+PRJ-0115,Renovation Project 115,Office Building,Manila,2027-03-27,2027-06-16,36260969.46,Critical,Ongoing,9
+PRJ-0116,School Building Project 116,Drainage Project,Calamba,2027-04-26,2027-10-08,20175424.53,Low,On Hold,86
+PRJ-0117,School Building Project 117,Office Building,Laguna,2027-07-01,2028-02-10,27280292.63,Low,Ongoing,80
+PRJ-0118,Bridge Construction Project 118,Commercial Building,Imus,2027-12-02,2028-05-27,48927717.55,Low,Completed,21
+PRJ-0119,Residential Building Project 119,Residential Building,Cavite City,2027-12-12,2028-06-12,39909101.53,High,On Hold,47
+PRJ-0120,Bridge Construction Project 120,Renovation,Imus,2027-03-18,2027-06-30,28513439.06,Medium,Ongoing,22
+PRJ-0121,Hospital Project 121,Drainage Project,Biñan,2026-03-22,2027-02-27,12421074.7,Medium,Ongoing,59
+PRJ-0122,Office Building Project 122,Warehouse,Biñan,2027-10-16,2028-03-24,965172.86,Critical,On Hold,86
+PRJ-0123,Commercial Building Project 123,Office Building,Cavite City,2027-07-14,2027-11-01,49388758.91,High,Completed,88
+PRJ-0124,Warehouse Project 124,Bridge Construction,Imus,2026-09-14,2027-06-04,42740105.2,Low,Ongoing,48
+PRJ-0125,Drainage Project Project 125,Warehouse,Calamba,2027-08-09,2028-03-09,15113922.32,Critical,On Hold,1
+PRJ-0126,Drainage Project Project 126,Office Building,Laguna,2027-08-03,2027-09-27,45255686.9,High,Ongoing,77
+PRJ-0127,Bridge Construction Project 127,Drainage Project,Taguig,2026-12-27,2027-05-18,34049340.7,Medium,Planning,80
+PRJ-0128,Warehouse Project 128,Office Building,Manila,2027-10-24,2027-12-13,29188903.37,Medium,Planning,37
+PRJ-0129,Road Construction Project 129,Bridge Construction,Makati,2026-12-01,2027-07-31,39432384.15,High,On Hold,21
+PRJ-0130,Warehouse Project 130,School Building,Antipolo,2026-09-21,2027-06-24,6200900.52,Low,Ongoing,96
+PRJ-0131,Renovation Project 131,School Building,Quezon City,2026-08-20,2027-04-10,39638757.45,Low,On Hold,68
+PRJ-0132,School Building Project 132,Warehouse,Santa Rosa,2026-05-07,2027-01-24,19360762.21,High,Planning,86
+PRJ-0133,Residential Building Project 133,Drainage Project,Bacoor,2026-08-28,2027-05-26,16736310.95,Medium,Planning,81
+PRJ-0134,Hospital Project 134,Commercial Building,Makati,2027-04-21,2027-10-22,2744667.15,Low,On Hold,63
+PRJ-0135,Bridge Construction Project 135,Renovation,Makati,2026-04-29,2026-07-17,19737968.64,High,Completed,75
+PRJ-0136,Commercial Building Project 136,Office Building,Santa Rosa,2026-06-08,2027-02-05,20701736.34,High,Planning,88
+PRJ-0137,Office Building Project 137,Office Building,Pasig,2027-01-15,2027-06-05,42844784.57,Low,On Hold,69
+PRJ-0138,Residential Building Project 138,Hospital,Taguig,2027-10-23,2028-05-23,9895523.83,Low,Completed,11
+PRJ-0139,Drainage Project Project 139,Residential Building,Manila,2027-11-10,2028-03-27,39446332.23,Medium,Ongoing,100
+PRJ-0140,Commercial Building Project 140,Renovation,Pasig,2027-08-02,2027-12-15,29525962.64,Medium,On Hold,99
+PRJ-0141,Residential Building Project 141,Warehouse,Laguna,2026-06-01,2027-05-02,49209392.53,Medium,On Hold,22
+PRJ-0142,Road Construction Project 142,Residential Building,Cavite City,2026-04-23,2026-06-05,39604240.88,Medium,On Hold,2
+PRJ-0143,Residential Building Project 143,Road Construction,Calamba,2026-06-28,2026-12-10,21337547.57,Low,Planning,60
+PRJ-0144,Renovation Project 144,Drainage Project,Quezon City,2027-04-05,2027-11-06,22874268.29,Medium,Planning,93
+PRJ-0145,Warehouse Project 145,Office Building,Biñan,2027-11-06,2028-08-28,48219296.06,Low,Completed,51
+PRJ-0146,Office Building Project 146,Office Building,Quezon City,2027-03-13,2027-06-06,45013704.87,High,Ongoing,8
+PRJ-0147,Drainage Project Project 147,Drainage Project,Bacoor,2026-05-10,2026-10-27,35751563.42,Critical,On Hold,58
+PRJ-0148,Hospital Project 148,Commercial Building,Antipolo,2027-06-02,2028-05-06,35238081.22,Medium,Completed,57
+PRJ-0149,School Building Project 149,Office Building,Imus,2026-08-22,2027-04-20,21091487.69,Low,On Hold,54
+PRJ-0150,School Building Project 150,Road Construction,Biñan,2026-11-17,2027-04-26,46187759.27,Low,Planning,10
+PRJ-0151,Commercial Building Project 151,School Building,Antipolo,2026-04-06,2026-12-13,6940714.95,Low,On Hold,85
+PRJ-0152,School Building Project 152,Hospital,Laguna,2026-05-06,2027-01-01,45834261.71,Low,On Hold,76
+PRJ-0153,Commercial Building Project 153,Drainage Project,Bacoor,2026-11-16,2027-06-14,11030570.88,Critical,Ongoing,13
+PRJ-0154,School Building Project 154,Commercial Building,Antipolo,2026-12-25,2027-11-04,14289126.52,Medium,Completed,71
+PRJ-0155,Renovation Project 155,Residential Building,Santa Rosa,2027-09-29,2028-09-07,46489672.4,High,Planning,23
+PRJ-0156,School Building Project 156,School Building,Manila,2026-10-07,2027-04-13,9479575.13,Medium,Completed,8
+PRJ-0157,Residential Building Project 157,Commercial Building,Calamba,2026-05-26,2027-05-15,26758893.09,Critical,Completed,58
+PRJ-0158,School Building Project 158,Warehouse,Calamba,2026-12-16,2027-04-05,16556953.16,Low,Planning,19
+PRJ-0159,Residential Building Project 159,Commercial Building,Taguig,2026-06-11,2027-05-23,22434092.23,Critical,Completed,77
+PRJ-0160,Warehouse Project 160,Bridge Construction,Antipolo,2027-03-29,2027-11-26,25861142.14,High,Completed,14
+PRJ-0161,Office Building Project 161,Renovation,Biñan,2026-10-18,2027-09-16,15766759.9,Medium,Completed,76
+PRJ-0162,Bridge Construction Project 162,Warehouse,Pasig,2026-02-26,2026-03-31,38483801.6,High,On Hold,41
+PRJ-0163,Office Building Project 163,Hospital,Makati,2026-05-03,2026-06-05,6894692.24,Medium,On Hold,9
+PRJ-0164,Hospital Project 164,Residential Building,Dasmarinas,2027-02-11,2027-04-03,46097540.51,High,Completed,73
+PRJ-0165,Hospital Project 165,Warehouse,Quezon City,2027-02-19,2028-02-11,20549099.2,High,Ongoing,79
+PRJ-0166,Commercial Building Project 166,Hospital,Laguna,2027-04-17,2027-11-18,5740225.1,Critical,Completed,67
+PRJ-0167,Warehouse Project 167,School Building,Pasig,2026-03-22,2026-11-09,16986896.81,Medium,Planning,65
+PRJ-0168,Renovation Project 168,Renovation,Pasig,2027-10-11,2028-01-07,45343175.21,High,On Hold,93
+PRJ-0169,Bridge Construction Project 169,Commercial Building,Makati,2027-10-23,2028-02-05,13170426.99,Medium,Ongoing,97
+PRJ-0170,Road Construction Project 170,Office Building,Dasmarinas,2027-11-03,2028-01-10,37845068.35,Critical,On Hold,80
+PRJ-0171,Office Building Project 171,Commercial Building,Dasmarinas,2026-11-20,2027-03-07,22389299.16,High,On Hold,75
+PRJ-0172,Renovation Project 172,Commercial Building,Taguig,2026-02-27,2026-09-25,23356253.08,Low,Planning,47
+PRJ-0173,Commercial Building Project 173,Drainage Project,Santa Rosa,2026-10-21,2026-12-29,25599856.96,Critical,Planning,57
+PRJ-0174,Bridge Construction Project 174,School Building,Santa Rosa,2027-08-09,2028-08-06,24043636.88,Medium,Planning,57
+PRJ-0175,Commercial Building Project 175,Renovation,Biñan,2026-04-16,2026-11-07,9041666.12,Medium,Completed,56
+PRJ-0176,Drainage Project Project 176,Road Construction,Cavite City,2027-06-21,2028-04-13,18956173.11,High,Completed,52
+PRJ-0177,Residential Building Project 177,School Building,Quezon City,2026-12-13,2027-11-14,16819692.38,Critical,On Hold,32
+PRJ-0178,Road Construction Project 178,School Building,Quezon City,2027-11-04,2028-10-07,29345605.97,Medium,On Hold,39
+PRJ-0179,Road Construction Project 179,Drainage Project,Calamba,2027-11-03,2028-06-20,46931108.88,High,Completed,82
+PRJ-0180,Renovation Project 180,Commercial Building,Biñan,2026-12-03,2027-03-08,33687573.98,High,Planning,46
+PRJ-0181,Bridge Construction Project 181,School Building,Antipolo,2026-11-13,2027-03-15,24570410.58,Medium,Ongoing,19
+PRJ-0182,Commercial Building Project 182,Renovation,Antipolo,2026-03-21,2026-09-18,27218652.54,Low,On Hold,98
+PRJ-0183,Drainage Project Project 183,Hospital,Makati,2027-09-25,2027-12-31,8531237.0,Medium,Completed,5
+PRJ-0184,Bridge Construction Project 184,Office Building,Santa Rosa,2027-02-25,2027-09-29,14603932.66,Critical,Ongoing,68
+PRJ-0185,Office Building Project 185,Bridge Construction,Cavite City,2026-09-02,2027-03-09,34076187.84,Critical,Completed,98
+PRJ-0186,Renovation Project 186,Renovation,Imus,2026-10-16,2027-05-29,48330273.58,Medium,Ongoing,32
+PRJ-0187,Office Building Project 187,School Building,Bacoor,2026-02-23,2027-02-16,46747530.92,Low,On Hold,10
+PRJ-0188,Office Building Project 188,Renovation,Makati,2026-06-14,2026-11-30,41636812.57,Low,Ongoing,57
+PRJ-0189,Hospital Project 189,Residential Building,Imus,2026-12-24,2027-02-05,25349352.18,Medium,Completed,10
+PRJ-0190,Residential Building Project 190,School Building,Quezon City,2027-01-19,2027-06-12,42039226.24,High,Ongoing,17
+PRJ-0191,Office Building Project 191,Road Construction,Antipolo,2026-02-09,2026-08-04,35424040.68,Critical,Planning,10
+PRJ-0192,Bridge Construction Project 192,Road Construction,Bacoor,2026-01-20,2026-06-30,47041184.49,Critical,Planning,99
+PRJ-0193,Warehouse Project 193,Commercial Building,Manila,2026-10-23,2027-03-23,12302755.42,Critical,Planning,14
+PRJ-0194,Renovation Project 194,Residential Building,Biñan,2027-05-27,2028-04-26,26011098.65,Medium,Ongoing,37
+PRJ-0195,Drainage Project Project 195,School Building,Pasig,2027-03-16,2027-04-15,28747853.94,Medium,Planning,67
+PRJ-0196,Renovation Project 196,Renovation,Bacoor,2027-01-05,2027-03-10,39427410.62,Low,Completed,60
+PRJ-0197,Hospital Project 197,School Building,Taguig,2026-02-14,2027-02-04,37492171.28,High,Planning,44
+PRJ-0198,Commercial Building Project 198,Drainage Project,Calamba,2026-09-04,2027-08-21,37955606.86,Medium,Planning,45
+PRJ-0199,Road Construction Project 199,Office Building,Calamba,2027-07-14,2028-02-02,24187293.0,Medium,Ongoing,8
+PRJ-0200,Warehouse Project 200,Bridge Construction,Manila,2027-04-14,2027-06-01,39659906.05,Low,On Hold,39
+PRJ-0201,Renovation Project 201,Office Building,Taguig,2027-06-12,2028-01-31,2312728.19,Medium,On Hold,45
+PRJ-0202,School Building Project 202,Warehouse,Quezon City,2026-02-18,2027-02-18,40067449.37,Critical,Completed,95
+PRJ-0203,School Building Project 203,Road Construction,Dasmarinas,2027-03-27,2027-11-09,34757390.31,High,On Hold,10
+PRJ-0204,Hospital Project 204,Drainage Project,Laguna,2027-03-11,2027-05-20,9432596.05,High,On Hold,13
+PRJ-0205,Warehouse Project 205,Warehouse,Dasmarinas,2026-03-23,2026-10-06,30329770.57,Critical,Ongoing,88
+PRJ-0206,Office Building Project 206,Residential Building,Calamba,2027-03-31,2027-10-26,43566840.17,High,Completed,35
+PRJ-0207,Commercial Building Project 207,Hospital,Cavite City,2027-10-17,2027-12-15,25897757.96,Medium,Planning,18
+PRJ-0208,Residential Building Project 208,Road Construction,Quezon City,2027-09-15,2028-05-26,12181771.33,High,On Hold,49
+PRJ-0209,Drainage Project Project 209,Road Construction,Biñan,2027-08-04,2027-09-19,22771167.15,High,On Hold,56
+PRJ-0210,Road Construction Project 210,Renovation,Cavite City,2026-03-20,2027-02-06,20202685.27,High,Ongoing,14
+PRJ-0211,Office Building Project 211,Renovation,Imus,2026-01-27,2026-06-01,45720354.04,Low,On Hold,99
+PRJ-0212,Bridge Construction Project 212,Drainage Project,Taguig,2026-09-24,2027-06-09,34852041.73,Critical,Ongoing,15
+PRJ-0213,Office Building Project 213,Road Construction,Calamba,2026-05-19,2026-07-25,22533004.04,Low,On Hold,85
+PRJ-0214,Renovation Project 214,Renovation,Taguig,2026-12-22,2027-02-23,44620918.28,Medium,Ongoing,46
+PRJ-0215,Commercial Building Project 215,Bridge Construction,Antipolo,2027-06-05,2027-10-27,7374405.17,Critical,Planning,46
+PRJ-0216,School Building Project 216,Office Building,Antipolo,2027-07-22,2028-06-09,49159091.9,Medium,Planning,8
+PRJ-0217,Office Building Project 217,Renovation,Imus,2026-11-13,2027-07-04,38573645.24,Low,Ongoing,40
+PRJ-0218,Office Building Project 218,Office Building,Biñan,2027-10-20,2027-12-26,26109320.59,Medium,Ongoing,98
+PRJ-0219,Renovation Project 219,Residential Building,Laguna,2026-05-13,2027-01-19,6645975.47,Medium,On Hold,21
+PRJ-0220,Bridge Construction Project 220,School Building,Bacoor,2026-06-15,2026-12-27,44798832.88,Low,On Hold,25
+PRJ-0221,Warehouse Project 221,Road Construction,Biñan,2027-10-13,2028-08-20,15489818.0,Low,Ongoing,75
+PRJ-0222,Road Construction Project 222,Drainage Project,Calamba,2027-08-18,2027-12-04,45149044.24,High,Planning,3
+PRJ-0223,Drainage Project Project 223,Warehouse,Biñan,2026-03-25,2026-05-17,10935014.8,Critical,Planning,63
+PRJ-0224,Warehouse Project 224,Warehouse,Dasmarinas,2027-10-05,2028-08-09,12621456.58,Critical,On Hold,58
+PRJ-0225,Road Construction Project 225,Office Building,Imus,2026-03-16,2026-05-15,24470430.94,Medium,On Hold,77
+PRJ-0226,School Building Project 226,School Building,Imus,2026-05-28,2026-12-04,6972924.5,High,Planning,40
+PRJ-0227,Commercial Building Project 227,Warehouse,Dasmarinas,2026-09-05,2027-05-31,12771984.69,Low,Planning,37
+PRJ-0228,Hospital Project 228,Bridge Construction,Laguna,2027-01-29,2028-01-09,45164385.94,High,On Hold,24
+PRJ-0229,Renovation Project 229,Office Building,Dasmarinas,2026-06-13,2027-03-25,44014245.35,Critical,Planning,11
+PRJ-0230,Office Building Project 230,Bridge Construction,Pasig,2027-02-07,2027-11-22,29375533.54,Low,Planning,36
+PRJ-0231,Office Building Project 231,Warehouse,Bacoor,2027-05-22,2028-04-21,904781.59,Low,Completed,17
+PRJ-0232,Hospital Project 232,School Building,Manila,2026-09-28,2027-05-03,20328790.24,Medium,On Hold,70
+PRJ-0233,Hospital Project 233,Renovation,Dasmarinas,2026-10-23,2026-12-29,38338003.68,High,Planning,16
+PRJ-0234,School Building Project 234,School Building,Bacoor,2026-04-10,2026-11-27,46977954.06,Medium,Ongoing,77
+PRJ-0235,Renovation Project 235,Residential Building,Manila,2027-06-06,2028-01-27,2426241.33,High,Completed,66
+PRJ-0236,Drainage Project Project 236,Renovation,Makati,2027-04-13,2027-07-28,16734309.46,High,Ongoing,50
+PRJ-0237,Drainage Project Project 237,School Building,Bacoor,2027-09-24,2028-03-25,41500324.6,Critical,On Hold,60
+PRJ-0238,School Building Project 238,Commercial Building,Imus,2026-01-18,2026-08-24,29393256.02,Low,Completed,33
+PRJ-0239,Drainage Project Project 239,Bridge Construction,Calamba,2027-11-03,2028-09-24,3042080.67,Critical,Ongoing,67
+PRJ-0240,Hospital Project 240,Road Construction,Laguna,2027-10-07,2028-09-18,34195981.31,Low,Planning,24
+PRJ-0241,School Building Project 241,Hospital,Makati,2026-01-20,2026-10-02,20941525.43,Medium,Completed,64
+PRJ-0242,Residential Building Project 242,Road Construction,Bacoor,2027-09-19,2028-06-16,10763414.4,High,Completed,67
+PRJ-0243,Road Construction Project 243,Office Building,Bacoor,2027-01-21,2027-07-30,17445187.38,High,On Hold,78
+PRJ-0244,Bridge Construction Project 244,Warehouse,Bacoor,2027-05-11,2027-09-16,15275708.48,High,On Hold,90
+PRJ-0245,School Building Project 245,Office Building,Cavite City,2026-08-01,2027-05-08,28244135.72,High,On Hold,15
+PRJ-0246,Hospital Project 246,Hospital,Laguna,2027-08-11,2028-06-14,17584166.42,Medium,On Hold,5
+PRJ-0247,School Building Project 247,Office Building,Biñan,2026-10-22,2026-12-31,13193976.79,Critical,Ongoing,25
+PRJ-0248,Renovation Project 248,Warehouse,Makati,2027-07-06,2027-12-21,5906715.79,Medium,Ongoing,6
+PRJ-0249,Bridge Construction Project 249,Bridge Construction,Manila,2027-11-17,2028-09-13,5459798.97,High,Completed,12
+PRJ-0250,Residential Building Project 250,Renovation,Makati,2027-11-29,2028-03-08,20641918.85,Critical,Completed,83
+PRJ-0251,School Building Project 251,Warehouse,Biñan,2026-07-24,2027-01-17,3428548.02,Low,Ongoing,68
+PRJ-0252,Hospital Project 252,Road Construction,Manila,2026-02-08,2026-06-07,49860004.25,Critical,Completed,23
+PRJ-0253,Residential Building Project 253,Warehouse,Santa Rosa,2026-10-24,2026-12-12,30337756.79,High,On Hold,58
+PRJ-0254,Renovation Project 254,Office Building,Makati,2027-10-19,2028-08-22,42627457.06,Critical,On Hold,24
+PRJ-0255,Road Construction Project 255,Office Building,Biñan,2026-04-26,2026-11-11,13234611.57,Medium,Planning,94
+PRJ-0256,Drainage Project Project 256,Bridge Construction,Makati,2026-12-12,2027-06-11,30742247.73,Critical,Completed,65
+PRJ-0257,Hospital Project 257,Commercial Building,Makati,2026-12-02,2027-02-14,49093417.03,Critical,On Hold,31
+PRJ-0258,Hospital Project 258,Bridge Construction,Dasmarinas,2026-01-07,2026-06-19,37810954.26,High,On Hold,74
+PRJ-0259,Warehouse Project 259,School Building,Calamba,2027-08-10,2027-09-14,12196977.58,Low,Completed,39
+PRJ-0260,Renovation Project 260,Warehouse,Calamba,2026-06-13,2027-02-05,6312079.42,High,On Hold,78
+PRJ-0261,Road Construction Project 261,Office Building,Makati,2026-08-15,2027-01-04,23021444.3,High,Completed,89
+PRJ-0262,Renovation Project 262,Bridge Construction,Antipolo,2027-07-17,2028-04-13,12749538.75,Low,Completed,67
+PRJ-0263,Commercial Building Project 263,Drainage Project,Quezon City,2027-12-22,2028-07-24,3557023.35,Medium,Ongoing,21
+PRJ-0264,Office Building Project 264,Commercial Building,Biñan,2026-12-02,2027-09-24,10667373.53,Critical,Planning,65
+PRJ-0265,Office Building Project 265,Road Construction,Bacoor,2027-04-02,2027-05-30,21063516.41,Low,Completed,86
+PRJ-0266,Hospital Project 266,Warehouse,Laguna,2026-11-12,2026-12-23,649265.84,Medium,Planning,5
+PRJ-0267,Commercial Building Project 267,Renovation,Manila,2027-03-10,2027-10-02,46761848.54,Low,Completed,4
+PRJ-0268,Road Construction Project 268,Road Construction,Antipolo,2026-10-21,2027-06-17,32255487.51,Critical,On Hold,48
+PRJ-0269,Hospital Project 269,Commercial Building,Biñan,2027-04-05,2027-11-14,48225146.63,Medium,On Hold,15
+PRJ-0270,Hospital Project 270,Renovation,Makati,2026-07-02,2027-05-03,36528977.97,Medium,Planning,96
+PRJ-0271,Office Building Project 271,Renovation,Imus,2026-01-24,2026-07-25,26830713.62,Medium,Ongoing,58
+PRJ-0272,Warehouse Project 272,Bridge Construction,Calamba,2026-12-21,2027-04-09,38391751.5,Low,Completed,78
+PRJ-0273,Bridge Construction Project 273,Commercial Building,Quezon City,2026-01-17,2026-06-19,29900235.3,Critical,Planning,31
+PRJ-0274,Office Building Project 274,Bridge Construction,Bacoor,2026-02-15,2026-10-08,11254825.9,Low,Ongoing,64
+PRJ-0275,Drainage Project Project 275,School Building,Santa Rosa,2026-10-24,2027-03-22,30096924.88,High,Ongoing,38
+PRJ-0276,Bridge Construction Project 276,Hospital,Taguig,2026-05-27,2027-03-19,14120119.07,Medium,Completed,71
+PRJ-0277,School Building Project 277,Hospital,Antipolo,2027-05-23,2027-07-16,26460921.46,Critical,Completed,19
+PRJ-0278,Road Construction Project 278,Renovation,Dasmarinas,2026-11-04,2027-06-14,12427925.36,Medium,On Hold,90
+PRJ-0279,Residential Building Project 279,Renovation,Imus,2026-05-28,2027-02-19,48405416.33,Medium,Completed,31
+PRJ-0280,School Building Project 280,Commercial Building,Dasmarinas,2026-09-19,2027-01-31,42433102.6,Low,Ongoing,6
+PRJ-0281,Drainage Project Project 281,Drainage Project,Manila,2026-10-02,2027-05-13,43744212.7,Medium,Ongoing,61
+PRJ-0282,Warehouse Project 282,Residential Building,Pasig,2026-08-02,2027-02-18,46889408.28,Low,Completed,31
+PRJ-0283,Bridge Construction Project 283,Hospital,Pasig,2027-12-14,2028-11-17,27827924.98,High,Completed,59
+PRJ-0284,School Building Project 284,Warehouse,Taguig,2027-07-01,2028-06-27,18302408.59,Critical,Completed,12
+PRJ-0285,Bridge Construction Project 285,School Building,Cavite City,2027-04-26,2027-11-05,20989543.44,Medium,Ongoing,2
+PRJ-0286,Drainage Project Project 286,Drainage Project,Calamba,2026-09-25,2027-08-04,21170114.64,Medium,Ongoing,42
+PRJ-0287,Drainage Project Project 287,Bridge Construction,Dasmarinas,2026-08-24,2027-04-05,27756805.36,High,On Hold,97
+PRJ-0288,Office Building Project 288,Office Building,Makati,2027-05-16,2028-05-08,36772225.73,High,Ongoing,17
+PRJ-0289,Road Construction Project 289,Renovation,Biñan,2027-07-14,2028-04-19,47883226.25,Low,Planning,85
+PRJ-0290,Hospital Project 290,Road Construction,Laguna,2026-02-19,2026-03-24,31719731.57,Low,Ongoing,1
+PRJ-0291,Office Building Project 291,School Building,Manila,2026-08-12,2027-05-27,31082844.18,Critical,Completed,2
+PRJ-0292,Renovation Project 292,Hospital,Manila,2026-01-07,2026-11-05,1327944.31,High,On Hold,2
+PRJ-0293,Road Construction Project 293,Commercial Building,Quezon City,2027-05-30,2028-02-04,26457077.36,Medium,Ongoing,79
+PRJ-0294,School Building Project 294,Warehouse,Antipolo,2027-06-24,2027-11-30,20146372.91,High,Completed,58
+PRJ-0295,Bridge Construction Project 295,Warehouse,Biñan,2027-08-02,2028-01-03,41489072.9,Low,Planning,11
+PRJ-0296,Hospital Project 296,Renovation,Dasmarinas,2027-02-20,2027-10-02,3277689.49,Low,Ongoing,10
+PRJ-0297,School Building Project 297,Drainage Project,Laguna,2027-05-27,2028-02-03,48705067.41,Low,Ongoing,27
+PRJ-0298,Office Building Project 298,Warehouse,Manila,2027-12-10,2028-10-25,46245883.7,High,Planning,22
+PRJ-0299,Bridge Construction Project 299,Drainage Project,Makati,2026-11-19,2026-12-27,37736596.26,Critical,Planning,38
+PRJ-0300,Bridge Construction Project 300,Drainage Project,Laguna,2026-06-16,2027-04-30,42547400.05,High,Completed,96
+PRJ-0301,Renovation Project 301,School Building,Manila,2026-05-24,2026-08-02,5335446.47,Medium,Planning,43
+PRJ-0302,Drainage Project Project 302,Hospital,Antipolo,2027-09-12,2028-08-21,16655644.03,High,Completed,62
+PRJ-0303,Renovation Project 303,Hospital,Imus,2026-08-22,2027-03-22,9694023.37,Critical,Planning,98
+PRJ-0304,Bridge Construction Project 304,Commercial Building,Quezon City,2027-09-26,2028-03-25,13764615.53,Critical,Ongoing,94
+PRJ-0305,School Building Project 305,Commercial Building,Quezon City,2027-02-03,2027-08-14,757163.51,High,Completed,46
+PRJ-0306,Road Construction Project 306,Commercial Building,Makati,2026-10-04,2026-12-25,21833486.04,Critical,Planning,3
+PRJ-0307,Renovation Project 307,Commercial Building,Santa Rosa,2026-04-02,2026-10-30,30103167.99,High,Completed,1
+PRJ-0308,Hospital Project 308,Commercial Building,Calamba,2026-10-26,2027-06-24,45106234.22,Medium,Ongoing,87
+PRJ-0309,Road Construction Project 309,Warehouse,Taguig,2027-01-25,2027-05-21,13786136.46,Medium,Planning,21
+PRJ-0310,Hospital Project 310,Warehouse,Dasmarinas,2027-03-22,2027-09-09,39241997.9,High,On Hold,31
+PRJ-0311,Drainage Project Project 311,Drainage Project,Pasig,2027-10-03,2028-07-12,23164150.83,Medium,On Hold,0
+PRJ-0312,Drainage Project Project 312,Hospital,Antipolo,2027-02-10,2027-08-29,43178816.37,Critical,On Hold,55
+PRJ-0313,Road Construction Project 313,Warehouse,Cavite City,2027-10-29,2028-09-27,30358957.79,Medium,Completed,40
+PRJ-0314,School Building Project 314,Warehouse,Calamba,2026-07-01,2027-02-19,34900409.5,Critical,Ongoing,41
+PRJ-0315,Hospital Project 315,School Building,Quezon City,2027-01-21,2027-07-13,46637324.05,Medium,Ongoing,87
+PRJ-0316,Office Building Project 316,Bridge Construction,Dasmarinas,2027-07-18,2027-08-30,39985433.29,Low,Completed,86
+PRJ-0317,Warehouse Project 317,Bridge Construction,Taguig,2027-05-27,2027-09-05,33103816.94,Critical,Completed,9
+PRJ-0318,Office Building Project 318,Drainage Project,Imus,2027-04-05,2028-03-06,26951186.36,Critical,Planning,46
+PRJ-0319,Drainage Project Project 319,Commercial Building,Quezon City,2027-12-20,2028-10-19,38563225.37,High,Ongoing,82
+PRJ-0320,Drainage Project Project 320,Hospital,Antipolo,2027-09-20,2027-11-11,16914036.75,Critical,Planning,1
+PRJ-0321,Bridge Construction Project 321,Renovation,Calamba,2026-04-11,2026-09-20,26180489.46,Medium,Completed,47
+PRJ-0322,Drainage Project Project 322,Renovation,Makati,2027-02-05,2027-10-30,17575885.69,Low,Completed,13
+PRJ-0323,Commercial Building Project 323,Commercial Building,Laguna,2026-10-30,2027-06-29,47063469.83,Medium,On Hold,39
+PRJ-0324,Bridge Construction Project 324,Renovation,Dasmarinas,2026-12-18,2027-09-07,17740864.68,Low,Completed,92
+PRJ-0325,School Building Project 325,Commercial Building,Taguig,2027-12-15,2028-09-01,2711811.11,Low,Planning,43
+PRJ-0326,Road Construction Project 326,Bridge Construction,Bacoor,2027-10-26,2028-01-19,9135435.02,Medium,On Hold,71
+PRJ-0327,Bridge Construction Project 327,Hospital,Biñan,2027-03-13,2027-12-04,9630362.87,Critical,Completed,3
+PRJ-0328,Office Building Project 328,Drainage Project,Imus,2027-09-21,2028-01-30,19747371.13,Medium,Ongoing,35
+PRJ-0329,Drainage Project Project 329,Commercial Building,Antipolo,2027-12-22,2028-02-22,43662976.84,Medium,On Hold,41
+PRJ-0330,Commercial Building Project 330,Warehouse,Biñan,2026-07-21,2027-04-11,43200509.1,High,Completed,78
+PRJ-0331,Commercial Building Project 331,School Building,Cavite City,2027-02-06,2028-01-02,42353131.23,Medium,On Hold,78
+PRJ-0332,Road Construction Project 332,School Building,Quezon City,2027-08-28,2027-11-09,12309349.96,Low,Ongoing,47
+PRJ-0333,Renovation Project 333,Hospital,Imus,2027-12-12,2028-03-23,30023077.96,Critical,Completed,23
+PRJ-0334,Renovation Project 334,Road Construction,Bacoor,2027-05-14,2028-05-03,8759843.43,High,Ongoing,23
+PRJ-0335,Drainage Project Project 335,Residential Building,Laguna,2026-11-19,2027-08-06,18272439.02,Low,Completed,17
+PRJ-0336,Renovation Project 336,Renovation,Biñan,2026-07-19,2027-03-02,25001007.47,Critical,Completed,90
+PRJ-0337,Road Construction Project 337,Commercial Building,Santa Rosa,2027-03-31,2028-01-05,2027604.93,Medium,On Hold,4
+PRJ-0338,Renovation Project 338,Warehouse,Makati,2026-10-09,2027-03-03,39146639.77,Critical,Planning,73
+PRJ-0339,Renovation Project 339,School Building,Bacoor,2026-04-27,2026-10-11,41219240.93,Low,Completed,69
+PRJ-0340,Commercial Building Project 340,Bridge Construction,Taguig,2026-08-12,2027-04-16,43803087.39,Low,Completed,33
+PRJ-0341,Office Building Project 341,Commercial Building,Antipolo,2026-12-23,2027-03-07,40688501.17,Medium,On Hold,90
+PRJ-0342,Hospital Project 342,Road Construction,Santa Rosa,2027-09-17,2028-09-04,7392130.81,Medium,Ongoing,7
+PRJ-0343,Renovation Project 343,Warehouse,Santa Rosa,2027-08-07,2028-03-03,27169043.03,High,On Hold,37
+PRJ-0344,Renovation Project 344,Commercial Building,Makati,2027-08-10,2028-01-23,48157213.75,Critical,Planning,35
+PRJ-0345,Road Construction Project 345,Bridge Construction,Makati,2027-11-03,2028-02-05,35714045.02,Medium,Completed,62
+PRJ-0346,Warehouse Project 346,Hospital,Imus,2026-05-26,2027-04-16,22873590.27,Low,Completed,65
+PRJ-0347,Office Building Project 347,Office Building,Cavite City,2026-10-12,2027-05-18,29306799.46,Low,Completed,81
+PRJ-0348,Commercial Building Project 348,Renovation,Imus,2027-11-12,2028-06-12,11282581.78,Critical,Ongoing,63
+PRJ-0349,Warehouse Project 349,School Building,Bacoor,2026-10-02,2027-04-15,29107715.19,Critical,On Hold,87
+PRJ-0350,Commercial Building Project 350,Office Building,Manila,2026-02-19,2026-04-13,6649740.37,Medium,Completed,58
+PRJ-0351,Bridge Construction Project 351,Road Construction,Biñan,2026-01-01,2026-09-07,15442342.47,High,Planning,83
+PRJ-0352,Commercial Building Project 352,School Building,Biñan,2027-01-05,2027-06-12,45238113.31,Medium,Planning,50
+PRJ-0353,Bridge Construction Project 353,Hospital,Biñan,2027-10-03,2028-04-06,5014359.77,Low,Planning,27
+PRJ-0354,Road Construction Project 354,Drainage Project,Pasig,2027-05-04,2027-07-12,26212490.6,Critical,Planning,1
+PRJ-0355,Commercial Building Project 355,Hospital,Calamba,2027-12-14,2028-07-06,7042669.98,Low,Ongoing,49
+PRJ-0356,Commercial Building Project 356,School Building,Cavite City,2026-04-02,2026-06-23,44108955.25,Medium,Completed,99
+PRJ-0357,Road Construction Project 357,Commercial Building,Bacoor,2026-05-17,2027-05-10,28382915.12,Medium,Completed,44
+PRJ-0358,Road Construction Project 358,Hospital,Santa Rosa,2026-08-07,2027-07-24,34485025.41,Medium,Planning,12
+PRJ-0359,Drainage Project Project 359,Hospital,Cavite City,2026-05-24,2026-08-25,48180811.17,High,Ongoing,31
+PRJ-0360,Commercial Building Project 360,Bridge Construction,Bacoor,2026-10-11,2027-10-06,30249453.56,High,Planning,84
+PRJ-0361,Renovation Project 361,Drainage Project,Bacoor,2026-11-05,2027-03-20,9838002.9,Critical,On Hold,82
+PRJ-0362,Office Building Project 362,Hospital,Quezon City,2026-02-25,2026-07-27,12433546.9,Low,Planning,46
+PRJ-0363,Hospital Project 363,Drainage Project,Imus,2026-11-21,2027-02-26,18587916.91,Medium,Completed,98
+PRJ-0364,Drainage Project Project 364,Commercial Building,Manila,2026-03-16,2026-04-23,13478171.22,Low,Planning,50
+PRJ-0365,Renovation Project 365,Hospital,Imus,2027-06-03,2027-11-26,35239626.61,Low,Ongoing,35
+PRJ-0366,Commercial Building Project 366,Renovation,Pasig,2026-03-27,2026-10-01,48728512.53,Medium,On Hold,50
+PRJ-0367,Commercial Building Project 367,Warehouse,Calamba,2027-08-24,2028-08-12,22155559.13,Medium,Planning,31
+PRJ-0368,Commercial Building Project 368,Office Building,Santa Rosa,2026-03-30,2026-12-07,30637204.02,High,Ongoing,15
+PRJ-0369,Residential Building Project 369,Road Construction,Dasmarinas,2026-01-13,2026-04-23,47674301.99,High,Ongoing,47
+PRJ-0370,Commercial Building Project 370,Residential Building,Cavite City,2026-05-10,2026-10-24,40451838.41,High,Planning,33
+PRJ-0371,Commercial Building Project 371,Office Building,Dasmarinas,2027-12-31,2028-11-20,25783703.03,Low,Completed,72
+PRJ-0372,Road Construction Project 372,Warehouse,Antipolo,2026-06-20,2027-01-24,5593793.29,Low,Ongoing,94
+PRJ-0373,Residential Building Project 373,Residential Building,Pasig,2027-06-06,2027-07-07,2776085.73,High,Completed,19
+PRJ-0374,Renovation Project 374,Hospital,Pasig,2026-07-03,2026-08-20,16429199.72,Critical,On Hold,34
+PRJ-0375,School Building Project 375,Commercial Building,Bacoor,2026-03-21,2027-02-06,33829622.98,Low,Ongoing,28
+PRJ-0376,Hospital Project 376,Commercial Building,Dasmarinas,2027-06-13,2027-08-05,43368595.38,High,On Hold,11
+PRJ-0377,Residential Building Project 377,School Building,Pasig,2027-07-21,2028-04-09,14933956.99,High,Ongoing,59
+PRJ-0378,Office Building Project 378,Bridge Construction,Calamba,2027-01-13,2027-12-11,45071943.21,Medium,Ongoing,0
+PRJ-0379,Bridge Construction Project 379,Renovation,Cavite City,2027-02-24,2027-04-07,31979121.06,Low,On Hold,0
+PRJ-0380,Warehouse Project 380,Commercial Building,Pasig,2027-11-05,2028-06-14,26725817.21,Medium,Completed,62
+PRJ-0381,Warehouse Project 381,Commercial Building,Manila,2026-03-03,2026-06-13,46103082.95,Critical,On Hold,58
+PRJ-0382,Commercial Building Project 382,Renovation,Makati,2026-03-28,2027-02-18,32042176.16,Critical,Planning,75
+PRJ-0383,Hospital Project 383,Road Construction,Pasig,2027-08-05,2027-10-05,14937963.19,High,Completed,89
+PRJ-0384,Office Building Project 384,Warehouse,Pasig,2026-12-01,2027-06-11,4197028.07,Medium,Ongoing,99
+PRJ-0385,Road Construction Project 385,Commercial Building,Makati,2027-08-22,2027-11-15,22753554.01,High,Completed,15
+PRJ-0386,Bridge Construction Project 386,Office Building,Taguig,2027-07-03,2028-02-01,23435656.46,Low,Planning,20
+PRJ-0387,Drainage Project Project 387,Residential Building,Pasig,2027-12-04,2028-06-06,41878275.17,High,Ongoing,11
+PRJ-0388,School Building Project 388,Hospital,Bacoor,2027-12-30,2028-06-04,2923055.57,High,On Hold,22
+PRJ-0389,Office Building Project 389,Renovation,Calamba,2026-02-01,2026-09-26,27730984.15,Low,Completed,13
+PRJ-0390,Residential Building Project 390,Residential Building,Laguna,2026-05-24,2026-08-24,39157519.68,Medium,Ongoing,25
+PRJ-0391,Commercial Building Project 391,Drainage Project,Santa Rosa,2027-02-15,2027-09-23,13311622.29,Low,Planning,8
+PRJ-0392,Office Building Project 392,Road Construction,Quezon City,2026-07-22,2027-07-17,45301359.53,High,Planning,5
+PRJ-0393,Road Construction Project 393,Drainage Project,Imus,2027-04-18,2027-06-12,41173427.38,Critical,Completed,3
+PRJ-0394,Road Construction Project 394,School Building,Pasig,2027-01-27,2027-10-02,45461058.69,High,On Hold,57
+PRJ-0395,Drainage Project Project 395,Drainage Project,Santa Rosa,2026-06-02,2026-07-19,12666346.57,High,Completed,52
+PRJ-0396,Residential Building Project 396,Commercial Building,Taguig,2027-07-18,2028-04-18,19459256.16,Critical,Ongoing,82
+PRJ-0397,Renovation Project 397,Residential Building,Imus,2027-06-23,2027-11-27,39204830.46,High,Completed,69
+PRJ-0398,Drainage Project Project 398,Renovation,Cavite City,2027-05-12,2027-12-04,19724873.09,Medium,Planning,40
+PRJ-0399,Residential Building Project 399,Warehouse,Manila,2027-09-04,2028-01-24,40528367.24,Critical,On Hold,98
+PRJ-0400,Road Construction Project 400,Commercial Building,Pasig,2027-08-22,2028-01-18,33014788.86,High,Planning,97
+PRJ-0401,Hospital Project 401,School Building,Laguna,2026-08-13,2027-07-03,49581325.09,Medium,Ongoing,30
+PRJ-0402,School Building Project 402,Drainage Project,Manila,2027-08-30,2028-03-09,35320917.7,High,Ongoing,72
+PRJ-0403,Renovation Project 403,Warehouse,Makati,2026-07-12,2027-04-20,24776602.8,Low,Planning,29
+PRJ-0404,Residential Building Project 404,Renovation,Dasmarinas,2027-09-09,2028-01-29,533833.07,Medium,Ongoing,43
+PRJ-0405,Residential Building Project 405,Residential Building,Makati,2026-07-01,2027-01-12,29537154.17,Medium,Planning,67
+PRJ-0406,School Building Project 406,Hospital,Santa Rosa,2027-01-09,2027-03-17,5501092.42,High,On Hold,17
+PRJ-0407,Office Building Project 407,School Building,Makati,2026-06-11,2027-02-19,35505554.6,High,Ongoing,85
+PRJ-0408,Hospital Project 408,Warehouse,Calamba,2027-08-27,2027-12-24,34580672.76,Medium,Ongoing,93
+PRJ-0409,Hospital Project 409,Drainage Project,Manila,2026-01-02,2026-11-21,9513046.92,High,Ongoing,81
+PRJ-0410,Office Building Project 410,Road Construction,Cavite City,2027-08-03,2027-10-25,37394494.74,Medium,On Hold,40
+PRJ-0411,Commercial Building Project 411,School Building,Dasmarinas,2026-06-21,2027-06-11,1064083.2,Medium,Ongoing,88
+PRJ-0412,Warehouse Project 412,Commercial Building,Calamba,2026-03-11,2026-10-06,563417.3,Critical,Completed,93
+PRJ-0413,Hospital Project 413,Office Building,Imus,2027-03-06,2027-06-29,17885942.88,Critical,Planning,61
+PRJ-0414,Bridge Construction Project 414,Road Construction,Dasmarinas,2027-08-15,2028-08-12,4148614.78,Low,On Hold,2
+PRJ-0415,Commercial Building Project 415,Commercial Building,Cavite City,2026-11-23,2027-05-05,8920207.56,Critical,Ongoing,93
+PRJ-0416,Commercial Building Project 416,School Building,Santa Rosa,2026-03-18,2027-01-22,49271166.96,Critical,Planning,55
+PRJ-0417,Drainage Project Project 417,Hospital,Makati,2027-11-01,2028-02-23,3151009.26,High,Ongoing,24
+PRJ-0418,Renovation Project 418,Warehouse,Biñan,2027-02-24,2028-01-03,14435392.14,Medium,Planning,6
+PRJ-0419,Renovation Project 419,Office Building,Makati,2027-02-07,2027-12-26,3197990.16,Low,Completed,11
+PRJ-0420,Drainage Project Project 420,Office Building,Pasig,2026-10-29,2027-10-14,5300851.43,Medium,Ongoing,81
+PRJ-0421,Office Building Project 421,Commercial Building,Taguig,2026-10-26,2027-01-05,39351390.37,Critical,Completed,84
+PRJ-0422,Renovation Project 422,Hospital,Makati,2026-09-29,2026-12-14,18865515.98,Critical,On Hold,23
+PRJ-0423,Warehouse Project 423,Office Building,Dasmarinas,2027-04-02,2027-05-24,13538340.08,High,Planning,19
+PRJ-0424,Commercial Building Project 424,School Building,Antipolo,2027-12-15,2028-03-03,27301725.8,Medium,Planning,49
+PRJ-0425,Renovation Project 425,Office Building,Santa Rosa,2027-06-20,2028-02-19,44141866.54,Critical,On Hold,10
+PRJ-0426,Renovation Project 426,Drainage Project,Bacoor,2027-02-09,2027-03-28,40122291.67,Medium,Planning,96
+PRJ-0427,Road Construction Project 427,Bridge Construction,Antipolo,2027-04-05,2027-08-01,10039941.16,Low,Completed,10
+PRJ-0428,Bridge Construction Project 428,Road Construction,Laguna,2027-12-01,2028-08-09,29954858.9,High,Planning,11
+PRJ-0429,Hospital Project 429,Renovation,Cavite City,2027-02-02,2027-12-13,42902896.94,Critical,Planning,100
+PRJ-0430,Drainage Project Project 430,Renovation,Antipolo,2027-12-19,2028-12-02,21269894.79,Critical,Ongoing,18
+PRJ-0431,Drainage Project Project 431,Commercial Building,Quezon City,2027-08-04,2028-06-30,28352846.09,Low,On Hold,68
+PRJ-0432,Warehouse Project 432,Hospital,Biñan,2026-12-19,2027-08-16,24536447.22,Critical,Planning,22
+PRJ-0433,Road Construction Project 433,Drainage Project,Santa Rosa,2026-10-10,2027-06-03,34200236.73,Critical,Planning,50
+PRJ-0434,Residential Building Project 434,Office Building,Taguig,2026-12-06,2027-05-06,44903052.43,Low,On Hold,38
+PRJ-0435,Office Building Project 435,Commercial Building,Laguna,2026-11-15,2027-05-07,11783891.97,High,Completed,99
+PRJ-0436,Hospital Project 436,Drainage Project,Biñan,2026-11-25,2027-05-11,4919699.09,Critical,Ongoing,52
+PRJ-0437,School Building Project 437,Residential Building,Bacoor,2027-05-12,2028-03-01,39678774.41,Low,On Hold,90
+PRJ-0438,Road Construction Project 438,Renovation,Santa Rosa,2027-06-03,2028-01-25,1932933.89,Medium,Ongoing,7
+PRJ-0439,Office Building Project 439,Residential Building,Cavite City,2026-09-13,2026-10-29,35379380.29,High,On Hold,59
+PRJ-0440,Commercial Building Project 440,Residential Building,Pasig,2027-06-02,2028-01-21,18937104.7,Critical,Ongoing,60
+PRJ-0441,School Building Project 441,School Building,Makati,2027-08-24,2028-07-01,41963861.63,High,Planning,36
+PRJ-0442,Residential Building Project 442,Road Construction,Laguna,2026-01-29,2026-09-13,28826774.02,Medium,Ongoing,82
+PRJ-0443,Warehouse Project 443,Hospital,Bacoor,2026-08-19,2027-01-01,1492591.7,Low,Completed,16
+PRJ-0444,Drainage Project Project 444,Residential Building,Pasig,2027-10-25,2028-02-20,12993326.85,High,On Hold,54
+PRJ-0445,Office Building Project 445,Warehouse,Pasig,2027-01-21,2027-08-17,23601551.77,Critical,Planning,0
+PRJ-0446,Renovation Project 446,Drainage Project,Santa Rosa,2027-06-08,2028-01-15,14492505.45,Low,Completed,8
+PRJ-0447,School Building Project 447,Warehouse,Taguig,2026-12-11,2027-05-31,32977920.46,High,Ongoing,19
+PRJ-0448,Residential Building Project 448,Drainage Project,Imus,2027-06-14,2027-11-14,33196251.02,Medium,Planning,83
+PRJ-0449,Warehouse Project 449,Hospital,Imus,2027-05-25,2027-11-22,19719608.59,Low,Ongoing,43
+PRJ-0450,Renovation Project 450,Office Building,Biñan,2028-01-01,2028-05-23,18245608.02,High,Ongoing,84
+PRJ-0451,Warehouse Project 451,Commercial Building,Dasmarinas,2027-07-26,2027-11-25,6833234.91,High,Ongoing,87
+PRJ-0452,Commercial Building Project 452,Bridge Construction,Cavite City,2026-12-10,2027-12-10,11554732.31,High,Completed,100
+PRJ-0453,Warehouse Project 453,Drainage Project,Taguig,2026-12-06,2027-07-14,23456151.1,Low,Completed,6
+PRJ-0454,Drainage Project Project 454,Drainage Project,Quezon City,2027-10-12,2028-09-04,23874874.28,Medium,Planning,87
+PRJ-0455,Warehouse Project 455,Hospital,Manila,2027-01-26,2027-11-23,43607032.74,Medium,Ongoing,25
+PRJ-0456,Drainage Project Project 456,Office Building,Makati,2026-12-17,2027-08-13,16160981.15,Medium,Planning,62
+PRJ-0457,Road Construction Project 457,School Building,Biñan,2026-12-07,2027-11-25,3371672.62,Critical,On Hold,26
+PRJ-0458,Road Construction Project 458,Office Building,Antipolo,2026-06-22,2027-05-13,38296673.77,Low,Ongoing,78
+PRJ-0459,Hospital Project 459,Hospital,Imus,2027-03-21,2028-03-09,48283728.09,Critical,Planning,4
+PRJ-0460,School Building Project 460,Residential Building,Cavite City,2027-07-01,2027-11-10,37963963.03,Medium,Planning,86
+PRJ-0461,Bridge Construction Project 461,Bridge Construction,Calamba,2026-01-05,2026-12-21,43910764.2,High,Ongoing,13
+PRJ-0462,Drainage Project Project 462,Warehouse,Makati,2027-01-28,2027-11-11,3731707.61,Low,On Hold,37
+PRJ-0463,Drainage Project Project 463,Renovation,Cavite City,2027-04-12,2028-02-02,21966428.89,Medium,On Hold,62
+PRJ-0464,Road Construction Project 464,Hospital,Manila,2027-01-03,2027-05-09,11806705.1,Medium,Ongoing,93
+PRJ-0465,Renovation Project 465,Road Construction,Quezon City,2026-01-23,2026-12-20,18646276.84,Low,Completed,81
+PRJ-0466,Drainage Project Project 466,Residential Building,Santa Rosa,2026-09-19,2027-07-19,49736671.57,Low,Planning,6
+PRJ-0467,Hospital Project 467,Office Building,Imus,2027-12-08,2028-03-06,6617955.62,High,Completed,89
+PRJ-0468,Residential Building Project 468,Warehouse,Imus,2026-06-06,2026-10-19,33252396.52,High,Ongoing,53
+PRJ-0469,Drainage Project Project 469,Commercial Building,Taguig,2026-04-18,2027-02-03,6143621.36,Low,Completed,25
+PRJ-0470,Warehouse Project 470,Renovation,Pasig,2027-09-16,2028-01-26,18217130.91,Critical,On Hold,20
+PRJ-0471,Office Building Project 471,Bridge Construction,Calamba,2026-02-10,2026-12-17,46689655.06,High,Ongoing,0
+PRJ-0472,Commercial Building Project 472,Drainage Project,Biñan,2026-01-14,2026-03-30,24958149.43,Low,Planning,92
+PRJ-0473,Bridge Construction Project 473,Office Building,Taguig,2026-04-14,2026-09-22,13574188.63,Low,Planning,22
+PRJ-0474,School Building Project 474,School Building,Imus,2026-02-10,2026-08-07,37057739.69,Low,Planning,1
+PRJ-0475,Road Construction Project 475,School Building,Cavite City,2026-05-22,2027-05-18,44779117.06,High,Planning,47
+PRJ-0476,Commercial Building Project 476,Hospital,Imus,2026-12-17,2027-04-19,48134341.54,High,Completed,88
+PRJ-0477,Road Construction Project 477,Commercial Building,Makati,2027-05-05,2028-01-05,34960408.74,Low,Ongoing,13
+PRJ-0478,Office Building Project 478,Drainage Project,Biñan,2027-03-03,2028-01-29,22189058.85,Critical,On Hold,78
+PRJ-0479,Office Building Project 479,Office Building,Quezon City,2026-01-30,2026-05-06,44435899.44,Critical,Planning,8
+PRJ-0480,School Building Project 480,Residential Building,Calamba,2026-09-25,2027-09-25,43482447.46,Medium,On Hold,66
+PRJ-0481,Commercial Building Project 481,Hospital,Biñan,2027-06-20,2028-05-31,36469272.44,Critical,On Hold,84
+PRJ-0482,Hospital Project 482,Road Construction,Laguna,2027-11-24,2028-11-16,41408672.1,Low,Planning,82
+PRJ-0483,Office Building Project 483,Office Building,Laguna,2026-06-10,2027-03-25,8687491.73,Critical,On Hold,30
+PRJ-0484,Residential Building Project 484,Renovation,Pasig,2026-12-05,2027-05-26,27749530.7,Critical,Completed,30
+PRJ-0485,Office Building Project 485,Drainage Project,Dasmarinas,2026-03-22,2026-12-12,4856983.15,Critical,Completed,40
+PRJ-0486,Residential Building Project 486,Commercial Building,Imus,2026-05-02,2027-02-10,20910758.11,Low,Planning,77
+PRJ-0487,Warehouse Project 487,Renovation,Bacoor,2027-09-26,2028-09-16,10739136.82,Critical,On Hold,46
+PRJ-0488,Office Building Project 488,School Building,Bacoor,2026-02-25,2026-07-19,38487111.79,Critical,On Hold,91
+PRJ-0489,Commercial Building Project 489,Bridge Construction,Manila,2027-04-09,2027-07-06,17397177.17,High,On Hold,89
+PRJ-0490,Road Construction Project 490,Office Building,Makati,2026-04-19,2026-06-11,41181013.67,Critical,Planning,32
+PRJ-0491,Bridge Construction Project 491,Commercial Building,Laguna,2027-09-18,2028-01-26,19948376.25,Critical,Ongoing,91
+PRJ-0492,Hospital Project 492,Residential Building,Biñan,2026-12-13,2027-03-08,41954578.76,Low,Completed,58
+PRJ-0493,Renovation Project 493,Road Construction,Dasmarinas,2027-11-06,2028-10-02,714712.57,Low,Completed,74
+PRJ-0494,Road Construction Project 494,Drainage Project,Makati,2027-05-10,2028-02-24,36659485.76,Medium,Planning,49
+PRJ-0495,Drainage Project Project 495,School Building,Bacoor,2027-11-05,2028-10-07,44128833.07,Critical,Ongoing,35
+PRJ-0496,Warehouse Project 496,Office Building,Antipolo,2027-02-12,2027-09-05,7101905.64,Critical,On Hold,89
+PRJ-0497,Renovation Project 497,Bridge Construction,Pasig,2027-07-15,2028-01-21,10880778.46,High,On Hold,86
+PRJ-0498,Road Construction Project 498,Renovation,Bacoor,2026-05-16,2027-05-13,34868442.7,High,Planning,97
+PRJ-0499,Office Building Project 499,Drainage Project,Santa Rosa,2026-12-27,2027-11-09,47162345.72,Critical,On Hold,54
+PRJ-0500,Commercial Building Project 500,Residential Building,Imus,2026-01-14,2026-11-07,7693672.23,Low,Ongoing,34

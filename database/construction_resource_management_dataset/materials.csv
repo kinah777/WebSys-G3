@@ -1,0 +1,501 @@
+material_id,name,type,unit,quantity_in_stock,reorder_level,unit_cost
+MAT-0001,Paint Grade C 001,Paint,tons,2535,86,2225.29
+MAT-0002,Gravel Grade C 002,Gravel,tons,1724,415,720.28
+MAT-0003,Lumber Grade C 003,Lumber,bags,6712,301,2717.67
+MAT-0004,Gravel Grade A 004,Gravel,meters,9452,828,3895.54
+MAT-0005,Concrete Grade C 005,Concrete,pcs,8777,733,2514.03
+MAT-0006,Electrical Supplies Grade A 006,Electrical Supplies,pcs,2302,284,1981.99
+MAT-0007,Gravel Grade C 007,Gravel,pcs,9912,609,350.07
+MAT-0008,Cement Grade C 008,Cement,kg,1511,327,378.53
+MAT-0009,Steel Grade C 009,Steel,liters,4117,386,3309.29
+MAT-0010,Electrical Supplies Grade C 010,Electrical Supplies,bags,3401,751,2042.82
+MAT-0011,Sand Grade A 011,Sand,pcs,6728,935,12.12
+MAT-0012,Gravel Grade A 012,Gravel,kg,4219,348,2785.91
+MAT-0013,Steel Grade B 013,Steel,tons,409,951,836.21
+MAT-0014,Concrete Grade B 014,Concrete,pcs,2419,288,631.6
+MAT-0015,Steel Grade B 015,Steel,tons,567,913,974.31
+MAT-0016,Concrete Grade B 016,Concrete,kg,9343,446,2016.3
+MAT-0017,Steel Grade B 017,Steel,liters,7983,938,4558.65
+MAT-0018,Steel Grade C 018,Steel,bags,4288,628,2695.82
+MAT-0019,Pipes Grade C 019,Pipes,kg,9007,574,4782.57
+MAT-0020,Cement Grade B 020,Cement,pcs,9080,168,493.52
+MAT-0021,Steel Grade B 021,Steel,tons,6828,549,4240.48
+MAT-0022,Steel Grade A 022,Steel,tons,3076,961,1978.65
+MAT-0023,Bricks Grade B 023,Bricks,meters,6967,651,3319.21
+MAT-0024,Electrical Supplies Grade A 024,Electrical Supplies,liters,9581,425,3485.43
+MAT-0025,Pipes Grade B 025,Pipes,tons,8352,410,2840.43
+MAT-0026,Steel Grade B 026,Steel,tons,9689,287,4894.69
+MAT-0027,Cement Grade A 027,Cement,kg,2258,759,2999.55
+MAT-0028,Gravel Grade A 028,Gravel,liters,7877,389,1239.52
+MAT-0029,Bricks Grade C 029,Bricks,kg,5805,136,361.21
+MAT-0030,Steel Grade B 030,Steel,liters,1063,252,4164.29
+MAT-0031,Pipes Grade C 031,Pipes,pcs,3443,451,1578.8
+MAT-0032,Bricks Grade C 032,Bricks,liters,2110,122,2578.19
+MAT-0033,Concrete Grade B 033,Concrete,tons,9872,77,1901.12
+MAT-0034,Cement Grade A 034,Cement,kg,9784,691,3260.12
+MAT-0035,Concrete Grade A 035,Concrete,tons,8739,614,1258.59
+MAT-0036,Cement Grade B 036,Cement,pcs,6194,718,4327.27
+MAT-0037,Pipes Grade C 037,Pipes,pcs,7117,529,2058.2
+MAT-0038,Lumber Grade B 038,Lumber,tons,2701,34,4102.75
+MAT-0039,Concrete Grade B 039,Concrete,pcs,6016,521,3783.77
+MAT-0040,Lumber Grade C 040,Lumber,kg,9408,481,3914.76
+MAT-0041,Concrete Grade B 041,Concrete,bags,3200,820,2537.05
+MAT-0042,Electrical Supplies Grade A 042,Electrical Supplies,pcs,2193,268,4286.62
+MAT-0043,Lumber Grade B 043,Lumber,pcs,6296,822,662.72
+MAT-0044,Gravel Grade B 044,Gravel,tons,4788,75,550.91
+MAT-0045,Lumber Grade C 045,Lumber,meters,5735,254,4627.51
+MAT-0046,Cement Grade C 046,Cement,liters,7021,184,4279.32
+MAT-0047,Steel Grade A 047,Steel,bags,4868,205,4816.76
+MAT-0048,Paint Grade B 048,Paint,pcs,7815,338,2012.17
+MAT-0049,Lumber Grade C 049,Lumber,kg,6442,48,527.24
+MAT-0050,Gravel Grade B 050,Gravel,liters,1687,114,1868.82
+MAT-0051,Pipes Grade B 051,Pipes,meters,8521,674,1947.34
+MAT-0052,Cement Grade A 052,Cement,meters,295,130,2378.18
+MAT-0053,Pipes Grade B 053,Pipes,pcs,8152,592,647.98
+MAT-0054,Steel Grade A 054,Steel,meters,9807,923,4709.43
+MAT-0055,Paint Grade A 055,Paint,tons,7359,158,4971.14
+MAT-0056,Bricks Grade B 056,Bricks,bags,7013,97,744.9
+MAT-0057,Steel Grade A 057,Steel,kg,3390,561,1263.63
+MAT-0058,Paint Grade B 058,Paint,bags,7096,374,3485.21
+MAT-0059,Bricks Grade C 059,Bricks,kg,7606,587,1758.27
+MAT-0060,Gravel Grade B 060,Gravel,tons,8472,199,1555.72
+MAT-0061,Steel Grade C 061,Steel,meters,3860,535,1628.25
+MAT-0062,Concrete Grade B 062,Concrete,tons,822,52,3382.34
+MAT-0063,Bricks Grade B 063,Bricks,tons,6069,312,3264.51
+MAT-0064,Lumber Grade C 064,Lumber,bags,3274,885,4401.47
+MAT-0065,Steel Grade A 065,Steel,bags,2575,977,3567.5
+MAT-0066,Paint Grade B 066,Paint,meters,8098,718,4701.02
+MAT-0067,Steel Grade B 067,Steel,pcs,6573,802,1039.34
+MAT-0068,Concrete Grade C 068,Concrete,liters,2775,521,856.91
+MAT-0069,Sand Grade C 069,Sand,meters,6267,721,856.88
+MAT-0070,Steel Grade B 070,Steel,tons,256,690,2719.08
+MAT-0071,Steel Grade C 071,Steel,pcs,4095,866,218.1
+MAT-0072,Lumber Grade C 072,Lumber,liters,3234,53,1939.2
+MAT-0073,Sand Grade B 073,Sand,liters,8984,535,4150.42
+MAT-0074,Concrete Grade C 074,Concrete,bags,5473,888,1155.3
+MAT-0075,Concrete Grade A 075,Concrete,kg,1751,547,354.93
+MAT-0076,Bricks Grade B 076,Bricks,pcs,8326,313,2575.8
+MAT-0077,Steel Grade B 077,Steel,tons,2872,305,1277.97
+MAT-0078,Lumber Grade B 078,Lumber,tons,7054,74,4131.0
+MAT-0079,Sand Grade C 079,Sand,tons,1130,506,3017.81
+MAT-0080,Sand Grade B 080,Sand,liters,9101,129,87.69
+MAT-0081,Lumber Grade A 081,Lumber,liters,9810,146,743.95
+MAT-0082,Paint Grade C 082,Paint,meters,4235,915,2698.94
+MAT-0083,Bricks Grade C 083,Bricks,meters,9540,455,4940.98
+MAT-0084,Pipes Grade C 084,Pipes,bags,9861,82,1537.31
+MAT-0085,Lumber Grade B 085,Lumber,meters,2226,877,2401.91
+MAT-0086,Concrete Grade B 086,Concrete,liters,2303,279,1890.44
+MAT-0087,Cement Grade A 087,Cement,liters,9851,573,3741.02
+MAT-0088,Bricks Grade C 088,Bricks,tons,2917,294,669.68
+MAT-0089,Sand Grade C 089,Sand,liters,3759,626,2253.16
+MAT-0090,Pipes Grade A 090,Pipes,bags,9356,831,524.98
+MAT-0091,Steel Grade C 091,Steel,liters,9056,531,160.12
+MAT-0092,Gravel Grade C 092,Gravel,bags,2874,549,4336.0
+MAT-0093,Cement Grade C 093,Cement,meters,9176,966,1068.33
+MAT-0094,Gravel Grade A 094,Gravel,kg,1966,35,933.72
+MAT-0095,Gravel Grade A 095,Gravel,kg,1082,728,2614.89
+MAT-0096,Paint Grade B 096,Paint,pcs,1927,66,4551.1
+MAT-0097,Pipes Grade C 097,Pipes,meters,9194,961,4012.17
+MAT-0098,Paint Grade C 098,Paint,pcs,2043,31,2743.23
+MAT-0099,Concrete Grade A 099,Concrete,tons,6336,835,473.77
+MAT-0100,Cement Grade C 100,Cement,bags,9110,316,4643.5
+MAT-0101,Sand Grade C 101,Sand,kg,9710,542,3778.03
+MAT-0102,Paint Grade B 102,Paint,pcs,9066,676,699.88
+MAT-0103,Lumber Grade B 103,Lumber,pcs,9695,343,4161.97
+MAT-0104,Steel Grade A 104,Steel,kg,3303,770,3867.74
+MAT-0105,Cement Grade B 105,Cement,pcs,3038,23,1856.59
+MAT-0106,Concrete Grade B 106,Concrete,liters,9689,408,2193.3
+MAT-0107,Steel Grade B 107,Steel,kg,804,466,2169.93
+MAT-0108,Bricks Grade B 108,Bricks,tons,1557,95,75.08
+MAT-0109,Bricks Grade B 109,Bricks,tons,1467,745,460.58
+MAT-0110,Sand Grade B 110,Sand,kg,7373,574,1626.42
+MAT-0111,Bricks Grade C 111,Bricks,meters,4455,810,3096.88
+MAT-0112,Cement Grade C 112,Cement,meters,296,396,3867.3
+MAT-0113,Sand Grade B 113,Sand,pcs,9032,227,1478.06
+MAT-0114,Gravel Grade B 114,Gravel,meters,9347,598,3112.93
+MAT-0115,Gravel Grade B 115,Gravel,meters,7572,823,86.98
+MAT-0116,Sand Grade C 116,Sand,pcs,9192,588,2604.99
+MAT-0117,Electrical Supplies Grade A 117,Electrical Supplies,pcs,8719,718,3305.46
+MAT-0118,Paint Grade C 118,Paint,kg,6015,51,1861.27
+MAT-0119,Electrical Supplies Grade B 119,Electrical Supplies,bags,5997,484,4221.03
+MAT-0120,Electrical Supplies Grade B 120,Electrical Supplies,pcs,432,729,2977.56
+MAT-0121,Gravel Grade A 121,Gravel,kg,2224,461,4407.09
+MAT-0122,Lumber Grade B 122,Lumber,liters,8602,611,2799.75
+MAT-0123,Gravel Grade B 123,Gravel,kg,5009,100,2770.95
+MAT-0124,Cement Grade C 124,Cement,tons,2330,983,373.47
+MAT-0125,Paint Grade B 125,Paint,tons,8413,341,4857.86
+MAT-0126,Steel Grade B 126,Steel,pcs,7536,317,3533.27
+MAT-0127,Gravel Grade B 127,Gravel,tons,6359,636,932.54
+MAT-0128,Steel Grade A 128,Steel,meters,9084,168,1408.85
+MAT-0129,Electrical Supplies Grade C 129,Electrical Supplies,meters,6649,982,697.48
+MAT-0130,Concrete Grade A 130,Concrete,bags,2358,637,4715.7
+MAT-0131,Lumber Grade C 131,Lumber,meters,1269,480,276.44
+MAT-0132,Concrete Grade C 132,Concrete,liters,6053,292,4582.08
+MAT-0133,Steel Grade C 133,Steel,tons,4861,401,2435.67
+MAT-0134,Cement Grade B 134,Cement,pcs,8336,149,24.4
+MAT-0135,Electrical Supplies Grade A 135,Electrical Supplies,bags,6065,528,4154.22
+MAT-0136,Electrical Supplies Grade A 136,Electrical Supplies,liters,865,84,3164.27
+MAT-0137,Sand Grade C 137,Sand,tons,6767,301,4753.69
+MAT-0138,Paint Grade A 138,Paint,bags,2278,305,4239.62
+MAT-0139,Paint Grade A 139,Paint,meters,2719,961,2804.35
+MAT-0140,Lumber Grade C 140,Lumber,tons,132,79,453.91
+MAT-0141,Pipes Grade C 141,Pipes,meters,3044,184,3447.35
+MAT-0142,Paint Grade A 142,Paint,kg,2282,449,371.72
+MAT-0143,Pipes Grade B 143,Pipes,kg,7938,87,304.0
+MAT-0144,Lumber Grade C 144,Lumber,liters,1016,113,589.68
+MAT-0145,Lumber Grade A 145,Lumber,meters,2966,884,2324.47
+MAT-0146,Steel Grade C 146,Steel,kg,5210,210,2142.74
+MAT-0147,Cement Grade C 147,Cement,tons,3775,989,4086.53
+MAT-0148,Paint Grade A 148,Paint,meters,2280,224,228.81
+MAT-0149,Paint Grade A 149,Paint,pcs,9776,341,3405.62
+MAT-0150,Cement Grade B 150,Cement,tons,1469,918,2525.86
+MAT-0151,Concrete Grade C 151,Concrete,liters,5411,735,1472.25
+MAT-0152,Gravel Grade C 152,Gravel,meters,7723,443,2969.56
+MAT-0153,Electrical Supplies Grade A 153,Electrical Supplies,pcs,5696,154,2979.94
+MAT-0154,Concrete Grade B 154,Concrete,kg,6823,876,3666.19
+MAT-0155,Electrical Supplies Grade C 155,Electrical Supplies,meters,2364,505,1018.9
+MAT-0156,Concrete Grade C 156,Concrete,kg,3543,943,3854.86
+MAT-0157,Steel Grade A 157,Steel,tons,5494,66,777.11
+MAT-0158,Pipes Grade C 158,Pipes,meters,6657,247,3426.17
+MAT-0159,Steel Grade B 159,Steel,tons,3545,922,3920.52
+MAT-0160,Lumber Grade B 160,Lumber,tons,8635,802,4407.73
+MAT-0161,Sand Grade B 161,Sand,bags,6942,562,311.77
+MAT-0162,Concrete Grade C 162,Concrete,pcs,687,783,2152.04
+MAT-0163,Sand Grade C 163,Sand,meters,3638,754,4982.31
+MAT-0164,Concrete Grade C 164,Concrete,meters,3248,580,1525.16
+MAT-0165,Gravel Grade B 165,Gravel,bags,6318,963,4907.17
+MAT-0166,Concrete Grade B 166,Concrete,bags,8900,68,1660.93
+MAT-0167,Cement Grade B 167,Cement,pcs,4583,741,260.1
+MAT-0168,Lumber Grade B 168,Lumber,meters,5547,380,409.51
+MAT-0169,Bricks Grade A 169,Bricks,bags,9299,207,3648.64
+MAT-0170,Cement Grade C 170,Cement,kg,8911,979,1673.2
+MAT-0171,Lumber Grade A 171,Lumber,kg,8133,664,3502.19
+MAT-0172,Cement Grade C 172,Cement,meters,1716,930,1175.52
+MAT-0173,Steel Grade A 173,Steel,pcs,8365,983,1945.62
+MAT-0174,Electrical Supplies Grade C 174,Electrical Supplies,kg,2381,356,4029.15
+MAT-0175,Paint Grade C 175,Paint,pcs,934,723,3516.46
+MAT-0176,Gravel Grade C 176,Gravel,kg,6703,754,3108.7
+MAT-0177,Sand Grade B 177,Sand,tons,1412,718,893.86
+MAT-0178,Cement Grade A 178,Cement,liters,2265,206,2194.31
+MAT-0179,Lumber Grade C 179,Lumber,tons,1025,30,797.96
+MAT-0180,Bricks Grade C 180,Bricks,kg,1343,347,563.86
+MAT-0181,Sand Grade C 181,Sand,bags,5735,837,3276.84
+MAT-0182,Electrical Supplies Grade B 182,Electrical Supplies,pcs,5617,52,2195.93
+MAT-0183,Cement Grade B 183,Cement,kg,7307,741,964.4
+MAT-0184,Gravel Grade B 184,Gravel,meters,9073,70,4654.44
+MAT-0185,Electrical Supplies Grade C 185,Electrical Supplies,tons,509,955,1160.69
+MAT-0186,Steel Grade A 186,Steel,kg,6483,314,4787.39
+MAT-0187,Electrical Supplies Grade A 187,Electrical Supplies,tons,249,228,3453.25
+MAT-0188,Electrical Supplies Grade A 188,Electrical Supplies,kg,4595,376,639.02
+MAT-0189,Cement Grade A 189,Cement,pcs,797,538,3061.76
+MAT-0190,Concrete Grade A 190,Concrete,kg,8942,327,3138.04
+MAT-0191,Steel Grade A 191,Steel,liters,5568,921,3080.71
+MAT-0192,Gravel Grade C 192,Gravel,tons,5720,798,3752.71
+MAT-0193,Lumber Grade C 193,Lumber,meters,5628,170,238.07
+MAT-0194,Bricks Grade A 194,Bricks,kg,1021,437,4819.13
+MAT-0195,Electrical Supplies Grade C 195,Electrical Supplies,kg,364,427,2860.25
+MAT-0196,Pipes Grade A 196,Pipes,kg,9007,416,3588.47
+MAT-0197,Paint Grade B 197,Paint,kg,4008,510,2509.76
+MAT-0198,Gravel Grade C 198,Gravel,bags,3225,603,4242.91
+MAT-0199,Concrete Grade C 199,Concrete,liters,6193,902,1132.89
+MAT-0200,Cement Grade B 200,Cement,pcs,7561,406,3796.23
+MAT-0201,Gravel Grade B 201,Gravel,tons,181,243,811.79
+MAT-0202,Lumber Grade A 202,Lumber,kg,8131,237,4926.99
+MAT-0203,Lumber Grade B 203,Lumber,bags,6458,208,1436.49
+MAT-0204,Paint Grade C 204,Paint,tons,3060,616,315.13
+MAT-0205,Gravel Grade C 205,Gravel,meters,2498,244,3948.49
+MAT-0206,Concrete Grade B 206,Concrete,kg,1192,35,3688.77
+MAT-0207,Cement Grade C 207,Cement,kg,6960,879,3387.07
+MAT-0208,Lumber Grade A 208,Lumber,kg,8913,589,4568.49
+MAT-0209,Pipes Grade B 209,Pipes,bags,278,175,4433.13
+MAT-0210,Steel Grade A 210,Steel,pcs,6482,474,1107.52
+MAT-0211,Gravel Grade C 211,Gravel,kg,4663,937,3394.91
+MAT-0212,Paint Grade B 212,Paint,meters,9167,828,4910.29
+MAT-0213,Paint Grade B 213,Paint,meters,3098,109,863.25
+MAT-0214,Electrical Supplies Grade B 214,Electrical Supplies,tons,2794,424,241.67
+MAT-0215,Sand Grade B 215,Sand,liters,2985,836,52.27
+MAT-0216,Gravel Grade B 216,Gravel,tons,5845,553,940.83
+MAT-0217,Concrete Grade B 217,Concrete,pcs,454,731,2983.23
+MAT-0218,Cement Grade B 218,Cement,kg,1538,840,1727.82
+MAT-0219,Gravel Grade A 219,Gravel,liters,9073,26,912.85
+MAT-0220,Bricks Grade C 220,Bricks,bags,1671,682,3978.36
+MAT-0221,Gravel Grade A 221,Gravel,tons,8642,824,631.22
+MAT-0222,Electrical Supplies Grade B 222,Electrical Supplies,liters,120,722,1836.55
+MAT-0223,Steel Grade B 223,Steel,kg,1886,535,2188.29
+MAT-0224,Pipes Grade B 224,Pipes,tons,9065,583,416.95
+MAT-0225,Electrical Supplies Grade B 225,Electrical Supplies,meters,7648,726,4864.33
+MAT-0226,Gravel Grade C 226,Gravel,liters,1593,410,2784.5
+MAT-0227,Cement Grade C 227,Cement,kg,5615,959,1189.3
+MAT-0228,Pipes Grade C 228,Pipes,meters,3588,88,2741.97
+MAT-0229,Bricks Grade C 229,Bricks,bags,8381,950,2913.6
+MAT-0230,Gravel Grade C 230,Gravel,tons,5484,923,1561.85
+MAT-0231,Cement Grade C 231,Cement,kg,8469,161,848.93
+MAT-0232,Paint Grade A 232,Paint,kg,934,201,2760.49
+MAT-0233,Electrical Supplies Grade B 233,Electrical Supplies,meters,2138,660,4633.84
+MAT-0234,Sand Grade A 234,Sand,liters,2597,80,1267.29
+MAT-0235,Concrete Grade B 235,Concrete,pcs,4617,690,1065.0
+MAT-0236,Gravel Grade C 236,Gravel,meters,1847,87,2113.09
+MAT-0237,Lumber Grade C 237,Lumber,meters,3265,737,60.94
+MAT-0238,Gravel Grade C 238,Gravel,liters,263,150,190.22
+MAT-0239,Sand Grade A 239,Sand,tons,2495,244,4263.35
+MAT-0240,Gravel Grade C 240,Gravel,pcs,8209,387,4253.93
+MAT-0241,Gravel Grade C 241,Gravel,kg,4042,401,3592.08
+MAT-0242,Cement Grade A 242,Cement,meters,1582,447,1683.97
+MAT-0243,Cement Grade B 243,Cement,tons,6535,221,24.4
+MAT-0244,Cement Grade B 244,Cement,liters,9796,256,4675.16
+MAT-0245,Paint Grade B 245,Paint,pcs,5880,427,4516.44
+MAT-0246,Steel Grade C 246,Steel,meters,3724,155,3841.85
+MAT-0247,Cement Grade C 247,Cement,bags,9851,111,2084.4
+MAT-0248,Steel Grade B 248,Steel,tons,6245,905,3044.51
+MAT-0249,Gravel Grade C 249,Gravel,liters,8748,243,605.46
+MAT-0250,Cement Grade B 250,Cement,bags,8917,860,1386.77
+MAT-0251,Electrical Supplies Grade B 251,Electrical Supplies,pcs,2707,174,2841.77
+MAT-0252,Sand Grade A 252,Sand,pcs,8026,34,2510.43
+MAT-0253,Lumber Grade B 253,Lumber,meters,6088,881,2094.24
+MAT-0254,Bricks Grade B 254,Bricks,kg,6327,259,3505.13
+MAT-0255,Gravel Grade A 255,Gravel,meters,8440,843,1974.64
+MAT-0256,Lumber Grade A 256,Lumber,tons,9572,313,3896.23
+MAT-0257,Concrete Grade B 257,Concrete,liters,642,471,4826.91
+MAT-0258,Bricks Grade A 258,Bricks,liters,5066,639,3853.35
+MAT-0259,Sand Grade C 259,Sand,pcs,5682,28,1518.48
+MAT-0260,Electrical Supplies Grade B 260,Electrical Supplies,bags,7482,214,656.08
+MAT-0261,Gravel Grade B 261,Gravel,bags,7158,923,4171.78
+MAT-0262,Steel Grade B 262,Steel,bags,4239,241,3931.29
+MAT-0263,Gravel Grade C 263,Gravel,tons,9139,732,1609.6
+MAT-0264,Gravel Grade A 264,Gravel,liters,8482,890,2571.06
+MAT-0265,Cement Grade C 265,Cement,liters,8127,991,4931.78
+MAT-0266,Electrical Supplies Grade A 266,Electrical Supplies,liters,6727,171,3200.96
+MAT-0267,Concrete Grade C 267,Concrete,kg,9893,604,3416.66
+MAT-0268,Concrete Grade A 268,Concrete,bags,9220,366,4026.94
+MAT-0269,Gravel Grade C 269,Gravel,tons,7601,1000,941.43
+MAT-0270,Lumber Grade C 270,Lumber,kg,6024,564,1186.89
+MAT-0271,Sand Grade B 271,Sand,bags,619,848,3450.73
+MAT-0272,Steel Grade A 272,Steel,liters,6043,888,3345.62
+MAT-0273,Paint Grade B 273,Paint,kg,6175,756,1342.71
+MAT-0274,Paint Grade C 274,Paint,pcs,9285,711,1350.13
+MAT-0275,Lumber Grade B 275,Lumber,pcs,9664,749,4475.62
+MAT-0276,Concrete Grade C 276,Concrete,liters,5546,989,1004.85
+MAT-0277,Sand Grade B 277,Sand,tons,9295,503,4955.73
+MAT-0278,Concrete Grade B 278,Concrete,pcs,9792,815,2518.92
+MAT-0279,Steel Grade B 279,Steel,bags,4643,149,404.6
+MAT-0280,Lumber Grade B 280,Lumber,tons,412,568,3491.73
+MAT-0281,Cement Grade C 281,Cement,tons,5069,540,446.82
+MAT-0282,Lumber Grade A 282,Lumber,pcs,9813,166,1622.25
+MAT-0283,Lumber Grade C 283,Lumber,pcs,6555,329,4222.76
+MAT-0284,Gravel Grade A 284,Gravel,bags,271,484,4351.88
+MAT-0285,Concrete Grade A 285,Concrete,bags,6078,815,3589.85
+MAT-0286,Steel Grade B 286,Steel,bags,6354,145,4666.29
+MAT-0287,Concrete Grade A 287,Concrete,liters,4388,686,2726.86
+MAT-0288,Sand Grade A 288,Sand,bags,6856,856,590.56
+MAT-0289,Lumber Grade B 289,Lumber,bags,964,483,2837.19
+MAT-0290,Sand Grade C 290,Sand,pcs,3752,126,4805.64
+MAT-0291,Cement Grade A 291,Cement,meters,2048,527,4701.33
+MAT-0292,Lumber Grade A 292,Lumber,bags,2020,101,1848.12
+MAT-0293,Pipes Grade B 293,Pipes,kg,9175,307,1598.49
+MAT-0294,Sand Grade B 294,Sand,liters,4627,776,4482.34
+MAT-0295,Bricks Grade C 295,Bricks,pcs,4305,293,4222.27
+MAT-0296,Paint Grade A 296,Paint,kg,8196,218,3217.65
+MAT-0297,Gravel Grade C 297,Gravel,liters,464,728,2649.89
+MAT-0298,Lumber Grade C 298,Lumber,bags,3696,946,2229.1
+MAT-0299,Paint Grade A 299,Paint,meters,7094,429,3413.02
+MAT-0300,Bricks Grade A 300,Bricks,bags,7718,23,566.26
+MAT-0301,Cement Grade C 301,Cement,kg,5900,854,770.98
+MAT-0302,Paint Grade C 302,Paint,kg,452,969,4680.89
+MAT-0303,Lumber Grade C 303,Lumber,meters,797,57,136.33
+MAT-0304,Gravel Grade B 304,Gravel,liters,2969,766,648.84
+MAT-0305,Concrete Grade A 305,Concrete,tons,7637,698,4234.94
+MAT-0306,Sand Grade A 306,Sand,pcs,483,638,1512.61
+MAT-0307,Electrical Supplies Grade C 307,Electrical Supplies,kg,3615,801,1996.0
+MAT-0308,Steel Grade B 308,Steel,bags,624,223,616.9
+MAT-0309,Bricks Grade C 309,Bricks,tons,5801,746,779.33
+MAT-0310,Bricks Grade A 310,Bricks,liters,488,635,3227.93
+MAT-0311,Electrical Supplies Grade C 311,Electrical Supplies,liters,7990,822,1238.19
+MAT-0312,Gravel Grade C 312,Gravel,tons,5821,867,4467.32
+MAT-0313,Sand Grade A 313,Sand,bags,2818,174,3203.28
+MAT-0314,Paint Grade A 314,Paint,liters,3164,935,2615.84
+MAT-0315,Electrical Supplies Grade A 315,Electrical Supplies,kg,4757,392,4265.79
+MAT-0316,Sand Grade B 316,Sand,bags,2166,252,2121.9
+MAT-0317,Steel Grade C 317,Steel,tons,619,500,1991.51
+MAT-0318,Cement Grade C 318,Cement,pcs,796,543,945.31
+MAT-0319,Electrical Supplies Grade B 319,Electrical Supplies,kg,8334,846,800.39
+MAT-0320,Sand Grade B 320,Sand,kg,1666,34,2462.05
+MAT-0321,Gravel Grade B 321,Gravel,kg,5853,680,4228.16
+MAT-0322,Pipes Grade A 322,Pipes,meters,9228,667,4809.92
+MAT-0323,Steel Grade B 323,Steel,liters,7172,965,3540.18
+MAT-0324,Concrete Grade C 324,Concrete,tons,6645,509,1009.52
+MAT-0325,Paint Grade B 325,Paint,bags,2428,234,4898.59
+MAT-0326,Sand Grade C 326,Sand,bags,2370,995,815.32
+MAT-0327,Pipes Grade A 327,Pipes,liters,1788,792,3041.07
+MAT-0328,Concrete Grade A 328,Concrete,tons,9228,706,4291.74
+MAT-0329,Electrical Supplies Grade A 329,Electrical Supplies,liters,3066,202,3673.92
+MAT-0330,Lumber Grade B 330,Lumber,kg,6227,207,4107.05
+MAT-0331,Electrical Supplies Grade B 331,Electrical Supplies,bags,6138,691,256.05
+MAT-0332,Bricks Grade A 332,Bricks,liters,7894,905,3995.7
+MAT-0333,Steel Grade C 333,Steel,kg,8759,76,1365.06
+MAT-0334,Paint Grade B 334,Paint,kg,3921,26,2432.98
+MAT-0335,Lumber Grade A 335,Lumber,meters,5045,810,618.9
+MAT-0336,Pipes Grade B 336,Pipes,bags,272,929,3303.36
+MAT-0337,Sand Grade B 337,Sand,bags,6624,696,296.09
+MAT-0338,Concrete Grade C 338,Concrete,pcs,3805,604,4142.58
+MAT-0339,Paint Grade C 339,Paint,tons,6376,84,1576.02
+MAT-0340,Concrete Grade B 340,Concrete,kg,5973,346,1264.62
+MAT-0341,Steel Grade A 341,Steel,liters,1152,397,441.52
+MAT-0342,Concrete Grade A 342,Concrete,kg,9327,804,4592.38
+MAT-0343,Lumber Grade B 343,Lumber,pcs,4500,37,2852.18
+MAT-0344,Steel Grade C 344,Steel,liters,6209,626,4923.98
+MAT-0345,Electrical Supplies Grade B 345,Electrical Supplies,pcs,9014,528,1795.19
+MAT-0346,Gravel Grade A 346,Gravel,pcs,58,850,694.07
+MAT-0347,Concrete Grade A 347,Concrete,pcs,2643,702,84.4
+MAT-0348,Electrical Supplies Grade C 348,Electrical Supplies,pcs,1624,159,3647.53
+MAT-0349,Steel Grade A 349,Steel,tons,1250,983,1016.91
+MAT-0350,Sand Grade C 350,Sand,pcs,6661,493,2664.58
+MAT-0351,Paint Grade B 351,Paint,kg,9329,997,2620.87
+MAT-0352,Sand Grade A 352,Sand,bags,7035,522,4467.05
+MAT-0353,Sand Grade A 353,Sand,meters,3087,155,2194.87
+MAT-0354,Bricks Grade C 354,Bricks,kg,7592,367,3480.31
+MAT-0355,Pipes Grade C 355,Pipes,meters,7834,684,2728.04
+MAT-0356,Lumber Grade A 356,Lumber,liters,3457,983,3158.52
+MAT-0357,Electrical Supplies Grade C 357,Electrical Supplies,liters,5108,227,585.29
+MAT-0358,Steel Grade C 358,Steel,pcs,5437,336,950.0
+MAT-0359,Pipes Grade C 359,Pipes,liters,9523,672,1681.01
+MAT-0360,Sand Grade A 360,Sand,bags,798,182,614.05
+MAT-0361,Steel Grade B 361,Steel,kg,5769,517,4039.7
+MAT-0362,Concrete Grade B 362,Concrete,meters,7522,838,4609.09
+MAT-0363,Paint Grade A 363,Paint,liters,868,21,710.0
+MAT-0364,Pipes Grade B 364,Pipes,pcs,5066,336,2728.33
+MAT-0365,Bricks Grade B 365,Bricks,pcs,4928,606,2244.65
+MAT-0366,Paint Grade B 366,Paint,kg,6927,855,1014.52
+MAT-0367,Lumber Grade B 367,Lumber,liters,603,283,4290.93
+MAT-0368,Cement Grade A 368,Cement,pcs,4052,381,1580.53
+MAT-0369,Sand Grade B 369,Sand,bags,666,622,3698.18
+MAT-0370,Concrete Grade C 370,Concrete,pcs,3105,495,2212.48
+MAT-0371,Steel Grade C 371,Steel,meters,5917,160,2850.86
+MAT-0372,Bricks Grade A 372,Bricks,tons,3423,70,3476.66
+MAT-0373,Electrical Supplies Grade B 373,Electrical Supplies,liters,180,203,1846.35
+MAT-0374,Steel Grade A 374,Steel,meters,2689,493,2073.49
+MAT-0375,Sand Grade B 375,Sand,tons,3896,100,4268.09
+MAT-0376,Electrical Supplies Grade B 376,Electrical Supplies,meters,9218,880,2853.88
+MAT-0377,Lumber Grade C 377,Lumber,pcs,5762,964,1415.65
+MAT-0378,Bricks Grade A 378,Bricks,tons,5463,791,1316.01
+MAT-0379,Concrete Grade C 379,Concrete,bags,5086,746,1294.42
+MAT-0380,Steel Grade B 380,Steel,meters,2037,425,2851.23
+MAT-0381,Electrical Supplies Grade C 381,Electrical Supplies,bags,4022,873,3531.38
+MAT-0382,Concrete Grade B 382,Concrete,meters,7437,311,1139.81
+MAT-0383,Concrete Grade B 383,Concrete,tons,331,558,3797.76
+MAT-0384,Pipes Grade A 384,Pipes,bags,3728,68,2970.67
+MAT-0385,Pipes Grade B 385,Pipes,bags,9969,760,2390.37
+MAT-0386,Sand Grade C 386,Sand,liters,8785,677,3854.98
+MAT-0387,Pipes Grade C 387,Pipes,tons,1684,275,796.89
+MAT-0388,Cement Grade C 388,Cement,pcs,2164,82,3459.45
+MAT-0389,Steel Grade B 389,Steel,kg,7896,354,1513.78
+MAT-0390,Pipes Grade B 390,Pipes,bags,4753,665,3551.68
+MAT-0391,Bricks Grade B 391,Bricks,tons,7793,839,2932.17
+MAT-0392,Gravel Grade A 392,Gravel,bags,216,63,1515.84
+MAT-0393,Electrical Supplies Grade B 393,Electrical Supplies,tons,6300,971,329.8
+MAT-0394,Electrical Supplies Grade A 394,Electrical Supplies,meters,944,862,146.66
+MAT-0395,Lumber Grade A 395,Lumber,bags,1930,228,3671.86
+MAT-0396,Paint Grade B 396,Paint,pcs,5886,561,3537.82
+MAT-0397,Bricks Grade A 397,Bricks,tons,9591,365,3143.74
+MAT-0398,Paint Grade A 398,Paint,meters,7099,845,403.62
+MAT-0399,Electrical Supplies Grade C 399,Electrical Supplies,bags,1176,287,3532.02
+MAT-0400,Pipes Grade B 400,Pipes,bags,4299,732,1643.01
+MAT-0401,Bricks Grade A 401,Bricks,kg,1237,248,4673.4
+MAT-0402,Pipes Grade B 402,Pipes,kg,3403,323,4452.34
+MAT-0403,Sand Grade B 403,Sand,bags,2273,54,4291.3
+MAT-0404,Sand Grade B 404,Sand,pcs,4846,207,1332.96
+MAT-0405,Sand Grade C 405,Sand,kg,356,328,1167.63
+MAT-0406,Paint Grade C 406,Paint,meters,6860,536,3709.84
+MAT-0407,Bricks Grade C 407,Bricks,kg,585,585,3959.43
+MAT-0408,Lumber Grade C 408,Lumber,liters,2357,602,4303.17
+MAT-0409,Bricks Grade C 409,Bricks,kg,2556,927,4025.54
+MAT-0410,Steel Grade C 410,Steel,liters,8033,468,4447.45
+MAT-0411,Steel Grade B 411,Steel,tons,3135,58,1517.47
+MAT-0412,Lumber Grade A 412,Lumber,bags,3791,569,3971.76
+MAT-0413,Lumber Grade A 413,Lumber,bags,2703,854,2799.83
+MAT-0414,Concrete Grade B 414,Concrete,pcs,5593,205,2247.79
+MAT-0415,Lumber Grade C 415,Lumber,bags,3309,225,676.05
+MAT-0416,Gravel Grade C 416,Gravel,bags,202,159,91.05
+MAT-0417,Lumber Grade B 417,Lumber,meters,1816,240,1030.01
+MAT-0418,Cement Grade A 418,Cement,kg,3645,222,1275.66
+MAT-0419,Paint Grade B 419,Paint,kg,2062,706,4505.51
+MAT-0420,Paint Grade B 420,Paint,kg,7218,896,2140.07
+MAT-0421,Paint Grade C 421,Paint,meters,5741,788,4071.02
+MAT-0422,Sand Grade C 422,Sand,kg,2893,304,3212.36
+MAT-0423,Sand Grade A 423,Sand,kg,2885,952,1161.84
+MAT-0424,Electrical Supplies Grade C 424,Electrical Supplies,tons,8039,194,1182.59
+MAT-0425,Sand Grade B 425,Sand,liters,2209,67,644.01
+MAT-0426,Concrete Grade B 426,Concrete,kg,9577,848,3709.58
+MAT-0427,Cement Grade A 427,Cement,pcs,2721,1000,825.4
+MAT-0428,Gravel Grade B 428,Gravel,kg,6166,79,2202.34
+MAT-0429,Bricks Grade B 429,Bricks,liters,9003,493,3650.94
+MAT-0430,Steel Grade B 430,Steel,liters,8163,348,4125.95
+MAT-0431,Bricks Grade A 431,Bricks,meters,9892,978,4312.7
+MAT-0432,Concrete Grade A 432,Concrete,pcs,5944,675,2712.7
+MAT-0433,Pipes Grade B 433,Pipes,bags,7736,664,750.21
+MAT-0434,Pipes Grade A 434,Pipes,bags,2598,344,2998.0
+MAT-0435,Electrical Supplies Grade C 435,Electrical Supplies,tons,6362,423,3793.66
+MAT-0436,Concrete Grade C 436,Concrete,tons,8358,762,3700.09
+MAT-0437,Sand Grade B 437,Sand,bags,3124,482,2871.28
+MAT-0438,Steel Grade A 438,Steel,kg,2179,106,438.9
+MAT-0439,Cement Grade A 439,Cement,meters,7552,545,219.4
+MAT-0440,Lumber Grade C 440,Lumber,meters,6864,846,4591.88
+MAT-0441,Electrical Supplies Grade A 441,Electrical Supplies,liters,1261,485,4276.74
+MAT-0442,Paint Grade B 442,Paint,liters,640,837,3150.1
+MAT-0443,Sand Grade C 443,Sand,bags,5825,126,2942.91
+MAT-0444,Electrical Supplies Grade C 444,Electrical Supplies,tons,5865,202,2994.91
+MAT-0445,Steel Grade B 445,Steel,kg,2878,199,719.1
+MAT-0446,Paint Grade B 446,Paint,liters,4220,275,1109.36
+MAT-0447,Paint Grade A 447,Paint,bags,401,389,4287.2
+MAT-0448,Gravel Grade A 448,Gravel,kg,6205,200,1890.65
+MAT-0449,Lumber Grade C 449,Lumber,tons,9734,920,3233.78
+MAT-0450,Sand Grade A 450,Sand,liters,74,728,2702.5
+MAT-0451,Sand Grade A 451,Sand,tons,4873,329,2219.66
+MAT-0452,Cement Grade B 452,Cement,meters,8546,531,2547.79
+MAT-0453,Electrical Supplies Grade B 453,Electrical Supplies,kg,4489,495,113.84
+MAT-0454,Gravel Grade A 454,Gravel,tons,6235,804,2542.36
+MAT-0455,Lumber Grade A 455,Lumber,meters,5181,214,3942.23
+MAT-0456,Paint Grade B 456,Paint,tons,3026,426,2141.42
+MAT-0457,Sand Grade A 457,Sand,meters,5236,444,1173.53
+MAT-0458,Gravel Grade B 458,Gravel,pcs,7818,346,3976.0
+MAT-0459,Gravel Grade B 459,Gravel,meters,2566,37,2097.62
+MAT-0460,Bricks Grade B 460,Bricks,meters,1421,165,4049.51
+MAT-0461,Gravel Grade A 461,Gravel,liters,6093,606,3628.39
+MAT-0462,Gravel Grade A 462,Gravel,meters,4733,139,365.97
+MAT-0463,Bricks Grade A 463,Bricks,kg,2534,625,1595.55
+MAT-0464,Electrical Supplies Grade B 464,Electrical Supplies,bags,7191,270,2321.73
+MAT-0465,Gravel Grade C 465,Gravel,pcs,2873,866,3115.89
+MAT-0466,Concrete Grade C 466,Concrete,bags,750,461,1891.15
+MAT-0467,Lumber Grade C 467,Lumber,tons,8477,47,3235.07
+MAT-0468,Pipes Grade B 468,Pipes,kg,3237,229,3622.02
+MAT-0469,Sand Grade C 469,Sand,meters,712,64,1370.33
+MAT-0470,Pipes Grade A 470,Pipes,liters,2622,85,4096.42
+MAT-0471,Steel Grade A 471,Steel,bags,1596,992,4145.89
+MAT-0472,Steel Grade B 472,Steel,liters,4900,543,3317.1
+MAT-0473,Steel Grade C 473,Steel,tons,8869,177,4349.95
+MAT-0474,Pipes Grade B 474,Pipes,meters,8233,431,1496.79
+MAT-0475,Cement Grade A 475,Cement,meters,1847,563,1640.32
+MAT-0476,Pipes Grade C 476,Pipes,kg,6430,336,4944.22
+MAT-0477,Gravel Grade C 477,Gravel,kg,747,833,1947.45
+MAT-0478,Electrical Supplies Grade C 478,Electrical Supplies,pcs,7295,673,2626.84
+MAT-0479,Sand Grade B 479,Sand,meters,5412,814,3686.38
+MAT-0480,Bricks Grade C 480,Bricks,pcs,4666,988,4352.38
+MAT-0481,Concrete Grade C 481,Concrete,kg,9811,465,3623.86
+MAT-0482,Sand Grade B 482,Sand,liters,3003,134,3056.47
+MAT-0483,Bricks Grade A 483,Bricks,bags,1280,217,923.28
+MAT-0484,Concrete Grade C 484,Concrete,kg,795,311,823.84
+MAT-0485,Concrete Grade C 485,Concrete,bags,1897,308,3666.37
+MAT-0486,Pipes Grade C 486,Pipes,liters,1883,112,2360.59
+MAT-0487,Electrical Supplies Grade B 487,Electrical Supplies,bags,6706,622,3050.96
+MAT-0488,Electrical Supplies Grade B 488,Electrical Supplies,meters,8681,118,3261.92
+MAT-0489,Pipes Grade C 489,Pipes,bags,1866,773,2752.27
+MAT-0490,Cement Grade A 490,Cement,pcs,6968,439,114.47
+MAT-0491,Gravel Grade C 491,Gravel,kg,1072,25,1745.7
+MAT-0492,Sand Grade C 492,Sand,bags,8884,364,975.03
+MAT-0493,Bricks Grade A 493,Bricks,kg,113,349,3162.72
+MAT-0494,Lumber Grade A 494,Lumber,tons,4052,927,2652.01
+MAT-0495,Sand Grade C 495,Sand,liters,81,977,1782.84
+MAT-0496,Gravel Grade B 496,Gravel,meters,2850,695,3893.98
+MAT-0497,Electrical Supplies Grade A 497,Electrical Supplies,kg,7440,427,2674.57
+MAT-0498,Bricks Grade A 498,Bricks,pcs,7195,975,1227.89
+MAT-0499,Sand Grade A 499,Sand,meters,3438,923,4361.68
+MAT-0500,Electrical Supplies Grade B 500,Electrical Supplies,liters,3389,239,4074.64

@@ -1,0 +1,501 @@
+equipment_id,name,type,model,status,daily_rental_cost,purchase_value
+EQ-0001,Concrete Mixer 001,Concrete Mixer,Model-2018-924,Maintenance,31935.87,3090428.12
+EQ-0002,Bulldozer 002,Excavator,Model-2020-718,Available,26951.48,3783370.68
+EQ-0003,Bulldozer 003,Loader,Model-2018-952,Maintenance,20754.27,13898062.2
+EQ-0004,Concrete Mixer 004,Forklift,Model-2025-288,Available,42402.6,8246116.79
+EQ-0005,Compactor 005,Loader,Model-2019-542,Available,32537.46,2853637.01
+EQ-0006,Backhoe Loader 006,Crane,Model-2026-859,Available,24855.6,4421539.21
+EQ-0007,Bulldozer 007,Compactor,Model-2025-476,In Use,20777.08,10495025.28
+EQ-0008,Bulldozer 008,Loader,Model-2024-933,Maintenance,9111.99,4322991.08
+EQ-0009,Bulldozer 009,Compactor,Model-2024-111,In Use,3636.01,9791292.66
+EQ-0010,Compactor 010,Loader,Model-2018-463,Available,24459.54,10873672.49
+EQ-0011,Concrete Mixer 011,Excavator,Model-2020-466,Available,18744.04,10622746.79
+EQ-0012,Forklift 012,Generator,Model-2019-278,Available,18889.62,10816215.72
+EQ-0013,Road Roller 013,Loader,Model-2020-385,In Use,46326.89,1116330.63
+EQ-0014,Loader 014,Forklift,Model-2025-720,Available,29649.87,13918442.46
+EQ-0015,Generator 015,Concrete Mixer,Model-2020-814,In Use,30264.9,8752798.31
+EQ-0016,Compactor 016,Compactor,Model-2024-169,Available,3417.05,11019874.77
+EQ-0017,Backhoe Loader 017,Bulldozer,Model-2019-611,Maintenance,17535.65,3549865.1
+EQ-0018,Backhoe Loader 018,Bulldozer,Model-2020-845,Maintenance,38279.07,6358836.73
+EQ-0019,Bulldozer 019,Excavator,Model-2022-217,Available,42646.49,1185937.25
+EQ-0020,Road Roller 020,Compactor,Model-2018-278,In Use,7167.73,6797693.5
+EQ-0021,Crane 021,Compactor,Model-2026-304,Available,14119.76,6618971.33
+EQ-0022,Concrete Mixer 022,Backhoe Loader,Model-2021-859,Available,22835.02,7975088.79
+EQ-0023,Backhoe Loader 023,Bulldozer,Model-2018-744,Available,11769.9,12169131.82
+EQ-0024,Excavator 024,Road Roller,Model-2024-681,Available,18354.14,10267181.97
+EQ-0025,Generator 025,Loader,Model-2021-952,Available,29377.76,7158619.76
+EQ-0026,Road Roller 026,Road Roller,Model-2026-973,Available,40476.6,6639283.13
+EQ-0027,Forklift 027,Bulldozer,Model-2019-230,In Use,6843.82,7530812.43
+EQ-0028,Excavator 028,Compactor,Model-2026-438,Available,12753.02,14115201.03
+EQ-0029,Concrete Mixer 029,Forklift,Model-2023-169,Available,48469.51,1214179.13
+EQ-0030,Compactor 030,Backhoe Loader,Model-2026-725,In Use,21162.54,944058.16
+EQ-0031,Bulldozer 031,Compactor,Model-2025-369,Available,3549.19,6378944.89
+EQ-0032,Backhoe Loader 032,Road Roller,Model-2018-242,Available,28260.19,11034702.77
+EQ-0033,Excavator 033,Backhoe Loader,Model-2025-174,Available,18600.59,1154370.13
+EQ-0034,Forklift 034,Compactor,Model-2019-664,Maintenance,47436.83,4130575.26
+EQ-0035,Excavator 035,Bulldozer,Model-2018-608,Available,33216.17,6529581.89
+EQ-0036,Concrete Mixer 036,Backhoe Loader,Model-2018-156,Available,39133.44,12189311.23
+EQ-0037,Generator 037,Compactor,Model-2024-798,Available,28519.81,876892.22
+EQ-0038,Forklift 038,Crane,Model-2024-818,Maintenance,28378.16,1822189.67
+EQ-0039,Bulldozer 039,Compactor,Model-2023-460,Available,18470.03,13779221.96
+EQ-0040,Backhoe Loader 040,Backhoe Loader,Model-2019-702,Available,12902.04,11237387.77
+EQ-0041,Generator 041,Compactor,Model-2018-921,Available,43916.28,3823843.77
+EQ-0042,Excavator 042,Bulldozer,Model-2018-229,Maintenance,10668.49,751419.48
+EQ-0043,Road Roller 043,Compactor,Model-2021-399,Available,31093.94,7232650.34
+EQ-0044,Bulldozer 044,Bulldozer,Model-2019-356,Available,25756.6,11054757.55
+EQ-0045,Road Roller 045,Backhoe Loader,Model-2025-830,In Use,47188.5,11725105.24
+EQ-0046,Concrete Mixer 046,Backhoe Loader,Model-2026-373,In Use,35493.04,7601336.5
+EQ-0047,Excavator 047,Road Roller,Model-2024-822,Maintenance,15429.62,3132968.53
+EQ-0048,Crane 048,Generator,Model-2021-412,Available,7891.91,10901170.28
+EQ-0049,Crane 049,Excavator,Model-2021-815,Maintenance,33195.59,6861068.48
+EQ-0050,Bulldozer 050,Excavator,Model-2025-956,Available,14974.33,8864778.34
+EQ-0051,Concrete Mixer 051,Bulldozer,Model-2018-385,Maintenance,25777.16,12955314.87
+EQ-0052,Forklift 052,Loader,Model-2018-329,Available,20207.69,9932892.86
+EQ-0053,Generator 053,Excavator,Model-2022-132,In Use,46986.75,13659804.64
+EQ-0054,Road Roller 054,Concrete Mixer,Model-2021-875,Available,18365.33,12455667.88
+EQ-0055,Forklift 055,Forklift,Model-2018-926,Available,28558.12,14291856.55
+EQ-0056,Concrete Mixer 056,Generator,Model-2025-534,In Use,9802.35,5781236.43
+EQ-0057,Backhoe Loader 057,Crane,Model-2018-387,In Use,6105.77,3823995.97
+EQ-0058,Generator 058,Concrete Mixer,Model-2023-684,Maintenance,3853.1,4186621.24
+EQ-0059,Concrete Mixer 059,Concrete Mixer,Model-2018-227,In Use,29285.17,4882741.93
+EQ-0060,Concrete Mixer 060,Crane,Model-2025-573,Available,23115.65,7049948.56
+EQ-0061,Road Roller 061,Loader,Model-2026-323,Maintenance,4812.07,14088630.44
+EQ-0062,Concrete Mixer 062,Compactor,Model-2026-421,Available,23141.1,3944303.68
+EQ-0063,Concrete Mixer 063,Concrete Mixer,Model-2025-230,Available,32256.23,2288836.6
+EQ-0064,Compactor 064,Excavator,Model-2021-217,Available,10844.26,7650115.87
+EQ-0065,Loader 065,Compactor,Model-2023-142,Available,4919.02,10746788.5
+EQ-0066,Concrete Mixer 066,Concrete Mixer,Model-2018-794,In Use,27941.19,766522.7
+EQ-0067,Backhoe Loader 067,Road Roller,Model-2019-179,Maintenance,7432.76,1254008.35
+EQ-0068,Backhoe Loader 068,Road Roller,Model-2023-949,Maintenance,5426.87,6454482.42
+EQ-0069,Concrete Mixer 069,Crane,Model-2018-434,In Use,18079.32,6181249.52
+EQ-0070,Road Roller 070,Loader,Model-2022-736,Available,9695.02,764697.6
+EQ-0071,Crane 071,Compactor,Model-2018-208,Available,40785.64,7710862.52
+EQ-0072,Generator 072,Compactor,Model-2023-320,Maintenance,41874.88,585732.98
+EQ-0073,Crane 073,Forklift,Model-2019-179,Available,29139.31,14967413.23
+EQ-0074,Generator 074,Forklift,Model-2026-850,Available,42684.56,7963570.34
+EQ-0075,Excavator 075,Compactor,Model-2025-775,Maintenance,17213.09,3005851.57
+EQ-0076,Compactor 076,Concrete Mixer,Model-2021-436,Available,40352.29,14664373.91
+EQ-0077,Backhoe Loader 077,Loader,Model-2023-866,Available,35267.51,6730611.54
+EQ-0078,Forklift 078,Road Roller,Model-2019-460,Available,45902.5,9834615.92
+EQ-0079,Compactor 079,Backhoe Loader,Model-2025-905,Maintenance,13028.64,12434534.46
+EQ-0080,Crane 080,Generator,Model-2021-895,Maintenance,34357.05,10021949.53
+EQ-0081,Compactor 081,Concrete Mixer,Model-2022-449,In Use,7662.27,6186691.58
+EQ-0082,Generator 082,Crane,Model-2025-747,Available,45193.88,13158444.88
+EQ-0083,Excavator 083,Crane,Model-2019-528,In Use,38744.46,10699589.93
+EQ-0084,Loader 084,Bulldozer,Model-2020-990,Available,42025.21,456578.81
+EQ-0085,Crane 085,Bulldozer,Model-2020-627,Maintenance,45404.5,5380079.79
+EQ-0086,Forklift 086,Generator,Model-2021-829,In Use,7713.42,13471652.18
+EQ-0087,Road Roller 087,Compactor,Model-2019-839,Available,5540.12,13818783.27
+EQ-0088,Loader 088,Forklift,Model-2025-858,Maintenance,15885.97,7208880.11
+EQ-0089,Crane 089,Crane,Model-2026-185,Available,44988.76,8943943.97
+EQ-0090,Road Roller 090,Loader,Model-2024-428,Maintenance,10482.67,10865744.47
+EQ-0091,Concrete Mixer 091,Bulldozer,Model-2021-404,Maintenance,18373.63,8505556.94
+EQ-0092,Generator 092,Compactor,Model-2026-964,Maintenance,15692.35,5822609.42
+EQ-0093,Crane 093,Crane,Model-2018-933,Available,22665.81,4246017.78
+EQ-0094,Compactor 094,Road Roller,Model-2019-455,In Use,9948.44,4388863.12
+EQ-0095,Loader 095,Loader,Model-2021-273,In Use,47081.83,3965492.33
+EQ-0096,Compactor 096,Bulldozer,Model-2021-782,In Use,8768.15,3181962.37
+EQ-0097,Generator 097,Crane,Model-2018-712,Available,48073.12,8143463.27
+EQ-0098,Backhoe Loader 098,Excavator,Model-2025-952,Available,19737.95,4299379.09
+EQ-0099,Compactor 099,Forklift,Model-2025-633,Available,41889.82,4494629.56
+EQ-0100,Bulldozer 100,Bulldozer,Model-2025-542,Maintenance,14626.71,12981091.0
+EQ-0101,Concrete Mixer 101,Bulldozer,Model-2023-922,Available,37725.32,3414382.46
+EQ-0102,Bulldozer 102,Road Roller,Model-2020-619,In Use,15253.19,9496296.74
+EQ-0103,Generator 103,Bulldozer,Model-2023-139,Maintenance,6821.06,10606044.93
+EQ-0104,Generator 104,Road Roller,Model-2021-961,Available,47560.76,9446547.22
+EQ-0105,Backhoe Loader 105,Crane,Model-2024-993,Available,34320.69,4052762.1
+EQ-0106,Crane 106,Loader,Model-2020-851,Maintenance,15564.78,3058737.23
+EQ-0107,Bulldozer 107,Generator,Model-2021-103,Maintenance,5228.54,8410283.7
+EQ-0108,Backhoe Loader 108,Crane,Model-2018-528,In Use,31442.15,9502293.12
+EQ-0109,Backhoe Loader 109,Road Roller,Model-2025-643,Available,44138.7,12626308.58
+EQ-0110,Concrete Mixer 110,Loader,Model-2025-915,Maintenance,30696.42,8196858.39
+EQ-0111,Concrete Mixer 111,Bulldozer,Model-2021-215,In Use,22140.51,6762876.39
+EQ-0112,Backhoe Loader 112,Forklift,Model-2019-280,Maintenance,47903.15,9943131.61
+EQ-0113,Road Roller 113,Forklift,Model-2020-892,Maintenance,42325.8,12973737.49
+EQ-0114,Compactor 114,Forklift,Model-2021-129,In Use,14860.35,3305081.99
+EQ-0115,Forklift 115,Excavator,Model-2026-890,In Use,14557.05,4832513.54
+EQ-0116,Forklift 116,Loader,Model-2024-508,In Use,45793.7,4097926.78
+EQ-0117,Backhoe Loader 117,Road Roller,Model-2018-415,Maintenance,21670.95,8630334.88
+EQ-0118,Crane 118,Generator,Model-2021-898,Available,47498.13,9238229.17
+EQ-0119,Road Roller 119,Crane,Model-2026-120,Available,40515.82,1444765.39
+EQ-0120,Road Roller 120,Road Roller,Model-2026-164,Available,26895.15,5495256.5
+EQ-0121,Backhoe Loader 121,Crane,Model-2026-505,Available,15929.0,2504922.24
+EQ-0122,Road Roller 122,Road Roller,Model-2024-320,Available,47120.66,637517.09
+EQ-0123,Excavator 123,Generator,Model-2019-613,Maintenance,39984.49,730049.0
+EQ-0124,Concrete Mixer 124,Concrete Mixer,Model-2018-335,Available,3621.34,11273739.34
+EQ-0125,Forklift 125,Forklift,Model-2020-937,In Use,43375.22,1240253.52
+EQ-0126,Generator 126,Forklift,Model-2018-115,Available,6586.72,8864117.3
+EQ-0127,Forklift 127,Backhoe Loader,Model-2022-903,In Use,22407.33,11177902.02
+EQ-0128,Concrete Mixer 128,Concrete Mixer,Model-2025-307,Available,14684.96,9875155.56
+EQ-0129,Loader 129,Forklift,Model-2022-539,Available,12668.14,6154327.67
+EQ-0130,Concrete Mixer 130,Loader,Model-2022-819,Available,20355.6,14897993.94
+EQ-0131,Forklift 131,Road Roller,Model-2026-831,Available,23708.98,8710404.38
+EQ-0132,Excavator 132,Forklift,Model-2021-557,In Use,24886.7,1723331.93
+EQ-0133,Concrete Mixer 133,Road Roller,Model-2020-929,Available,6578.67,2621910.12
+EQ-0134,Loader 134,Compactor,Model-2021-185,Available,21353.36,12587248.9
+EQ-0135,Generator 135,Compactor,Model-2021-160,Maintenance,14097.14,4740678.86
+EQ-0136,Road Roller 136,Crane,Model-2018-429,Maintenance,43828.54,4095358.95
+EQ-0137,Backhoe Loader 137,Generator,Model-2025-658,Maintenance,17024.78,9814928.51
+EQ-0138,Road Roller 138,Loader,Model-2025-626,Available,46219.06,6442960.18
+EQ-0139,Bulldozer 139,Forklift,Model-2020-875,Available,9780.47,11247416.56
+EQ-0140,Crane 140,Backhoe Loader,Model-2025-990,Available,3874.97,6420315.15
+EQ-0141,Crane 141,Generator,Model-2025-243,Maintenance,21171.47,4521590.25
+EQ-0142,Forklift 142,Concrete Mixer,Model-2022-635,In Use,31524.82,5637314.01
+EQ-0143,Crane 143,Crane,Model-2022-635,Available,40535.06,14284730.91
+EQ-0144,Road Roller 144,Generator,Model-2022-583,Maintenance,12109.62,5019639.87
+EQ-0145,Crane 145,Crane,Model-2026-832,Maintenance,2471.42,6302913.85
+EQ-0146,Crane 146,Loader,Model-2019-105,In Use,35670.3,3069087.81
+EQ-0147,Bulldozer 147,Generator,Model-2025-438,Available,4933.17,7083542.13
+EQ-0148,Crane 148,Bulldozer,Model-2023-751,Available,18557.96,310529.39
+EQ-0149,Backhoe Loader 149,Concrete Mixer,Model-2022-940,Maintenance,30054.48,4655679.78
+EQ-0150,Compactor 150,Forklift,Model-2022-674,Available,5718.85,2371084.87
+EQ-0151,Backhoe Loader 151,Concrete Mixer,Model-2020-369,Available,8081.8,7882535.24
+EQ-0152,Forklift 152,Road Roller,Model-2022-926,Maintenance,12046.72,139794.71
+EQ-0153,Backhoe Loader 153,Backhoe Loader,Model-2019-922,Available,8880.0,7184413.61
+EQ-0154,Excavator 154,Road Roller,Model-2019-153,Available,26561.85,6651366.41
+EQ-0155,Loader 155,Road Roller,Model-2022-612,Available,13557.1,5959375.25
+EQ-0156,Forklift 156,Loader,Model-2023-419,In Use,27472.9,13260955.57
+EQ-0157,Backhoe Loader 157,Crane,Model-2022-828,Available,42314.05,8451239.4
+EQ-0158,Loader 158,Concrete Mixer,Model-2019-671,Maintenance,33300.42,2752384.89
+EQ-0159,Road Roller 159,Loader,Model-2023-845,Maintenance,12261.44,8440930.94
+EQ-0160,Backhoe Loader 160,Forklift,Model-2023-283,Available,11400.13,5478771.53
+EQ-0161,Backhoe Loader 161,Excavator,Model-2022-436,Available,45729.96,13745525.79
+EQ-0162,Generator 162,Excavator,Model-2022-134,In Use,32800.35,6034580.63
+EQ-0163,Concrete Mixer 163,Concrete Mixer,Model-2018-685,Available,43432.9,13920865.1
+EQ-0164,Compactor 164,Loader,Model-2025-277,Maintenance,37996.93,9748472.57
+EQ-0165,Generator 165,Bulldozer,Model-2018-478,Available,31420.18,10728325.73
+EQ-0166,Crane 166,Crane,Model-2019-529,Available,4690.3,9598424.52
+EQ-0167,Excavator 167,Road Roller,Model-2019-978,In Use,49203.36,2993317.44
+EQ-0168,Compactor 168,Excavator,Model-2023-957,In Use,45091.35,2621281.86
+EQ-0169,Compactor 169,Road Roller,Model-2026-114,Maintenance,21986.18,10049064.67
+EQ-0170,Excavator 170,Bulldozer,Model-2021-944,Available,36989.94,1351133.63
+EQ-0171,Loader 171,Excavator,Model-2022-723,Available,35058.4,6197847.53
+EQ-0172,Excavator 172,Concrete Mixer,Model-2022-674,In Use,7650.3,7047158.96
+EQ-0173,Bulldozer 173,Compactor,Model-2025-190,Available,46064.53,2819264.47
+EQ-0174,Bulldozer 174,Crane,Model-2023-705,Available,38802.68,11852176.51
+EQ-0175,Backhoe Loader 175,Road Roller,Model-2025-183,Available,16773.55,10245269.86
+EQ-0176,Backhoe Loader 176,Crane,Model-2022-154,Maintenance,35883.87,2752260.14
+EQ-0177,Crane 177,Compactor,Model-2023-523,Available,42093.21,4164711.42
+EQ-0178,Backhoe Loader 178,Crane,Model-2022-365,Maintenance,14698.17,7399296.34
+EQ-0179,Compactor 179,Road Roller,Model-2023-890,Maintenance,41816.0,10336894.11
+EQ-0180,Crane 180,Excavator,Model-2024-259,Available,49700.27,6564415.63
+EQ-0181,Concrete Mixer 181,Backhoe Loader,Model-2023-816,In Use,6356.36,11623794.04
+EQ-0182,Concrete Mixer 182,Backhoe Loader,Model-2025-367,Available,46252.13,7803744.31
+EQ-0183,Crane 183,Loader,Model-2020-578,In Use,19869.57,5730861.34
+EQ-0184,Compactor 184,Excavator,Model-2023-818,Available,32214.66,13053003.61
+EQ-0185,Excavator 185,Crane,Model-2024-586,In Use,18160.25,13554400.12
+EQ-0186,Crane 186,Road Roller,Model-2022-266,Maintenance,28245.35,11305473.14
+EQ-0187,Loader 187,Compactor,Model-2025-707,Maintenance,37085.83,7156223.9
+EQ-0188,Backhoe Loader 188,Concrete Mixer,Model-2023-715,In Use,25162.76,6077181.26
+EQ-0189,Excavator 189,Backhoe Loader,Model-2026-210,Maintenance,22442.92,4113478.62
+EQ-0190,Compactor 190,Forklift,Model-2018-267,Available,46272.97,13310269.17
+EQ-0191,Generator 191,Backhoe Loader,Model-2020-233,In Use,39851.33,901621.47
+EQ-0192,Bulldozer 192,Concrete Mixer,Model-2020-920,In Use,24018.25,2563597.01
+EQ-0193,Excavator 193,Crane,Model-2021-276,In Use,16761.28,2850445.49
+EQ-0194,Backhoe Loader 194,Forklift,Model-2019-841,Available,9398.62,8374688.65
+EQ-0195,Road Roller 195,Excavator,Model-2025-263,In Use,6795.85,8292453.16
+EQ-0196,Forklift 196,Backhoe Loader,Model-2025-784,Maintenance,41904.66,10622739.1
+EQ-0197,Bulldozer 197,Forklift,Model-2020-425,Available,21194.41,4973966.41
+EQ-0198,Concrete Mixer 198,Forklift,Model-2024-646,Available,18649.62,10081162.5
+EQ-0199,Compactor 199,Excavator,Model-2021-723,Available,38856.51,5600075.24
+EQ-0200,Road Roller 200,Generator,Model-2018-725,Maintenance,45900.13,9719101.3
+EQ-0201,Crane 201,Loader,Model-2021-145,Available,16493.02,1483470.25
+EQ-0202,Forklift 202,Crane,Model-2024-254,In Use,16932.42,10161566.7
+EQ-0203,Loader 203,Excavator,Model-2022-531,Available,9850.06,10266862.67
+EQ-0204,Bulldozer 204,Loader,Model-2019-454,Available,33481.69,6126655.88
+EQ-0205,Excavator 205,Crane,Model-2023-231,Maintenance,34942.34,272671.02
+EQ-0206,Forklift 206,Forklift,Model-2018-410,Maintenance,14415.15,9548345.97
+EQ-0207,Compactor 207,Loader,Model-2026-481,Maintenance,36177.13,12678109.25
+EQ-0208,Road Roller 208,Bulldozer,Model-2020-534,Maintenance,43775.09,1292135.76
+EQ-0209,Excavator 209,Road Roller,Model-2022-302,Maintenance,22874.63,7024971.29
+EQ-0210,Excavator 210,Bulldozer,Model-2025-571,In Use,4403.53,9029990.55
+EQ-0211,Road Roller 211,Concrete Mixer,Model-2024-445,In Use,38808.02,450602.15
+EQ-0212,Concrete Mixer 212,Crane,Model-2022-465,Maintenance,2840.91,4937025.0
+EQ-0213,Excavator 213,Compactor,Model-2019-465,Available,27500.89,6003597.08
+EQ-0214,Crane 214,Bulldozer,Model-2026-196,Available,36885.8,9530508.34
+EQ-0215,Forklift 215,Concrete Mixer,Model-2023-569,Available,46101.21,13563349.12
+EQ-0216,Generator 216,Compactor,Model-2025-141,Available,17676.25,670481.96
+EQ-0217,Compactor 217,Bulldozer,Model-2024-624,Available,18213.09,9587441.94
+EQ-0218,Concrete Mixer 218,Forklift,Model-2024-122,Available,47617.23,3927184.26
+EQ-0219,Bulldozer 219,Forklift,Model-2019-912,Available,29402.97,14924284.28
+EQ-0220,Compactor 220,Generator,Model-2026-974,Available,35324.34,827585.17
+EQ-0221,Compactor 221,Loader,Model-2021-878,Maintenance,15189.76,10364062.92
+EQ-0222,Crane 222,Concrete Mixer,Model-2026-787,Available,31021.88,13655221.51
+EQ-0223,Concrete Mixer 223,Concrete Mixer,Model-2018-516,Available,2898.51,6273440.11
+EQ-0224,Crane 224,Concrete Mixer,Model-2022-573,In Use,6663.09,3449889.09
+EQ-0225,Road Roller 225,Backhoe Loader,Model-2019-726,In Use,36951.87,9178810.69
+EQ-0226,Loader 226,Compactor,Model-2024-750,In Use,27989.98,7186483.02
+EQ-0227,Generator 227,Excavator,Model-2023-448,In Use,18625.58,6721307.65
+EQ-0228,Loader 228,Loader,Model-2021-645,Available,34303.33,3909819.69
+EQ-0229,Excavator 229,Compactor,Model-2019-746,Maintenance,28943.64,5244957.97
+EQ-0230,Backhoe Loader 230,Generator,Model-2023-411,In Use,38041.16,6827337.84
+EQ-0231,Loader 231,Excavator,Model-2020-739,Available,31964.73,8516897.31
+EQ-0232,Forklift 232,Excavator,Model-2022-669,Maintenance,49504.65,5691736.61
+EQ-0233,Generator 233,Crane,Model-2024-721,Available,6655.03,3352750.17
+EQ-0234,Bulldozer 234,Compactor,Model-2022-282,Available,38809.98,14767302.37
+EQ-0235,Forklift 235,Generator,Model-2024-460,Available,22072.64,9028803.22
+EQ-0236,Road Roller 236,Road Roller,Model-2019-780,In Use,26110.62,8034375.14
+EQ-0237,Backhoe Loader 237,Forklift,Model-2025-874,Maintenance,15741.6,13875799.89
+EQ-0238,Crane 238,Crane,Model-2024-395,Available,27567.95,5077417.24
+EQ-0239,Loader 239,Crane,Model-2019-492,Maintenance,48763.87,6213377.68
+EQ-0240,Excavator 240,Compactor,Model-2021-241,Available,30779.27,11009005.12
+EQ-0241,Excavator 241,Road Roller,Model-2021-270,Maintenance,34849.43,14282506.6
+EQ-0242,Excavator 242,Compactor,Model-2024-665,Available,42814.83,2504551.18
+EQ-0243,Road Roller 243,Backhoe Loader,Model-2020-583,Available,17490.76,4465430.54
+EQ-0244,Excavator 244,Backhoe Loader,Model-2025-570,Available,34816.21,6710432.62
+EQ-0245,Backhoe Loader 245,Crane,Model-2025-612,Available,40576.97,12584344.21
+EQ-0246,Crane 246,Backhoe Loader,Model-2025-839,Available,2330.4,581606.27
+EQ-0247,Forklift 247,Generator,Model-2025-982,Maintenance,5377.55,6314635.2
+EQ-0248,Concrete Mixer 248,Generator,Model-2019-832,Available,23049.01,12433532.1
+EQ-0249,Excavator 249,Concrete Mixer,Model-2024-948,Available,19441.92,10777706.9
+EQ-0250,Generator 250,Loader,Model-2024-906,Available,6973.9,12721348.71
+EQ-0251,Compactor 251,Bulldozer,Model-2020-475,Maintenance,33513.78,2215056.49
+EQ-0252,Backhoe Loader 252,Loader,Model-2021-370,Available,17841.23,10436369.25
+EQ-0253,Loader 253,Loader,Model-2021-875,In Use,18437.26,10368992.33
+EQ-0254,Road Roller 254,Loader,Model-2022-681,In Use,30532.55,11443708.79
+EQ-0255,Crane 255,Generator,Model-2022-126,Available,44248.19,8496737.55
+EQ-0256,Concrete Mixer 256,Concrete Mixer,Model-2020-681,In Use,24813.67,6653949.06
+EQ-0257,Concrete Mixer 257,Crane,Model-2020-250,In Use,43239.09,3933855.84
+EQ-0258,Backhoe Loader 258,Excavator,Model-2021-697,In Use,9121.44,279794.07
+EQ-0259,Road Roller 259,Generator,Model-2026-515,Maintenance,31686.08,2639110.88
+EQ-0260,Road Roller 260,Crane,Model-2026-421,In Use,20142.98,13898626.3
+EQ-0261,Crane 261,Generator,Model-2025-279,Maintenance,45062.41,312065.68
+EQ-0262,Bulldozer 262,Road Roller,Model-2021-416,Available,12766.88,4246901.68
+EQ-0263,Bulldozer 263,Backhoe Loader,Model-2023-610,Maintenance,29331.58,9615685.06
+EQ-0264,Excavator 264,Generator,Model-2021-859,Available,19450.9,589323.91
+EQ-0265,Bulldozer 265,Road Roller,Model-2026-168,In Use,28557.66,8067832.7
+EQ-0266,Generator 266,Bulldozer,Model-2018-557,Available,13745.23,11979320.97
+EQ-0267,Crane 267,Backhoe Loader,Model-2021-806,Maintenance,10516.67,14692724.61
+EQ-0268,Concrete Mixer 268,Generator,Model-2022-193,Available,37200.19,13770255.84
+EQ-0269,Crane 269,Generator,Model-2022-162,Available,12924.14,8826593.13
+EQ-0270,Compactor 270,Loader,Model-2025-200,Available,17305.2,9545194.96
+EQ-0271,Backhoe Loader 271,Loader,Model-2019-552,Available,24849.72,1588151.04
+EQ-0272,Compactor 272,Backhoe Loader,Model-2025-407,Available,29922.25,12930972.64
+EQ-0273,Bulldozer 273,Loader,Model-2021-703,Maintenance,49627.41,3851041.89
+EQ-0274,Forklift 274,Compactor,Model-2022-604,Available,17774.69,7300866.89
+EQ-0275,Concrete Mixer 275,Concrete Mixer,Model-2022-988,Available,18374.83,10199854.06
+EQ-0276,Generator 276,Concrete Mixer,Model-2025-214,Available,25403.86,4856192.47
+EQ-0277,Generator 277,Loader,Model-2025-267,Available,5146.85,6537022.27
+EQ-0278,Concrete Mixer 278,Bulldozer,Model-2025-450,Available,11292.58,1719804.37
+EQ-0279,Backhoe Loader 279,Backhoe Loader,Model-2022-613,In Use,17360.76,8002952.84
+EQ-0280,Bulldozer 280,Concrete Mixer,Model-2021-684,Available,17540.74,2959370.59
+EQ-0281,Forklift 281,Crane,Model-2020-724,Available,17632.7,7795347.83
+EQ-0282,Loader 282,Compactor,Model-2024-898,In Use,12978.73,4016545.67
+EQ-0283,Concrete Mixer 283,Road Roller,Model-2020-413,In Use,36882.06,12455546.22
+EQ-0284,Road Roller 284,Loader,Model-2022-535,Maintenance,38609.37,184520.66
+EQ-0285,Forklift 285,Excavator,Model-2024-462,Available,48799.32,11529024.13
+EQ-0286,Excavator 286,Backhoe Loader,Model-2021-777,In Use,16150.25,5664780.28
+EQ-0287,Road Roller 287,Forklift,Model-2024-433,Available,40278.78,9301581.99
+EQ-0288,Loader 288,Concrete Mixer,Model-2019-176,Available,9700.06,10870452.32
+EQ-0289,Compactor 289,Loader,Model-2018-899,Maintenance,35014.45,13642421.47
+EQ-0290,Loader 290,Backhoe Loader,Model-2022-721,Maintenance,4847.21,936107.04
+EQ-0291,Road Roller 291,Concrete Mixer,Model-2026-478,Maintenance,46333.09,1754358.78
+EQ-0292,Crane 292,Bulldozer,Model-2023-893,Maintenance,41566.91,13121864.19
+EQ-0293,Compactor 293,Concrete Mixer,Model-2021-675,Available,23036.54,4984847.49
+EQ-0294,Generator 294,Concrete Mixer,Model-2026-643,In Use,35099.37,2192966.76
+EQ-0295,Bulldozer 295,Road Roller,Model-2023-891,Maintenance,37869.11,3300710.97
+EQ-0296,Road Roller 296,Loader,Model-2021-571,In Use,17984.58,10197265.15
+EQ-0297,Concrete Mixer 297,Concrete Mixer,Model-2018-243,Available,32827.53,6467230.84
+EQ-0298,Loader 298,Excavator,Model-2026-161,In Use,2777.66,6614383.06
+EQ-0299,Excavator 299,Generator,Model-2023-909,Maintenance,15567.03,5072913.29
+EQ-0300,Bulldozer 300,Bulldozer,Model-2019-671,Available,27524.6,11999005.55
+EQ-0301,Bulldozer 301,Compactor,Model-2025-724,Available,38091.55,11530017.75
+EQ-0302,Forklift 302,Concrete Mixer,Model-2025-562,Available,33221.3,1188084.22
+EQ-0303,Compactor 303,Road Roller,Model-2025-640,Maintenance,44691.06,6081844.42
+EQ-0304,Concrete Mixer 304,Excavator,Model-2024-119,Available,12811.04,6464529.74
+EQ-0305,Concrete Mixer 305,Backhoe Loader,Model-2023-645,Maintenance,33373.41,3084940.13
+EQ-0306,Compactor 306,Road Roller,Model-2020-293,Available,11894.92,2805642.14
+EQ-0307,Excavator 307,Generator,Model-2018-898,Available,27923.66,14324442.87
+EQ-0308,Road Roller 308,Road Roller,Model-2021-773,Available,11681.67,2533004.75
+EQ-0309,Concrete Mixer 309,Backhoe Loader,Model-2021-890,In Use,3310.23,13176800.15
+EQ-0310,Loader 310,Bulldozer,Model-2024-126,Maintenance,43641.57,12827402.88
+EQ-0311,Backhoe Loader 311,Forklift,Model-2018-557,Maintenance,21160.55,3163920.79
+EQ-0312,Forklift 312,Compactor,Model-2019-195,Available,26321.76,8716722.69
+EQ-0313,Generator 313,Bulldozer,Model-2020-874,Available,7777.2,7387715.55
+EQ-0314,Compactor 314,Road Roller,Model-2023-525,Available,12095.72,1452785.57
+EQ-0315,Generator 315,Road Roller,Model-2025-361,Available,47355.05,340567.36
+EQ-0316,Forklift 316,Forklift,Model-2024-978,Available,19024.69,14191403.58
+EQ-0317,Bulldozer 317,Forklift,Model-2022-334,Available,33220.77,12171524.42
+EQ-0318,Loader 318,Excavator,Model-2022-847,In Use,4177.74,12726480.64
+EQ-0319,Crane 319,Compactor,Model-2018-231,Available,8730.58,7100209.29
+EQ-0320,Excavator 320,Excavator,Model-2021-987,In Use,19841.79,6281657.92
+EQ-0321,Crane 321,Forklift,Model-2020-278,Available,37614.4,12173763.15
+EQ-0322,Crane 322,Road Roller,Model-2019-905,Available,3439.05,3140745.75
+EQ-0323,Forklift 323,Road Roller,Model-2022-736,In Use,3366.95,484867.49
+EQ-0324,Excavator 324,Loader,Model-2018-852,Available,45851.69,792841.81
+EQ-0325,Forklift 325,Compactor,Model-2026-273,Available,6805.53,5295129.46
+EQ-0326,Backhoe Loader 326,Bulldozer,Model-2024-167,Available,48499.06,7020056.46
+EQ-0327,Forklift 327,Generator,Model-2025-237,Available,16948.68,7095356.02
+EQ-0328,Concrete Mixer 328,Crane,Model-2023-772,In Use,47931.46,10059636.06
+EQ-0329,Bulldozer 329,Loader,Model-2025-866,Available,8039.98,7769537.06
+EQ-0330,Crane 330,Backhoe Loader,Model-2019-861,Available,36428.87,4306266.7
+EQ-0331,Compactor 331,Bulldozer,Model-2021-331,In Use,10862.08,9924603.45
+EQ-0332,Road Roller 332,Loader,Model-2026-629,In Use,38474.89,2062435.75
+EQ-0333,Forklift 333,Road Roller,Model-2020-693,Available,37900.93,12016593.66
+EQ-0334,Excavator 334,Backhoe Loader,Model-2020-114,Available,32462.27,12547148.48
+EQ-0335,Backhoe Loader 335,Crane,Model-2024-430,Available,29460.16,7309288.42
+EQ-0336,Road Roller 336,Backhoe Loader,Model-2024-562,Available,23753.29,4015789.12
+EQ-0337,Loader 337,Bulldozer,Model-2022-771,In Use,18188.22,13398649.98
+EQ-0338,Concrete Mixer 338,Road Roller,Model-2025-890,Maintenance,33835.91,10053389.01
+EQ-0339,Road Roller 339,Generator,Model-2022-164,In Use,22472.7,478668.45
+EQ-0340,Generator 340,Crane,Model-2019-332,Maintenance,41843.74,1892138.39
+EQ-0341,Concrete Mixer 341,Crane,Model-2023-414,Maintenance,22935.88,14766244.32
+EQ-0342,Bulldozer 342,Generator,Model-2020-507,Available,8802.0,10240558.06
+EQ-0343,Excavator 343,Backhoe Loader,Model-2023-638,Available,29018.38,8005366.95
+EQ-0344,Excavator 344,Generator,Model-2023-652,Available,35297.35,14957905.24
+EQ-0345,Crane 345,Road Roller,Model-2020-202,Available,32475.55,12898218.14
+EQ-0346,Backhoe Loader 346,Crane,Model-2026-724,Maintenance,43198.17,4248478.56
+EQ-0347,Forklift 347,Concrete Mixer,Model-2024-634,Maintenance,44899.74,7073261.79
+EQ-0348,Crane 348,Concrete Mixer,Model-2018-176,In Use,36000.37,10054990.54
+EQ-0349,Backhoe Loader 349,Compactor,Model-2019-160,Maintenance,8734.56,7265888.63
+EQ-0350,Crane 350,Backhoe Loader,Model-2024-905,Available,33012.06,5925895.0
+EQ-0351,Backhoe Loader 351,Backhoe Loader,Model-2023-172,Available,48241.15,4215646.28
+EQ-0352,Forklift 352,Bulldozer,Model-2020-310,Maintenance,8835.6,4204507.47
+EQ-0353,Road Roller 353,Excavator,Model-2019-633,In Use,27163.57,11597704.65
+EQ-0354,Compactor 354,Loader,Model-2021-776,Maintenance,16343.47,1960480.94
+EQ-0355,Compactor 355,Loader,Model-2020-172,In Use,44011.3,14247369.85
+EQ-0356,Excavator 356,Forklift,Model-2022-215,Maintenance,22443.71,2609994.54
+EQ-0357,Loader 357,Concrete Mixer,Model-2021-635,Available,6251.5,11003213.67
+EQ-0358,Compactor 358,Road Roller,Model-2021-990,Maintenance,42162.04,14452341.84
+EQ-0359,Forklift 359,Excavator,Model-2019-985,In Use,42431.6,11013395.25
+EQ-0360,Concrete Mixer 360,Generator,Model-2023-529,In Use,49188.16,1338091.07
+EQ-0361,Bulldozer 361,Loader,Model-2021-699,Maintenance,12626.63,6563128.79
+EQ-0362,Concrete Mixer 362,Bulldozer,Model-2025-674,Maintenance,31118.14,13068862.58
+EQ-0363,Forklift 363,Excavator,Model-2019-704,Available,29630.03,1850353.12
+EQ-0364,Backhoe Loader 364,Road Roller,Model-2024-934,Maintenance,36477.87,693987.35
+EQ-0365,Loader 365,Loader,Model-2026-138,Maintenance,41031.71,9458963.4
+EQ-0366,Forklift 366,Excavator,Model-2021-680,Available,3158.93,14194651.4
+EQ-0367,Bulldozer 367,Concrete Mixer,Model-2024-921,Available,36994.75,12756508.24
+EQ-0368,Concrete Mixer 368,Road Roller,Model-2023-460,Available,15278.36,11777276.05
+EQ-0369,Road Roller 369,Loader,Model-2022-887,Available,12050.29,11585052.67
+EQ-0370,Generator 370,Road Roller,Model-2024-871,In Use,39486.47,2663664.42
+EQ-0371,Loader 371,Bulldozer,Model-2023-460,Available,17193.64,4656943.97
+EQ-0372,Bulldozer 372,Forklift,Model-2023-736,Maintenance,32694.8,11372810.73
+EQ-0373,Backhoe Loader 373,Concrete Mixer,Model-2025-459,In Use,40683.08,13447125.44
+EQ-0374,Crane 374,Crane,Model-2023-116,Available,11109.91,4726861.01
+EQ-0375,Generator 375,Generator,Model-2022-874,Available,21102.62,10464977.69
+EQ-0376,Backhoe Loader 376,Bulldozer,Model-2019-828,Maintenance,42906.02,2271905.12
+EQ-0377,Road Roller 377,Generator,Model-2023-506,Available,46220.4,1644027.8
+EQ-0378,Concrete Mixer 378,Compactor,Model-2019-431,Available,23241.73,707515.35
+EQ-0379,Generator 379,Crane,Model-2022-126,Maintenance,12774.49,10456678.63
+EQ-0380,Backhoe Loader 380,Backhoe Loader,Model-2021-550,Available,8978.08,4522217.71
+EQ-0381,Excavator 381,Compactor,Model-2025-958,Maintenance,21897.24,8313269.69
+EQ-0382,Compactor 382,Backhoe Loader,Model-2024-290,Maintenance,32108.25,13340201.7
+EQ-0383,Forklift 383,Concrete Mixer,Model-2023-922,In Use,22703.11,5531266.48
+EQ-0384,Backhoe Loader 384,Road Roller,Model-2026-465,Available,47988.37,2103942.75
+EQ-0385,Backhoe Loader 385,Generator,Model-2020-198,Maintenance,27697.28,1661633.56
+EQ-0386,Compactor 386,Backhoe Loader,Model-2023-834,Available,24333.75,8656461.38
+EQ-0387,Excavator 387,Loader,Model-2025-609,Maintenance,5103.57,14937250.11
+EQ-0388,Excavator 388,Generator,Model-2025-672,Available,45000.4,7201734.07
+EQ-0389,Crane 389,Bulldozer,Model-2023-166,In Use,29348.17,14215531.79
+EQ-0390,Excavator 390,Compactor,Model-2025-541,Available,49337.92,3306541.68
+EQ-0391,Loader 391,Concrete Mixer,Model-2026-813,In Use,17865.6,8590874.74
+EQ-0392,Generator 392,Forklift,Model-2020-884,In Use,43411.24,14566238.98
+EQ-0393,Excavator 393,Road Roller,Model-2019-893,Available,31464.82,7993602.49
+EQ-0394,Crane 394,Backhoe Loader,Model-2021-715,Available,42115.49,539364.57
+EQ-0395,Loader 395,Bulldozer,Model-2023-191,Available,47415.06,8652643.05
+EQ-0396,Forklift 396,Forklift,Model-2024-813,Maintenance,8648.46,5215100.52
+EQ-0397,Bulldozer 397,Concrete Mixer,Model-2023-281,Maintenance,44195.1,7545259.17
+EQ-0398,Crane 398,Concrete Mixer,Model-2024-305,Available,18857.63,9743656.57
+EQ-0399,Bulldozer 399,Road Roller,Model-2025-869,Available,27145.63,403971.35
+EQ-0400,Compactor 400,Excavator,Model-2026-160,In Use,6583.54,125760.6
+EQ-0401,Generator 401,Excavator,Model-2018-434,Maintenance,16700.67,12020568.78
+EQ-0402,Compactor 402,Compactor,Model-2023-979,Available,47874.16,2908383.22
+EQ-0403,Compactor 403,Loader,Model-2020-648,Available,48837.17,1544790.14
+EQ-0404,Crane 404,Compactor,Model-2023-687,Available,44788.96,10624876.73
+EQ-0405,Crane 405,Generator,Model-2020-933,Maintenance,3456.4,677736.79
+EQ-0406,Generator 406,Bulldozer,Model-2022-398,Available,18754.59,2788209.72
+EQ-0407,Generator 407,Crane,Model-2019-609,Available,30968.16,14960394.39
+EQ-0408,Road Roller 408,Loader,Model-2026-951,Maintenance,39635.01,14165765.4
+EQ-0409,Generator 409,Bulldozer,Model-2023-352,In Use,8786.31,14409767.26
+EQ-0410,Loader 410,Backhoe Loader,Model-2024-142,In Use,4813.96,14736949.93
+EQ-0411,Loader 411,Compactor,Model-2019-968,Available,33848.6,4876240.65
+EQ-0412,Generator 412,Compactor,Model-2026-634,Maintenance,38332.33,9683657.75
+EQ-0413,Concrete Mixer 413,Road Roller,Model-2020-558,Available,16062.04,9432455.2
+EQ-0414,Forklift 414,Forklift,Model-2024-184,Maintenance,3144.04,1654345.68
+EQ-0415,Generator 415,Loader,Model-2024-413,Maintenance,49629.79,11584037.5
+EQ-0416,Excavator 416,Generator,Model-2018-292,Available,16741.75,8853300.9
+EQ-0417,Compactor 417,Generator,Model-2020-756,In Use,37484.34,8060952.76
+EQ-0418,Excavator 418,Concrete Mixer,Model-2024-292,In Use,48280.98,881285.3
+EQ-0419,Forklift 419,Generator,Model-2026-969,Available,26419.79,10248887.47
+EQ-0420,Excavator 420,Backhoe Loader,Model-2019-568,Available,44833.09,10714917.63
+EQ-0421,Bulldozer 421,Backhoe Loader,Model-2025-311,Available,4171.23,5784182.03
+EQ-0422,Bulldozer 422,Concrete Mixer,Model-2018-346,In Use,49251.29,14807573.87
+EQ-0423,Backhoe Loader 423,Road Roller,Model-2024-145,Available,8800.13,3767980.13
+EQ-0424,Concrete Mixer 424,Forklift,Model-2022-309,In Use,21641.76,252388.26
+EQ-0425,Forklift 425,Forklift,Model-2022-962,Available,41202.78,7374425.72
+EQ-0426,Compactor 426,Excavator,Model-2024-142,Maintenance,8186.64,10373540.65
+EQ-0427,Bulldozer 427,Bulldozer,Model-2019-262,Maintenance,5192.02,8100401.61
+EQ-0428,Crane 428,Concrete Mixer,Model-2024-391,In Use,15665.83,8594614.17
+EQ-0429,Bulldozer 429,Bulldozer,Model-2024-942,Available,47610.04,8365774.8
+EQ-0430,Loader 430,Backhoe Loader,Model-2020-630,Available,24509.94,1729224.03
+EQ-0431,Backhoe Loader 431,Excavator,Model-2024-288,Available,38601.99,12115495.79
+EQ-0432,Backhoe Loader 432,Forklift,Model-2023-548,Available,23217.14,11559985.81
+EQ-0433,Generator 433,Backhoe Loader,Model-2021-842,In Use,4100.38,311745.99
+EQ-0434,Crane 434,Road Roller,Model-2022-279,In Use,24177.7,13533285.94
+EQ-0435,Excavator 435,Forklift,Model-2024-256,In Use,26268.54,3456010.41
+EQ-0436,Backhoe Loader 436,Road Roller,Model-2025-125,Maintenance,5330.38,3762064.21
+EQ-0437,Generator 437,Concrete Mixer,Model-2026-264,Available,28261.92,4831548.01
+EQ-0438,Bulldozer 438,Bulldozer,Model-2024-630,Available,31692.14,2631737.1
+EQ-0439,Road Roller 439,Road Roller,Model-2018-246,Available,34847.2,187933.96
+EQ-0440,Excavator 440,Compactor,Model-2018-933,Maintenance,38897.38,1882667.18
+EQ-0441,Backhoe Loader 441,Excavator,Model-2026-175,Available,33145.41,13671090.72
+EQ-0442,Compactor 442,Forklift,Model-2022-802,Maintenance,23584.22,11246234.17
+EQ-0443,Loader 443,Compactor,Model-2022-453,Maintenance,24998.2,13488793.61
+EQ-0444,Loader 444,Generator,Model-2023-329,Available,15769.45,10991580.17
+EQ-0445,Forklift 445,Concrete Mixer,Model-2020-476,Available,22723.36,4567879.17
+EQ-0446,Excavator 446,Loader,Model-2024-827,Available,49399.49,1962860.89
+EQ-0447,Road Roller 447,Backhoe Loader,Model-2024-531,Maintenance,24107.91,6839445.96
+EQ-0448,Forklift 448,Loader,Model-2023-445,In Use,33937.92,2083408.71
+EQ-0449,Generator 449,Backhoe Loader,Model-2021-322,Available,29282.56,14225274.57
+EQ-0450,Compactor 450,Road Roller,Model-2025-661,Maintenance,19991.2,4672794.85
+EQ-0451,Forklift 451,Crane,Model-2025-211,Maintenance,16415.37,12510029.64
+EQ-0452,Compactor 452,Forklift,Model-2018-304,Available,18208.79,13359877.35
+EQ-0453,Forklift 453,Generator,Model-2024-284,Maintenance,3144.1,3176153.89
+EQ-0454,Compactor 454,Crane,Model-2022-863,Available,32779.43,8668530.23
+EQ-0455,Backhoe Loader 455,Crane,Model-2024-424,Maintenance,13793.53,11103138.67
+EQ-0456,Loader 456,Road Roller,Model-2026-852,Available,34457.09,11825737.62
+EQ-0457,Bulldozer 457,Excavator,Model-2018-982,Available,17912.41,1440209.89
+EQ-0458,Road Roller 458,Backhoe Loader,Model-2020-318,In Use,42352.57,5507806.94
+EQ-0459,Road Roller 459,Compactor,Model-2025-586,In Use,35772.95,4417141.63
+EQ-0460,Bulldozer 460,Generator,Model-2020-255,Available,21928.92,8031347.19
+EQ-0461,Compactor 461,Forklift,Model-2020-675,Maintenance,35593.41,4290395.72
+EQ-0462,Backhoe Loader 462,Bulldozer,Model-2020-555,Available,38272.33,2120421.23
+EQ-0463,Forklift 463,Loader,Model-2024-588,Available,38822.63,8834013.05
+EQ-0464,Road Roller 464,Loader,Model-2020-558,Available,48574.24,14204400.76
+EQ-0465,Compactor 465,Road Roller,Model-2023-187,In Use,5306.72,2110656.67
+EQ-0466,Concrete Mixer 466,Forklift,Model-2020-213,Available,48155.61,4878408.9
+EQ-0467,Bulldozer 467,Road Roller,Model-2025-116,Maintenance,49601.69,5541718.08
+EQ-0468,Concrete Mixer 468,Backhoe Loader,Model-2026-386,Available,25501.23,13596668.13
+EQ-0469,Excavator 469,Backhoe Loader,Model-2022-369,Maintenance,49815.39,5129015.64
+EQ-0470,Concrete Mixer 470,Loader,Model-2019-440,Available,8271.19,14675905.07
+EQ-0471,Compactor 471,Excavator,Model-2018-409,Maintenance,11582.84,7104802.44
+EQ-0472,Forklift 472,Excavator,Model-2022-813,Maintenance,18110.48,12066875.86
+EQ-0473,Forklift 473,Forklift,Model-2023-235,In Use,36517.62,8330501.48
+EQ-0474,Loader 474,Concrete Mixer,Model-2022-185,Maintenance,46101.25,1363450.0
+EQ-0475,Road Roller 475,Generator,Model-2019-123,Available,40698.88,1695039.17
+EQ-0476,Bulldozer 476,Crane,Model-2023-166,Available,29451.62,3630485.41
+EQ-0477,Bulldozer 477,Bulldozer,Model-2018-840,Available,37352.17,5182908.64
+EQ-0478,Compactor 478,Bulldozer,Model-2020-696,Maintenance,32288.14,5030419.5
+EQ-0479,Bulldozer 479,Compactor,Model-2019-157,Available,11577.02,11216354.81
+EQ-0480,Bulldozer 480,Crane,Model-2019-835,Available,2184.37,11894731.67
+EQ-0481,Backhoe Loader 481,Backhoe Loader,Model-2018-834,Available,20571.25,9419230.93
+EQ-0482,Backhoe Loader 482,Loader,Model-2021-825,Maintenance,31061.98,2872366.71
+EQ-0483,Concrete Mixer 483,Compactor,Model-2018-553,Available,26364.05,1285418.66
+EQ-0484,Backhoe Loader 484,Concrete Mixer,Model-2020-999,Available,35598.42,10572734.61
+EQ-0485,Bulldozer 485,Backhoe Loader,Model-2020-968,In Use,38301.74,3492961.63
+EQ-0486,Forklift 486,Compactor,Model-2022-715,Maintenance,26319.41,4352504.92
+EQ-0487,Forklift 487,Concrete Mixer,Model-2023-853,Available,27466.44,9857148.29
+EQ-0488,Concrete Mixer 488,Concrete Mixer,Model-2020-166,Available,5013.58,5228926.47
+EQ-0489,Excavator 489,Compactor,Model-2024-181,Maintenance,2575.95,11189603.6
+EQ-0490,Bulldozer 490,Road Roller,Model-2023-814,Available,29321.65,10934519.01
+EQ-0491,Road Roller 491,Loader,Model-2023-860,Maintenance,19781.28,4573682.92
+EQ-0492,Loader 492,Road Roller,Model-2026-862,Available,12949.36,2641238.8
+EQ-0493,Road Roller 493,Forklift,Model-2025-572,In Use,46325.41,12712575.93
+EQ-0494,Forklift 494,Loader,Model-2025-563,Available,8819.98,11283226.04
+EQ-0495,Forklift 495,Excavator,Model-2020-907,In Use,20309.95,13066732.53
+EQ-0496,Crane 496,Forklift,Model-2023-114,Maintenance,39986.01,9960403.87
+EQ-0497,Crane 497,Crane,Model-2020-322,Available,2786.69,7137094.51
+EQ-0498,Concrete Mixer 498,Road Roller,Model-2021-122,Maintenance,20827.13,4622479.75
+EQ-0499,Generator 499,Concrete Mixer,Model-2021-294,Maintenance,31127.6,7537139.67
+EQ-0500,Forklift 500,Crane,Model-2025-781,Available,18961.73,1679571.39
