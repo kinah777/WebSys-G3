@@ -230,6 +230,36 @@ CREATE TABLE maintenance_records (
 );
 
 
+-- 15. ROLES
+CREATE TABLE roles (
+    role_id SERIAL PRIMARY KEY,
+    role_name VARCHAR(50) UNIQUE NOT NULL,
+    description VARCHAR(150)
+);
+
+
+-- 16. USERS
+CREATE TABLE users (
+    user_id SERIAL PRIMARY KEY,
+    employee_id VARCHAR(20) UNIQUE,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    role_id INTEGER NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT fk_user_employee
+        FOREIGN KEY (employee_id)
+        REFERENCES employees(employee_id)
+        ON DELETE SET NULL,
+
+    CONSTRAINT fk_user_role
+        FOREIGN KEY (role_id)
+        REFERENCES roles(role_id)
+        ON DELETE RESTRICT
+);
+
+
 -- =========================================================
 -- INDEXES
 -- These make searches and allocation checks faster.
@@ -255,3 +285,9 @@ ON budgets(project_id);
 
 CREATE INDEX idx_maintenance_equipment
 ON maintenance_records(equipment_id);
+
+CREATE INDEX idx_user_employee
+ON users(employee_id);
+
+CREATE INDEX idx_user_role
+ON users(role_id);
