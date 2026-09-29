@@ -7,7 +7,6 @@ import {
 } from "@mui/material";
 
 import RootComponent from "./components/RootComponent";
-import RootPage from "./components/RootPage";
 import LoginPage from "./components/LoginPage";
 
 import {
@@ -17,14 +16,23 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Home from "./components/bodyComponents/home/Home";
-import Inventory from "./components/bodyComponents/inventory/Inventory";
 import Customer from "./components/bodyComponents/customer/Customer";
 import Revenue from "./components/bodyComponents/revenue/Revenue";
 import Growth from "./components/bodyComponents/growth/Growth";
 import Report from "./components/bodyComponents/report/Report";
 import Setting from "./components/bodyComponents/Settings/Setting";
 import Order from "./components/bodyComponents/order/Order";
+import {
+  CalendarPage,
+  ConflictsPage,
+  DashboardPage,
+  ForecastPage,
+  MaterialsPage,
+  MembersPage,
+  ProjectsPage,
+  ResourcesPage,
+  TasksPage,
+} from "./components/ConstructionPages";
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
@@ -79,10 +87,17 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootComponent />}>
-        <Route index element={<RootPage />} />
+        <Route index element={<DashboardPage />} />
 
-        <Route path="home" element={<Home />} />
-        <Route path="inventory" element={<Inventory />} />
+        <Route path="home" element={<DashboardPage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="tasks" element={<TasksPage />} />
+        <Route path="inventory" element={<MaterialsPage />} />
+        <Route path="resources" element={<ResourcesPage />} />
+        <Route path="conflicts" element={<ConflictsPage />} />
+        <Route path="calendar" element={<CalendarPage />} />
+        <Route path="members" element={<MembersPage />} />
+        <Route path="forecasts" element={<ForecastPage />} />
         <Route path="orders" element={<Order />} />
         <Route path="customers" element={<Customer />} />
         <Route path="revenue" element={<Revenue />} />

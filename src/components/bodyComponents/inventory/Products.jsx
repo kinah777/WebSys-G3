@@ -2,8 +2,7 @@ import { Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import Product from "./Product";
 import { DataGrid } from "@mui/x-data-grid";
-
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+import { apiRequest } from "../../../api";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -14,16 +13,11 @@ export default function Products() {
 
     async function loadProducts() {
       try {
-        const response = await fetch(`${apiBaseUrl}/api/products`, {
-          signal: controller.signal,
-        });
-        if (!response.ok) {
-          throw new Error("Unable to load inventory.");
-        }
-        setProducts(await response.json());
+        const materials = await apiRequest("/materials", { signal: controller.signal });
+        setProducts(materials);
       } catch (requestError) {
         if (requestError.name !== "AbortError") {
-          setError("Unable to load inventory. Start the FastAPI server and try again.");
+          setError(requestError.message || "Unable to load inventory. Check the API server and database.");
         }
       }
     }
@@ -34,42 +28,42 @@ export default function Products() {
 
   const columns = [
     {
-      field: "id",
+      field: "material_id",
       headerName: "ID",
       width: 90,
-      description: "id of the product",
+      description: "Material ID",
     },
     {
-      field: "product",
-      headerName: "Product",
-      width: 400,
-      description: "",
-      //same here we have the cell data which i will get the value of the cells in the tables cellData.row.fieldName
-
+      field: "name",
+      headerName: "Material",
+      width: 260,
+      description: "Material name",
       renderCell: (cellData) => {
-        console.log("the cell data is : ", cellData.row.name);
         return <Product productName={cellData.row.name} />;
       },
     },
     {
-      field: "category",
+      field: "type",
       headerName: "Category",
       width: 200,
-      description: "category of the product",
+      description: "Material category",
     },
     {
-      field: "price",
-      headerName: "Price",
+      field: "quantity_in_stock",
+      headerName: "Quantity",
       width: 150,
-      description: "price of the product",
-      valueGetter: (params) => "$" + params.row.stock,
+      renderCell: ({ row }) => `${row.quantity_in_stock ?? 0} ${row.unit || ""}`,
     },
     {
-      field: "stock",
-      headerName: "Stock",
-      width: 200,
-      description: "how many items in the stock",
-      valueGetter: (params) => params.row.stock + " pcs",
+      field: "reorder_level",
+      headerName: "Minimum stock",
+      width: 160,
+    },
+    {
+      field: "unit_cost",
+      headerName: "Unit cost",
+      width: 140,
+      renderCell: ({ row }) => `PHP ${row.unit_cost ?? 0}`,
     },
   ];
 
@@ -79,6 +73,7 @@ export default function Products() {
       <DataGrid
         sx={{ borderLeft: 0, borderRight: 0, borderRadius: 0 }}
         rows={products}
+        getRowId={(row) => row.material_id}
         columns={columns}
         initialState={{
           pagination: {
