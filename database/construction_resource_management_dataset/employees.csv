@@ -1,0 +1,501 @@
+employee_id,name,position,skill,phone,employment_status,daily_rate
+EMP-0001,Daniel Flores,Safety Officer,Masonry,09257226287,Active,3607.68
+EMP-0002,Christopher Bautista,Welder,Surveying,09134688715,Active,4163.12
+EMP-0003,Robert Ramos,Surveyor,Surveying,09517563874,Active,2799.15
+EMP-0004,Christopher Reyes,Plumber,Heavy Equipment,09547284589,Active,4846.25
+EMP-0005,John Santos,Surveyor,Masonry,09318063243,On Leave,4234.93
+EMP-0006,Andrew Bautista,Welder,Plumbing,09415870923,On Leave,1298.42
+EMP-0007,Michael Mendoza,Civil Engineer,Surveying,09228155179,On Leave,682.85
+EMP-0008,Joseph Torres,Civil Engineer,Electrical,09727050254,Active,525.4
+EMP-0009,Kevin Dela Cruz,Project Manager,Electrical,09446421355,Active,3981.47
+EMP-0010,Angel Flores,Mason,Safety Management,09690729993,Active,827.96
+EMP-0011,Matthew Fernandez,Architect,Electrical,09658996745,Active,4038.16
+EMP-0012,Daniel Gonzales,Carpenter,Surveying,09533165776,Active,2072.31
+EMP-0013,Mark Navarro,Electrician,Carpentry,09415223070,Active,4776.39
+EMP-0014,Angel Fernandez,Mason,Surveying,09984428681,Active,1016.25
+EMP-0015,Andrew Aquino,Architect,Safety Management,09766935087,Active,4815.04
+EMP-0016,Matthew Rivera,Welder,Civil Works,09514331133,Active,2931.07
+EMP-0017,Christopher Santos,Carpenter,Carpentry,09652235149,On Leave,2690.62
+EMP-0018,Christopher Bautista,Electrician,Surveying,09188417749,Active,1253.28
+EMP-0019,Miguel Santos,Safety Officer,Civil Works,09326324885,Active,4392.28
+EMP-0020,William Garcia,Architect,Surveying,09989862107,On Leave,3409.53
+EMP-0021,Michael Dela Cruz,Project Manager,Welding,09869731458,Active,670.49
+EMP-0022,Michael Reyes,Civil Engineer,Masonry,09699238353,Active,3087.33
+EMP-0023,Anthony Torres,Plumber,Heavy Equipment,09584392493,On Leave,2448.61
+EMP-0024,James Rivera,Safety Officer,Civil Works,09674274037,Active,3386.4
+EMP-0025,Angel Cruz,Welder,Safety Management,09148873346,Active,2109.65
+EMP-0026,Carlos Garcia,Foreman,Masonry,09751295118,Active,1766.83
+EMP-0027,Kevin Rivera,Plumber,Project Management,09608940398,Active,2900.6
+EMP-0028,David Rivera,Welder,Surveying,09416730716,Active,1841.25
+EMP-0029,Andrew Santos,Carpenter,Surveying,09251799039,Active,687.98
+EMP-0030,Jose Rivera,Carpenter,Surveying,09191404267,Active,1445.24
+EMP-0031,Andrew Bautista,Plumber,Surveying,09252960017,Active,1327.97
+EMP-0032,Angel Torres,Architect,Civil Works,09294731649,Active,4331.24
+EMP-0033,Miguel Aquino,Safety Officer,Surveying,09178538388,Active,3522.58
+EMP-0034,Joseph Garcia,Architect,Safety Management,09623116712,Active,2107.12
+EMP-0035,Anthony Garcia,Foreman,Safety Management,09174956719,Active,1930.04
+EMP-0036,Kevin Navarro,Heavy Equipment Operator,Masonry,09844594995,Active,3044.98
+EMP-0037,Andrew Navarro,Plumber,Electrical,09105188198,Active,1607.79
+EMP-0038,Anthony Gonzales,Foreman,Carpentry,09244209787,Active,4450.49
+EMP-0039,Kevin Aquino,Electrician,Masonry,09622881542,Active,1290.97
+EMP-0040,Angel Cruz,Laborer,Masonry,09987387141,Active,4510.84
+EMP-0041,Mark Torres,Surveyor,Civil Works,09881067043,Active,4514.47
+EMP-0042,Carlos Santos,Laborer,Safety Management,09721589989,On Leave,3961.4
+EMP-0043,Mark Reyes,Carpenter,Masonry,09683545743,On Leave,3442.59
+EMP-0044,David Castillo,Plumber,Plumbing,09929084214,Active,1102.47
+EMP-0045,Carlos Fernandez,Site Engineer,Heavy Equipment,09490697670,Active,3482.05
+EMP-0046,Angel Mendoza,Welder,Surveying,09250721880,On Leave,1216.5
+EMP-0047,Jose Dela Cruz,Surveyor,Welding,09485253781,Active,1484.69
+EMP-0048,Brian Ramos,Site Engineer,Masonry,09496678008,Active,692.64
+EMP-0049,Mark Fernandez,Welder,Carpentry,09516711804,On Leave,4630.56
+EMP-0050,John Reyes,Safety Officer,Carpentry,09210837014,Active,4256.93
+EMP-0051,Joseph Mendoza,Plumber,Heavy Equipment,09492234424,Active,2824.98
+EMP-0052,Joshua Ramos,Carpenter,Heavy Equipment,09478921345,Active,2690.88
+EMP-0053,Brian Santos,Carpenter,Electrical,09572337634,Active,1534.96
+EMP-0054,Carlos Torres,Architect,Electrical,09300688440,Active,2130.0
+EMP-0055,Robert Ramos,Plumber,Carpentry,09873368624,Active,2666.82
+EMP-0056,Brian Villanueva,Architect,Safety Management,09273136853,On Leave,601.01
+EMP-0057,John Dela Cruz,Heavy Equipment Operator,Safety Management,09273011097,Active,3332.93
+EMP-0058,John Dela Cruz,Project Manager,Electrical,09377304178,Active,2824.88
+EMP-0059,Joshua Santos,Surveyor,Masonry,09192071758,Active,2521.42
+EMP-0060,Brian Villanueva,Civil Engineer,Plumbing,09991596102,On Leave,3203.77
+EMP-0061,Jose Mendoza,Heavy Equipment Operator,Surveying,09384026939,Active,3758.84
+EMP-0062,Matthew Aquino,Heavy Equipment Operator,Safety Management,09173919503,Active,2201.95
+EMP-0063,David Garcia,Project Manager,Plumbing,09661257031,On Leave,4219.31
+EMP-0064,Angel Garcia,Civil Engineer,Welding,09760080817,Active,4449.89
+EMP-0065,Miguel Fernandez,Welder,Civil Works,09200061963,On Leave,3467.27
+EMP-0066,Angel Santos,Welder,Heavy Equipment,09660540722,On Leave,2166.7
+EMP-0067,John Fernandez,Plumber,Plumbing,09961463274,On Leave,4053.0
+EMP-0068,Joshua Castillo,Heavy Equipment Operator,Safety Management,09204922732,On Leave,1102.47
+EMP-0069,Brian Ramos,Laborer,Civil Works,09404155269,On Leave,1660.12
+EMP-0070,James Santos,Heavy Equipment Operator,Surveying,09226517500,Active,2187.63
+EMP-0071,Mark Navarro,Plumber,Carpentry,09214442861,Active,2417.32
+EMP-0072,Jose Torres,Foreman,Surveying,09554795749,Active,3253.46
+EMP-0073,Joshua Bautista,Plumber,Surveying,09941586401,On Leave,1304.24
+EMP-0074,Miguel Villanueva,Foreman,Masonry,09720248205,Active,3983.88
+EMP-0075,Joshua Dela Cruz,Laborer,Civil Works,09902959376,Active,2509.68
+EMP-0076,Daniel Garcia,Architect,Surveying,09530098998,Active,4103.84
+EMP-0077,Angel Reyes,Civil Engineer,Heavy Equipment,09782767320,Active,4119.66
+EMP-0078,David Villanueva,Heavy Equipment Operator,Heavy Equipment,09194640346,Active,1683.91
+EMP-0079,Andrew Cruz,Heavy Equipment Operator,Project Management,09877920274,On Leave,4688.08
+EMP-0080,Joshua Fernandez,Foreman,Safety Management,09161700457,Active,3381.31
+EMP-0081,Kevin Santos,Architect,Surveying,09407097155,Active,651.24
+EMP-0082,Angel Fernandez,Carpenter,Plumbing,09760555221,Active,3533.11
+EMP-0083,Andrew Ramos,Safety Officer,Project Management,09269055029,Active,4985.68
+EMP-0084,Joshua Castillo,Safety Officer,Heavy Equipment,09535349662,Active,2829.84
+EMP-0085,Michael Cruz,Carpenter,Masonry,09879685499,Active,2063.64
+EMP-0086,Joseph Ramos,Heavy Equipment Operator,Plumbing,09588293766,On Leave,3087.08
+EMP-0087,Joseph Mendoza,Plumber,Surveying,09214315878,Active,2764.26
+EMP-0088,Matthew Garcia,Welder,Surveying,09376696166,Active,3623.86
+EMP-0089,Joshua Villanueva,Welder,Plumbing,09913330750,Active,4825.57
+EMP-0090,Kevin Aquino,Heavy Equipment Operator,Project Management,09617511527,Active,1660.19
+EMP-0091,Joshua Ramos,Safety Officer,Plumbing,09959166755,Active,2355.92
+EMP-0092,Andrew Fernandez,Carpenter,Project Management,09852498189,Active,1617.16
+EMP-0093,Michael Rivera,Safety Officer,Carpentry,09181635326,Active,2644.5
+EMP-0094,Andrew Bautista,Heavy Equipment Operator,Masonry,09296263306,Active,2745.5
+EMP-0095,Mark Ramos,Surveyor,Plumbing,09384976854,Active,1531.43
+EMP-0096,Anthony Castillo,Civil Engineer,Civil Works,09228718546,Active,3541.15
+EMP-0097,Brian Santos,Welder,Surveying,09145379683,On Leave,2170.38
+EMP-0098,Matthew Villanueva,Heavy Equipment Operator,Masonry,09626998235,Active,4929.78
+EMP-0099,Carlos Torres,Plumber,Plumbing,09905488247,Active,743.67
+EMP-0100,William Villanueva,Carpenter,Project Management,09639528648,Active,2271.73
+EMP-0101,Daniel Aquino,Site Engineer,Surveying,09593997037,Active,3601.45
+EMP-0102,James Bautista,Plumber,Safety Management,09208177158,Active,2127.21
+EMP-0103,Joseph Mendoza,Carpenter,Masonry,09354626229,Active,2621.05
+EMP-0104,Angel Navarro,Electrician,Electrical,09635550230,On Leave,1447.4
+EMP-0105,Andrew Castillo,Laborer,Heavy Equipment,09400249927,On Leave,1309.5
+EMP-0106,David Ramos,Laborer,Civil Works,09873969707,Active,4118.39
+EMP-0107,Miguel Gonzales,Laborer,Heavy Equipment,09310521278,Active,4100.17
+EMP-0108,David Villanueva,Welder,Project Management,09289630619,On Leave,2748.19
+EMP-0109,Carlos Navarro,Welder,Welding,09422159250,Active,3029.62
+EMP-0110,Jose Reyes,Plumber,Civil Works,09841465088,Active,770.16
+EMP-0111,Joseph Villanueva,Laborer,Civil Works,09583027931,Active,1668.96
+EMP-0112,Andrew Torres,Electrician,Project Management,09542124908,Active,2079.91
+EMP-0113,Angel Bautista,Heavy Equipment Operator,Safety Management,09797787747,Active,4907.18
+EMP-0114,Christopher Castillo,Electrician,Surveying,09623442423,On Leave,4503.35
+EMP-0115,Joshua Flores,Mason,Electrical,09279932861,Active,2398.17
+EMP-0116,Angel Rivera,Laborer,Civil Works,09184945787,Active,2046.31
+EMP-0117,Matthew Navarro,Safety Officer,Masonry,09862822145,Active,3224.23
+EMP-0118,Joshua Torres,Mason,Carpentry,09903046674,On Leave,2362.95
+EMP-0119,Daniel Santos,Civil Engineer,Plumbing,09810841299,Active,4731.97
+EMP-0120,Michael Bautista,Civil Engineer,Heavy Equipment,09210605413,Active,787.07
+EMP-0121,Brian Reyes,Project Manager,Heavy Equipment,09662622237,Active,967.68
+EMP-0122,Angel Dela Cruz,Site Engineer,Heavy Equipment,09432184213,Active,1613.28
+EMP-0123,Christopher Aquino,Safety Officer,Electrical,09240957723,Active,628.57
+EMP-0124,Andrew Navarro,Laborer,Welding,09601645174,Active,2968.45
+EMP-0125,David Mendoza,Heavy Equipment Operator,Safety Management,09590209766,On Leave,2855.57
+EMP-0126,Miguel Flores,Electrician,Welding,09679464236,Active,4121.18
+EMP-0127,Kevin Flores,Electrician,Heavy Equipment,09378965689,Active,1866.08
+EMP-0128,James Fernandez,Laborer,Electrical,09469243620,Active,2611.39
+EMP-0129,James Villanueva,Welder,Welding,09421704344,Active,3946.41
+EMP-0130,Christopher Ramos,Welder,Project Management,09688638365,Active,1348.57
+EMP-0131,Miguel Gonzales,Plumber,Plumbing,09275309282,On Leave,4227.92
+EMP-0132,Anthony Torres,Site Engineer,Heavy Equipment,09771435478,Active,2824.75
+EMP-0133,Angel Torres,Foreman,Surveying,09968451673,Active,2358.07
+EMP-0134,Michael Mendoza,Civil Engineer,Masonry,09218494225,On Leave,3279.78
+EMP-0135,Joseph Villanueva,Architect,Carpentry,09120825650,Active,723.34
+EMP-0136,Miguel Santos,Civil Engineer,Civil Works,09402918178,Active,1062.68
+EMP-0137,Kevin Santos,Architect,Civil Works,09261795387,Active,2721.11
+EMP-0138,Matthew Gonzales,Foreman,Welding,09498784578,On Leave,3636.21
+EMP-0139,John Navarro,Site Engineer,Electrical,09160170716,Active,3990.44
+EMP-0140,Michael Villanueva,Civil Engineer,Plumbing,09368520783,On Leave,4227.13
+EMP-0141,Robert Ramos,Plumber,Welding,09365388382,Active,1396.31
+EMP-0142,Robert Fernandez,Safety Officer,Plumbing,09607692567,On Leave,3566.49
+EMP-0143,Christopher Navarro,Civil Engineer,Project Management,09899641923,Active,1639.91
+EMP-0144,Christopher Bautista,Electrician,Project Management,09815858075,Active,4879.73
+EMP-0145,Anthony Gonzales,Electrician,Project Management,09279701810,Active,3131.14
+EMP-0146,Joshua Ramos,Project Manager,Project Management,09723926702,On Leave,3597.83
+EMP-0147,David Castillo,Welder,Civil Works,09367063493,Active,2749.64
+EMP-0148,Angel Navarro,Welder,Project Management,09164183056,Active,3400.59
+EMP-0149,Miguel Garcia,Civil Engineer,Welding,09349832483,Active,4917.54
+EMP-0150,Andrew Aquino,Surveyor,Plumbing,09122927426,On Leave,2111.75
+EMP-0151,David Torres,Project Manager,Welding,09858733870,On Leave,3015.61
+EMP-0152,Miguel Villanueva,Architect,Safety Management,09300388921,Active,1956.56
+EMP-0153,Kevin Torres,Laborer,Safety Management,09695411648,Active,809.94
+EMP-0154,David Aquino,Foreman,Masonry,09681544961,Active,2543.36
+EMP-0155,Carlos Rivera,Surveyor,Electrical,09120100290,Active,3992.07
+EMP-0156,Anthony Navarro,Surveyor,Civil Works,09806832877,On Leave,1354.41
+EMP-0157,Brian Dela Cruz,Heavy Equipment Operator,Masonry,09446389157,On Leave,3384.07
+EMP-0158,Robert Garcia,Carpenter,Civil Works,09147005473,Active,1303.87
+EMP-0159,John Bautista,Site Engineer,Welding,09305746804,Active,643.18
+EMP-0160,Joshua Villanueva,Carpenter,Safety Management,09853030195,Active,720.89
+EMP-0161,Anthony Cruz,Project Manager,Plumbing,09804105516,On Leave,4677.82
+EMP-0162,Michael Aquino,Welder,Project Management,09487541399,On Leave,4199.12
+EMP-0163,John Torres,Carpenter,Project Management,09888448988,Active,4255.05
+EMP-0164,Michael Bautista,Carpenter,Civil Works,09208689641,Active,2892.47
+EMP-0165,Mark Bautista,Carpenter,Plumbing,09712062546,Active,3012.91
+EMP-0166,Miguel Gonzales,Surveyor,Civil Works,09922790554,Active,3535.22
+EMP-0167,William Garcia,Civil Engineer,Electrical,09690520920,On Leave,2771.12
+EMP-0168,Daniel Aquino,Electrician,Carpentry,09690645339,Active,4301.84
+EMP-0169,William Gonzales,Laborer,Carpentry,09753278884,Active,3034.15
+EMP-0170,Mark Rivera,Welder,Surveying,09899484915,Active,2120.04
+EMP-0171,Kevin Aquino,Plumber,Project Management,09879872949,Active,4923.3
+EMP-0172,Angel Santos,Carpenter,Electrical,09424100009,Active,1851.5
+EMP-0173,Anthony Bautista,Laborer,Carpentry,09123301671,Active,4636.0
+EMP-0174,Carlos Dela Cruz,Site Engineer,Project Management,09594318319,Active,1202.48
+EMP-0175,Joseph Castillo,Heavy Equipment Operator,Plumbing,09350175561,Active,4149.83
+EMP-0176,Michael Rivera,Heavy Equipment Operator,Plumbing,09888412068,Active,3756.11
+EMP-0177,Brian Mendoza,Mason,Safety Management,09979947812,Active,3178.54
+EMP-0178,Christopher Reyes,Surveyor,Safety Management,09509682018,Active,4010.55
+EMP-0179,Matthew Castillo,Laborer,Heavy Equipment,09547236783,Active,4414.04
+EMP-0180,Anthony Santos,Safety Officer,Heavy Equipment,09158119446,Active,2859.73
+EMP-0181,Matthew Dela Cruz,Electrician,Surveying,09849223390,Active,1189.39
+EMP-0182,Joshua Aquino,Welder,Safety Management,09717675194,Active,1499.39
+EMP-0183,Christopher Rivera,Civil Engineer,Electrical,09460957835,Active,2641.35
+EMP-0184,John Rivera,Foreman,Civil Works,09527915151,On Leave,3982.21
+EMP-0185,David Dela Cruz,Mason,Surveying,09312717408,On Leave,2278.93
+EMP-0186,Jose Bautista,Carpenter,Safety Management,09889917232,Active,1590.42
+EMP-0187,Joseph Gonzales,Electrician,Safety Management,09196201527,Active,3522.86
+EMP-0188,William Castillo,Electrician,Plumbing,09444390192,Active,3172.45
+EMP-0189,James Flores,Civil Engineer,Carpentry,09761662253,On Leave,3304.32
+EMP-0190,Kevin Reyes,Laborer,Plumbing,09314410364,Active,1201.96
+EMP-0191,Michael Garcia,Surveyor,Project Management,09360971128,Active,4409.39
+EMP-0192,Christopher Santos,Electrician,Civil Works,09427618008,On Leave,2620.36
+EMP-0193,Matthew Bautista,Surveyor,Surveying,09327499388,Active,2958.91
+EMP-0194,Joseph Villanueva,Heavy Equipment Operator,Electrical,09846326954,Active,2194.73
+EMP-0195,Carlos Reyes,Foreman,Electrical,09164542674,Active,1403.13
+EMP-0196,Angel Torres,Project Manager,Welding,09803040905,Active,799.69
+EMP-0197,Joseph Castillo,Laborer,Civil Works,09120485196,Active,4403.35
+EMP-0198,Joshua Ramos,Plumber,Surveying,09862022549,Active,4567.42
+EMP-0199,Brian Cruz,Civil Engineer,Plumbing,09637569722,On Leave,3023.09
+EMP-0200,James Reyes,Architect,Surveying,09427413432,Active,2704.7
+EMP-0201,Daniel Santos,Electrician,Carpentry,09481584364,Active,1562.92
+EMP-0202,Carlos Torres,Welder,Project Management,09771939435,Active,4454.05
+EMP-0203,James Torres,Architect,Electrical,09466990085,On Leave,3456.19
+EMP-0204,Michael Rivera,Carpenter,Safety Management,09771651925,Active,2378.0
+EMP-0205,Jose Dela Cruz,Plumber,Masonry,09750009892,Active,2521.26
+EMP-0206,David Bautista,Safety Officer,Electrical,09723876967,Active,4381.64
+EMP-0207,Christopher Fernandez,Civil Engineer,Heavy Equipment,09926834891,Active,3453.04
+EMP-0208,Jose Mendoza,Electrician,Civil Works,09698439590,Active,1328.61
+EMP-0209,David Santos,Welder,Carpentry,09544572227,On Leave,1865.07
+EMP-0210,Joseph Dela Cruz,Welder,Plumbing,09214644955,Active,1331.36
+EMP-0211,Angel Torres,Heavy Equipment Operator,Safety Management,09757518717,Active,3183.62
+EMP-0212,Anthony Santos,Electrician,Civil Works,09838886075,On Leave,1103.39
+EMP-0213,Angel Villanueva,Surveyor,Carpentry,09297543237,On Leave,2711.51
+EMP-0214,David Mendoza,Architect,Plumbing,09134606221,On Leave,3940.42
+EMP-0215,James Torres,Plumber,Plumbing,09897110135,Active,3909.99
+EMP-0216,Michael Mendoza,Mason,Safety Management,09626072176,Active,4400.49
+EMP-0217,Anthony Gonzales,Plumber,Project Management,09752759821,On Leave,3740.9
+EMP-0218,Joshua Fernandez,Safety Officer,Project Management,09659042709,Active,2532.24
+EMP-0219,John Ramos,Carpenter,Surveying,09524784283,Active,3009.65
+EMP-0220,Carlos Reyes,Architect,Masonry,09571967377,On Leave,4479.79
+EMP-0221,Christopher Aquino,Civil Engineer,Heavy Equipment,09416130770,Active,3604.79
+EMP-0222,David Aquino,Laborer,Welding,09197110078,Active,1308.97
+EMP-0223,Jose Dela Cruz,Plumber,Heavy Equipment,09447313528,On Leave,612.1
+EMP-0224,Kevin Bautista,Mason,Civil Works,09368523822,Active,3612.73
+EMP-0225,Daniel Garcia,Site Engineer,Civil Works,09858305156,On Leave,3353.33
+EMP-0226,Michael Fernandez,Surveyor,Heavy Equipment,09880474837,Active,2204.05
+EMP-0227,Joshua Reyes,Welder,Electrical,09459910894,Active,1229.56
+EMP-0228,David Mendoza,Welder,Project Management,09550522411,Active,1892.83
+EMP-0229,Kevin Flores,Safety Officer,Electrical,09226222619,Active,4821.95
+EMP-0230,James Torres,Project Manager,Welding,09634323575,On Leave,2945.76
+EMP-0231,James Villanueva,Architect,Plumbing,09732286107,On Leave,2541.82
+EMP-0232,Kevin Cruz,Heavy Equipment Operator,Safety Management,09107057729,Active,4469.76
+EMP-0233,Joseph Bautista,Project Manager,Electrical,09259188853,Active,3439.75
+EMP-0234,John Dela Cruz,Laborer,Project Management,09816182084,Active,1990.0
+EMP-0235,Michael Reyes,Site Engineer,Heavy Equipment,09291392758,Active,3524.41
+EMP-0236,Angel Mendoza,Mason,Safety Management,09486749612,Active,919.07
+EMP-0237,Christopher Navarro,Electrician,Heavy Equipment,09980752567,Active,3912.99
+EMP-0238,Miguel Cruz,Foreman,Welding,09244467442,Active,3625.79
+EMP-0239,Joseph Navarro,Carpenter,Heavy Equipment,09663334583,Active,3631.23
+EMP-0240,Angel Reyes,Site Engineer,Safety Management,09883540031,Active,2676.48
+EMP-0241,Angel Flores,Plumber,Safety Management,09439827006,Active,2864.26
+EMP-0242,Angel Castillo,Civil Engineer,Safety Management,09704124018,On Leave,2838.68
+EMP-0243,Brian Villanueva,Welder,Electrical,09754344451,Active,3688.64
+EMP-0244,Mark Santos,Site Engineer,Project Management,09599167150,Active,3818.61
+EMP-0245,Mark Gonzales,Plumber,Project Management,09458406707,Active,3021.87
+EMP-0246,Mark Santos,Safety Officer,Plumbing,09840900181,Active,1644.88
+EMP-0247,Michael Flores,Foreman,Surveying,09690551135,Active,3951.65
+EMP-0248,Robert Navarro,Electrician,Heavy Equipment,09877814971,Active,4244.19
+EMP-0249,Mark Navarro,Laborer,Carpentry,09822062338,On Leave,4622.73
+EMP-0250,John Dela Cruz,Mason,Electrical,09773451395,On Leave,4514.26
+EMP-0251,Miguel Navarro,Mason,Heavy Equipment,09897344195,Active,4257.98
+EMP-0252,Christopher Navarro,Carpenter,Surveying,09120098766,Active,3098.29
+EMP-0253,Matthew Castillo,Site Engineer,Electrical,09401141657,Active,2026.19
+EMP-0254,Joshua Mendoza,Heavy Equipment Operator,Safety Management,09518293601,Active,3178.36
+EMP-0255,Christopher Navarro,Surveyor,Project Management,09391518128,On Leave,890.59
+EMP-0256,Anthony Castillo,Mason,Masonry,09332078427,Active,1287.56
+EMP-0257,Andrew Reyes,Welder,Plumbing,09199432918,On Leave,2776.98
+EMP-0258,Brian Fernandez,Civil Engineer,Plumbing,09465196671,On Leave,3795.98
+EMP-0259,Carlos Flores,Welder,Carpentry,09253861882,Active,4199.62
+EMP-0260,Carlos Dela Cruz,Architect,Project Management,09593243074,On Leave,3711.55
+EMP-0261,Carlos Garcia,Project Manager,Masonry,09147276808,Active,1999.8
+EMP-0262,John Garcia,Carpenter,Masonry,09124137992,Active,3374.83
+EMP-0263,Mark Navarro,Architect,Plumbing,09407699378,Active,2895.24
+EMP-0264,Kevin Garcia,Foreman,Electrical,09269110063,Active,1015.07
+EMP-0265,Angel Fernandez,Site Engineer,Plumbing,09682535775,Active,2972.15
+EMP-0266,Joseph Dela Cruz,Surveyor,Masonry,09716416868,Active,1270.74
+EMP-0267,Christopher Navarro,Carpenter,Welding,09154466824,Active,630.47
+EMP-0268,John Garcia,Plumber,Project Management,09192470197,On Leave,2263.63
+EMP-0269,Angel Aquino,Heavy Equipment Operator,Carpentry,09435480597,Active,4178.49
+EMP-0270,Miguel Cruz,Welder,Welding,09709659120,Active,918.12
+EMP-0271,Kevin Garcia,Mason,Masonry,09834952627,On Leave,2617.46
+EMP-0272,Anthony Dela Cruz,Laborer,Safety Management,09377082043,Active,2264.35
+EMP-0273,Matthew Navarro,Mason,Welding,09132495867,Active,2639.0
+EMP-0274,Andrew Villanueva,Mason,Electrical,09403071541,Active,3219.98
+EMP-0275,David Fernandez,Site Engineer,Heavy Equipment,09977840731,Active,1966.41
+EMP-0276,Michael Flores,Carpenter,Welding,09530373413,On Leave,1573.59
+EMP-0277,Anthony Mendoza,Mason,Heavy Equipment,09170931315,Active,1437.07
+EMP-0278,Jose Gonzales,Welder,Heavy Equipment,09709038381,Active,2950.37
+EMP-0279,Anthony Mendoza,Safety Officer,Civil Works,09893889313,On Leave,1014.45
+EMP-0280,Angel Aquino,Electrician,Surveying,09204855083,On Leave,1292.78
+EMP-0281,Joshua Cruz,Heavy Equipment Operator,Civil Works,09836059336,On Leave,1973.34
+EMP-0282,John Cruz,Architect,Electrical,09723594774,Active,3906.85
+EMP-0283,David Aquino,Carpenter,Masonry,09518740692,On Leave,1380.5
+EMP-0284,Matthew Flores,Heavy Equipment Operator,Masonry,09566784595,Active,4956.3
+EMP-0285,Jose Santos,Heavy Equipment Operator,Surveying,09534003670,Active,4336.27
+EMP-0286,John Castillo,Carpenter,Project Management,09100905503,Active,993.64
+EMP-0287,Christopher Santos,Architect,Heavy Equipment,09854005004,On Leave,3313.46
+EMP-0288,Joshua Rivera,Plumber,Heavy Equipment,09685316847,Active,3481.19
+EMP-0289,Brian Dela Cruz,Architect,Surveying,09512955792,Active,4279.83
+EMP-0290,David Flores,Laborer,Electrical,09244179313,Active,822.86
+EMP-0291,James Dela Cruz,Surveyor,Welding,09806443412,On Leave,4887.39
+EMP-0292,David Cruz,Civil Engineer,Heavy Equipment,09589657032,On Leave,3304.62
+EMP-0293,Kevin Fernandez,Plumber,Surveying,09980544989,On Leave,2231.22
+EMP-0294,Anthony Mendoza,Plumber,Safety Management,09107977894,On Leave,4310.62
+EMP-0295,Anthony Fernandez,Foreman,Heavy Equipment,09686441554,Active,650.58
+EMP-0296,John Villanueva,Surveyor,Carpentry,09221509314,On Leave,4827.82
+EMP-0297,Michael Dela Cruz,Surveyor,Surveying,09905931508,Active,2592.21
+EMP-0298,Michael Fernandez,Heavy Equipment Operator,Civil Works,09363315107,On Leave,3337.98
+EMP-0299,Michael Flores,Heavy Equipment Operator,Project Management,09468879895,Active,2609.91
+EMP-0300,Carlos Villanueva,Heavy Equipment Operator,Carpentry,09552062605,Active,4822.62
+EMP-0301,Christopher Flores,Civil Engineer,Project Management,09846305497,Active,3771.37
+EMP-0302,Jose Torres,Project Manager,Welding,09720774271,Active,3077.87
+EMP-0303,Christopher Santos,Foreman,Welding,09188594622,Active,2775.18
+EMP-0304,Joseph Torres,Civil Engineer,Safety Management,09401691319,Active,4360.36
+EMP-0305,James Garcia,Heavy Equipment Operator,Electrical,09735408331,Active,3466.2
+EMP-0306,Andrew Mendoza,Foreman,Plumbing,09620677295,Active,4097.17
+EMP-0307,John Navarro,Site Engineer,Electrical,09739460592,Active,4269.26
+EMP-0308,William Rivera,Architect,Welding,09879535586,Active,1448.86
+EMP-0309,Andrew Reyes,Safety Officer,Masonry,09911194689,Active,736.35
+EMP-0310,Kevin Rivera,Mason,Masonry,09611386978,Active,2209.1
+EMP-0311,Joshua Villanueva,Foreman,Electrical,09669557898,On Leave,553.38
+EMP-0312,Kevin Rivera,Safety Officer,Carpentry,09669355272,Active,938.14
+EMP-0313,Miguel Castillo,Laborer,Heavy Equipment,09755503884,Active,2007.35
+EMP-0314,Joseph Garcia,Foreman,Safety Management,09519998159,On Leave,3979.18
+EMP-0315,Anthony Bautista,Carpenter,Carpentry,09827694333,Active,1909.71
+EMP-0316,James Santos,Laborer,Civil Works,09112843471,On Leave,939.64
+EMP-0317,Robert Aquino,Electrician,Plumbing,09878731965,Active,1633.53
+EMP-0318,John Santos,Heavy Equipment Operator,Civil Works,09161076482,Active,4777.2
+EMP-0319,Robert Garcia,Site Engineer,Safety Management,09239486853,On Leave,3453.78
+EMP-0320,Jose Mendoza,Site Engineer,Electrical,09372017183,Active,2601.3
+EMP-0321,Michael Aquino,Foreman,Heavy Equipment,09843267161,Active,1658.01
+EMP-0322,Michael Torres,Welder,Project Management,09511027302,On Leave,1996.95
+EMP-0323,John Torres,Laborer,Masonry,09291050332,On Leave,812.29
+EMP-0324,Mark Rivera,Civil Engineer,Welding,09216426335,Active,2932.84
+EMP-0325,William Bautista,Heavy Equipment Operator,Civil Works,09574144746,Active,964.79
+EMP-0326,Michael Cruz,Heavy Equipment Operator,Masonry,09934552051,On Leave,584.44
+EMP-0327,Brian Dela Cruz,Safety Officer,Project Management,09140625696,On Leave,1698.96
+EMP-0328,Matthew Rivera,Heavy Equipment Operator,Project Management,09653388287,On Leave,2651.63
+EMP-0329,Joshua Cruz,Carpenter,Plumbing,09103551249,On Leave,4793.7
+EMP-0330,Brian Garcia,Heavy Equipment Operator,Surveying,09485385619,Active,3568.26
+EMP-0331,Joshua Reyes,Safety Officer,Civil Works,09492297332,Active,862.06
+EMP-0332,Kevin Flores,Safety Officer,Plumbing,09289642463,Active,4853.81
+EMP-0333,Mark Flores,Surveyor,Heavy Equipment,09214641286,Active,2689.27
+EMP-0334,Kevin Bautista,Civil Engineer,Project Management,09307331729,Active,3738.83
+EMP-0335,Jose Ramos,Mason,Heavy Equipment,09167637817,Active,2748.58
+EMP-0336,Kevin Santos,Project Manager,Carpentry,09160188010,Active,4045.0
+EMP-0337,John Rivera,Site Engineer,Plumbing,09966621002,On Leave,4730.4
+EMP-0338,Miguel Dela Cruz,Surveyor,Safety Management,09350166446,Active,665.95
+EMP-0339,David Villanueva,Safety Officer,Project Management,09605968226,Active,1592.07
+EMP-0340,David Santos,Civil Engineer,Project Management,09430000948,Active,2552.83
+EMP-0341,Daniel Cruz,Laborer,Civil Works,09222599500,On Leave,3177.4
+EMP-0342,Angel Ramos,Site Engineer,Plumbing,09557641077,Active,4151.84
+EMP-0343,Joshua Navarro,Site Engineer,Safety Management,09686139340,Active,1947.15
+EMP-0344,Mark Reyes,Heavy Equipment Operator,Electrical,09460244389,Active,1043.35
+EMP-0345,David Gonzales,Civil Engineer,Carpentry,09694217027,Active,2473.98
+EMP-0346,Jose Reyes,Civil Engineer,Civil Works,09949385932,On Leave,3999.48
+EMP-0347,James Villanueva,Site Engineer,Project Management,09107756709,Active,4667.62
+EMP-0348,Jose Flores,Plumber,Welding,09843414103,Active,1427.72
+EMP-0349,Joseph Fernandez,Mason,Heavy Equipment,09356896763,Active,3247.42
+EMP-0350,John Mendoza,Surveyor,Welding,09757183487,Active,3322.36
+EMP-0351,Christopher Castillo,Plumber,Project Management,09698836985,Active,1363.56
+EMP-0352,Carlos Garcia,Heavy Equipment Operator,Carpentry,09917255218,Active,2588.97
+EMP-0353,Mark Torres,Project Manager,Plumbing,09220988280,Active,3583.6
+EMP-0354,Brian Villanueva,Civil Engineer,Electrical,09819560168,Active,743.12
+EMP-0355,Andrew Flores,Architect,Heavy Equipment,09369919135,Active,3275.69
+EMP-0356,Kevin Reyes,Site Engineer,Project Management,09676986599,Active,1211.21
+EMP-0357,James Villanueva,Carpenter,Civil Works,09176084801,Active,3746.31
+EMP-0358,Jose Navarro,Plumber,Plumbing,09902178290,Active,1535.28
+EMP-0359,Robert Navarro,Architect,Civil Works,09354603902,On Leave,4414.49
+EMP-0360,Joshua Ramos,Site Engineer,Welding,09728238027,On Leave,744.53
+EMP-0361,William Dela Cruz,Architect,Safety Management,09588542730,Active,2242.99
+EMP-0362,David Aquino,Surveyor,Plumbing,09778627510,Active,4890.0
+EMP-0363,Mark Navarro,Civil Engineer,Project Management,09843255395,Active,1762.72
+EMP-0364,Robert Aquino,Mason,Heavy Equipment,09283826012,Active,1489.34
+EMP-0365,Christopher Mendoza,Welder,Safety Management,09282466834,Active,889.13
+EMP-0366,Carlos Villanueva,Laborer,Plumbing,09735205122,On Leave,4266.45
+EMP-0367,Joseph Santos,Surveyor,Heavy Equipment,09890466024,Active,1615.24
+EMP-0368,William Ramos,Heavy Equipment Operator,Electrical,09716006526,Active,2379.97
+EMP-0369,John Reyes,Mason,Surveying,09136099794,On Leave,2890.05
+EMP-0370,Brian Garcia,Mason,Welding,09358247252,Active,3013.19
+EMP-0371,James Gonzales,Architect,Electrical,09484835170,Active,1575.78
+EMP-0372,Michael Santos,Mason,Masonry,09273734464,On Leave,4360.65
+EMP-0373,Jose Santos,Mason,Welding,09928751533,Active,4433.9
+EMP-0374,Joshua Mendoza,Welder,Carpentry,09773033141,On Leave,3667.56
+EMP-0375,James Cruz,Plumber,Carpentry,09670071366,Active,1834.65
+EMP-0376,Joseph Bautista,Welder,Civil Works,09766208705,Active,3810.92
+EMP-0377,John Fernandez,Safety Officer,Carpentry,09155364901,Active,2223.3
+EMP-0378,Kevin Reyes,Electrician,Carpentry,09288191943,Active,3023.41
+EMP-0379,Mark Dela Cruz,Electrician,Plumbing,09679427414,Active,3420.67
+EMP-0380,Jose Bautista,Welder,Plumbing,09444095402,Active,4540.7
+EMP-0381,Carlos Gonzales,Foreman,Project Management,09168042141,Active,2053.52
+EMP-0382,Brian Fernandez,Carpenter,Civil Works,09604834590,Active,2533.9
+EMP-0383,Andrew Cruz,Architect,Welding,09193747059,Active,2258.07
+EMP-0384,Daniel Flores,Site Engineer,Civil Works,09276916378,Active,1004.11
+EMP-0385,David Villanueva,Civil Engineer,Plumbing,09659084094,Active,1819.26
+EMP-0386,Miguel Dela Cruz,Mason,Carpentry,09551111120,On Leave,3819.69
+EMP-0387,James Flores,Architect,Civil Works,09123661636,Active,4257.26
+EMP-0388,Carlos Navarro,Plumber,Safety Management,09468070623,Active,2687.67
+EMP-0389,Carlos Aquino,Mason,Masonry,09709081834,Active,4542.27
+EMP-0390,Christopher Mendoza,Welder,Masonry,09343505251,On Leave,2173.56
+EMP-0391,Christopher Reyes,Civil Engineer,Carpentry,09405352880,On Leave,4802.96
+EMP-0392,Angel Mendoza,Surveyor,Surveying,09406281188,Active,4879.43
+EMP-0393,David Mendoza,Architect,Civil Works,09144186034,Active,3085.36
+EMP-0394,Kevin Torres,Electrician,Electrical,09320283891,Active,3494.99
+EMP-0395,Andrew Dela Cruz,Electrician,Welding,09679677338,Active,2901.39
+EMP-0396,Robert Santos,Plumber,Welding,09925190102,Active,4765.05
+EMP-0397,Matthew Dela Cruz,Project Manager,Surveying,09644826299,Active,3412.6
+EMP-0398,Christopher Villanueva,Foreman,Safety Management,09816065251,Active,4098.09
+EMP-0399,Kevin Navarro,Surveyor,Civil Works,09885593029,On Leave,4550.79
+EMP-0400,David Garcia,Foreman,Project Management,09531246845,Active,2506.88
+EMP-0401,Michael Navarro,Project Manager,Safety Management,09788604221,Active,3125.44
+EMP-0402,Anthony Torres,Architect,Project Management,09189753594,On Leave,3546.79
+EMP-0403,Michael Fernandez,Plumber,Plumbing,09626633172,Active,3214.27
+EMP-0404,Carlos Reyes,Safety Officer,Carpentry,09526874654,Active,3721.84
+EMP-0405,William Castillo,Plumber,Carpentry,09113089765,Active,2052.14
+EMP-0406,Christopher Aquino,Laborer,Surveying,09194058316,Active,3775.34
+EMP-0407,Kevin Gonzales,Welder,Welding,09409918418,Active,4125.53
+EMP-0408,William Gonzales,Civil Engineer,Safety Management,09742028580,Active,1146.38
+EMP-0409,Christopher Villanueva,Laborer,Surveying,09460150990,Active,4699.19
+EMP-0410,Jose Rivera,Site Engineer,Project Management,09539655012,Active,2365.31
+EMP-0411,Miguel Aquino,Surveyor,Safety Management,09910936792,Active,1396.66
+EMP-0412,Joshua Flores,Carpenter,Welding,09145347243,Active,4255.63
+EMP-0413,Christopher Villanueva,Carpenter,Welding,09341076755,Active,4060.49
+EMP-0414,David Torres,Foreman,Welding,09233333957,Active,2377.21
+EMP-0415,Brian Ramos,Project Manager,Civil Works,09921110081,Active,2718.73
+EMP-0416,Michael Castillo,Heavy Equipment Operator,Welding,09707281088,On Leave,4407.56
+EMP-0417,Brian Garcia,Electrician,Surveying,09887006874,Active,4303.76
+EMP-0418,Daniel Reyes,Civil Engineer,Carpentry,09595042189,Active,2108.23
+EMP-0419,John Torres,Electrician,Heavy Equipment,09783165158,Active,719.22
+EMP-0420,Christopher Fernandez,Safety Officer,Civil Works,09651759949,Active,3948.99
+EMP-0421,Daniel Garcia,Heavy Equipment Operator,Electrical,09683806675,Active,4425.99
+EMP-0422,Christopher Torres,Safety Officer,Carpentry,09202900339,Active,4204.92
+EMP-0423,James Dela Cruz,Carpenter,Masonry,09500520940,On Leave,2353.98
+EMP-0424,Daniel Garcia,Architect,Electrical,09640503265,Active,4242.08
+EMP-0425,Miguel Fernandez,Laborer,Surveying,09865091650,Active,2378.06
+EMP-0426,Michael Garcia,Laborer,Electrical,09118660989,On Leave,2066.94
+EMP-0427,Andrew Dela Cruz,Laborer,Welding,09741720343,Active,1274.93
+EMP-0428,Christopher Santos,Surveyor,Civil Works,09338754922,Active,4355.67
+EMP-0429,David Ramos,Foreman,Electrical,09325315065,Active,4914.99
+EMP-0430,William Garcia,Site Engineer,Project Management,09931819535,On Leave,3908.0
+EMP-0431,John Bautista,Site Engineer,Project Management,09951536517,Active,2610.87
+EMP-0432,Joseph Reyes,Site Engineer,Masonry,09816815464,Active,3895.48
+EMP-0433,Robert Bautista,Heavy Equipment Operator,Plumbing,09298407974,Active,631.67
+EMP-0434,David Torres,Heavy Equipment Operator,Carpentry,09478175386,Active,4348.12
+EMP-0435,Angel Ramos,Carpenter,Safety Management,09173376339,Active,4188.14
+EMP-0436,James Fernandez,Architect,Plumbing,09402641424,Active,4557.47
+EMP-0437,Miguel Santos,Surveyor,Civil Works,09329797269,On Leave,2149.08
+EMP-0438,Jose Mendoza,Mason,Civil Works,09294184632,Active,4915.86
+EMP-0439,William Bautista,Carpenter,Plumbing,09537633515,Active,3926.34
+EMP-0440,Matthew Garcia,Mason,Civil Works,09658053247,Active,2731.17
+EMP-0441,Andrew Flores,Carpenter,Project Management,09188313058,Active,2721.71
+EMP-0442,Joshua Flores,Mason,Safety Management,09890461268,Active,3591.71
+EMP-0443,Kevin Ramos,Carpenter,Heavy Equipment,09412017904,On Leave,1349.53
+EMP-0444,Michael Villanueva,Safety Officer,Carpentry,09292518998,Active,4994.25
+EMP-0445,Brian Garcia,Plumber,Welding,09661204449,Active,1036.48
+EMP-0446,Joshua Rivera,Surveyor,Safety Management,09209223328,Active,791.2
+EMP-0447,Mark Navarro,Architect,Safety Management,09534102044,Active,1547.91
+EMP-0448,William Villanueva,Foreman,Safety Management,09737426805,Active,3903.36
+EMP-0449,Joshua Castillo,Mason,Safety Management,09534268004,On Leave,2801.37
+EMP-0450,David Aquino,Site Engineer,Civil Works,09369176186,On Leave,2737.73
+EMP-0451,David Santos,Site Engineer,Project Management,09991541224,Active,2741.61
+EMP-0452,James Mendoza,Plumber,Safety Management,09829290130,Active,1187.31
+EMP-0453,Angel Garcia,Welder,Civil Works,09809829892,On Leave,4067.29
+EMP-0454,Mark Flores,Safety Officer,Welding,09626402312,Active,2940.97
+EMP-0455,Miguel Santos,Welder,Project Management,09562145358,Active,2226.33
+EMP-0456,Matthew Rivera,Mason,Welding,09138634432,Active,1295.91
+EMP-0457,Christopher Mendoza,Mason,Heavy Equipment,09244405651,Active,3720.75
+EMP-0458,Brian Garcia,Heavy Equipment Operator,Welding,09808753985,On Leave,2641.6
+EMP-0459,Daniel Fernandez,Project Manager,Heavy Equipment,09382813918,On Leave,3159.7
+EMP-0460,Joshua Castillo,Welder,Masonry,09444115773,Active,626.66
+EMP-0461,John Dela Cruz,Laborer,Carpentry,09474603593,Active,3943.37
+EMP-0462,Matthew Rivera,Site Engineer,Heavy Equipment,09470594501,Active,2353.68
+EMP-0463,John Ramos,Architect,Plumbing,09795873638,Active,3166.39
+EMP-0464,Michael Flores,Site Engineer,Carpentry,09282299078,Active,2922.88
+EMP-0465,John Aquino,Safety Officer,Heavy Equipment,09709938401,On Leave,1699.78
+EMP-0466,Brian Santos,Electrician,Heavy Equipment,09712412455,On Leave,1950.9
+EMP-0467,Robert Villanueva,Site Engineer,Plumbing,09460742313,On Leave,2762.46
+EMP-0468,Matthew Mendoza,Heavy Equipment Operator,Masonry,09490127233,On Leave,1407.91
+EMP-0469,Michael Bautista,Foreman,Masonry,09151036409,Active,4983.02
+EMP-0470,Joshua Ramos,Heavy Equipment Operator,Civil Works,09870631850,Active,3163.39
+EMP-0471,Joseph Cruz,Heavy Equipment Operator,Surveying,09610315526,On Leave,1443.83
+EMP-0472,Michael Flores,Carpenter,Masonry,09564834095,Active,1400.35
+EMP-0473,Joshua Torres,Heavy Equipment Operator,Surveying,09586650508,Active,4464.03
+EMP-0474,Carlos Mendoza,Heavy Equipment Operator,Welding,09328656334,On Leave,1705.71
+EMP-0475,Miguel Gonzales,Heavy Equipment Operator,Project Management,09660782698,Active,2139.24
+EMP-0476,David Ramos,Civil Engineer,Masonry,09567495148,On Leave,1933.94
+EMP-0477,Michael Bautista,Laborer,Heavy Equipment,09386619011,Active,3407.19
+EMP-0478,Joseph Ramos,Plumber,Plumbing,09221932595,Active,1363.62
+EMP-0479,Anthony Flores,Mason,Welding,09701107527,On Leave,2399.09
+EMP-0480,John Bautista,Civil Engineer,Masonry,09246491273,Active,1662.79
+EMP-0481,Joseph Mendoza,Safety Officer,Project Management,09875750551,On Leave,4020.05
+EMP-0482,John Cruz,Electrician,Safety Management,09419952703,Active,4552.59
+EMP-0483,William Castillo,Safety Officer,Civil Works,09526162812,Active,1562.19
+EMP-0484,Jose Fernandez,Site Engineer,Surveying,09813197718,Active,2734.03
+EMP-0485,Michael Ramos,Heavy Equipment Operator,Civil Works,09930207388,Active,1981.79
+EMP-0486,Jose Rivera,Welder,Plumbing,09554052132,Active,1149.25
+EMP-0487,Daniel Bautista,Foreman,Welding,09538489918,Active,4383.05
+EMP-0488,John Villanueva,Carpenter,Carpentry,09851208813,Active,1924.2
+EMP-0489,William Villanueva,Safety Officer,Plumbing,09398214359,Active,2133.49
+EMP-0490,Andrew Flores,Project Manager,Safety Management,09137376338,Active,3608.07
+EMP-0491,Anthony Torres,Carpenter,Heavy Equipment,09432074523,Active,4564.21
+EMP-0492,Robert Ramos,Laborer,Welding,09517117581,Active,4594.05
+EMP-0493,Joshua Torres,Foreman,Civil Works,09983375690,Active,1838.4
+EMP-0494,Daniel Aquino,Safety Officer,Carpentry,09972144388,On Leave,4051.93
+EMP-0495,Joseph Cruz,Laborer,Welding,09605830413,On Leave,4669.24
+EMP-0496,Matthew Gonzales,Laborer,Civil Works,09985193689,Active,3643.17
+EMP-0497,Carlos Cruz,Electrician,Heavy Equipment,09746517065,Active,2539.68
+EMP-0498,James Reyes,Safety Officer,Electrical,09776625216,On Leave,4059.59
+EMP-0499,David Santos,Plumber,Plumbing,09774627988,Active,1911.75
+EMP-0500,Michael Garcia,Civil Engineer,Plumbing,09654443651,Active,4311.32
