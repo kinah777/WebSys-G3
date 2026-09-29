@@ -47,8 +47,8 @@ export default function NavBarComponent() {
   return (
     <Grid container>
       <Grid item md={12}>
-        <Paper elevation={4}>
-          <AppBar sx={{ padding: 2 }} position="static" borderradius={2}>
+        <Paper elevation={4} sx={{ borderRadius: 5, overflow: "hidden" }}>
+          <AppBar sx={{ padding: 2}} position="sticky">
             <Container maxWidth="xxl">
               <Box
                 sx={{

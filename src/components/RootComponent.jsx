@@ -7,20 +7,19 @@ import myBG from "../BuildSync BG.png";
 
 export default function RootComponent() {
   return (
-    <>
-      <NavBarComponent />
-      <Box
-        sx={
-          {
-          minHeight: "calc(100vh - 64px)",
-          width: "100%",
-          backgroundImage: `url("${myBG}")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat", 
-          }
-        }
-      >
+    <Box
+      sx={{
+        minHeight: "100vh",
+        width: "100%",
+        backgroundImage: `url("${myBG}")`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <Box sx={{ pt: 3, px: { xs: 2, md: 3 } }}>
+        <NavBarComponent />
+      </Box>
         <Grid container spacing={0}>
           <Grid item md={2} sm={0}>
             <SideBarComponent />
@@ -29,7 +28,6 @@ export default function RootComponent() {
             <Outlet />
           </Grid>
         </Grid>
-      </Box>
-    </>
+    </Box>
   );
 }
