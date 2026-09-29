@@ -4,6 +4,8 @@ import {
   Box,
   Button,
   CircularProgress,
+  Chip,
+  IconButton,
   MenuItem,
   Paper,
   Stack,
@@ -13,6 +15,8 @@ import {
   Typography,
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import PropTypes from "prop-types";
 import { apiRequest } from "../api";
 
 function useApiCollection(endpoint) {
@@ -50,6 +54,7 @@ function ApiCollectionPage({
   canCreate = true,
   canEdit = true,
   canDelete = true,
+  allowTaskAssignments = false,
 }) {
   const { rows, loading, error, reload } = useApiCollection(endpoint);
   const [formValues, setFormValues] = useState({});
@@ -57,13 +62,13 @@ function ApiCollectionPage({
   const [formOpen, setFormOpen] = useState(false);
   const [saving, setSaving] = useState(false);
   const [actionError, setActionError] = useState("");
+  const [selectedTask, setSelectedTask] = useState(null);
   const [optionsByPath, setOptionsByPath] = useState({});
-  const optionPaths = [...new Set(fields.map((field) => field.optionsPath).filter(Boolean))];
-  const optionPathKey = optionPaths.join("|");
+  const optionPathKey = [...new Set(fields.map((field) => field.optionsPath).filter(Boolean))].join("|");
 
   useEffect(() => {
     const controller = new AbortController();
-    optionPaths.forEach((path) => {
+    optionPathKey.split("|").filter(Boolean).forEach((path) => {
       apiRequest(path, { signal: controller.signal })
         .then((options) => {
           setOptionsByPath((current) => ({ ...current, [path]: options }));
@@ -130,16 +135,17 @@ function ApiCollectionPage({
 
   const gridColumns = [
     ...columns,
-    ...(canEdit || canDelete
+    ...(canEdit || canDelete || allowTaskAssignments
       ? [{
           field: "actions",
           headerName: "Actions",
-          width: 150,
+          width: allowTaskAssignments ? 280 : 150,
           sortable: false,
           renderCell: ({ row }) => (
             <Stack direction="row" spacing={1}>
               {canEdit && <Button size="small" onClick={() => openEdit(row)}>Edit</Button>}
               {canDelete && <Button size="small" color="error" onClick={() => deleteRow(row)}>Delete</Button>}
+              {allowTaskAssignments && <Button size="small" onClick={() => setSelectedTask(row)}>Assign resources</Button>}
             </Stack>
           ),
         }]
@@ -199,9 +205,121 @@ function ApiCollectionPage({
           />
         )}
       </Box>
+      {allowTaskAssignments && selectedTask && (
+        <TaskAssignmentsPanel task={selectedTask} onClose={() => setSelectedTask(null)} />
+      )}
     </Stack>
   );
 }
+
+ApiCollectionPage.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string,
+  endpoint: PropTypes.string.isRequired,
+  idField: PropTypes.string.isRequired,
+  fields: PropTypes.array,
+  columns: PropTypes.array.isRequired,
+  canCreate: PropTypes.bool,
+  canEdit: PropTypes.bool,
+  canDelete: PropTypes.bool,
+  allowTaskAssignments: PropTypes.bool,
+};
+
+function TaskAssignmentsPanel({ task, onClose }) {
+  const endpoint = `/project-schedules/${task.schedule_id}/assignments`;
+  const { rows: assignments, loading, error, reload } = useApiCollection(endpoint);
+  const { rows: employees } = useApiCollection("/employees");
+  const { rows: equipment } = useApiCollection("/equipment");
+  const { rows: vehicles } = useApiCollection("/vehicles");
+  const { rows: materials } = useApiCollection("/materials");
+  const [resourceType, setResourceType] = useState("employee");
+  const [resourceId, setResourceId] = useState("");
+  const [quantity, setQuantity] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [actionError, setActionError] = useState("");
+  const resourcesByType = { employee: employees, equipment, vehicle: vehicles, material: materials };
+  const idByType = { employee: "employee_id", equipment: "equipment_id", vehicle: "vehicle_id", material: "material_id" };
+  const labelByType = { employee: "name", equipment: "name", vehicle: "plate_number", material: "name" };
+  const availableResources = resourcesByType[resourceType];
+
+  const addAssignment = async (event) => {
+    event.preventDefault();
+    setSaving(true);
+    setActionError("");
+    try {
+      await apiRequest(endpoint, {
+        method: "POST",
+        body: {
+          resource_type: resourceType,
+          resource_id: resourceId,
+          ...(resourceType === "material" ? { quantity: Number(quantity) } : {}),
+        },
+      });
+      setResourceId("");
+      setQuantity("");
+      reload();
+    } catch (requestError) {
+      setActionError(requestError.message);
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const removeAssignment = async (assignment) => {
+    try {
+      await apiRequest(`${endpoint}/${assignment.assignment_id}`, { method: "DELETE" });
+      reload();
+    } catch (requestError) {
+      setActionError(requestError.message);
+    }
+  };
+
+  return (
+    <Paper variant="outlined" sx={{ p: 2 }}>
+      <Stack direction="row" justifyContent="space-between" alignItems="flex-start" gap={2}>
+        <Box>
+          <Typography variant="h6">Task resources</Typography>
+          <Typography color="text.secondary">{task.task_name} · {task.schedule_id}</Typography>
+        </Box>
+        <Button onClick={onClose}>Close</Button>
+      </Stack>
+      {(error || actionError) && <Alert severity="error" sx={{ my: 1 }}>{actionError || error}</Alert>}
+      <Box component="form" onSubmit={addAssignment} sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mt: 2 }}>
+        <TextField select size="small" label="Resource type" value={resourceType} onChange={(event) => { setResourceType(event.target.value); setResourceId(""); }} sx={{ minWidth: 150 }}>
+          <MenuItem value="employee">Employee</MenuItem>
+          <MenuItem value="equipment">Equipment</MenuItem>
+          <MenuItem value="vehicle">Vehicle</MenuItem>
+          <MenuItem value="material">Material</MenuItem>
+        </TextField>
+        <TextField select size="small" label="Resource" required value={resourceId} onChange={(event) => setResourceId(event.target.value)} sx={{ minWidth: 220, flexGrow: 1 }}>
+          {availableResources.map((resource) => {
+            const id = resource[idByType[resourceType]];
+            return <MenuItem key={id} value={id}>{resource[labelByType[resourceType]]} ({id})</MenuItem>;
+          })}
+        </TextField>
+        {resourceType === "material" && <TextField size="small" label="Quantity" required type="number" inputProps={{ min: 0.01, step: "any" }} value={quantity} onChange={(event) => setQuantity(event.target.value)} />}
+        <Button type="submit" variant="contained" disabled={saving}>{saving ? "Assigning..." : "Assign"}</Button>
+      </Box>
+      {loading ? <CircularProgress sx={{ mt: 2 }} /> : (
+        <Stack spacing={1} sx={{ mt: 2 }}>
+          {assignments.length === 0 && <Typography color="text.secondary">No resources assigned to this task.</Typography>}
+          {assignments.map((assignment) => (
+            <Paper key={assignment.assignment_id} variant="outlined" sx={{ p: 1, display: "flex", alignItems: "center", gap: 1 }}>
+              <Chip size="small" label={assignment.resource_type} />
+              <Typography sx={{ flexGrow: 1 }}>{assignment.resource_name} ({assignment.resource_id}){assignment.quantity ? ` · ${assignment.quantity}` : ""}</Typography>
+              <Button size="small" color="error" onClick={() => removeAssignment(assignment)}>Remove</Button>
+            </Paper>
+          ))}
+        </Stack>
+      )}
+    </Paper>
+  );
+}
+
+TaskAssignmentsPanel.propTypes = {
+  task: PropTypes.object.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 
 const projectFields = [
   { name: "project_name", label: "Project name", required: true },
@@ -248,7 +366,7 @@ const taskColumns = [
 ];
 
 export function TasksPage() {
-  return <ApiCollectionPage title="Tasks" description="Schedule project milestones and update task status." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} />;
+  return <ApiCollectionPage title="Tasks" description="Schedule project milestones, update task status, and assign resources directly to tasks." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} allowTaskAssignments />;
 }
 
 const materialFields = [
@@ -307,6 +425,14 @@ const vehicleColumns = [
 function AssetTab({ title, endpoint, idField, fields, columns }) {
   return <ApiCollectionPage title={title} endpoint={endpoint} idField={idField} fields={fields} columns={columns} />;
 }
+
+AssetTab.propTypes = {
+  title: PropTypes.string.isRequired,
+  endpoint: PropTypes.string.isRequired,
+  idField: PropTypes.string.isRequired,
+  fields: PropTypes.array.isRequired,
+  columns: PropTypes.array.isRequired,
+};
 
 const assignmentTabs = [
   {
@@ -377,6 +503,10 @@ function AssignmentTab({ config }) {
   return <ApiCollectionPage title={config.title} description="Bookings are validated by the API for stock availability and scheduling conflicts." endpoint={config.endpoint} idField={config.idField} fields={fields} columns={columns} canEdit={config.label !== "Materials"} />;
 }
 
+AssignmentTab.propTypes = {
+  config: PropTypes.object.isRequired,
+};
+
 export function ResourcesPage() {
   const [assignmentTab, setAssignmentTab] = useState(0);
   const [catalogTab, setCatalogTab] = useState(0);
@@ -422,15 +552,70 @@ export function MembersPage() {
 }
 
 export function CalendarPage() {
-  const calendarColumns = [
-    { field: "schedule_id", headerName: "ID", width: 110 },
-    { field: "project_id", headerName: "Project", width: 130 },
-    { field: "task_name", headerName: "Task", minWidth: 220, flex: 1 },
-    { field: "start_date", headerName: "Start", width: 140 },
-    { field: "end_date", headerName: "End", width: 140 },
-    { field: "status", headerName: "Status", width: 140 },
-  ];
-  return <ApiCollectionPage title="Project calendar" description="Schedule view of task start and end dates." endpoint="/project-schedules" idField="schedule_id" columns={calendarColumns} canCreate={false} canEdit={false} canDelete={false} />;
+  const { rows: tasks, loading, error } = useApiCollection("/project-schedules");
+  const { rows: projects } = useApiCollection("/projects");
+  const [visibleMonth, setVisibleMonth] = useState(() => new Date(new Date().getFullYear(), new Date().getMonth(), 1));
+  const monthTitle = visibleMonth.toLocaleDateString(undefined, { month: "long", year: "numeric" });
+  const firstOfMonth = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth(), 1);
+  const gridStart = new Date(visibleMonth.getFullYear(), visibleMonth.getMonth(), 1 - ((firstOfMonth.getDay() + 6) % 7));
+  const days = Array.from({ length: 42 }, (_, index) => new Date(gridStart.getFullYear(), gridStart.getMonth(), gridStart.getDate() + index));
+  const today = new Date();
+  const todayKey = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  const projectNames = Object.fromEntries(projects.map((project) => [project.project_id, project.project_name]));
+  const tasksWithDates = tasks.filter((task) => task.start_date && task.end_date);
+  const hasUndatedTasks = tasks.some((task) => !task.start_date || !task.end_date);
+
+  return (
+    <Stack spacing={2} sx={{ p: { xs: 1.5, md: 3 } }}>
+      <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 1 }}>
+        <Box>
+          <Typography variant="h5" fontWeight={700}>Project calendar</Typography>
+          <Typography color="text.secondary">Tasks shown across their scheduled date range.</Typography>
+        </Box>
+        <Stack direction="row" alignItems="center" spacing={1}>
+          <Button onClick={() => setVisibleMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1))}>Today</Button>
+          <IconButton aria-label="Previous month" onClick={() => setVisibleMonth(new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() - 1, 1))}><ChevronLeft /></IconButton>
+          <Typography variant="h6" sx={{ minWidth: 150, textAlign: "center" }}>{monthTitle}</Typography>
+          <IconButton aria-label="Next month" onClick={() => setVisibleMonth(new Date(visibleMonth.getFullYear(), visibleMonth.getMonth() + 1, 1))}><ChevronRight /></IconButton>
+        </Stack>
+      </Box>
+      {error && <Alert severity="error">{error}</Alert>}
+      {hasUndatedTasks && <Alert severity="info">Tasks without both a start and end date are not placed on the calendar.</Alert>}
+      {loading ? <CircularProgress /> : (
+        <Box sx={{ overflowX: "auto" }}>
+          <Box sx={{ minWidth: 760 }}>
+            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: 0.5, mb: 0.5 }}>
+              {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((day) => (
+                <Typography key={day} variant="caption" fontWeight={700} sx={{ px: 1, py: 0.5 }}>{day}</Typography>
+              ))}
+            </Box>
+            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: 0.5 }}>
+              {days.map((day) => {
+                const dayKey = `${day.getFullYear()}-${String(day.getMonth() + 1).padStart(2, "0")}-${String(day.getDate()).padStart(2, "0")}`;
+                const todaysTasks = tasksWithDates.filter((task) => task.start_date <= dayKey && task.end_date >= dayKey);
+                const isCurrentMonth = day.getMonth() === visibleMonth.getMonth();
+                const isToday = dayKey === todayKey;
+                return (
+                  <Paper key={dayKey} variant="outlined" sx={{ minHeight: 128, p: 0.75, overflow: "hidden", bgcolor: isCurrentMonth ? "background.paper" : "action.hover", borderColor: isToday ? "primary.main" : "divider" }}>
+                    <Typography variant="caption" fontWeight={isToday ? 700 : 400} color={isCurrentMonth ? "text.primary" : "text.disabled"}>{day.getDate()}</Typography>
+                    <Stack spacing={0.5} sx={{ mt: 0.5 }}>
+                      {todaysTasks.slice(0, 3).map((task) => (
+                        <Box key={task.schedule_id} title={`${task.task_name} · ${projectNames[task.project_id] || task.project_id}`} sx={{ px: 0.75, py: 0.5, bgcolor: task.status === "Completed" ? "success.light" : task.status === "In Progress" ? "warning.light" : "primary.light", color: "#20252b", borderRadius: 0.75, overflow: "hidden" }}>
+                          <Typography variant="caption" fontWeight={700} noWrap display="block">{task.task_name}</Typography>
+                          <Typography variant="caption" noWrap display="block">{projectNames[task.project_id] || task.project_id}</Typography>
+                        </Box>
+                      ))}
+                      {todaysTasks.length > 3 && <Typography variant="caption" color="text.secondary">+{todaysTasks.length - 3} more</Typography>}
+                    </Stack>
+                  </Paper>
+                );
+              })}
+            </Box>
+          </Box>
+        </Box>
+      )}
+    </Stack>
+  );
 }
 
 export function ForecastPage() {

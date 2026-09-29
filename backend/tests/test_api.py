@@ -154,6 +154,52 @@ def test_module_6_conflict_resolution_center():
     assert client.get("/conflicts/vehicles").status_code == 200
 
 
+def test_task_resource_assignment_round_trip():
+    projects = client.get("/projects?limit=1").json()
+    materials = client.get("/materials?limit=100").json()
+    material = next((item for item in materials if item["quantity_in_stock"] >= 0.01), None)
+    assert projects and material
+
+    task_response = client.post("/project-schedules", json={
+        "project_id": projects[0]["project_id"],
+        "task_name": "Task assignment integration test",
+        "start_date": "2099-01-10",
+        "end_date": "2099-01-12",
+    })
+    assert task_response.status_code == 201
+    schedule_id = task_response.json()["schedule_id"]
+
+    try:
+        stock_before = float(material["quantity_in_stock"])
+        assignment_response = client.post(
+            f"/project-schedules/{schedule_id}/assignments",
+            json={"resource_type": "material", "resource_id": material["material_id"], "quantity": 0.01},
+        )
+        assert assignment_response.status_code == 201
+        assignment = assignment_response.json()
+        assert assignment["resource_name"] == material["name"]
+        assert assignment["quantity"] == 0.01
+
+        duplicate_response = client.post(
+            f"/project-schedules/{schedule_id}/assignments",
+            json={"resource_type": "material", "resource_id": material["material_id"], "quantity": 0.01},
+        )
+        assert duplicate_response.status_code == 409
+
+        listed = client.get(f"/project-schedules/{schedule_id}/assignments")
+        assert listed.status_code == 200
+        assert len(listed.json()) == 1
+
+        delete_response = client.delete(
+            f"/project-schedules/{schedule_id}/assignments/{assignment['assignment_id']}"
+        )
+        assert delete_response.status_code == 204
+        updated_material = client.get(f"/materials/{material['material_id']}").json()
+        assert round(float(updated_material["quantity_in_stock"]), 2) == round(stock_before, 2)
+    finally:
+        client.delete(f"/project-schedules/{schedule_id}")
+
+
 def test_crud_and_error_handling():
     # 404 on nonexistent resource
     assert client.get("/projects/PRJ-NONEXISTENT").status_code == 404
@@ -175,5 +221,6 @@ if __name__ == "__main__":
     test_module_4_materials_and_supply_chain()
     test_module_5_financials_and_forecasting()
     test_module_6_conflict_resolution_center()
+    test_task_resource_assignment_round_trip()
     test_crud_and_error_handling()
     print("ALL TESTS PASSED SUCCESSFULLY!")

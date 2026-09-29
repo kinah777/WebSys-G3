@@ -1,4 +1,3 @@
-import React from "react";
 import "../../public/styles/links.css";
 import {
   List,

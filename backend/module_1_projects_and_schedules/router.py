@@ -21,6 +21,8 @@ from .models import (
     ProjectInput,
     Schedule,
     ScheduleInput,
+    TaskResourceAssignment,
+    TaskResourceAssignmentInput,
 )
 
 router = APIRouter(tags=["Module 1: Projects & Schedules"])
@@ -231,6 +233,174 @@ def delete_schedule(schedule_id: str, db: Database) -> None:
     res = db.execute("DELETE FROM project_schedules WHERE schedule_id = %s", [schedule_id])
     if res.rowcount == 0:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Schedule task {schedule_id} not found")
+
+
+_TASK_RESOURCE_CONFIG = {
+    "employee": {
+        "table": "employees", "id": "employee_id", "label": "name",
+        "allocations": "employee_allocations", "allocation_id": "employee_id",
+    },
+    "equipment": {
+        "table": "equipment", "id": "equipment_id", "label": "name",
+        "allocations": "equipment_allocations", "allocation_id": "equipment_id",
+    },
+    "vehicle": {
+        "table": "vehicles", "id": "vehicle_id", "label": "plate_number",
+        "allocations": "vehicle_allocations", "allocation_id": "vehicle_id",
+    },
+    "material": {
+        "table": "materials", "id": "material_id", "label": "name",
+    },
+}
+
+
+@router.get(
+    "/project-schedules/{schedule_id}/assignments",
+    response_model=list[TaskResourceAssignment],
+    summary="List resources assigned directly to a task",
+)
+def list_task_assignments(schedule_id: str, db: Database) -> list[dict[str, Any]]:
+    if not db.execute("SELECT 1 FROM project_schedules WHERE schedule_id = %s", [schedule_id]).fetchone():
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Schedule task {schedule_id} not found")
+
+    rows = db.execute(
+        """
+        SELECT
+            a.assignment_id,
+            a.schedule_id,
+            a.resource_type,
+            a.resource_id,
+            a.quantity,
+            CASE a.resource_type
+                WHEN 'employee' THEN (SELECT name FROM employees WHERE employee_id = a.resource_id)
+                WHEN 'equipment' THEN (SELECT name FROM equipment WHERE equipment_id = a.resource_id)
+                WHEN 'vehicle' THEN (SELECT plate_number FROM vehicles WHERE vehicle_id = a.resource_id)
+                WHEN 'material' THEN (SELECT name FROM materials WHERE material_id = a.resource_id)
+            END AS resource_name
+        FROM task_resource_assignments a
+        WHERE a.schedule_id = %s
+        ORDER BY a.assignment_id
+        """,
+        [schedule_id],
+    ).fetchall()
+    return [serialize_row(row) for row in rows]
+
+
+@router.post(
+    "/project-schedules/{schedule_id}/assignments",
+    response_model=TaskResourceAssignment,
+    status_code=status.HTTP_201_CREATED,
+    summary="Assign a resource directly to a task",
+)
+def create_task_assignment(
+    schedule_id: str,
+    data: TaskResourceAssignmentInput,
+    db: Database,
+) -> dict[str, Any]:
+    task = db.execute(
+        "SELECT schedule_id, project_id, start_date, end_date, status FROM project_schedules WHERE schedule_id = %s",
+        [schedule_id],
+    ).fetchone()
+    if not task:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Schedule task {schedule_id} not found")
+
+    config = _TASK_RESOURCE_CONFIG[data.resource_type]
+    resource = db.execute(
+        f"SELECT {config['label']} AS resource_name FROM {config['table']} WHERE {config['id']} = %s",
+        [data.resource_id],
+    ).fetchone()
+    if not resource:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"{data.resource_type.title()} {data.resource_id} not found")
+
+    if data.resource_type == "material" and data.quantity is None:
+        raise HTTPException(status_code=status.HTTP_422_UNPROCESSABLE_ENTITY, detail="quantity is required for material assignments")
+
+    if data.resource_type != "material":
+        if not task["start_date"] or not task["end_date"]:
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Set task start and end dates before assigning people or equipment.")
+
+        task_conflict = db.execute(
+            """
+            SELECT a.assignment_id
+            FROM task_resource_assignments a
+            JOIN project_schedules s ON s.schedule_id = a.schedule_id
+            WHERE a.resource_type = %s
+              AND a.resource_id = %s
+              AND a.schedule_id != %s
+              AND s.status != 'Completed'
+              AND s.start_date <= %s
+              AND s.end_date >= %s
+            LIMIT 1
+            """,
+            [data.resource_type, data.resource_id, schedule_id, task["end_date"], task["start_date"]],
+        ).fetchone()
+        if task_conflict:
+            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=f"Resource {data.resource_id} is already assigned to another overlapping task.")
+
+        allocation_conflict = db.execute(
+            f"""
+            SELECT 1 FROM {config['allocations']}
+            WHERE {config['allocation_id']} = %s
+              AND project_id != %s
+              AND allocation_status NOT IN ('Completed', 'Cancelled')
+              AND start_date <= %s
+              AND end_date >= %s
+            LIMIT 1
+            """,
+            [data.resource_id, task["project_id"], task["end_date"], task["start_date"]],
+        ).fetchone()
+        if allocation_conflict:
+            raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail=f"Resource {data.resource_id} is already booked by another project during this task.")
+
+    try:
+        with db.transaction():
+            existing = db.execute(
+                "SELECT assignment_id FROM task_resource_assignments WHERE schedule_id = %s AND resource_type = %s AND resource_id = %s",
+                [schedule_id, data.resource_type, data.resource_id],
+            ).fetchone()
+            if existing:
+                raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="This resource is already assigned to the task.")
+
+            if data.resource_type == "material":
+                stock_update = db.execute(
+                    "UPDATE materials SET quantity_in_stock = quantity_in_stock - %s WHERE material_id = %s AND quantity_in_stock >= %s",
+                    [data.quantity, data.resource_id, data.quantity],
+                )
+                if stock_update.rowcount == 0:
+                    raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Not enough material is in stock for this assignment.")
+
+            row = db.execute(
+                """
+                INSERT INTO task_resource_assignments (schedule_id, resource_type, resource_id, quantity)
+                VALUES (%s, %s, %s, %s)
+                RETURNING assignment_id, schedule_id, resource_type, resource_id, quantity
+                """,
+                [schedule_id, data.resource_type, data.resource_id, data.quantity],
+            ).fetchone()
+    except HTTPException:
+        raise
+
+    return {**serialize_row(row), "resource_name": resource["resource_name"]}
+
+
+@router.delete(
+    "/project-schedules/{schedule_id}/assignments/{assignment_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+    summary="Remove a resource assignment from a task",
+)
+def delete_task_assignment(schedule_id: str, assignment_id: int, db: Database) -> None:
+    with db.transaction():
+        assignment = db.execute(
+            "DELETE FROM task_resource_assignments WHERE schedule_id = %s AND assignment_id = %s RETURNING resource_type, resource_id, quantity",
+            [schedule_id, assignment_id],
+        ).fetchone()
+        if not assignment:
+            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Task resource assignment not found")
+        if assignment["resource_type"] == "material" and assignment["quantity"]:
+            db.execute(
+                "UPDATE materials SET quantity_in_stock = quantity_in_stock + %s WHERE material_id = %s",
+                [assignment["quantity"], assignment["resource_id"]],
+            )
 
 
 # ==========================================================================
