@@ -3,6 +3,7 @@ import NavBarComponent from "./NavBarComponent";
 import { Box, Grid } from "@mui/material";
 import SideBarComponent from "./SideBarComponent";
 import { Outlet } from "react-router-dom";
+import myBG from "../BuildSync BG.png";
 
 export default function RootComponent() {
   return (
@@ -11,8 +12,12 @@ export default function RootComponent() {
       <Box
         sx={
           {
-            // bgcolor: "#DEE3E9",
-            // height: 899,
+          minHeight: "calc(100vh - 64px)",
+          width: "100%",
+          backgroundImage: `url("${myBG}")`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat", 
           }
         }
       >
