@@ -66,7 +66,7 @@ export default function LoginPage({ onLogin }) {
           width: "min(100%, 420px)",
           p: { xs: 3, sm: 5 },
           borderRadius: 2,
-          color: "text.secondary",
+          color: "black",
           position: "relative",
           zIndex: 10,
         }}
@@ -81,7 +81,7 @@ export default function LoginPage({ onLogin }) {
           <Typography component="h1" variant="h5" fontWeight={700} mb={0.5}>
             Sign in
           </Typography>
-          <Typography color="text.secondary" mb={0} fontSize="0.875rem">
+          <Typography color="#000000" mb={0} fontSize="0.875rem">
             Please enter your credentials to access your account.
           </Typography>
           <TextField
@@ -95,6 +95,11 @@ export default function LoginPage({ onLogin }) {
             required
             fullWidth
             margin="normal"
+            sx={{
+                "& .MuiInputBase-input": {
+                color: "black",
+                },
+            }}
           />
           <TextField
             label="Password"
@@ -108,6 +113,11 @@ export default function LoginPage({ onLogin }) {
             required
             fullWidth
             margin="normal"
+            sx={{
+                "& .MuiInputBase-input": {
+                color: "black",
+                },
+            }}
             error={hasError}
             helperText={hasError ? "Invalid username or password." : " "}
           />
