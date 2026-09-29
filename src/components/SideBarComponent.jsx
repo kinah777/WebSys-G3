@@ -95,7 +95,8 @@ export default function SideBarComponent() {
                   mb: 3,
                   borderLeft: 0,
                   borderColor: "primary.main",
-                  ml: 1,
+                  ml: 4,
+                  borderRadius: 3,
                 }}
               >
                 <ListItemIcon>
