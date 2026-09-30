@@ -43,25 +43,7 @@ DATASET_DIR = (
 # ==========================================
 
 FILES = [
-    ("projects", "projects.csv"),
-
-    ("employees", "employees.csv"),
-    ("contractors", "contractors.csv"),
-    ("equipment", "equipment.csv"),
-    ("vehicles", "vehicles.csv"),
-    ("materials", "materials.csv"),
-    ("suppliers", "suppliers.csv"),
-
-    ("project_schedules", "project_schedules.csv"),
-
-    ("equipment_allocations", "equipment_allocations.csv"),
-    ("employee_allocations", "employee_allocations.csv"),
-    ("material_allocations", "material_allocations.csv"),
-    ("vehicle_allocations", "vehicle_allocations.csv"),
-
-    ("budgets", "budgets.csv"),
-
-    ("maintenance_records", "maintenance_records.csv"),
+    ("historical_material_demand", "historical_material_demand.csv"),
 ]
 
 
@@ -183,9 +165,9 @@ def main():
     print("=" * 50)
 
     print("\nImported:")
-    print("14 tables")
-    print("500 records per table")
-    print("7,000 total records")
+    print("15 tables")
+    print("14 original tables + 1 historical demand table")
+    print("8,200 total records")
 
     print("\nYour BuildSync database is now populated.")
 
