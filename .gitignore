@@ -1,6 +1,15 @@
+.env
 backend/.env
+.venv/
+__pycache__/
+*.pyc
 backend/__pycache__/
-backend/app/__pycache__/# Logs
+backend/app/__pycache__/
+
+# Personal agents folder — not shared with the team
+.agents/
+
+# Logs
 logs
 *.log
 npm-debug.log*

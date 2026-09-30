@@ -1,3 +1,5 @@
+import myLG from "../BuildSync LG.png";
+
 import {
   Box,
   Grid,
@@ -45,8 +47,8 @@ export default function NavBarComponent() {
   return (
     <Grid container>
       <Grid item md={12}>
-        <Paper elevation={4}>
-          <AppBar sx={{ padding: 2 }} position="static">
+        <Paper elevation={4} sx={{ borderRadius: 5, overflow: "hidden" }}>
+          <AppBar sx={{ padding: 2}} position="sticky">
             <Container maxWidth="xxl">
               <Box
                 sx={{
@@ -55,7 +57,7 @@ export default function NavBarComponent() {
                   alignItems: "center",
                 }}
               >
-                <Typography
+                <Box
                   variant="h6"
                   component="a"
                   href="/"
@@ -64,12 +66,16 @@ export default function NavBarComponent() {
                     display: { xs: "none", md: "flex" },
                     fontWeight: 700,
                     letterSpacing: ".2rem",
-                    color: "inherit",
+                    fontColor: "black",
                     textDecoration: "none",
                   }}
                 >
-                  BuildSync
-                </Typography>
+                  <img
+                    src={myLG} 
+                    alt="Logo"
+                    style={{ width: "200px", height: "50px" }} 
+                  />
+                </Box>
 
                 <Box
                   sx={{
@@ -87,15 +93,17 @@ export default function NavBarComponent() {
                     </Badge>
                   </IconButton>
                   <Menu
+                  
                     open={notificationOpen}
                     anchorEl={notificationAnchorEl}
                     onClick={notificationHandleClose}
                     onClose={notificationHandleClose}
+
                   >
-                    <MenuItem>Notification number 1 </MenuItem>
+                    <MenuItem sx={{ fontSize: "small", color: "red" }}>Stock 304 (low stock) </MenuItem>
                     <Divider />
-                    <MenuItem>Notification number 2</MenuItem>
-                    <MenuItem>Notification number 3</MenuItem>
+                    <MenuItem sx={{ fontSize: "small", color: "black" }}>Upcoming Delivery no. 34</MenuItem>
+                    <MenuItem sx={{ fontSize: "small", color: "black" }}>Delivery Successful no. 67</MenuItem>
                   </Menu>
                   <IconButton
                     onClick={handleAvatarClicked}
@@ -104,10 +112,10 @@ export default function NavBarComponent() {
                     aria-haspopup="true"
                   >
                     <Tooltip title="account settings">
-                      <Avatar sx={{ width: 32, height: 32 }}>A</Avatar>
+                      <Avatar sx={{ width: 32, height: 32, color: "white" }}>A</Avatar>
                     </Tooltip>
                   </IconButton>
-                  <Typography fontFamily={"Inter"}>ADMIN</Typography>
+                  <Typography fontFamily={"Montserrat"}>ADMIN</Typography>
                 </Box>
 
                 <Menu
@@ -116,23 +124,23 @@ export default function NavBarComponent() {
                   onClick={handleClose}
                   onClose={handleClose}
                 >
-                  <MenuItem>
-                    <ListItemIcon>
-                      <AccountCircleOutlined fontSize="small" />
-                    </ListItemIcon>
-                    Profile
+                  <MenuItem sx={{ color: "black" }}>
+                    <ListItemIcon> 
+                      <AccountCircleOutlined fontSize="small" sx={{ color: "black" }} />
+                    </ListItemIcon > 
+                    Profile 
                   </MenuItem>
                   <Divider />
 
-                  <MenuItem>
+                  <MenuItem sx={{ color: "black" }}>
                     <ListItemIcon>
-                      <Settings fontSize="small" />
+                      <Settings fontSize="small" sx={{ color: "black" }} />
                     </ListItemIcon>
                     Settings
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem sx={{ color: "black" }}>
                     <ListItemIcon>
-                      <Logout fontSize="small" />
+                      <Logout fontSize="small" sx={{ color: "black" }} />
                     </ListItemIcon>
                     Logout
                   </MenuItem>

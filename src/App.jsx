@@ -1,86 +1,121 @@
-import Inter from "../public/static/fonts/Inter.ttf";
-import { ThemeProvider, CssBaseline, createTheme, Box } from "@mui/material";
+import { useState } from "react";
+
+import {
+  ThemeProvider,
+  CssBaseline,
+  createTheme,
+} from "@mui/material";
+
 import RootComponent from "./components/RootComponent";
-import RootPage from "./components/RootPage";
-import DataTable from "./test/DataTable";
-import Hello from "./test/Hello";
-// import "../app.css";
+import LoginPage from "./components/LoginPage";
+
 import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./components/bodyComponents/home/Home";
-import Inventory from "./components/bodyComponents/inventory/Inventory";
+
 import Customer from "./components/bodyComponents/customer/Customer";
 import Revenue from "./components/bodyComponents/revenue/Revenue";
 import Growth from "./components/bodyComponents/growth/Growth";
 import Report from "./components/bodyComponents/report/Report";
 import Setting from "./components/bodyComponents/Settings/Setting";
 import Order from "./components/bodyComponents/order/Order";
-import OrderModal from "./components/bodyComponents/order/OrderModal";
+import {
+  CalendarPage,
+  ConflictsPage,
+  DashboardPage,
+  ForecastPage,
+  MaterialsPage,
+  MembersPage,
+  ProjectsPage,
+  ResourcesPage,
+  TasksPage,
+} from "./components/ConstructionPages";
 
 function App() {
+  const [authenticated, setAuthenticated] = useState(false);
+
   const theme = createTheme({
     spacing: 4,
+
     palette: {
       mode: "light",
 
       primary: {
-         main: "#D84A05",
-       },
-       text: {
-         primary: "#343434",
-         secondary: "#343434",
-       },
-       secondary: {
-         main: "#343434",
-       },
-       error: {
-         main: "#E03137",
-       },
+        main: "#D84A05",
+      },
+
+      text: {
+        primary: "#ffffff",
+        secondary: "#343434",
+      },
+
+      secondary: {
+        main: "#343434",
+      },
+
+      error: {
+        main: "#E03137",
+      },
     },
 
     typography: {
-      fontFamily: "Inter",
+      fontFamily: "Montserrat, sans-serif",
     },
+
     components: {
       MuiCssBaseline: {
         styleOverrides: `
           @font-face {
-            font-family: 'Inter';
+            font-family: "Montserrat";
             font-style: normal;
             font-display: swap;
             font-weight: 400;
-            src: local('Raleway'), local('Raleway-Regular'), url(${Inter}) format('woff2');
-            unicodeRange: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+            src: url("/public/static/fonts/static/Montserrat-Regular.ttf") format("truetype");
+          }
+
+          body {
+            font-family: "Montserrat", sans-serif;
           }
         `,
       },
     },
-    //here we customize our typographi and in the variant prop we can use out myVar value
   });
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootComponent />}>
-        <Route index element={<RootPage />} />
-        <Route path="/home" element={<Home />}></Route>
-        <Route path="/inventory" element={<Inventory />}></Route>
-        <Route path="/orders" element={<Order />}></Route>
-        <Route path="/customers" element={<Customer />}></Route>
-        <Route path="/revenue" element={<Revenue />}></Route>
-        <Route path="/growth" element={<Growth />}></Route>
-        <Route path="/reports" element={<Report />}></Route>
-        <Route path="/settings" element={<Setting />}></Route>
+        <Route index element={<DashboardPage />} />
+
+        <Route path="home" element={<DashboardPage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="tasks" element={<TasksPage />} />
+        <Route path="inventory" element={<MaterialsPage />} />
+        <Route path="resources" element={<ResourcesPage />} />
+        <Route path="conflicts" element={<ConflictsPage />} />
+        <Route path="calendar" element={<CalendarPage />} />
+        <Route path="members" element={<MembersPage />} />
+        <Route path="forecasts" element={<ForecastPage />} />
+        <Route path="orders" element={<Order />} />
+        <Route path="customers" element={<Customer />} />
+        <Route path="revenue" element={<Revenue />} />
+        <Route path="growth" element={<Growth />} />
+        <Route path="reports" element={<Report />} />
+        <Route path="settings" element={<Setting />} />
       </Route>
     )
   );
 
   return (
     <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
       <CssBaseline />
+      {authenticated ? (
+        <RouterProvider router={router} />
+      ) : (
+        <LoginPage onLogin={() => setAuthenticated(true)} />
+      )}
     </ThemeProvider>
   );
 }

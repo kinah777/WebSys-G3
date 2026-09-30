@@ -107,6 +107,17 @@ CREATE TABLE project_schedules (
 );
 
 
+-- 8a. RESOURCES ASSIGNED DIRECTLY TO TASKS
+CREATE TABLE task_resource_assignments (
+    assignment_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    schedule_id VARCHAR(20) NOT NULL REFERENCES project_schedules(schedule_id) ON DELETE CASCADE,
+    resource_type VARCHAR(20) NOT NULL CHECK (resource_type IN ('employee', 'equipment', 'vehicle', 'material')),
+    resource_id VARCHAR(20) NOT NULL,
+    quantity NUMERIC(12,2) CHECK (quantity IS NULL OR quantity > 0),
+    UNIQUE (schedule_id, resource_type, resource_id)
+);
+
+
 -- 9. EQUIPMENT ALLOCATIONS
 CREATE TABLE equipment_allocations (
     allocation_id VARCHAR(20) PRIMARY KEY,
