@@ -625,11 +625,12 @@ export function ForecastPage() {
     { field: "projected_total_cost", headerName: "Projected cost", width: 170 },
     { field: "projected_overrun", headerName: "Projected overrun", width: 180 },
     { field: "is_overrun", headerName: "Over budget", width: 130 },
+    { field: "forecast_method", headerName: "Forecast method", minWidth: 180, flex: 1 },
   ];
   return (
     <>
-      <Alert severity="info" sx={{ m: 3, mb: 0 }}>The connected forecast is project cost forecasting. Material-demand ARIMA forecasts require historical consumption data and a backend endpoint, which are not currently available.</Alert>
-      <ApiCollectionPage title="Cost forecasts" description="Projected project spend based on current daily burn rates." endpoint="/financials/forecast" idField="budget_id" columns={forecastColumns} canCreate={false} canEdit={false} canDelete={false} />
+      <Alert severity="info" sx={{ m: 3, mb: 0 }}>Daily ARIMA uses recorded project expenses when at least 30 calendar days of history are available. Projects with less history use the budget burn-rate estimate.</Alert>
+      <ApiCollectionPage title="Cost forecasts" description="Daily project expense outlook compared with each allocated budget." endpoint="/financials/forecast" idField="budget_id" columns={forecastColumns} canCreate={false} canEdit={false} canDelete={false} />
     </>
   );
 }

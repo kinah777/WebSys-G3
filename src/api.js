@@ -1,10 +1,23 @@
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
+export function getStoredAuthToken() {
+  return localStorage.getItem("buildsync_token");
+}
+
+export function getStoredUser() {
+  const raw = localStorage.getItem("buildsync_user");
+  return raw ? JSON.parse(raw) : null;
+}
+
 export async function apiRequest(path, { method = "GET", body, signal } = {}) {
+  const token = getStoredAuthToken();
   const response = await fetch(`${apiBaseUrl}${path}`, {
     method,
     signal,
-    headers: body ? { "Content-Type": "application/json" } : undefined,
+    headers: {
+      ...(body ? { "Content-Type": "application/json" } : {}),
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
     body: body ? JSON.stringify(body) : undefined,
   });
 

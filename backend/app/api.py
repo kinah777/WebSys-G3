@@ -19,6 +19,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import psycopg.errors
 
+from app.auth import auth_router
 from app.database import initialize_database
 from module_1_projects_and_schedules import router as module_1_router
 from module_2_equipment_and_fleet import router as module_2_router
@@ -104,8 +105,9 @@ def root() -> dict[str, str]:
 
 
 # --------------------------------------------------------------------------
-# Mount the 6 Core Module Routers
+# Mount the authentication and 6 Core Module Routers
 # --------------------------------------------------------------------------
+app.include_router(auth_router)        # Authentication and role-based access
 app.include_router(module_1_router)   # Module 1 (Projects & Schedules)
 app.include_router(module_2_router)   # Module 2 (Equipment & Fleet)
 app.include_router(module_3_router)   # Module 3 (Workforce & Labor)

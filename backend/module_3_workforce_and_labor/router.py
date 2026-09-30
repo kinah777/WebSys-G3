@@ -13,8 +13,9 @@ Endpoints:
 
 from datetime import date
 from typing import Any
-from fastapi import APIRouter, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 
+from app.auth import require_roles
 from app.database import Database, generate_next_id, serialize_row
 from .models import (
     AllocationStatusUpdate,
@@ -41,6 +42,7 @@ def list_employees(
     filter_status: str | None = Query(None, alias="status", description="Filter by employment status (Active, Inactive, On Leave)"),
     skill: str | None = Query(None, description="Filter by skill or trade (case-insensitive substring)"),
     limit: int = Query(100, ge=1, le=500),
+    _: dict[str, Any] = Depends(require_roles("admin", "employee")),
 ) -> list[dict[str, Any]]:
     """List in-house employees with optional status and skill filtering."""
     query = "SELECT * FROM employees WHERE 1=1"
@@ -95,7 +97,7 @@ def get_available_employees(
 
 
 @router.get("/employees/{employee_id}", response_model=Employee, summary="Get employee details by ID")
-def get_employee(employee_id: str, db: Database) -> dict[str, Any]:
+def get_employee(employee_id: str, db: Database, _: dict[str, Any] = Depends(require_roles("admin", "employee"))) -> dict[str, Any]:
     """Retrieve details for a single employee."""
     row = db.execute("SELECT * FROM employees WHERE employee_id = %s", [employee_id]).fetchone()
     if not row:
@@ -104,7 +106,7 @@ def get_employee(employee_id: str, db: Database) -> dict[str, Any]:
 
 
 @router.post("/employees", response_model=Employee, status_code=status.HTTP_201_CREATED, summary="Create an employee")
-def create_employee(data: EmployeeInput, db: Database) -> dict[str, Any]:
+def create_employee(data: EmployeeInput, db: Database, _: dict[str, Any] = Depends(require_roles("admin"))) -> dict[str, Any]:
     """Register a new in-house employee with server-assigned ID (EMP-xxxx)."""
     new_id = generate_next_id(db, "employees", "employee_id", "EMP-")
     db.execute(
@@ -118,7 +120,7 @@ def create_employee(data: EmployeeInput, db: Database) -> dict[str, Any]:
 
 
 @router.patch("/employees/{employee_id}", response_model=Employee, summary="Partially update employee details")
-def update_employee(employee_id: str, data: PartialEmployeeInput, db: Database) -> dict[str, Any]:
+def update_employee(employee_id: str, data: PartialEmployeeInput, db: Database, _: dict[str, Any] = Depends(require_roles("admin"))) -> dict[str, Any]:
     """Partial update: only the fields included in the request body will be changed."""
     existing = db.execute("SELECT * FROM employees WHERE employee_id = %s", [employee_id]).fetchone()
     if not existing:
@@ -144,7 +146,7 @@ def update_employee(employee_id: str, data: PartialEmployeeInput, db: Database) 
 
 
 @router.delete("/employees/{employee_id}", status_code=status.HTTP_204_NO_CONTENT, summary="Delete an employee")
-def delete_employee(employee_id: str, db: Database) -> None:
+def delete_employee(employee_id: str, db: Database, _: dict[str, Any] = Depends(require_roles("admin"))) -> None:
     """Delete an employee and their corresponding allocation records."""
     res = db.execute("DELETE FROM employees WHERE employee_id = %s", [employee_id])
     if res.rowcount == 0:

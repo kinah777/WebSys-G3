@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import {
   ThemeProvider,
@@ -36,6 +36,31 @@ import {
 
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const token = localStorage.getItem("buildsync_token");
+    const storedUser = localStorage.getItem("buildsync_user");
+    if (token && storedUser) {
+      setAuthenticated(true);
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
+
+  const handleLogin = (payload) => {
+    const nextUser = payload.user;
+    localStorage.setItem("buildsync_token", payload.access_token);
+    localStorage.setItem("buildsync_user", JSON.stringify(nextUser));
+    setUser(nextUser);
+    setAuthenticated(true);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("buildsync_token");
+    localStorage.removeItem("buildsync_user");
+    setUser(null);
+    setAuthenticated(false);
+  };
 
   const theme = createTheme({
     spacing: 4,
@@ -114,7 +139,7 @@ function App() {
       {authenticated ? (
         <RouterProvider router={router} />
       ) : (
-        <LoginPage onLogin={() => setAuthenticated(true)} />
+        <LoginPage onLogin={handleLogin} />
       )}
     </ThemeProvider>
   );

@@ -14,7 +14,7 @@ from typing import Any
 from fastapi import APIRouter, HTTPException, Query, status
 
 from app.database import Database, generate_next_id, serialize_row
-from app.forecasting import forecast_monthly_series
+from app.forecasting import forecast_daily_series, forecast_monthly_series
 from .models import Budget, BudgetInput, CostHistoryInput, PartialBudgetInput
 
 router = APIRouter(tags=["Module 5: Financials & Cost Forecasting"])
@@ -42,6 +42,11 @@ def record_project_cost(data: CostHistoryInput, db: Database) -> dict[str, Any]:
         """,
         [data.project_id, data.amount, data.incurred_on, data.description],
     ).fetchone()
+    if row is None:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Failed to record project cost",
+        )
     return serialize_row(row)
 
 
@@ -238,21 +243,15 @@ def financials_summary(db: Database) -> dict[str, Any]:
     return serialize_row(row) or {}
 
 
-@router.get("/financials/forecast", summary="Cost forecasting with daily burn rates and projected overruns")
+@router.get("/financials/forecast", summary="Daily project cost forecasts with ARIMA and budget burn-rate fallback")
 def cost_forecast(
     db: Database,
     limit: int = Query(50, ge=1, le=500),
+    forecast_days: int = Query(30, ge=1, le=90),
 ) -> list[dict[str, Any]]:
-    """
-    Complex Functionality:
-    Predictive cost forecasting engine using elapsed project durations and burn rates:
-    - daily_burn_rate = actual_spending / elapsed_days
-    - projected_total_cost = daily_burn_rate * total_project_days
-    - projected_overrun = projected_total_cost - allocated_budget
-    """
     rows = db.execute(
         """
-        SELECT b.*, p.project_name, p.start_date AS p_start, p.end_date AS p_end, p.completion_percentage
+        SELECT b.*, p.project_name, p.start_date AS p_start, p.end_date AS p_end
         FROM budgets b
         JOIN projects p ON p.project_id = b.project_id
         ORDER BY b.budget_id
@@ -269,11 +268,39 @@ def cost_forecast(
         p_end = r["p_end"] or today
         elapsed_days = max((today - p_start).days, 1)
         total_days = max((p_end - p_start).days, 1)
+        remaining_days = max((p_end - today).days, 0)
         actual = float(r["actual_spending"] or 0)
         allocated = float(r["allocated_budget"] or 0)
 
         daily_burn = actual / elapsed_days
-        projected_total = round(daily_burn * total_days, 2)
+        history_rows = db.execute(
+            """
+            SELECT incurred_on::text AS day, SUM(amount) AS value
+            FROM project_cost_history
+            WHERE project_id = %s AND incurred_on <= CURRENT_DATE
+            GROUP BY incurred_on
+            ORDER BY incurred_on
+            """,
+            [r["project_id"]],
+        ).fetchall()
+        daily_forecast = forecast_daily_series(
+            [(history["day"], float(history["value"])) for history in history_rows],
+            periods=forecast_days,
+            through_date=today,
+        )
+
+        forecast_method = "daily_arima"
+        if daily_forecast["status"] == "ok" and daily_forecast["forecast"]:
+            forecasted_daily_values = [
+                point["value"] for point in daily_forecast["forecast"]
+            ]
+            forecasted_daily_average = sum(forecasted_daily_values) / len(forecasted_daily_values)
+            projected_total = actual + forecasted_daily_average * remaining_days
+        else:
+            forecast_method = "burn_rate_fallback"
+            projected_total = daily_burn * total_days
+
+        projected_total = round(projected_total, 2)
         projected_overrun = round(projected_total - allocated, 2)
 
         results.append({
@@ -282,5 +309,9 @@ def cost_forecast(
             "projected_total_cost": projected_total,
             "projected_overrun": projected_overrun,
             "is_overrun": projected_overrun > 0,
+            "forecast_status": daily_forecast["status"],
+            "forecast_method": forecast_method,
+            "minimum_history_days": daily_forecast["minimum_observations"],
+            "forecast_days": daily_forecast.get("effective_periods", 0),
         })
     return results
