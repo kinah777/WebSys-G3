@@ -18,3 +18,5 @@ This module manages project budgets, executive portfolio financial KPIs, and pre
 ### Complex Endpoints
 - `GET /financials/summary` - Returns portfolio-wide KPIs: total allocated budget, total spending to date, remaining budget balance, and count of projects in deficit/overrun.
 - `GET /financials/forecast` - Returns predictive cost projections using elapsed days, daily burn rate (`actual_spending / elapsed_days`), projected total completion cost, and estimated budget overruns.
+- `POST /financials/cost-history` - Record a dated actual project cost in PHP.
+- `GET /financials/forecast/arima?project_id=PRJ-0001&periods=3` - Forecast monthly project costs with ARIMA. Omitting `project_id` returns forecasts for projects with recorded history. Each project needs at least six distinct months of history.

@@ -24,6 +24,14 @@ class RestockInput(BaseModel):
     unit_cost: float | None = Field(default=None, ge=0, description="Optional updated unit cost")
 
 
+class MaterialConsumptionInput(BaseModel):
+    """Actual material consumption recorded with its occurrence date."""
+    project_id: str = Field(min_length=1)
+    material_id: str = Field(min_length=1)
+    quantity: float = Field(gt=0)
+    consumed_on: date
+
+
 class MaterialAllocationStatusUpdate(BaseModel):
     """Request body for changing a material allocation's status."""
     status: MaterialAllocationStatus = Field(description="New status: Scheduled, Active, Completed, Cancelled")

@@ -6,21 +6,33 @@ import { loadSlim } from "@tsparticles/slim";
 import PropTypes from "prop-types";
 import myBG from "../BuildSync BG.png";
 import myLG from "../BuildSync LG(B).png";
+import { apiRequest } from "../api";
 
 export default function LoginPage({ onLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [hasError, setHasError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    setHasError(false);
+    setErrorMessage("");
+    setIsSubmitting(true);
 
-    if (username === "admin" && password === "admin") {
-      onLogin();
-      return;
+    try {
+      const result = await apiRequest("/auth/login", {
+        method: "POST",
+        body: { username, password },
+      });
+      onLogin(result);
+    } catch (error) {
+      setHasError(true);
+      setErrorMessage(error.message || "Invalid username or password.");
+    } finally {
+      setIsSubmitting(false);
     }
-
-    setHasError(true);
   };
 
   return (
@@ -120,10 +132,10 @@ export default function LoginPage({ onLogin }) {
               },
             }}
             error={hasError}
-            helperText={hasError ? "Invalid username or password." : " "}
+            helperText={hasError ? (errorMessage || "Invalid username or password.") : " "}
           />
-          <Button type="submit" variant="contained" fullWidth size="large" sx={{ mt: 1 }}>
-            Sign in
+          <Button type="submit" variant="contained" fullWidth size="large" sx={{ mt: 1 }} disabled={isSubmitting}>
+            {isSubmitting ? "Signing in..." : "Sign in"}
           </Button>
         </Box>
       </Paper>

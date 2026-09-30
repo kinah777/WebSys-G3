@@ -12,7 +12,7 @@ from decimal import Decimal
 import importlib.util
 import os
 from pathlib import Path
-from typing import Annotated, Any, Iterator
+from typing import Annotated, Any, Iterator, overload
 
 from dotenv import load_dotenv
 from fastapi import Depends
@@ -49,6 +49,7 @@ ALLOWED_TABLE_COLUMNS: dict[str, str] = {
     "suppliers": "supplier_id",
     "material_allocations": "material_allocation_id",
     "budgets": "budget_id",
+    "app_users": "user_id",
 }
 
 
@@ -64,6 +65,12 @@ def get_connection() -> Iterator[Connection[dict[str, Any]]]:
 
 
 Database = Annotated[Connection[dict[str, Any]], Depends(get_connection)]
+
+
+def _default_password_hash(password: str) -> str:
+    import bcrypt
+
+    return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt(rounds=12)).decode("utf-8")
 
 
 def initialize_database() -> None:
@@ -96,6 +103,88 @@ def initialize_database() -> None:
                     spec.loader.exec_module(mod)
                     if hasattr(mod, "main"):
                         mod.main()
+
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS app_users (
+                user_id VARCHAR(20) PRIMARY KEY,
+                employee_id VARCHAR(20) NULL REFERENCES employees(employee_id) ON DELETE SET NULL,
+                username VARCHAR(50) NOT NULL UNIQUE,
+                password_hash VARCHAR(255) NOT NULL,
+                role VARCHAR(20) NOT NULL CHECK (role IN ('admin', 'employee')),
+                is_active BOOLEAN NOT NULL DEFAULT TRUE,
+                created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+            )
+            """
+        )
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS material_consumption_history (
+                consumption_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+                project_id VARCHAR(20) NOT NULL REFERENCES projects(project_id) ON DELETE CASCADE,
+                material_id VARCHAR(20) NOT NULL REFERENCES materials(material_id) ON DELETE CASCADE,
+                quantity NUMERIC(12,2) NOT NULL CHECK (quantity > 0),
+                consumed_on DATE NOT NULL
+            )
+            """
+        )
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS project_cost_history (
+                cost_entry_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+                project_id VARCHAR(20) NOT NULL REFERENCES projects(project_id) ON DELETE CASCADE,
+                amount NUMERIC(15,2) NOT NULL CHECK (amount > 0),
+                incurred_on DATE NOT NULL,
+                description VARCHAR(250)
+            )
+            """
+        )
+        connection.execute(
+            "CREATE INDEX IF NOT EXISTS idx_material_consumption_material_date "
+            "ON material_consumption_history(material_id, consumed_on)"
+        )
+        connection.execute(
+            "CREATE INDEX IF NOT EXISTS idx_project_cost_history_project_date "
+            "ON project_cost_history(project_id, incurred_on)"
+        )
+
+        admin_exists = connection.execute(
+            "SELECT 1 FROM app_users WHERE username = %s",
+            ["admin"],
+        ).fetchone()
+        if not admin_exists:
+            connection.execute(
+                "INSERT INTO app_users (user_id, employee_id, username, password_hash, role, is_active) VALUES (%s, %s, %s, %s, %s, %s)",
+                [
+                    "USR-0001",
+                    None,
+                    "admin",
+                    _default_password_hash("Admin@123"),
+                    "admin",
+                    True,
+                ],
+            )
+
+        employee_exists = connection.execute(
+            "SELECT 1 FROM app_users WHERE username = %s",
+            ["employee"],
+        ).fetchone()
+        if not employee_exists:
+            employee_row = connection.execute(
+                "SELECT employee_id FROM employees ORDER BY employee_id LIMIT 1",
+            ).fetchone()
+            employee_id = employee_row["employee_id"] if employee_row else None
+            connection.execute(
+                "INSERT INTO app_users (user_id, employee_id, username, password_hash, role, is_active) VALUES (%s, %s, %s, %s, %s, %s)",
+                [
+                    "USR-0002",
+                    employee_id,
+                    "employee",
+                    _default_password_hash("Employee@123"),
+                    "employee",
+                    True,
+                ],
+            )
 
         # Keep existing databases compatible with task-level resource assignments.
         connection.execute(
@@ -134,6 +223,14 @@ def generate_next_id(db: Connection[dict[str, Any]], table: str, id_column: str,
         return f"{prefix}{num_part + 1:04d}"
     except (IndexError, ValueError):
         return f"{prefix}0001"
+
+
+@overload
+def serialize_row(row: None) -> None: ...
+
+
+@overload
+def serialize_row(row: dict[str, Any]) -> dict[str, Any]: ...
 
 
 def serialize_row(row: dict[str, Any] | None) -> dict[str, Any] | None:
