@@ -184,6 +184,28 @@ CREATE TABLE material_allocations (
 );
 
 
+
+-- 11a. HISTORICAL MATERIAL DEMAND
+CREATE TABLE historical_material_demand (
+    demand_id VARCHAR(20) PRIMARY KEY,
+    material_id VARCHAR(20) NOT NULL,
+    demand_date DATE NOT NULL,
+    quantity_demanded NUMERIC(12,2) NOT NULL,
+    project_id VARCHAR(20),
+
+    CONSTRAINT fk_historical_demand_material
+        FOREIGN KEY (material_id)
+        REFERENCES materials(material_id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_historical_demand_project
+        FOREIGN KEY (project_id)
+        REFERENCES projects(project_id)
+        ON DELETE SET NULL
+);
+
+
+
 -- 12. VEHICLE ALLOCATIONS
 CREATE TABLE vehicle_allocations (
     vehicle_allocation_id VARCHAR(20) PRIMARY KEY,
@@ -241,6 +263,36 @@ CREATE TABLE maintenance_records (
 );
 
 
+-- 15. ROLES
+CREATE TABLE roles (
+    role_id SERIAL PRIMARY KEY,
+    role_name VARCHAR(50) UNIQUE NOT NULL,
+    description VARCHAR(150)
+);
+
+
+-- 16. USERS
+CREATE TABLE users (
+    user_id SERIAL PRIMARY KEY,
+    employee_id VARCHAR(20) UNIQUE,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    role_id INTEGER NOT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT fk_user_employee
+        FOREIGN KEY (employee_id)
+        REFERENCES employees(employee_id)
+        ON DELETE SET NULL,
+
+    CONSTRAINT fk_user_role
+        FOREIGN KEY (role_id)
+        REFERENCES roles(role_id)
+        ON DELETE RESTRICT
+);
+
+
 -- =========================================================
 -- INDEXES
 -- These make searches and allocation checks faster.
@@ -266,3 +318,15 @@ ON budgets(project_id);
 
 CREATE INDEX idx_maintenance_equipment
 ON maintenance_records(equipment_id);
+
+CREATE INDEX idx_user_employee
+ON users(employee_id);
+
+CREATE INDEX idx_user_role
+ON users(role_id);
+
+CREATE INDEX idx_historical_demand_material
+ON historical_material_demand(material_id);
+
+CREATE INDEX idx_historical_demand_date
+ON historical_material_demand(demand_date);

@@ -489,6 +489,78 @@ maintenance_df = pd.DataFrame(maintenance)
 
 
 # ============================================================
+# 15. HISTORICAL MATERIAL DEMAND
+# ============================================================
+# 50 materials x 24 months = 1,200 records
+# Used for ARIMA material-demand forecasting
+
+historical_material_demand = []
+
+# Use the first 50 materials from the existing materials dataset
+forecast_materials = materials[:50]
+
+# Historical period: January 2024 to December 2025
+history_start = date(2024, 1, 1)
+
+for material in forecast_materials:
+
+    # Base demand is different for each material
+    base_demand = random.randint(100, 2000)
+
+    # Controls the strength of seasonal changes
+    seasonal_strength = random.uniform(0.05, 0.25)
+
+    for month_index in range(24):
+
+        # Calculate year and month
+        year = history_start.year + (
+            history_start.month - 1 + month_index
+        ) // 12
+
+        month = (
+            history_start.month - 1 + month_index
+        ) % 12 + 1
+
+        demand_date = date(year, month, 1)
+
+        # Seasonal construction demand
+        if month in [3, 4, 5, 6]:
+            seasonal_factor = 1 + seasonal_strength
+        elif month in [11, 12]:
+            seasonal_factor = 1 - (seasonal_strength * 0.5)
+        else:
+            seasonal_factor = 1
+
+        # Gradual demand trend
+        trend_factor = 1 + (month_index * 0.005)
+
+        # Small random variation
+        noise_factor = random.uniform(0.85, 1.15)
+
+        quantity_demanded = max(
+            1,
+            round(
+                base_demand
+                * seasonal_factor
+                * trend_factor
+                * noise_factor,
+                2
+            )
+        )
+
+        historical_material_demand.append({
+            "demand_id": f"DMD-{len(historical_material_demand) + 1:04d}",
+            "material_id": material["material_id"],
+            "demand_date": demand_date,
+            "quantity_demanded": quantity_demanded
+        })
+
+historical_material_demand_df = pd.DataFrame(
+    historical_material_demand
+)
+
+
+# ============================================================
 # SAVE ALL DATASETS
 # ============================================================
 
@@ -506,7 +578,8 @@ datasets = {
     "material_allocations.csv": material_allocations_df,
     "vehicle_allocations.csv": vehicle_allocations_df,
     "budgets.csv": budgets_df,
-    "maintenance_records.csv": maintenance_df
+    "maintenance_records.csv": maintenance_df,
+    "historical_material_demand.csv": historical_material_demand_df
 }
 
 for filename, dataframe in datasets.items():
