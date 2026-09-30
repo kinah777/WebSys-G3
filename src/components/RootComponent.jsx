@@ -28,7 +28,7 @@ export default function RootComponent() {
         speed={0.32}
         frequency={3.5}
         ringSharpness={0.55}
-        maxOpacity={2.34}
+        maxOpacity={1.34}
       />
       <Box sx={{ position: "relative", zIndex: 1 }}>
         <Box sx={{ pt: 3, px: { xs: 2, md: 3 } }}>

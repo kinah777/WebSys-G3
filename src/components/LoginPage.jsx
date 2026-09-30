@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Box, Button, Paper, TextField, Typography } from "@mui/material";
 import { ParticlesProvider } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import PropTypes from "prop-types";
 import myBG from "../BuildSync BG.png";
 import myLG from "../BuildSync LG(B).png";
 
@@ -96,9 +97,9 @@ export default function LoginPage({ onLogin }) {
             fullWidth
             margin="normal"
             sx={{
-                "& .MuiInputBase-input": {
+              "& .MuiInputBase-input": {
                 color: "black",
-                },
+              },
             }}
           />
           <TextField
@@ -114,9 +115,9 @@ export default function LoginPage({ onLogin }) {
             fullWidth
             margin="normal"
             sx={{
-                "& .MuiInputBase-input": {
+              "& .MuiInputBase-input": {
                 color: "black",
-                },
+              },
             }}
             error={hasError}
             helperText={hasError ? "Invalid username or password." : " "}
@@ -130,3 +131,7 @@ export default function LoginPage({ onLogin }) {
     </ParticlesProvider>
   );
 }
+
+LoginPage.propTypes = {
+  onLogin: PropTypes.func.isRequired,
+};
