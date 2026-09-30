@@ -19,8 +19,6 @@ import { ArrowForward, ChevronLeft, ChevronRight } from "@mui/icons-material";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { apiRequest } from "../api";
-import dashboardImage from "../BuildSync DB.png";
-import { Italic } from "lucide-react";
 
 function useApiCollection(endpoint) {
   const [rows, setRows] = useState([]);
@@ -726,82 +724,147 @@ export function ConflictsPage() {
 
 export function DashboardPage() {
   const navigate = useNavigate();
-  const [countdown, setCountdown] = useState(10);
+  const [overview, setOverview] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    const countdownTimer = window.setInterval(() => {
-      setCountdown((seconds) => Math.max(seconds - 1, 0));
-    }, 1000);
-    const redirectTimer = window.setTimeout(() => navigate("/projects"), 5000);
+    const controller = new AbortController();
+    Promise.all([
+      apiRequest("/projects?limit=100", { signal: controller.signal }),
+      apiRequest("/project-schedules?limit=100", { signal: controller.signal }),
+      apiRequest("/materials?limit=100", { signal: controller.signal }),
+      apiRequest("/conflicts/summary", { signal: controller.signal }),
+    ])
+      .then(([projects, tasks, materials, conflicts]) => setOverview({ projects, tasks, materials, conflicts }))
+      .catch((requestError) => {
+        if (requestError.name !== "AbortError") setError(requestError.message);
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) setLoading(false);
+      });
 
-    return () => {
-      window.clearInterval(countdownTimer);
-      window.clearTimeout(redirectTimer);
-    };
-  }, [navigate]);
+    return () => controller.abort();
+  }, []);
+
+  const projects = overview?.projects ?? [];
+  const tasks = overview?.tasks ?? [];
+  const materials = overview?.materials ?? [];
+  const lowStock = materials
+    .filter((material) => Number(material.quantity_in_stock) <= Number(material.reorder_level))
+    .sort((first, second) => Number(first.quantity_in_stock) - Number(second.quantity_in_stock));
+  const visibleProjects = projects.filter((project) => project.status !== "Completed").slice(0, 5);
+  const today = new Date().toISOString().slice(0, 10);
+  const upcomingTasks = tasks
+    .filter((task) => task.start_date && task.end_date && task.end_date >= today && task.status !== "Completed")
+    .sort((first, second) => first.start_date.localeCompare(second.start_date))
+    .slice(0, 4);
+  const activeProjectCount = projects.filter((project) => project.status === "Ongoing").length;
+  const openTaskCount = tasks.filter((task) => task.status !== "Completed").length;
+  const metrics = [
+    { label: "Active projects", value: overview ? activeProjectCount : "--", accent: "#f47a50" },
+    { label: "Open tasks", value: overview ? openTaskCount : "--", accent: "#85b9a0" },
+    { label: "Low-stock items", value: overview ? lowStock.length : "--", accent: "#edbd64" },
+    { label: "Resource conflicts", value: overview ? overview.conflicts.total : "--", accent: "#e98b8b" },
+  ];
+  const projectNames = Object.fromEntries(projects.map((project) => [project.project_id, project.project_name]));
+  const todayLabel = new Date().toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric", year: "numeric" });
 
   return (
-    <Stack spacing={2.5} sx={{ p: { xs: 2, md: 3 } }}>
-      <Box>
-        <Typography
-                variant="h6"
-                sx={{
-                    fontStyle: "italic",
-                    marginTop: "1rem",
-                    fontSize: "1.20rem",
-                    fontWeight: 400,
-                    color: "#ffffff",
-                    letterSpacing: "3px",
-                    opacity: 0.5,
-                }}
-                >
-                ⠀⠀Welcome back Admin! Lets get started.
-        </Typography>
-      </Box>
-      <Box sx={{ position: "relative", width: "100%", maxWidth: 1920, mx: "auto" }}>
-        <Box
-          component="img"
-          src={dashboardImage}
-          alt="BuildSync dashboard"
-          sx={{
-            display: "block",
-            width: "100%",
-            maxWidth: 1920,
-            aspectRatio: "16 / 9",
-            objectFit: "contain",
-            mx: "auto",
-          }}
-        />
-        <Button
-          onClick={() => navigate("/projects")}
-          startIcon={<ArrowForward />}
-          sx={{
-            position: "absolute",
-            right: { xs: 204, sm: 208, md: 220 },
-            bottom: { xs: 106, sm: 108, md: 130 },
-            display: "flex",
-            alignItems: "center",
-            gap: 1,
-            px: { xs: 5.5, sm: 3 },
-            py: 4.25,
-            borderRadius: 20,
-            color: "#fff",
-            backgroundColor: "rgba(18, 27, 35, 0.59)",
-            textAlign: "left",
-            textTransform: "none",
-            "&:hover": { backgroundColor: "rgba(18, 27, 35, 0.64)" },
-          }}
-        >
-          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <Typography component="span" variant="body3" fontWeight={700}>
-              Redirecting to projects
+    <Box sx={{ p: { xs: 2, md: 3 }, color: "#f5f3ed" }}>
+      <Stack spacing={{ xs: 3, md: 4 }}>
+        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 2, flexWrap: "wrap" }}>
+          <Box>
+            <Typography variant="overline" sx={{ color: "#f47a50", fontWeight: 700, letterSpacing: "0.12em" }}>
+              BUILDSYNC / FIELD OPERATIONS
             </Typography>
-            <Typography component="span" variant="caption" sx={{ color: "rgba(255,255,255,0.8)" }}>
-              In {countdown} {countdown === 1 ? "second" : "seconds"}
+            <Typography component="h1" sx={{ color: "#fff", fontSize: { xs: 40, md: 56 }, lineHeight: 1, fontWeight: 700 }}>
+              Operations<span style={{ color: "#f47a50" }}>.</span>
             </Typography>
+            <Typography sx={{ mt: 1, color: "rgba(255,255,255,0.72)" }}>{todayLabel} · Live project and site overview</Typography>
           </Box>
-        </Button>
-      </Box>
-    </Stack>
+          <Button
+            onClick={() => navigate("/projects")}
+            endIcon={<ArrowForward />}
+            sx={{ color: "#fff", borderBottom: "1px solid rgba(255,255,255,0.55)", borderRadius: 0, px: 0, textTransform: "none" }}
+          >
+            View projects
+          </Button>
+        </Box>
+
+        {error && <Alert severity="warning">Live data is unavailable: {error}. Start FastAPI and confirm the database connection.</Alert>}
+
+        <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, minmax(0, 1fr))", md: "repeat(4, minmax(0, 1fr))" }, borderTop: "1px solid rgba(255,255,255,0.28)", borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
+          {metrics.map((metric, index) => (
+            <Box key={metric.label} sx={{ py: { xs: 1.5, md: 2.25 }, px: { xs: 1, md: 2 }, borderRight: index < metrics.length - 1 ? { xs: index % 2 === 0 ? "1px solid rgba(255,255,255,0.18)" : "none", md: "1px solid rgba(255,255,255,0.18)" } : "none", borderBottom: { xs: index < 2 ? "1px solid rgba(255,255,255,0.18)" : "none", md: "none" } }}>
+              <Typography sx={{ color: metric.accent, fontSize: 34, lineHeight: 1, fontWeight: 700 }}>{loading ? "· · ·" : metric.value}</Typography>
+              <Typography variant="body2" sx={{ mt: 0.75, color: "rgba(255,255,255,0.7)" }}>{metric.label}</Typography>
+            </Box>
+          ))}
+        </Box>
+
+        <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", lg: "minmax(0, 1.45fr) minmax(280px, 0.8fr)" }, gap: { xs: 3, lg: 5 } }}>
+          <Box component="section" aria-labelledby="project-roll-heading">
+            <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 1, pb: 1.25, borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
+              <Typography id="project-roll-heading" variant="h6" sx={{ color: "#fff", fontWeight: 700 }}>Project roll</Typography>
+              <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>01 / CURRENT PORTFOLIO</Typography>
+            </Box>
+            {loading ? <Typography sx={{ py: 3, color: "rgba(255,255,255,0.68)" }}>Loading project data…</Typography> : visibleProjects.length ? visibleProjects.map((project, index) => {
+              const progress = Math.max(0, Math.min(100, Number(project.completion_percentage) || 0));
+              return (
+                <Box key={project.project_id} sx={{ ml: { xs: 0, md: index % 2 === 1 ? 5 : 0 }, py: 1.75, borderBottom: "1px solid rgba(255,255,255,0.18)" }}>
+                  <Box sx={{ display: "grid", gridTemplateColumns: { xs: "36px minmax(0, 1fr) auto", md: "44px minmax(0, 1.4fr) minmax(110px, 0.8fr) 96px" }, alignItems: "center", gap: { xs: 0.75, md: 1.5 } }}>
+                    <Typography variant="caption" sx={{ color: "#f47a50", fontWeight: 700 }}>0{index + 1}</Typography>
+                    <Box sx={{ minWidth: 0 }}>
+                      <Typography sx={{ color: "#fff", fontSize: { xs: 15, md: 18 }, fontWeight: 600 }} noWrap>{project.project_name}</Typography>
+                      <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }} noWrap>{project.project_id} · {project.location || project.project_type || "Construction site"}</Typography>
+                    </Box>
+                    <Typography variant="body2" sx={{ display: { xs: "none", md: "block" }, color: "rgba(255,255,255,0.68)" }}>{project.status}</Typography>
+                    <Typography variant="body2" sx={{ color: "#fff", textAlign: "right" }}>{progress}%</Typography>
+                  </Box>
+                  <Box sx={{ height: 3, mt: 1.25, ml: { xs: 4.5, md: 5.5 }, bgcolor: "rgba(255,255,255,0.14)" }}>
+                    <Box sx={{ width: `${progress}%`, height: "100%", bgcolor: "#f47a50" }} />
+                  </Box>
+                </Box>
+              );
+            }) : <Typography sx={{ py: 3, color: "rgba(255,255,255,0.68)" }}>No active projects to display.</Typography>}
+          </Box>
+
+          <Stack component="aside" spacing={3}>
+            <Box component="section" aria-labelledby="schedule-heading">
+              <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", pb: 1.25, borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
+                <Typography id="schedule-heading" variant="h6" sx={{ color: "#fff", fontWeight: 700 }}>Next on site</Typography>
+                <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>02 / SCHEDULE</Typography>
+              </Box>
+              {loading ? <Typography sx={{ py: 2, color: "rgba(255,255,255,0.68)" }}>Loading schedule…</Typography> : upcomingTasks.length ? upcomingTasks.map((task) => (
+                <Box key={task.schedule_id} sx={{ py: 1.25, borderBottom: "1px solid rgba(255,255,255,0.16)", display: "grid", gridTemplateColumns: "70px minmax(0, 1fr)", gap: 1.25 }}>
+                  <Typography variant="caption" sx={{ pt: 0.25, color: "#edbd64", fontWeight: 700 }}>{task.start_date}</Typography>
+                  <Box>
+                    <Typography variant="body2" sx={{ color: "#fff", fontWeight: 600 }}>{task.task_name}</Typography>
+                    <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>{projectNames[task.project_id] || task.project_id}</Typography>
+                  </Box>
+                </Box>
+              )) : <Typography sx={{ py: 2, color: "rgba(255,255,255,0.68)" }}>No upcoming dated tasks.</Typography>}
+            </Box>
+
+            <Box component="section" aria-labelledby="stock-heading">
+              <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", pb: 1.25, borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
+                <Typography id="stock-heading" variant="h6" sx={{ color: "#fff", fontWeight: 700 }}>Stock watch</Typography>
+                <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>03 / MATERIALS</Typography>
+              </Box>
+              {loading ? <Typography sx={{ py: 2, color: "rgba(255,255,255,0.68)" }}>Loading stock…</Typography> : lowStock.length ? lowStock.slice(0, 3).map((material) => (
+                <Box key={material.material_id} sx={{ py: 1.25, borderBottom: "1px solid rgba(255,255,255,0.16)", display: "flex", justifyContent: "space-between", gap: 1 }}>
+                  <Box>
+                    <Typography variant="body2" sx={{ color: "#fff", fontWeight: 600 }}>{material.name}</Typography>
+                    <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>Minimum {material.reorder_level} {material.unit || "units"}</Typography>
+                  </Box>
+                  <Typography variant="body2" sx={{ flexShrink: 0, color: "#e98b8b", fontWeight: 700 }}>{material.quantity_in_stock} {material.unit || ""}</Typography>
+                </Box>
+              )) : <Typography sx={{ py: 2, color: "rgba(255,255,255,0.68)" }}>{overview ? "All materials are above minimum stock." : "Stock status unavailable."}</Typography>}
+            </Box>
+          </Stack>
+        </Box>
+      </Stack>
+    </Box>
   );
 }
