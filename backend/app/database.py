@@ -97,6 +97,20 @@ def initialize_database() -> None:
                     if hasattr(mod, "main"):
                         mod.main()
 
+        # Keep existing databases compatible with task-level resource assignments.
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS task_resource_assignments (
+                assignment_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+                schedule_id VARCHAR(20) NOT NULL REFERENCES project_schedules(schedule_id) ON DELETE CASCADE,
+                resource_type VARCHAR(20) NOT NULL CHECK (resource_type IN ('employee', 'equipment', 'vehicle', 'material')),
+                resource_id VARCHAR(20) NOT NULL,
+                quantity NUMERIC(12,2) CHECK (quantity IS NULL OR quantity > 0),
+                UNIQUE (schedule_id, resource_type, resource_id)
+            )
+            """
+        )
+
 
 def generate_next_id(db: Connection[dict[str, Any]], table: str, id_column: str, prefix: str) -> str:
     """

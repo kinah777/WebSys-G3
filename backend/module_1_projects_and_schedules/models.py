@@ -13,6 +13,7 @@ from pydantic import BaseModel, Field
 ProjectStatus = Literal["Planning", "Ongoing", "Completed", "On Hold"]
 ScheduleStatus = Literal["Pending", "Not Started", "In Progress", "Completed"]
 PriorityLevel = Literal["Critical", "High", "Medium", "Low"]
+TaskResourceType = Literal["employee", "equipment", "vehicle", "material"]
 
 
 class ProjectInput(BaseModel):
@@ -71,3 +72,20 @@ class PartialScheduleInput(BaseModel):
 class Schedule(ScheduleInput):
     """Complete schedule task record including the primary key."""
     schedule_id: str = Field(description="Primary key (e.g. SCH-0001)")
+
+
+class TaskResourceAssignmentInput(BaseModel):
+    """Payload for assigning a resource directly to a scheduled task."""
+    resource_type: TaskResourceType
+    resource_id: str = Field(min_length=1)
+    quantity: float | None = Field(default=None, gt=0, description="Required for material assignments")
+
+
+class TaskResourceAssignment(BaseModel):
+    """Persisted task assignment returned to the frontend."""
+    assignment_id: int
+    schedule_id: str
+    resource_type: TaskResourceType
+    resource_id: str
+    resource_name: str
+    quantity: float | None = None

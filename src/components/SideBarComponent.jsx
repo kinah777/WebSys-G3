@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../../public/styles/links.css";
 import {
   List,
@@ -6,132 +5,114 @@ import {
   ListItemIcon,
   ListItemText,
   ListItemButton,
-  IconButton,
   Box,
-  Snackbar,
-  Alert,
-  Button,
 } from "@mui/material";
 import {
-  HomeOutlined,
-  EngineeringOutlined,
-  SettingsOutlined,
+  DashboardOutlined,
+  FolderOpenOutlined,
+  AssignmentOutlined,
+  Inventory2Outlined,
+  BuildOutlined,
   WarningAmberOutlined,
-  MonetizationOnOutlined,
-  PrecisionManufacturingOutlined,
-  PeopleAltOutlined,
-  InventoryOutlined,
+  CalendarMonthOutlined,
+  GroupsOutlined,
+  QueryStatsOutlined,
 } from "@mui/icons-material";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function SideBarComponent() {
   const navigate = useNavigate();
-  const navigateTo = (to) => {
-    navigate(to);
-  };
+  const navigateTo = (to) => navigate(to);
   const location = useLocation();
   const currentPage = location.pathname;
-  console.log(currentPage);
+
   const sideBarComponent = [
     {
-      title: "Home",
-      component: <HomeOutlined fontSize="medium" color="primary" />,
+      title: "Dashboard",
+      path: "/home",
+      component: <DashboardOutlined fontSize="medium" color="primary" />,
     },
     {
       title: "Projects",
-      component: <EngineeringOutlined fontSize="medium" color="primary" />,
+      path: "/projects",
+      component: <FolderOpenOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Equipment",
-      component: <PrecisionManufacturingOutlined fontSize="medium" color="primary" />,
+      title: "Tasks",
+      path: "/tasks",
+      component: <AssignmentOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Workforce",
-      component: <PeopleAltOutlined fontSize="medium" color="primary" />,
+      title: "Inventory",
+      path: "/inventory",
+      component: <Inventory2Outlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Materials",
-      component: <InventoryOutlined fontSize="medium" color="primary" />,
-    },
-    {
-      title: "Financials",
-      component: <MonetizationOnOutlined fontSize="medium" color="primary" />,
+      title: "Resources",
+      path: "/resources",
+      component: <BuildOutlined fontSize="medium" color="primary" />,
     },
     {
       title: "Conflicts",
+      path: "/conflicts",
       component: <WarningAmberOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Settings",
-      component: <SettingsOutlined fontSize="medium" color="primary" />,
+      title: "Calendar",
+      path: "/calendar",
+      component: <CalendarMonthOutlined fontSize="medium" color="primary" />,
+    },
+    {
+      title: "Members",
+      path: "/members",
+      component: <GroupsOutlined fontSize="medium" color="primary" />,
+    },
+    {
+      title: "Forecasts",
+      path: "/forecasts",
+      component: <QueryStatsOutlined fontSize="medium" color="primary" />,
     },
   ];
-  const [selected, setSelected] = useState(0);
-  const handlSelectedComponent = (event, index) => {
-    setSelected(index);
-  };
   return (
-    <>
-      <List>
-        {sideBarComponent.map((comp, index) => (
-          <ListItem disablePadding dense={true} key={index}>
-            <Box width="100%">
-              <ListItemButton
-                onClick={(event) => {
-                  handlSelectedComponent(event, index);
-                  navigateTo(comp.title.toLocaleLowerCase());
+    <List>
+      {sideBarComponent.map((comp, index) => (
+        <ListItem disablePadding dense={true} key={index}>
+          <Box width="100%">
+            <ListItemButton
+              onClick={() => navigateTo(comp.path)}
+              selected={
+                currentPage === comp.path ||
+                (currentPage === "/" && comp.path === "/home")
+              }
+              sx={{
+                mb: 3,
+                borderLeft: 0,
+                borderColor: "primary.main",
+                ml: 4,
+                borderRadius: 3,
+              }}
+            >
+              <ListItemIcon>{comp.component}</ListItemIcon>
+              <ListItemText
+                primary={comp.title}
+                primaryTypographyProps={{
+                  fontSize: "medium",
+                  fontWeight:
+                    currentPage === comp.path ||
+                    (currentPage === "/" && comp.path === "/home")
+                      ? "bold"
+                      : "",
+                  color:
+                    currentPage === comp.path ||
+                    (currentPage === "/" && comp.path === "/home")
+                      ? "primary.main"
+                      : "inherit",
                 }}
-                // selected={}
-                selected={
-                  index === selected &&
-                  currentPage === "/" + comp.title.toLowerCase()
-                }
-                sx={{
-                  mb: 3,
-                  borderLeft: 0,
-                  borderColor: "primary.main",
-                  ml: 1,
-                }}
-              >
-                <ListItemIcon>
-                  <IconButton>{comp.component}</IconButton>
-                </ListItemIcon>
-                {/* <Link
-                  to={"" + comp.title.toLocaleLowerCase()}
-                  className="router-link"
-                > */}
-                <ListItemText
-                  primary={comp.title}
-                  primaryTypographyProps={{
-                    fontSize: "medium",
-                    fontWeight: selected === index ? "bold" : "",
-                    color: selected === index ? "primary.main" : "inherit",
-                  }}
-                />
-                {/* </Link> */}
-              </ListItemButton>
-            </Box>
-          </ListItem>
-        ))}
-      </List>
-      {/* <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
-          This is a success message!
-        </Alert>
-      </Snackbar> */}
-    </>
+              />
+            </ListItemButton>
+          </Box>
+        </ListItem>
+      ))}
+    </List>
   );
-  //   const [open, setOpen] = React.useState(false);
-
-  //   const handleClick = () => {
-  //     setOpen(true);
-  //   };
-
-  //   const handleClose = (event, reason) => {
-  //     if (reason === 'clickaway') {
-  //       return;
-  //     }
-
-  //     setOpen(false);
-  //   };
 }
