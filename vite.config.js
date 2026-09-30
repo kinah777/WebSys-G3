@@ -6,7 +6,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server: {
     watch: {
-      ignored: [path.resolve(__dirname, "src/BuildSync DB.png")],
+      ignored: [
+        path.resolve(__dirname, "src/BuildSync DB.png"),
+        path.resolve(__dirname, "src/BuildSync Square Logo.png"),
+      ],
     },
   },
   resolve: {

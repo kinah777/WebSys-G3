@@ -7,3 +7,38 @@
     inset: 0;
     z-index: 0;
 }
+
+.app-background-ripple {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+    width: 100vw !important;
+
+@media (prefers-reduced-motion: reduce) {
+    .login-transition-screen,
+    .login-transition-screen::before,
+    .login-transition-sweep,
+    .login-transition-mark,
+    .login-transition-copy {
+        animation: none !important;
+    }
+
+    .login-transition-screen {
+        opacity: 1;
+    }
+
+    .login-transition-screen::before {
+        opacity: 0.78;
+    }
+
+    .login-transition-sweep {
+        opacity: 0.45;
+        transform: rotate(-18deg);
+    }
+
+    .login-transition-mark,
+    .login-transition-copy {
+        opacity: 1;
+        transform: none;
+    }
+}
