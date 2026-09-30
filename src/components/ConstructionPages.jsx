@@ -755,7 +755,7 @@ export function DashboardPage() {
                     opacity: 0.5,
                 }}
                 >
-                ⠀⠀Welcome back Admin! Let's get started.
+                ⠀⠀Welcome back Admin! Lets get started.
         </Typography>
       </Box>
       <Box sx={{ position: "relative", width: "100%", maxWidth: 1920, mx: "auto" }}>
