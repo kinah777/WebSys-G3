@@ -15,9 +15,12 @@ import {
   Typography,
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { ArrowForward, ChevronLeft, ChevronRight } from "@mui/icons-material";
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 import { apiRequest } from "../api";
+import dashboardImage from "../BuildSync DB.png";
+import { Italic } from "lucide-react";
 
 function useApiCollection(endpoint) {
   const [rows, setRows] = useState([]);
@@ -49,6 +52,7 @@ function ApiCollectionPage({
   description,
   endpoint,
   idField,
+  descriptionColor = "white",
   fields = [],
   columns,
   canCreate = true,
@@ -157,7 +161,7 @@ function ApiCollectionPage({
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 2 }}>
         <Box>
           <Typography variant="h5" fontWeight={700}>{title}</Typography>
-          {description && <Typography color="text.secondary" sx={{ mt: 0.5 }}>{description}</Typography>}
+          {description && <Typography color={descriptionColor} sx={{ mt: 0.5 }}>{description}</Typography>}
         </Box>
         {canCreate && <Button variant="contained" onClick={formOpen ? () => setFormOpen(false) : openCreate}>{formOpen ? "Close form" : `Add ${title.replace(/s$/, "")}`}</Button>}
       </Box>
@@ -217,6 +221,7 @@ ApiCollectionPage.propTypes = {
   description: PropTypes.string,
   endpoint: PropTypes.string.isRequired,
   idField: PropTypes.string.isRequired,
+  descriptionColor: PropTypes.string,
   fields: PropTypes.array,
   columns: PropTypes.array.isRequired,
   canCreate: PropTypes.bool,
@@ -511,9 +516,16 @@ export function ResourcesPage() {
   const [assignmentTab, setAssignmentTab] = useState(0);
   const [catalogTab, setCatalogTab] = useState(0);
   return (
-    <Box sx={{ p: { xs: 2, md: 3 } }}>
+    <Box
+      sx={{
+        p: { xs: 2, md: 3 },
+        maxHeight: "calc(100vh - 120px)",
+        overflowY: "auto",
+        overscrollBehaviorY: "contain",
+      }}
+    >
       <Typography variant="h5" fontWeight={700}>Resource assignments</Typography>
-      <Typography color="text.secondary" sx={{ mt: 0.5 }}>Assign equipment, vehicles, employees, and materials to projects.</Typography>
+      <Typography color="white" sx={{ mt: 0.5 }}>Assign equipment, vehicles, employees, and materials to projects.</Typography>
       <Tabs value={assignmentTab} onChange={(_, value) => setAssignmentTab(value)} variant="scrollable" sx={{ mt: 2 }}>
         {assignmentTabs.map((item) => <Tab key={item.label} label={item.label} />)}
       </Tabs>
@@ -546,7 +558,7 @@ export function MembersPage() {
   return (
     <>
       <Alert severity="info" sx={{ m: 3, mb: 0 }}>The API manages employee records, but it does not provide login roles or role-based permissions yet.</Alert>
-      <ApiCollectionPage title="Members" description="Manage workforce records and trades." endpoint="/employees" idField="employee_id" fields={employeeFields} columns={employeeColumns} />
+      <ApiCollectionPage title="Members" description="Manage workforce records and trades." descriptionColor="white" endpoint="/employees" idField="employee_id" fields={employeeFields} columns={employeeColumns} />
     </>
   );
 }
@@ -570,7 +582,7 @@ export function CalendarPage() {
       <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 1 }}>
         <Box>
           <Typography variant="h5" fontWeight={700}>Project calendar</Typography>
-          <Typography color="text.secondary">Tasks shown across their scheduled date range.</Typography>
+          <Typography color="white">Tasks shown across their scheduled date range.</Typography>
         </Box>
         <Stack direction="row" alignItems="center" spacing={1}>
           <Button onClick={() => setVisibleMonth(new Date(new Date().getFullYear(), new Date().getMonth(), 1))}>Today</Button>
@@ -678,7 +690,7 @@ export function ConflictsPage() {
     <Stack spacing={2.5} sx={{ p: { xs: 2, md: 3 } }}>
       <Box>
         <Typography variant="h5" fontWeight={700}>Resource conflicts</Typography>
-        <Typography color="text.secondary" sx={{ mt: 0.5 }}>Overlapping active bookings detected by the backend.</Typography>
+        <Typography color="white" sx={{ mt: 0.5 }}>Overlapping active bookings detected by the backend.</Typography>
       </Box>
       {error && <Alert severity="error">{error}</Alert>}
       {notice && <Alert severity="success">{notice}</Alert>}
@@ -714,61 +726,84 @@ export function ConflictsPage() {
 }
 
 export function DashboardPage() {
-  const [summary, setSummary] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
+  const navigate = useNavigate();
+  const [countdown, setCountdown] = useState(10);
 
   useEffect(() => {
-    const controller = new AbortController();
-    Promise.all([
-      apiRequest("/projects", { signal: controller.signal }),
-      apiRequest("/materials", { signal: controller.signal }),
-      apiRequest("/equipment", { signal: controller.signal }),
-      apiRequest("/conflicts/summary", { signal: controller.signal }),
-      apiRequest("/financials/summary", { signal: controller.signal }),
-    ])
-      .then(([projects, materials, equipment, conflicts, finances]) => setSummary({
-        projects,
-        lowStock: materials.filter((material) => Number(material.quantity_in_stock) <= Number(material.reorder_level)).length,
-        availableEquipment: equipment.filter((item) => item.status === "Available").length,
-        conflicts,
-        finances,
-      }))
-      .catch((requestError) => {
-        if (requestError.name !== "AbortError") setError(requestError.message);
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) setLoading(false);
-      });
-    return () => controller.abort();
-  }, []);
+    const countdownTimer = window.setInterval(() => {
+      setCountdown((seconds) => Math.max(seconds - 1, 0));
+    }, 1000);
+    const redirectTimer = window.setTimeout(() => navigate("/projects"), 5000);
 
-  const metrics = summary ? [
-    ["Active projects", summary.projects.filter((project) => project.status === "Ongoing").length],
-    ["Low-stock materials", summary.lowStock],
-    ["Available equipment", summary.availableEquipment],
-    ["Resource conflicts", summary.conflicts.total],
-    ["Budget overruns", summary.finances.overrun_count],
-  ] : [];
+    return () => {
+      window.clearInterval(countdownTimer);
+      window.clearTimeout(redirectTimer);
+    };
+  }, [navigate]);
 
   return (
     <Stack spacing={2.5} sx={{ p: { xs: 2, md: 3 } }}>
       <Box>
-        <Typography variant="h5" fontWeight={700}>Dashboard</Typography>
-        <Typography color="text.secondary" sx={{ mt: 0.5 }}>Construction operations overview from live backend data.</Typography>
+        <Typography
+                variant="h6"
+                sx={{
+                    fontStyle: "italic",
+                    marginTop: "1rem",
+                    fontSize: "1.20rem",
+                    fontWeight: 400,
+                    color: "#ffffff",
+                    letterSpacing: "3px",
+                    opacity: 0.5,
+                }}
+                >
+                ⠀⠀Welcome back Admin! Let's get started.
+        </Typography>
       </Box>
-      {error && <Alert severity="error">{error} Check that FastAPI and PostgreSQL are running.</Alert>}
-      {loading ? <CircularProgress /> : (
-        <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr 1fr", lg: "repeat(5, minmax(0, 1fr))" }, gap: 1.5 }}>
-          {metrics.map(([label, value]) => (
-            <Paper key={label} variant="outlined" sx={{ p: 2 }}>
-              <Typography variant="body2" color="text.secondary">{label}</Typography>
-              <Typography variant="h4" fontWeight={700} sx={{ mt: 1 }}>{value}</Typography>
-            </Paper>
-          ))}
-        </Box>
-      )}
-      <Alert severity="info">Material-demand predictions are not included yet; the backend currently provides project cost forecasts only.</Alert>
+      <Box sx={{ position: "relative", width: "100%", maxWidth: 1920, mx: "auto" }}>
+        <Box
+          component="img"
+          src={dashboardImage}
+          alt="BuildSync dashboard"
+          sx={{
+            display: "block",
+            width: "100%",
+            maxWidth: 1920,
+            aspectRatio: "16 / 9",
+            objectFit: "contain",
+            mx: "auto",
+          }}
+        />
+        <Button
+          onClick={() => navigate("/projects")}
+          startIcon={<ArrowForward />}
+          sx={{
+            position: "absolute",
+            right: { xs: 104, sm: 108, md: 120 },
+            bottom: { xs: 76, sm: 88, md: 100 },
+            display: "flex",
+            alignItems: "center",
+            maxWidth: 400,
+            gap: 1,
+            px: { xs: 5.5, sm: 3 },
+            py: 4.25,
+            borderRadius: 20,
+            color: "#fff",
+            backgroundColor: "rgba(18, 27, 35, 0.59)",
+            textAlign: "left",
+            textTransform: "none",
+            "&:hover": { backgroundColor: "rgba(18, 27, 35, 0.64)" },
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+            <Typography component="span" variant="body2" fontWeight={700}>
+              Redirecting to projects
+            </Typography>
+            <Typography component="span" variant="caption" sx={{ color: "rgba(255,255,255,0.8)" }}>
+              In {countdown} {countdown === 1 ? "second" : "seconds"}
+            </Typography>
+          </Box>
+        </Button>
+      </Box>
     </Stack>
   );
 }
