@@ -97,6 +97,37 @@ def initialize_database() -> None:
                     if hasattr(mod, "main"):
                         mod.main()
 
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS material_consumption_history (
+                consumption_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+                project_id VARCHAR(20) NOT NULL REFERENCES projects(project_id) ON DELETE CASCADE,
+                material_id VARCHAR(20) NOT NULL REFERENCES materials(material_id) ON DELETE CASCADE,
+                quantity NUMERIC(12,2) NOT NULL CHECK (quantity > 0),
+                consumed_on DATE NOT NULL
+            )
+            """
+        )
+        connection.execute(
+            """
+            CREATE TABLE IF NOT EXISTS project_cost_history (
+                cost_entry_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+                project_id VARCHAR(20) NOT NULL REFERENCES projects(project_id) ON DELETE CASCADE,
+                amount NUMERIC(15,2) NOT NULL CHECK (amount > 0),
+                incurred_on DATE NOT NULL,
+                description VARCHAR(250)
+            )
+            """
+        )
+        connection.execute(
+            "CREATE INDEX IF NOT EXISTS idx_material_consumption_material_date "
+            "ON material_consumption_history(material_id, consumed_on)"
+        )
+        connection.execute(
+            "CREATE INDEX IF NOT EXISTS idx_project_cost_history_project_date "
+            "ON project_cost_history(project_id, incurred_on)"
+        )
+
         # Keep existing databases compatible with task-level resource assignments.
         connection.execute(
             """

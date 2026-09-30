@@ -11,15 +11,18 @@ Endpoints:
 - Complex: POST /materials/{id}/restock, GET /materials/alerts/low-stock, GET /procurement/budget-check/{project_id}
 """
 
+from datetime import date
 from typing import Any
 from fastapi import APIRouter, HTTPException, Query, status
 
 from app.database import Database, generate_next_id, serialize_row
+from app.forecasting import forecast_monthly_series
 from .models import (
     Material,
     MaterialAllocation,
     MaterialAllocationInput,
     MaterialAllocationStatusUpdate,
+    MaterialConsumptionInput,
     MaterialInput,
     PartialMaterialInput,
     PartialSupplierInput,
@@ -29,6 +32,68 @@ from .models import (
 )
 
 router = APIRouter(tags=["Module 4: Materials & Supply Chain (Procurement)"])
+
+
+@router.post("/materials/consumption", status_code=status.HTTP_201_CREATED, summary="Record actual material consumption")
+def record_material_consumption(data: MaterialConsumptionInput, db: Database) -> dict[str, Any]:
+    if data.consumed_on > date.today():
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Consumption date cannot be in the future")
+    row = db.execute(
+        """
+        INSERT INTO material_consumption_history (project_id, material_id, quantity, consumed_on)
+        VALUES (%s, %s, %s, %s)
+        RETURNING *
+        """,
+        [data.project_id, data.material_id, data.quantity, data.consumed_on],
+    ).fetchone()
+    return serialize_row(row)
+
+
+@router.get("/materials/{material_id}/forecast/demand", summary="Forecast monthly material demand with ARIMA")
+def material_demand_forecast(
+    material_id: str,
+    db: Database,
+    periods: int = Query(3, ge=1, le=24),
+) -> dict[str, Any]:
+    material = db.execute(
+        "SELECT material_id, name, unit, unit_cost FROM materials WHERE material_id = %s",
+        [material_id],
+    ).fetchone()
+    if not material:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"Material {material_id} not found")
+
+    rows = db.execute(
+        """
+        SELECT TO_CHAR(DATE_TRUNC('month', consumed_on), 'YYYY-MM') AS month,
+               SUM(quantity) AS value
+        FROM material_consumption_history
+        WHERE material_id = %s AND consumed_on <= CURRENT_DATE
+        GROUP BY DATE_TRUNC('month', consumed_on)
+        ORDER BY DATE_TRUNC('month', consumed_on)
+        """,
+        [material_id],
+    ).fetchall()
+    result = forecast_monthly_series(
+        [(row["month"], float(row["value"])) for row in rows], periods
+    )
+    unit_cost = float(material["unit_cost"] or 0)
+    return {
+        "material_id": material_id,
+        "material_name": material["name"],
+        "unit": material["unit"],
+        "unit_cost": unit_cost,
+        "status": result["status"],
+        "observations": result["observations"],
+        "forecast": [
+            {
+                "month": point["month"],
+                "demand_quantity": point["value"],
+                "projected_material_cost": round(float(point["value"]) * unit_cost, 2),
+            }
+            for point in result["forecast"]
+        ],
+        "minimum_observations": result["minimum_observations"],
+    }
 
 
 # ==========================================================================

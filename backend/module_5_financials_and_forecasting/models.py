@@ -5,7 +5,17 @@ Data schemas for project budgets, cost allocation breakdowns,
 and spending tracking.
 """
 
+from datetime import date
+
 from pydantic import BaseModel, Field
+
+
+class CostHistoryInput(BaseModel):
+    """Actual project cost recorded with its occurrence date."""
+    project_id: str = Field(min_length=1)
+    amount: float = Field(gt=0, description="Actual cost in PHP")
+    incurred_on: date
+    description: str | None = Field(default=None, max_length=250)
 
 
 class BudgetInput(BaseModel):
