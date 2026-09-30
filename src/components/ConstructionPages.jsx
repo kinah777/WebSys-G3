@@ -777,11 +777,10 @@ export function DashboardPage() {
           startIcon={<ArrowForward />}
           sx={{
             position: "absolute",
-            right: { xs: 104, sm: 108, md: 120 },
-            bottom: { xs: 76, sm: 88, md: 100 },
+            right: { xs: 204, sm: 208, md: 220 },
+            bottom: { xs: 106, sm: 108, md: 130 },
             display: "flex",
             alignItems: "center",
-            maxWidth: 400,
             gap: 1,
             px: { xs: 5.5, sm: 3 },
             py: 4.25,
@@ -794,7 +793,7 @@ export function DashboardPage() {
           }}
         >
           <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <Typography component="span" variant="body2" fontWeight={700}>
+            <Typography component="span" variant="body3" fontWeight={700}>
               Redirecting to projects
             </Typography>
             <Typography component="span" variant="caption" sx={{ color: "rgba(255,255,255,0.8)" }}>
