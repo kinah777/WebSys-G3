@@ -14,13 +14,13 @@ import {
 } from "@mui/material";
 import {
   HomeOutlined,
-  Inventory2Outlined,
+  EngineeringOutlined,
   SettingsOutlined,
-  DescriptionOutlined,
+  WarningAmberOutlined,
   MonetizationOnOutlined,
-  CardTravelOutlined,
-  TrendingUpOutlined,
+  PrecisionManufacturingOutlined,
   PeopleAltOutlined,
+  InventoryOutlined,
 } from "@mui/icons-material";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 
@@ -32,39 +32,34 @@ export default function SideBarComponent() {
   const location = useLocation();
   const currentPage = location.pathname;
   console.log(currentPage);
-  // const styles = theme => ({
-  //     listItemText:{
-  //         fontSize:'0.7em',//Insert your required size
-  //     }
-  //     });
   const sideBarComponent = [
     {
       title: "Home",
       component: <HomeOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Inventory",
-      component: <Inventory2Outlined fontSize="medium" color="primary" />,
+      title: "Projects",
+      component: <EngineeringOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Orders",
-      component: <CardTravelOutlined fontSize="medium" color="primary" />,
+      title: "Equipment",
+      component: <PrecisionManufacturingOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Customers",
+      title: "Workforce",
       component: <PeopleAltOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Revenue",
+      title: "Materials",
+      component: <InventoryOutlined fontSize="medium" color="primary" />,
+    },
+    {
+      title: "Financials",
       component: <MonetizationOnOutlined fontSize="medium" color="primary" />,
     },
     {
-      title: "Growth",
-      component: <TrendingUpOutlined fontSize="medium" color="primary" />,
-    },
-    {
-      title: "Reports",
-      component: <DescriptionOutlined fontSize="medium" color="primary" />,
+      title: "Conflicts",
+      component: <WarningAmberOutlined fontSize="medium" color="primary" />,
     },
     {
       title: "Settings",
