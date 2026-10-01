@@ -183,7 +183,7 @@ function ApiCollectionPage({
             <Stack direction="row" spacing={1}>
               {canEdit && <Button size="small" onClick={() => openEdit(row)}>Edit</Button>}
               {canDelete && <Button size="small" color="error" onClick={() => deleteRow(row)}>Delete</Button>}
-              {allowTaskAssignments && <Button size="small" onClick={() => setSelectedTask(row)}>Assign resources</Button>}
+              {allowTaskAssignments && <Button size="extra-small" onClick={() => setSelectedTask(row)}>Assign resources</Button>}
             </Stack>
           ),
         }]
@@ -241,7 +241,7 @@ function ApiCollectionPage({
         <TextField
           type="search"
           label={`Search ${title}`}
-          placeholder="Search here..."
+          placeholder="Search here "
           value={searchQuery}
           onChange={(event) => setSearchQuery(event.target.value)}
           size="small"
@@ -697,19 +697,128 @@ export function CalendarPage() {
 }
 
 export function ForecastPage() {
+  const { rows, loading, error, reload } = useApiCollection("/financials/forecast");
+  const [searchQuery, setSearchQuery] = useState("");
+  const currency = new Intl.NumberFormat("en-PH", { style: "currency", currency: "PHP", maximumFractionDigits: 0 });
+  const formatCurrency = (value) => currency.format(Number(value) || 0);
+  const totalBudget = rows.reduce((total, row) => total + (Number(row.allocated_budget) || 0), 0);
+  const totalProjectedCost = rows.reduce((total, row) => total + (Number(row.projected_total_cost) || 0), 0);
+  const totalDailySpend = rows.reduce((total, row) => total + (Number(row.daily_burn_rate) || 0), 0);
+  const overBudgetCount = rows.filter((row) => row.is_overrun || Number(row.projected_overrun) > 0).length;
+  const normalizedSearchQuery = searchQuery.trim().toLowerCase();
+  const filteredRows = normalizedSearchQuery
+    ? rows.filter((row) => Object.values(row).some((value) => String(value ?? "").toLowerCase().includes(normalizedSearchQuery)))
+    : rows;
+  const metrics = [
+    { label: "Allocated budget", value: formatCurrency(totalBudget), accent: "#f47a50" },
+    { label: "Projected cost", value: formatCurrency(totalProjectedCost), accent: "#edbd64" },
+    { label: "Daily burn rate", value: formatCurrency(totalDailySpend), accent: "#85b9a0" },
+    { label: "Projects over budget", value: overBudgetCount, accent: "#e98b8b" },
+  ];
   const forecastColumns = [
     { field: "project_name", headerName: "Project", minWidth: 200, flex: 1 },
-    { field: "daily_burn_rate", headerName: "Daily spend", width: 150 },
-    { field: "projected_total_cost", headerName: "Projected cost", width: 170 },
-    { field: "projected_overrun", headerName: "Projected overrun", width: 180 },
-    { field: "is_overrun", headerName: "Over budget", width: 130 },
-    { field: "forecast_method", headerName: "Forecast method", minWidth: 180, flex: 1 },
+    { field: "allocated_budget", headerName: "Budget", width: 150, renderCell: ({ value }) => formatCurrency(value) },
+    { field: "actual_spending", headerName: "Spent to date", width: 160, renderCell: ({ value }) => formatCurrency(value) },
+    { field: "daily_burn_rate", headerName: "Daily spend", width: 145, renderCell: ({ value }) => formatCurrency(value) },
+    { field: "projected_total_cost", headerName: "Projected cost", width: 165, renderCell: ({ value }) => formatCurrency(value) },
+    {
+      field: "projected_overrun",
+      headerName: "Variance",
+      width: 150,
+      renderCell: ({ value }) => (
+        <Typography variant="body2" fontWeight={700} sx={{ color: Number(value) > 0 ? "#e98b8b" : "#85b9a0" }}>
+          {Number(value) > 0 ? "+" : ""}{formatCurrency(value)}
+        </Typography>
+      ),
+    },
+    {
+      field: "is_overrun",
+      headerName: "Risk",
+      width: 130,
+      renderCell: ({ row }) => {
+        const overBudget = row.is_overrun || Number(row.projected_overrun) > 0;
+        return <Chip size="small" label={overBudget ? "Over budget" : "On track"} sx={{ color: overBudget ? "#ffd4d4" : "#c6eadb", bgcolor: overBudget ? "rgba(233,139,139,0.18)" : "rgba(133,185,160,0.16)", borderRadius: 0.75 }} />;
+      },
+    },
+    {
+      field: "forecast_method",
+      headerName: "Forecast basis",
+      minWidth: 170,
+      flex: 0.8,
+      valueFormatter: ({ value }) => value === "daily_arima" ? "ARIMA trend" : "Burn-rate estimate",
+    },
   ];
+
   return (
-    <>
-      <Alert severity="info" sx={{ m: 3, mb: 0 }}>Daily ARIMA uses recorded project expenses when at least 30 calendar days of history are available. Projects with less history use the budget burn-rate estimate.</Alert>
-      <ApiCollectionPage title="Cost forecasts" description="Daily project expense outlook compared with each allocated budget." endpoint="/financials/forecast" idField="budget_id" columns={forecastColumns} canCreate={false} canEdit={false} canDelete={false} />
-    </>
+    <Stack spacing={3} sx={{ p: { xs: 2, md: 3 }, color: "#f5f3ed" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 2, flexWrap: "wrap" }}>
+        <Box>
+          <Typography variant="overline" sx={{ color: "#f47a50", fontWeight: 700 }}>FINANCE / COST CONTROL</Typography>
+          <Typography component="h1" variant="h4" fontWeight={700}>Forecast outlook</Typography>
+          <Typography sx={{ mt: 0.5, color: "rgba(255,255,255,0.68)" }}>Projected project costs compared with allocated budgets.</Typography>
+        </Box>
+        <Button onClick={reload} sx={{ color: "#fff", borderBottom: "1px solid rgba(255,255,255,0.55)", borderRadius: 0, px: 0, textTransform: "none" }}>
+          Refresh forecast
+        </Button>
+      </Box>
+
+      {error && <Alert severity="warning">Forecast data is unavailable: {error}</Alert>}
+      <Alert severity="info" sx={{ bgcolor: "rgba(237,189,100,0.1)", color: "#f5f3ed", "& .MuiAlert-icon": { color: "#edbd64" } }}>
+        Daily ARIMA uses recorded expenses when enough history is available; other projects use a budget burn-rate estimate.
+      </Alert>
+
+      <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, minmax(0, 1fr))", md: "repeat(4, minmax(0, 1fr))" }, borderTop: "1px solid rgba(255,255,255,0.28)", borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
+        {metrics.map((metric, index) => (
+          <Box key={metric.label} sx={{ py: { xs: 1.5, md: 2.25 }, px: { xs: 1, md: 2 }, borderRight: index < metrics.length - 1 ? { xs: index % 2 === 0 ? "1px solid rgba(255,255,255,0.18)" : "none", md: "1px solid rgba(255,255,255,0.18)" } : "none", borderBottom: { xs: index < 2 ? "1px solid rgba(255,255,255,0.18)" : "none", md: "none" } }}>
+            <Typography sx={{ color: metric.accent, fontSize: { xs: 22, md: 30 }, lineHeight: 1.15, fontWeight: 700 }}>{loading ? "..." : metric.value}</Typography>
+            <Typography variant="body2" sx={{ mt: 0.75, color: "rgba(255,255,255,0.7)" }}>{metric.label}</Typography>
+          </Box>
+        ))}
+      </Box>
+
+      <Box>
+        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 2, flexWrap: "wrap", mb: 1.5 }}>
+          <Box>
+            <Typography variant="h6" fontWeight={700}>Project outlook</Typography>
+            <Typography variant="body2" sx={{ color: "rgba(255,255,255,0.62)" }}>{filteredRows.length} of {rows.length} projects</Typography>
+          </Box>
+          <TextField
+            type="search"
+            label="Search forecasts"
+            placeholder="Search projects"
+            value={searchQuery}
+            onChange={(event) => setSearchQuery(event.target.value)}
+            size="small"
+            fullWidth
+            sx={{ maxWidth: { xs: "100%", sm: 360 }, ...searchFieldSx }}
+            InputProps={{ startAdornment: <InputAdornment position="start"><Search fontSize="small" /></InputAdornment> }}
+          />
+        </Box>
+        <Box sx={{ height: 560, width: "100%" }}>
+          {loading ? <CircularProgress /> : (
+            <DataGrid
+              rows={filteredRows}
+              columns={forecastColumns}
+              getRowId={(row) => row.budget_id}
+              pageSizeOptions={[10, 25, 50]}
+              initialState={{ pagination: { paginationModel: { page: 0, pageSize: 10 } } }}
+              disableRowSelectionOnClick
+              sx={{
+                border: 0,
+                color: "#f5f3ed",
+                "& .MuiDataGrid-columnHeaders": { bgcolor: "#855b00", borderBottom: "1px solid rgba(255,255,255,0.2)" },
+                "& .MuiDataGrid-columnHeaderTitle": { fontWeight: 700 },
+                "& .MuiDataGrid-cell": { borderColor: "rgba(255,255,255,0.12)" },
+                "& .MuiDataGrid-row:hover": { bgcolor: "rgba(255,255,255,0.045)" },
+                "& .MuiDataGrid-footerContainer": { borderColor: "rgba(255,255,255,0.2)", color: "#f5f3ed" },
+                "& .MuiTablePagination-root": { color: "#f5f3ed" },
+                "& .MuiDataGrid-sortIcon, & .MuiDataGrid-menuIconButton, & .MuiDataGrid-iconButtonContainer": { color: "#cbd2d9" },
+              }}
+            />
+          )}
+        </Box>
+      </Box>
+    </Stack>
   );
 }
 
