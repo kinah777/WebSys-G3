@@ -43,7 +43,7 @@ router = APIRouter(tags=["Module 2: Equipment & Fleet Management"])
 def list_equipment(
     db: Database,
     filter_status: str | None = Query(None, alias="status", description="Available, In Use, Under Maintenance, Retired"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List construction equipment units with optional status filter."""
     if filter_status:
