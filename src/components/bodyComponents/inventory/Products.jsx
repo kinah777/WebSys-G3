@@ -4,6 +4,14 @@ import Product from "./Product";
 import { DataGrid } from "@mui/x-data-grid";
 import { apiRequest } from "../../../api";
 
+const sampleMaterials = [
+  { material_id: "SAMPLE-001", name: "Sample: Portland cement", type: "Sample", quantity_in_stock: 120, unit: "bags", reorder_level: 25, unit_cost: 350 },
+  { material_id: "SAMPLE-002", name: "Sample: Reinforcing steel", type: "Sample", quantity_in_stock: 85, unit: "bars", reorder_level: 20, unit_cost: 620 },
+  { material_id: "SAMPLE-003", name: "Sample: Washed sand", type: "Sample", quantity_in_stock: 40, unit: "cu.m", reorder_level: 10, unit_cost: 1450 },
+  { material_id: "SAMPLE-004", name: "Sample: Concrete hollow blocks", type: "Sample", quantity_in_stock: 500, unit: "pcs", reorder_level: 100, unit_cost: 18 },
+  { material_id: "SAMPLE-005", name: "Sample: Plywood", type: "Sample", quantity_in_stock: 60, unit: "sheets", reorder_level: 15, unit_cost: 780 },
+];
+
 export default function Products() {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState("");
@@ -72,15 +80,16 @@ export default function Products() {
       {error && <Typography color="error" sx={{ m: 2 }}>{error}</Typography>}
       <DataGrid
         sx={{ borderLeft: 0, borderRight: 0, borderRadius: 0 }}
-        rows={products}
+        rows={[...products, ...sampleMaterials]}
         getRowId={(row) => row.material_id}
         columns={columns}
+        autoHeight
         initialState={{
           pagination: {
-            paginationModel: { page: 0, pageSize: 10 },
+            paginationModel: { page: 0, pageSize: 15 },
           },
         }}
-        pageSizeOptions={[5, 10, 20]}
+        pageSizeOptions={[10, 15, 20]}
         checkboxSelection
       />
     </div>

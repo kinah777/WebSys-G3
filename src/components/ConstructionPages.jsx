@@ -20,6 +20,27 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { apiRequest } from "../api";
 
+const darkFormFieldSx = {
+  "& .MuiInputBase-root": { color: "#f5f3ed", bgcolor: "#252b31" },
+  "& .MuiInputLabel-root": { color: "#b8c0c7" },
+  "& .MuiInputLabel-root.Mui-focused": { color: "#f47a50" },
+  "& .MuiOutlinedInput-notchedOutline": { borderColor: "#68727c" },
+  "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline": { borderColor: "#aeb8c1" },
+  "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: "#f47a50" },
+  "& .MuiSvgIcon-root": { color: "#cbd2d9" },
+};
+
+const darkMenuProps = {
+  PaperProps: {
+    sx: {
+      bgcolor: "#252b31",
+      color: "#f5f3ed",
+      "& .MuiMenuItem-root:hover": { bgcolor: "#363e46" },
+      "& .MuiMenuItem-root.Mui-selected": { bgcolor: "#454d55" },
+    },
+  },
+};
+
 function useApiCollection(endpoint) {
   const [rows, setRows] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -57,6 +78,8 @@ function ApiCollectionPage({
   canEdit = true,
   canDelete = true,
   allowTaskAssignments = false,
+  tableHeight = 440,
+  hidePageSizeSelector = false,
 }) {
   const { rows, loading, error, reload } = useApiCollection(endpoint);
   const [formValues, setFormValues] = useState({});
@@ -165,7 +188,7 @@ function ApiCollectionPage({
       </Box>
       {(error || actionError) && <Alert severity="error">{actionError || error}</Alert>}
       {formOpen && (
-        <Paper component="form" onSubmit={submitForm} variant="outlined" sx={{ p: 2 }}>
+        <Paper component="form" onSubmit={submitForm} variant="outlined" sx={{ p: 2, bgcolor: "#1b2025", color: "#f5f3ed", borderColor: "#454d55" }}>
           <Typography variant="subtitle1" fontWeight={700} mb={1.5}>{editingId ? `Edit ${title}` : `New ${title.replace(/s$/, "")}`}</Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, minmax(0, 1fr))" }, gap: 1.5 }}>
             {fields.map((field) => (
@@ -181,6 +204,8 @@ function ApiCollectionPage({
                 size="small"
                 InputLabelProps={field.type === "date" ? { shrink: true } : undefined}
                 inputProps={field.type === "number" ? { min: field.min ?? 0, step: field.step ?? "any" } : undefined}
+                SelectProps={field.type === "select" ? { MenuProps: darkMenuProps } : undefined}
+                sx={darkFormFieldSx}
               >
                 {field.type === "select" && (field.options || (optionsByPath[field.optionsPath] || []).map((option) => ({
                   value: option[field.optionValue],
@@ -195,13 +220,13 @@ function ApiCollectionPage({
           </Stack>
         </Paper>
       )}
-      <Box sx={{ height: 440, width: "100%" }}>
+      <Box sx={{ height: tableHeight, width: "100%" }}>
         {loading ? <CircularProgress /> : (
           <DataGrid
             rows={rows}
             columns={gridColumns}
             getRowId={(row) => row[idField]}
-            pageSizeOptions={[10, 25, 50]}
+            pageSizeOptions={hidePageSizeSelector ? [] : [10, 25, 50]}
             initialState={{ pagination: { paginationModel: { page: 0, pageSize: 10 } } }}
             disableRowSelectionOnClick
           />
@@ -226,6 +251,8 @@ ApiCollectionPage.propTypes = {
   canEdit: PropTypes.bool,
   canDelete: PropTypes.bool,
   allowTaskAssignments: PropTypes.bool,
+  tableHeight: PropTypes.number,
+  hidePageSizeSelector: PropTypes.bool,
 };
 
 function TaskAssignmentsPanel({ task, onClose }) {
@@ -278,7 +305,7 @@ function TaskAssignmentsPanel({ task, onClose }) {
   };
 
   return (
-    <Paper variant="outlined" sx={{ p: 2 }}>
+    <Paper variant="outlined" sx={{ p: 2, bgcolor: "#1b2025", color: "#f5f3ed", borderColor: "#454d55", "& .MuiTypography-colorTextSecondary": { color: "rgb(8, 8, 8)" } }}>
       <Stack direction="row" justifyContent="space-between" alignItems="flex-start" gap={2}>
         <Box>
           <Typography variant="h6">Task resources</Typography>
@@ -288,26 +315,26 @@ function TaskAssignmentsPanel({ task, onClose }) {
       </Stack>
       {(error || actionError) && <Alert severity="error" sx={{ my: 1 }}>{actionError || error}</Alert>}
       <Box component="form" onSubmit={addAssignment} sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mt: 2 }}>
-        <TextField select size="small" label="Resource type" value={resourceType} onChange={(event) => { setResourceType(event.target.value); setResourceId(""); }} sx={{ minWidth: 150 }}>
+        <TextField select size="small" label="Resource type" value={resourceType} onChange={(event) => { setResourceType(event.target.value); setResourceId(""); }} SelectProps={{ MenuProps: darkMenuProps }} sx={{ ...darkFormFieldSx, minWidth: 150 }}>
           <MenuItem value="employee">Employee</MenuItem>
           <MenuItem value="equipment">Equipment</MenuItem>
           <MenuItem value="vehicle">Vehicle</MenuItem>
           <MenuItem value="material">Material</MenuItem>
         </TextField>
-        <TextField select size="small" label="Resource" required value={resourceId} onChange={(event) => setResourceId(event.target.value)} sx={{ minWidth: 220, flexGrow: 1 }}>
+        <TextField select size="small" label="Resource" required value={resourceId} onChange={(event) => setResourceId(event.target.value)} SelectProps={{ MenuProps: darkMenuProps }} sx={{ ...darkFormFieldSx, minWidth: 220, flexGrow: 1 }}>
           {availableResources.map((resource) => {
             const id = resource[idByType[resourceType]];
             return <MenuItem key={id} value={id}>{resource[labelByType[resourceType]]} ({id})</MenuItem>;
           })}
         </TextField>
-        {resourceType === "material" && <TextField size="small" label="Quantity" required type="number" inputProps={{ min: 0.01, step: "any" }} value={quantity} onChange={(event) => setQuantity(event.target.value)} />}
+        {resourceType === "material" && <TextField size="small" label="Quantity" required type="number" inputProps={{ min: 0.01, step: "any" }} value={quantity} onChange={(event) => setQuantity(event.target.value)} sx={darkFormFieldSx} />}
         <Button type="submit" variant="contained" disabled={saving}>{saving ? "Assigning..." : "Assign"}</Button>
       </Box>
       {loading ? <CircularProgress sx={{ mt: 2 }} /> : (
         <Stack spacing={1} sx={{ mt: 2 }}>
           {assignments.length === 0 && <Typography color="text.secondary">No resources assigned to this task.</Typography>}
           {assignments.map((assignment) => (
-            <Paper key={assignment.assignment_id} variant="outlined" sx={{ p: 1, display: "flex", alignItems: "center", gap: 1 }}>
+            <Paper key={assignment.assignment_id} variant="outlined" sx={{ p: 1, display: "flex", alignItems: "center", gap: 1, bgcolor: "#252b31", color: "#f5f3ed", borderColor: "#454d55" }}>
               <Chip size="small" label={assignment.resource_type} />
               <Typography sx={{ flexGrow: 1 }}>{assignment.resource_name} ({assignment.resource_id}){assignment.quantity ? ` · ${assignment.quantity}` : ""}</Typography>
               <Button size="small" color="error" onClick={() => removeAssignment(assignment)}>Remove</Button>
@@ -346,7 +373,7 @@ const projectColumns = [
 ];
 
 export function ProjectsPage() {
-  return <ApiCollectionPage title="Projects" description="Create and manage construction projects." endpoint="/projects" idField="project_id" fields={projectFields} columns={projectColumns} />;
+  return <ApiCollectionPage title="Projects" description="Create and manage construction projects." endpoint="/projects" idField="project_id" fields={projectFields} columns={projectColumns} tableHeight={640} hidePageSizeSelector />;
 }
 
 const taskFields = [
@@ -392,7 +419,7 @@ const materialColumns = [
 ];
 
 export function MaterialsPage() {
-  return <ApiCollectionPage title="Inventory" description="Construction materials, stock levels, and reorder thresholds." endpoint="/materials" idField="material_id" fields={materialFields} columns={materialColumns} />;
+  return <ApiCollectionPage title="Inventory" description="Construction materials, stock levels, and reorder thresholds." endpoint="/materials" idField="material_id" fields={materialFields} columns={materialColumns} tableHeight={640} hidePageSizeSelector />;
 }
 
 const equipmentFields = [
@@ -688,7 +715,7 @@ export function ConflictsPage() {
     <Stack spacing={2.5} sx={{ p: { xs: 2, md: 3 } }}>
       <Box>
         <Typography variant="h5" fontWeight={700}>Resource conflicts</Typography>
-        <Typography color="white" sx={{ mt: 0.5 }}>Overlapping active bookings detected by the backend.</Typography>
+        <Typography color="white" sx={{ mt: 0.5 }}>Overlapping active bookings detected by the system.</Typography>
       </Box>
       {error && <Alert severity="error">{error}</Alert>}
       {notice && <Alert severity="success">{notice}</Alert>}
@@ -807,7 +834,7 @@ export function DashboardPage() {
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", lg: "minmax(0, 1.45fr) minmax(280px, 0.8fr)" }, gap: { xs: 3, lg: 5 } }}>
           <Box component="section" aria-labelledby="project-roll-heading">
             <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 1, pb: 1.25, borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
-              <Typography id="project-roll-heading" variant="h6" sx={{ color: "#fff", fontWeight: 700 }}>Project roll</Typography>
+              <Typography id="project-roll-heading" variant="h6" sx={{ color: "#fff", fontWeight: 900 }}> ➤ Project roll</Typography>
               <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>01 / CURRENT PORTFOLIO</Typography>
             </Box>
             {loading ? <Typography sx={{ py: 3, color: "rgba(255,255,255,0.68)" }}>Loading project data…</Typography> : visibleProjects.length ? visibleProjects.map((project, index) => {
@@ -834,7 +861,7 @@ export function DashboardPage() {
           <Stack component="aside" spacing={3}>
             <Box component="section" aria-labelledby="schedule-heading">
               <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", pb: 1.25, borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
-                <Typography id="schedule-heading" variant="h6" sx={{ color: "#fff", fontWeight: 700 }}>Next on site</Typography>
+                <Typography id="schedule-heading" variant="h6" sx={{ color: "#fff", fontWeight: 900 }}> ➤ Next on site</Typography>
                 <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>02 / SCHEDULE</Typography>
               </Box>
               {loading ? <Typography sx={{ py: 2, color: "rgba(255,255,255,0.68)" }}>Loading schedule…</Typography> : upcomingTasks.length ? upcomingTasks.map((task) => (
@@ -850,7 +877,7 @@ export function DashboardPage() {
 
             <Box component="section" aria-labelledby="stock-heading">
               <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", pb: 1.25, borderBottom: "1px solid rgba(255,255,255,0.28)" }}>
-                <Typography id="stock-heading" variant="h6" sx={{ color: "#fff", fontWeight: 700 }}>Stock watch</Typography>
+                <Typography id="stock-heading" variant="h6" sx={{ color: "#fff", fontWeight: 900 }}>  ➤ Stock watch</Typography>
                 <Typography variant="caption" sx={{ color: "rgba(255,255,255,0.58)" }}>03 / MATERIALS</Typography>
               </Box>
               {loading ? <Typography sx={{ py: 2, color: "rgba(255,255,255,0.68)" }}>Loading stock…</Typography> : lowStock.length ? lowStock.slice(0, 3).map((material) => (

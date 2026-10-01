@@ -184,6 +184,25 @@ CREATE TABLE material_allocations (
 );
 
 
+-- 11a. HISTORICAL MATERIAL DEMAND
+CREATE TABLE historical_material_demand (
+    demand_id VARCHAR(20) PRIMARY KEY,
+    material_id VARCHAR(20) NOT NULL,
+    demand_date DATE NOT NULL,
+    quantity_demanded NUMERIC(12,2) NOT NULL,
+    project_id VARCHAR(20),
+
+    CONSTRAINT fk_historical_demand_material
+        FOREIGN KEY (material_id)
+        REFERENCES materials(material_id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_historical_demand_project
+        FOREIGN KEY (project_id)
+        REFERENCES projects(project_id)
+        ON DELETE SET NULL
+);
+
 -- Dated actual consumption observations used by material-demand forecasting.
 CREATE TABLE material_consumption_history (
     consumption_id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -202,7 +221,6 @@ CREATE TABLE project_cost_history (
     incurred_on DATE NOT NULL,
     description VARCHAR(250)
 );
-
 
 -- 12. VEHICLE ALLOCATIONS
 CREATE TABLE vehicle_allocations (
@@ -328,3 +346,9 @@ ON users(employee_id);
 
 CREATE INDEX idx_user_role
 ON users(role_id);
+
+CREATE INDEX idx_historical_demand_material
+ON historical_material_demand(material_id);
+
+CREATE INDEX idx_historical_demand_date
+ON historical_material_demand(demand_date);

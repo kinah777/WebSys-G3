@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 import myBG from "../BuildSync BG.png";
 import WavyRippleBackground from "./lightswind/wavy-ripple-background";
 
-export default function RootComponent() {
+export default function RootComponent({ onLogout }) {
   return (
     <Box
       sx={{
@@ -23,7 +23,7 @@ export default function RootComponent() {
     >
       <WavyRippleBackground
         className="app-background-ripple"
-        waveColor="#ff9000"
+        waveColor="#ffae00"
         backgroundColor="transparent"
         speed={0.32}
         frequency={3.5}
@@ -32,7 +32,7 @@ export default function RootComponent() {
       />
       <Box sx={{ position: "relative", zIndex: 1 }}>
         <Box sx={{ pt: 3, px: { xs: 2, md: 3 } }}>
-          <NavBarComponent />
+          <NavBarComponent onLogout={onLogout} />
         </Box>
         <Grid container spacing={0}>
           <Grid item md={2} sm={0}>
