@@ -732,7 +732,7 @@ export function DashboardPage() {
   useEffect(() => {
     const controller = new AbortController();
     Promise.all([
-      apiRequest("/projects?limit=100", { signal: controller.signal }),
+      apiRequest("/projects?limit=600", { signal: controller.signal }),
       apiRequest("/project-schedules?limit=100", { signal: controller.signal }),
       apiRequest("/materials?limit=100", { signal: controller.signal }),
       apiRequest("/conflicts/summary", { signal: controller.signal }),

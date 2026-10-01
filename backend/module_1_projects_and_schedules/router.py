@@ -35,7 +35,7 @@ router = APIRouter(tags=["Module 1: Projects & Schedules"])
 def list_projects(
     db: Database,
     filter_status: str | None = Query(None, alias="status", description="Filter by status (Planning, Ongoing, Completed, On Hold)"),
-    limit: int = Query(100, ge=1, le=500, description="Max number of records to return"),
+    limit: int = Query(600, ge=1, le=600, description="Max number of records to return"),
 ) -> list[dict[str, Any]]:
     """List construction projects with optional status filtering and pagination limit."""
     if filter_status:
