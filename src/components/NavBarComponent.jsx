@@ -24,7 +24,7 @@ import {
 } from "@mui/icons-material";
 import { useState } from "react";
 
-export default function NavBarComponent({ onLogout }) {
+export default function NavBarComponent({ onLogout, user }) {
   const [notificationAnchorEl, setNotificationAnchorEl] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
   // handleNotificationClicked
@@ -112,10 +112,10 @@ export default function NavBarComponent({ onLogout }) {
                     aria-haspopup="true"
                   >
                     <Tooltip title="account settings">
-                      <Avatar sx={{ width: 32, height: 32, color: "white" }}>A</Avatar>
+                      <Avatar sx={{ width: 32, height: 32, color: "white" }}>{user?.username?.charAt(0)?.toUpperCase() || "U"}</Avatar>
                     </Tooltip>
                   </IconButton>
-                  <Typography fontFamily={"Montserrat"}>ADMIN</Typography>
+                  <Typography fontFamily={"Montserrat"}>{user?.role?.toUpperCase() || "USER"}</Typography>
                 </Box>
 
                 <Menu

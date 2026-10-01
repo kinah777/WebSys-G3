@@ -24,6 +24,12 @@ from app.api import app
 client = TestClient(app)
 
 
+def auth_headers(username="admin", password="Admin@123"):
+    response = client.post("/auth/login", json={"username": username, "password": password})
+    assert response.status_code == 200
+    return {"Authorization": f"Bearer {response.json()['access_token']}"}
+
+
 def test_system_root():
     r = client.get("/")
     assert r.status_code == 200
@@ -87,11 +93,12 @@ def test_module_2_equipment_and_fleet():
 
 
 def test_module_3_workforce_and_labor():
+    headers = auth_headers()
     # Employees list
-    r = client.get("/employees?limit=5")
+    r = client.get("/employees?limit=5", headers=headers)
     assert r.status_code == 200
     emp_id = r.json()[0]["employee_id"]
-    r_emp = client.get(f"/employees/{emp_id}")
+    r_emp = client.get(f"/employees/{emp_id}", headers=headers)
     assert r_emp.status_code == 200
 
     # Contractors list
@@ -155,6 +162,7 @@ def test_module_6_conflict_resolution_center():
 
 
 def test_task_resource_assignment_round_trip():
+    headers = auth_headers()
     projects = client.get("/projects?limit=1").json()
     materials = client.get("/materials?limit=100").json()
     material = next((item for item in materials if item["quantity_in_stock"] >= 0.01), None)
@@ -165,7 +173,7 @@ def test_task_resource_assignment_round_trip():
         "task_name": "Task assignment integration test",
         "start_date": "2099-01-10",
         "end_date": "2099-01-12",
-    })
+    }, headers=headers)
     assert task_response.status_code == 201
     schedule_id = task_response.json()["schedule_id"]
 
@@ -174,6 +182,7 @@ def test_task_resource_assignment_round_trip():
         assignment_response = client.post(
             f"/project-schedules/{schedule_id}/assignments",
             json={"resource_type": "material", "resource_id": material["material_id"], "quantity": 0.01},
+            headers=headers,
         )
         assert assignment_response.status_code == 201
         assignment = assignment_response.json()
@@ -183,6 +192,7 @@ def test_task_resource_assignment_round_trip():
         duplicate_response = client.post(
             f"/project-schedules/{schedule_id}/assignments",
             json={"resource_type": "material", "resource_id": material["material_id"], "quantity": 0.01},
+            headers=headers,
         )
         assert duplicate_response.status_code == 409
 
@@ -191,13 +201,38 @@ def test_task_resource_assignment_round_trip():
         assert len(listed.json()) == 1
 
         delete_response = client.delete(
-            f"/project-schedules/{schedule_id}/assignments/{assignment['assignment_id']}"
+            f"/project-schedules/{schedule_id}/assignments/{assignment['assignment_id']}",
+            headers=headers,
         )
         assert delete_response.status_code == 204
         updated_material = client.get(f"/materials/{material['material_id']}").json()
         assert round(float(updated_material["quantity_in_stock"]), 2) == round(stock_before, 2)
     finally:
-        client.delete(f"/project-schedules/{schedule_id}")
+        client.delete(f"/project-schedules/{schedule_id}", headers=headers)
+
+
+def test_employee_cannot_modify_schedule_tasks():
+    admin_headers = auth_headers()
+    employee_headers = auth_headers("employee", "Employee@123")
+    project = client.get("/projects?limit=1").json()[0]
+    task_response = client.post("/project-schedules", json={
+        "project_id": project["project_id"],
+        "task_name": "Role permission integration test",
+    }, headers=admin_headers)
+    assert task_response.status_code == 201
+    schedule_id = task_response.json()["schedule_id"]
+
+    try:
+        assert client.post("/project-schedules", json={
+            "project_id": project["project_id"],
+            "task_name": "Employee-created task",
+        }, headers=employee_headers).status_code == 403
+        assert client.patch(f"/project-schedules/{schedule_id}", json={
+            "task_name": "Employee-edited task",
+        }, headers=employee_headers).status_code == 403
+        assert client.delete(f"/project-schedules/{schedule_id}", headers=employee_headers).status_code == 403
+    finally:
+        client.delete(f"/project-schedules/{schedule_id}", headers=admin_headers)
 
 
 def test_crud_and_error_handling():

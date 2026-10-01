@@ -11,8 +11,9 @@ Endpoints:
 """
 
 from typing import Any
-from fastapi import APIRouter, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 
+from app.auth import require_roles
 from app.database import Database, generate_next_id, serialize_row
 from .models import (
     PartialProjectInput,
@@ -161,7 +162,11 @@ def get_schedule(schedule_id: str, db: Database) -> dict[str, Any]:
 
 @router.post("/project-schedules", response_model=Schedule, status_code=status.HTTP_201_CREATED, summary="Create a schedule task")
 @router.post("/schedules", response_model=Schedule, status_code=status.HTTP_201_CREATED, summary="Create a schedule task (alias)")
-def create_schedule(data: ScheduleInput, db: Database) -> dict[str, Any]:
+def create_schedule(
+    data: ScheduleInput,
+    db: Database,
+    _: dict[str, Any] = Depends(require_roles("admin")),
+) -> dict[str, Any]:
     """Create a new schedule milestone task with validation that the project exists."""
     if data.start_date and data.end_date and data.start_date > data.end_date:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="start_date must be before or equal to end_date")
@@ -186,7 +191,12 @@ def create_schedule(data: ScheduleInput, db: Database) -> dict[str, Any]:
 
 @router.patch("/project-schedules/{schedule_id}", response_model=Schedule, summary="Partially update a schedule task")
 @router.patch("/schedules/{schedule_id}", response_model=Schedule, summary="Partially update a schedule task (alias)")
-def update_schedule(schedule_id: str, data: PartialScheduleInput, db: Database) -> dict[str, Any]:
+def update_schedule(
+    schedule_id: str,
+    data: PartialScheduleInput,
+    db: Database,
+    _: dict[str, Any] = Depends(require_roles("admin")),
+) -> dict[str, Any]:
     """Partial update: only the fields included in the request body will be changed."""
     existing = db.execute("SELECT * FROM project_schedules WHERE schedule_id = %s", [schedule_id]).fetchone()
     if not existing:
@@ -228,7 +238,11 @@ def update_schedule(schedule_id: str, data: PartialScheduleInput, db: Database) 
 
 @router.delete("/project-schedules/{schedule_id}", status_code=status.HTTP_204_NO_CONTENT, summary="Delete a schedule task")
 @router.delete("/schedules/{schedule_id}", status_code=status.HTTP_204_NO_CONTENT, summary="Delete a schedule task (alias)")
-def delete_schedule(schedule_id: str, db: Database) -> None:
+def delete_schedule(
+    schedule_id: str,
+    db: Database,
+    _: dict[str, Any] = Depends(require_roles("admin")),
+) -> None:
     """Delete a schedule milestone task."""
     res = db.execute("DELETE FROM project_schedules WHERE schedule_id = %s", [schedule_id])
     if res.rowcount == 0:
@@ -296,6 +310,7 @@ def create_task_assignment(
     schedule_id: str,
     data: TaskResourceAssignmentInput,
     db: Database,
+    _: dict[str, Any] = Depends(require_roles("admin")),
 ) -> dict[str, Any]:
     task = db.execute(
         "SELECT schedule_id, project_id, start_date, end_date, status FROM project_schedules WHERE schedule_id = %s",
@@ -388,7 +403,12 @@ def create_task_assignment(
     status_code=status.HTTP_204_NO_CONTENT,
     summary="Remove a resource assignment from a task",
 )
-def delete_task_assignment(schedule_id: str, assignment_id: int, db: Database) -> None:
+def delete_task_assignment(
+    schedule_id: str,
+    assignment_id: int,
+    db: Database,
+    _: dict[str, Any] = Depends(require_roles("admin")),
+) -> None:
     with db.transaction():
         assignment = db.execute(
             "DELETE FROM task_resource_assignments WHERE schedule_id = %s AND assignment_id = %s RETURNING resource_type, resource_id, quantity",

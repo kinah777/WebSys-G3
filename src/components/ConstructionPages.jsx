@@ -19,7 +19,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import { ArrowForward, ChevronLeft, ChevronRight, Search } from "@mui/icons-material";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-import { apiRequest } from "../api";
+import { apiRequest, getStoredUser } from "../api";
 
 const darkFormFieldSx = {
   "& .MuiInputBase-root": { color: "#f5f3ed", bgcolor: "#252b31" },
@@ -94,6 +94,11 @@ function ApiCollectionPage({
   enableSearch = false,
 }) {
   const { rows, loading, error, reload } = useApiCollection(endpoint);
+  const isAdmin = getStoredUser()?.role === "admin";
+  const canCreateRows = isAdmin && canCreate;
+  const canEditRows = isAdmin && canEdit;
+  const canDeleteRows = isAdmin && canDelete;
+  const canAssignTaskResources = isAdmin && allowTaskAssignments;
   const [formValues, setFormValues] = useState({});
   const [editingId, setEditingId] = useState(null);
   const [formOpen, setFormOpen] = useState(false);
@@ -173,17 +178,17 @@ function ApiCollectionPage({
 
   const gridColumns = [
     ...columns,
-    ...(canEdit || canDelete || allowTaskAssignments
+    ...(canEditRows || canDeleteRows || canAssignTaskResources
       ? [{
           field: "actions",
           headerName: "Actions",
-          width: allowTaskAssignments ? 280 : 150,
+          width: canAssignTaskResources ? 280 : 150,
           sortable: false,
           renderCell: ({ row }) => (
             <Stack direction="row" spacing={1}>
-              {canEdit && <Button size="small" onClick={() => openEdit(row)}>Edit</Button>}
-              {canDelete && <Button size="small" color="error" onClick={() => deleteRow(row)}>Delete</Button>}
-              {allowTaskAssignments && <Button size="extra-small" onClick={() => setSelectedTask(row)}>Assign resources</Button>}
+              {canEditRows && <Button size="small" onClick={() => openEdit(row)}>Edit</Button>}
+              {canDeleteRows && <Button size="small" color="error" onClick={() => deleteRow(row)}>Delete</Button>}
+              {canAssignTaskResources && <Button size="extra-small" onClick={() => setSelectedTask(row)}>Assign resources</Button>}
             </Stack>
           ),
         }]
@@ -201,7 +206,7 @@ function ApiCollectionPage({
           <Typography variant="h5" fontWeight={700}>{title}</Typography>
           {description && <Typography color={descriptionColor} sx={{ mt: 0.5 }}>{description}</Typography>}
         </Box>
-        {canCreate && <Button variant="contained" onClick={formOpen ? () => setFormOpen(false) : openCreate}>{formOpen ? "Close form" : `Add ${title.replace(/s$/, "")}`}</Button>}
+        {canCreateRows && <Button variant="contained" onClick={formOpen ? () => setFormOpen(false) : openCreate}>{formOpen ? "Close form" : `Add ${title.replace(/s$/, "")}`}</Button>}
       </Box>
       {(error || actionError) && <Alert severity="error">{actionError || error}</Alert>}
       {formOpen && (
@@ -262,7 +267,7 @@ function ApiCollectionPage({
           />
         )}
       </Box>
-      {allowTaskAssignments && selectedTask && (
+      {canAssignTaskResources && selectedTask && (
         <TaskAssignmentsPanel task={selectedTask} onClose={() => setSelectedTask(null)} />
       )}
     </Stack>
@@ -426,9 +431,13 @@ const taskColumns = [
   { field: "status", headerName: "Status", width: 140 },
 ];
 
-export function TasksPage() {
-  return <ApiCollectionPage title="Tasks" description="Schedule project milestones, update task status, and assign resources directly to tasks." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} allowTaskAssignments tableHeight={640} hidePageSizeSelector enableSearch />;
+export function TasksPage({ isAdmin = false }) {
+  return <ApiCollectionPage title="Tasks" description="Schedule project milestones, update task status, and assign resources directly to tasks." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} canCreate={isAdmin} canEdit={isAdmin} canDelete={isAdmin} allowTaskAssignments={isAdmin} tableHeight={640} hidePageSizeSelector enableSearch />;
 }
+
+TasksPage.propTypes = {
+  isAdmin: PropTypes.bool,
+};
 
 const materialFields = [
   { name: "name", label: "Item name", required: true },
@@ -823,6 +832,7 @@ export function ForecastPage() {
 }
 
 export function ConflictsPage() {
+  const isAdmin = getStoredUser()?.role === "admin";
   const [conflicts, setConflicts] = useState({ equipment: [], employees: [], vehicles: [] });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -885,9 +895,9 @@ export function ConflictsPage() {
                 { field: "project_b", headerName: "Project B", width: 130 },
                 { field: "b_start", headerName: "B starts", width: 130 },
                 { field: "b_end", headerName: "B ends", width: 130 },
-                { field: "resolve", headerName: "Action", width: 170, sortable: false, renderCell: ({ row }) => (
+                ...(isAdmin ? [{ field: "resolve", headerName: "Action", width: 170, sortable: false, renderCell: ({ row }) => (
                   <Button size="small" color="error" onClick={() => cancelAllocation(section.key === "employees" ? "employee" : section.key === "vehicles" ? "vehicle" : "equipment", row.allocation_b)}>Cancel booking B</Button>
-                ) },
+                ) }] : []),
               ]}
               pageSizeOptions={[5, 10]}
               initialState={{ pagination: { paginationModel: { page: 0, pageSize: 5 } } }}
