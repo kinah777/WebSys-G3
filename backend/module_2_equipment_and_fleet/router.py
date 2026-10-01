@@ -120,7 +120,7 @@ def delete_equipment(equipment_id: str, db: Database) -> None:
 def list_vehicles(
     db: Database,
     filter_status: str | None = Query(None, alias="status", description="Available, In Use, Under Maintenance, Retired"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List fleet vehicles with optional status filter."""
     if filter_status:
@@ -276,7 +276,7 @@ def list_equipment_allocations(
     db: Database,
     project_id: str | None = Query(None, description="Filter by project ID"),
     equipment_id: str | None = Query(None, description="Filter by equipment ID"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List equipment project bookings."""
     query = "SELECT * FROM equipment_allocations WHERE 1=1"
@@ -425,7 +425,7 @@ def delete_equipment_allocation(allocation_id: str, db: Database) -> None:
 def list_vehicle_allocations(
     db: Database,
     project_id: str | None = Query(None, description="Filter by project ID"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List vehicle project allocations."""
     if project_id:

@@ -41,7 +41,7 @@ def list_employees(
     db: Database,
     filter_status: str | None = Query(None, alias="status", description="Filter by employment status (Active, Inactive, On Leave)"),
     skill: str | None = Query(None, description="Filter by skill or trade (case-insensitive substring)"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
     _: dict[str, Any] = Depends(require_roles("admin", "employee")),
 ) -> list[dict[str, Any]]:
     """List in-house employees with optional status and skill filtering."""
@@ -160,7 +160,7 @@ def delete_employee(employee_id: str, db: Database, _: dict[str, Any] = Depends(
 def list_contractors(
     db: Database,
     filter_status: str | None = Query(None, alias="status", description="Active, Inactive"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List third-party external contractors and specialized firms."""
     if filter_status:
@@ -238,7 +238,7 @@ def list_employee_allocations(
     db: Database,
     project_id: str | None = Query(None, description="Filter by project ID"),
     employee_id: str | None = Query(None, description="Filter by employee ID"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List worker project assignments."""
     query = "SELECT * FROM employee_allocations WHERE 1=1"

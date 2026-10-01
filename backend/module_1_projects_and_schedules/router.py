@@ -136,7 +136,7 @@ def delete_project(project_id: str, db: Database) -> None:
 def list_schedules(
     db: Database,
     project_id: str | None = Query(None, description="Filter by project ID"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List project schedule tasks with optional project_id filter."""
     if project_id:
