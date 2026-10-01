@@ -582,7 +582,17 @@ export function ResourcesPage() {
     >
       <Typography variant="h5" fontWeight={700}>Resource assignments</Typography>
       <Typography color="white" sx={{ mt: 0.5 }}>Assign equipment, vehicles, employees, and materials to projects.</Typography>
-      <Tabs value={assignmentTab} onChange={(_, value) => setAssignmentTab(value)} variant="scrollable" sx={{ mt: 2 }}>
+      <Tabs
+        value={assignmentTab}
+        onChange={(_, value) => setAssignmentTab(value)}
+        variant="scrollable"
+        sx={{
+          mt: 2,
+          "& .MuiTab-root": { color: "#fff" },
+          "& .MuiTab-root.Mui-selected": { color: "#f47a50" },
+          "& .MuiTabs-indicator": { bgcolor: "#f47a50" },
+        }}
+      >
         {assignmentTabs.map((item) => <Tab key={item.label} label={item.label} />)}
       </Tabs>
       <AssignmentTab config={assignmentTabs[assignmentTab]} />
@@ -652,20 +662,20 @@ export function CalendarPage() {
       {loading ? <CircularProgress /> : (
         <Box sx={{ overflowX: "auto" }}>
           <Box sx={{ minWidth: 760 }}>
-            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: 0.5, mb: 0.5 }}>
+            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: 1, mb: 1 }}>
               {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((day) => (
                 <Typography key={day} variant="caption" fontWeight={700} sx={{ px: 1, py: 0.5 }}>{day}</Typography>
               ))}
             </Box>
-            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: 0.5 }}>
+            <Box sx={{ display: "grid", gridTemplateColumns: "repeat(7, minmax(0, 1fr))", gap: 1 }}>
               {days.map((day) => {
                 const dayKey = `${day.getFullYear()}-${String(day.getMonth() + 1).padStart(2, "0")}-${String(day.getDate()).padStart(2, "0")}`;
                 const todaysTasks = tasksWithDates.filter((task) => task.start_date <= dayKey && task.end_date >= dayKey);
-                const isCurrentMonth = day.getMonth() === visibleMonth.getMonth();
+                const isPastDay = dayKey < todayKey;
                 const isToday = dayKey === todayKey;
                 return (
-                  <Paper key={dayKey} variant="outlined" sx={{ minHeight: 128, p: 0.75, overflow: "hidden", bgcolor: isCurrentMonth ? "background.paper" : "action.hover", borderColor: isToday ? "primary.main" : "divider" }}>
-                    <Typography variant="caption" fontWeight={isToday ? 700 : 400} color={isCurrentMonth ? "text.primary" : "text.disabled"}>{day.getDate()}</Typography>
+                  <Paper key={dayKey} variant="outlined" sx={{ minHeight: 128, p: 0.75, overflow: "hidden", bgcolor: isPastDay ? "#373d45" : "#fff", borderColor: isToday ? "primary.main" : "divider", borderRadius: 1.5 }}>
+                    <Typography variant="caption" fontWeight={isToday ? 700 : 400} sx={{ color: isPastDay ? "#fff" : "#111" }}>{day.getDate()}</Typography>
                     <Stack spacing={0.5} sx={{ mt: 0.5 }}>
                       {todaysTasks.slice(0, 3).map((task) => (
                         <Box key={task.schedule_id} title={`${task.task_name} · ${projectNames[task.project_id] || task.project_id}`} sx={{ px: 0.75, py: 0.5, bgcolor: task.status === "Completed" ? "success.light" : task.status === "In Progress" ? "warning.light" : "primary.light", color: "#20252b", borderRadius: 0.75, overflow: "hidden" }}>
