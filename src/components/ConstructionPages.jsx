@@ -697,8 +697,6 @@ export function CalendarPage() {
 }
 
 export function ForecastPage() {
-<<<<<<< HEAD
-<<<<<<< HEAD
   const { rows, loading, error, reload } = useApiCollection("/financials/forecast");
   const [searchQuery, setSearchQuery] = useState("");
   const currency = new Intl.NumberFormat("en-PH", { style: "currency", currency: "PHP", maximumFractionDigits: 0 });
@@ -749,18 +747,6 @@ export function ForecastPage() {
       flex: 0.8,
       valueFormatter: ({ value }) => value === "daily_arima" ? "ARIMA trend" : "Burn-rate estimate",
     },
-=======
-  const formatCurrency = (value) => `₱${Number(value ?? 0).toLocaleString("en-PH", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-=======
->>>>>>> 0638f27b0becac14051e7ec56fad7b5f03a4150a
-  const forecastColumns = [
-    { field: "project_name", headerName: "Project", minWidth: 200, flex: 1 },
-    { field: "daily_burn_rate", headerName: "Daily spend", width: 150 },
-    { field: "projected_total_cost", headerName: "Projected cost", width: 170 },
-    { field: "projected_overrun", headerName: "Projected overrun", width: 180 },
-    { field: "is_overrun", headerName: "Over budget", width: 130 },
-    { field: "forecast_method", headerName: "Forecast method", minWidth: 180, flex: 1 },
->>>>>>> 68ee02a4f6bc41bdb249c4f87ccf925ebd2ce18a
   ];
 
   return (
