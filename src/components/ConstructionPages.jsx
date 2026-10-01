@@ -5,6 +5,7 @@ import {
   Button,
   CircularProgress,
   Chip,
+  InputAdornment,
   IconButton,
   MenuItem,
   Paper,
@@ -15,7 +16,7 @@ import {
   Typography,
 } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { ArrowForward, ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { ArrowForward, ChevronLeft, ChevronRight, Search } from "@mui/icons-material";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import { apiRequest } from "../api";
@@ -28,6 +29,16 @@ const darkFormFieldSx = {
   "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline": { borderColor: "#aeb8c1" },
   "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: "#f47a50" },
   "& .MuiSvgIcon-root": { color: "#cbd2d9" },
+};
+
+const searchFieldSx = {
+  "& .MuiInputBase-root": { color: "#fff", bgcolor: "transparent" },
+  "& .MuiInputLabel-root": { color: "rgba(255,255,255,0.72)" },
+  "& .MuiInputLabel-root.Mui-focused": { color: "#fff" },
+  "& .MuiOutlinedInput-notchedOutline": { borderColor: "rgba(255,255,255,0.45)" },
+  "& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline": { borderColor: "#fff" },
+  "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: "#f47a50" },
+  "& .MuiSvgIcon-root": { color: "#fff" },
 };
 
 const darkMenuProps = {
@@ -80,6 +91,7 @@ function ApiCollectionPage({
   allowTaskAssignments = false,
   tableHeight = 440,
   hidePageSizeSelector = false,
+  enableSearch = false,
 }) {
   const { rows, loading, error, reload } = useApiCollection(endpoint);
   const [formValues, setFormValues] = useState({});
@@ -89,6 +101,7 @@ function ApiCollectionPage({
   const [actionError, setActionError] = useState("");
   const [selectedTask, setSelectedTask] = useState(null);
   const [optionsByPath, setOptionsByPath] = useState({});
+  const [searchQuery, setSearchQuery] = useState("");
   const optionPathKey = [...new Set(fields.map((field) => field.optionsPath).filter(Boolean))].join("|");
 
   useEffect(() => {
@@ -176,6 +189,10 @@ function ApiCollectionPage({
         }]
       : []),
   ];
+  const normalizedSearchQuery = searchQuery.trim().toLowerCase();
+  const filteredRows = normalizedSearchQuery
+    ? rows.filter((row) => Object.values(row).some((value) => String(value ?? "").toLowerCase().includes(normalizedSearchQuery)))
+    : rows;
 
   return (
     <Stack spacing={2.5} sx={{ p: { xs: 2, md: 3 } }}>
@@ -220,10 +237,23 @@ function ApiCollectionPage({
           </Stack>
         </Paper>
       )}
+      {enableSearch && (
+        <TextField
+          type="search"
+          label={`Search ${title}`}
+          placeholder="Search here..."
+          value={searchQuery}
+          onChange={(event) => setSearchQuery(event.target.value)}
+          size="small"
+          fullWidth
+          sx={searchFieldSx}
+          InputProps={{ startAdornment: <InputAdornment position="start"><Search fontSize="small" /></InputAdornment> }}
+        />
+      )}
       <Box sx={{ height: tableHeight, width: "100%" }}>
         {loading ? <CircularProgress /> : (
           <DataGrid
-            rows={rows}
+            rows={filteredRows}
             columns={gridColumns}
             getRowId={(row) => row[idField]}
             pageSizeOptions={hidePageSizeSelector ? [] : [10, 25, 50]}
@@ -253,6 +283,7 @@ ApiCollectionPage.propTypes = {
   allowTaskAssignments: PropTypes.bool,
   tableHeight: PropTypes.number,
   hidePageSizeSelector: PropTypes.bool,
+  enableSearch: PropTypes.bool,
 };
 
 function TaskAssignmentsPanel({ task, onClose }) {
@@ -373,7 +404,7 @@ const projectColumns = [
 ];
 
 export function ProjectsPage() {
-  return <ApiCollectionPage title="Projects" description="Create and manage construction projects." endpoint="/projects" idField="project_id" fields={projectFields} columns={projectColumns} tableHeight={640} hidePageSizeSelector />;
+  return <ApiCollectionPage title="Projects" description="Create and manage construction projects." endpoint="/projects" idField="project_id" fields={projectFields} columns={projectColumns} tableHeight={640} hidePageSizeSelector enableSearch />;
 }
 
 const taskFields = [
@@ -396,7 +427,7 @@ const taskColumns = [
 ];
 
 export function TasksPage() {
-  return <ApiCollectionPage title="Tasks" description="Schedule project milestones, update task status, and assign resources directly to tasks." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} allowTaskAssignments tableHeight={640} hidePageSizeSelector />;
+  return <ApiCollectionPage title="Tasks" description="Schedule project milestones, update task status, and assign resources directly to tasks." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} allowTaskAssignments tableHeight={640} hidePageSizeSelector enableSearch />;
 }
 
 const materialFields = [
@@ -419,7 +450,7 @@ const materialColumns = [
 ];
 
 export function MaterialsPage() {
-  return <ApiCollectionPage title="Inventory" description="Construction materials, stock levels, and reorder thresholds." endpoint="/materials" idField="material_id" fields={materialFields} columns={materialColumns} tableHeight={640} hidePageSizeSelector />;
+  return <ApiCollectionPage title="Inventory" description="Construction materials, stock levels, and reorder thresholds." endpoint="/materials" idField="material_id" fields={materialFields} columns={materialColumns} tableHeight={640} hidePageSizeSelector enableSearch />;
 }
 
 const equipmentFields = [
@@ -453,7 +484,7 @@ const vehicleColumns = [
 ];
 
 function AssetTab({ title, endpoint, idField, fields, columns }) {
-  return <ApiCollectionPage title={title} endpoint={endpoint} idField={idField} fields={fields} columns={columns} />;
+  return <ApiCollectionPage title={title} endpoint={endpoint} idField={idField} fields={fields} columns={columns} enableSearch />;
 }
 
 AssetTab.propTypes = {
@@ -530,7 +561,7 @@ function AssignmentTab({ config }) {
         ]),
   ];
   const columns = config.columns.map((field) => ({ field, headerName: field.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase()), minWidth: 140, flex: field === config.idField ? 0 : 1, width: field === config.idField ? 170 : undefined }));
-  return <ApiCollectionPage title={config.title} description="Bookings are validated by the API for stock availability and scheduling conflicts." endpoint={config.endpoint} idField={config.idField} fields={fields} columns={columns} canEdit={config.label !== "Materials"} />;
+  return <ApiCollectionPage title={config.title} description="Bookings are validated by the API for stock availability and scheduling conflicts." endpoint={config.endpoint} idField={config.idField} fields={fields} columns={columns} canEdit={config.label !== "Materials"} enableSearch />;
 }
 
 AssignmentTab.propTypes = {
