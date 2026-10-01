@@ -396,7 +396,7 @@ const taskColumns = [
 ];
 
 export function TasksPage() {
-  return <ApiCollectionPage title="Tasks" description="Schedule project milestones, update task status, and assign resources directly to tasks." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} allowTaskAssignments />;
+  return <ApiCollectionPage title="Tasks" description="Schedule project milestones, update task status, and assign resources directly to tasks." endpoint="/project-schedules" idField="schedule_id" fields={taskFields} columns={taskColumns} allowTaskAssignments tableHeight={640} hidePageSizeSelector />;
 }
 
 const materialFields = [
