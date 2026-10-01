@@ -102,7 +102,7 @@ def material_demand_forecast(
 @router.get("/materials", response_model=list[Material], summary="List all materials in inventory")
 def list_materials(
     db: Database,
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List site construction materials and current stock levels."""
     rows = db.execute("SELECT * FROM materials ORDER BY material_id LIMIT %s", [limit]).fetchall()
@@ -296,7 +296,7 @@ def delete_supplier(supplier_id: str, db: Database) -> None:
 def list_material_allocations(
     db: Database,
     project_id: str | None = Query(None, description="Filter by project ID"),
-    limit: int = Query(100, ge=1, le=500),
+    limit: int = Query(600, ge=1, le=600),
 ) -> list[dict[str, Any]]:
     """List project material allocations and usage records."""
     if project_id:
