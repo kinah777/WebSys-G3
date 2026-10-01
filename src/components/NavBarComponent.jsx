@@ -24,7 +24,7 @@ import {
 } from "@mui/icons-material";
 import { useState } from "react";
 
-export default function NavBarComponent() {
+export default function NavBarComponent({ onLogout }) {
   const [notificationAnchorEl, setNotificationAnchorEl] = useState(null);
   const [anchorEl, setAnchorEl] = useState(null);
   // handleNotificationClicked
@@ -124,7 +124,7 @@ export default function NavBarComponent() {
                   onClick={handleClose}
                   onClose={handleClose}
                 >
-                  <MenuItem sx={{ color: "black" }}>
+                  <MenuItem sx={{ color: "black" }} onClick={onLogout}>
                     <ListItemIcon> 
                       <AccountCircleOutlined fontSize="small" sx={{ color: "black" }} />
                     </ListItemIcon > 

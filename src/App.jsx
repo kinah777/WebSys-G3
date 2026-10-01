@@ -111,7 +111,7 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<RootComponent />}>
+      <Route path="/" element={<RootComponent onLogout={handleLogout} />}>
         <Route index element={<DashboardPage />} />
 
         <Route path="home" element={<DashboardPage />} />
