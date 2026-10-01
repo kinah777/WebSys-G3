@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 
 import {
+  Box,
   ThemeProvider,
   CssBaseline,
   createTheme,
 } from "@mui/material";
 
+import buildSyncLogoVideo from "./BuildSync logoW.mp4";
 import RootComponent from "./components/RootComponent";
 import LoginPage from "./components/LoginPage";
 
@@ -34,9 +36,45 @@ import {
   TasksPage,
 } from "./components/ConstructionPages";
 
+function LoginTransition({ onComplete }) {
+  return (
+    <Box
+      sx={{
+        position: "fixed",
+        inset: 0,
+        zIndex: 2000,
+        display: "grid",
+        placeItems: "center",
+        bgcolor: "#000000",
+      }}
+    >
+      <Box
+        component="video"
+        src={buildSyncLogoVideo}
+        autoPlay
+        muted
+        playsInline
+        aria-label="BuildSync logo animation"
+        onEnded={onComplete}
+        onError={onComplete}
+        sx={{
+          width: "auto",
+          height: "auto",
+          maxWidth: "90vw",
+          maxHeight: "90vh",
+          aspectRatio: "1122 / 1586",
+          objectFit: "contain",
+          objectPosition: "center",
+        }}
+      />
+    </Box>
+  );
+}
+
 function App() {
   const [authenticated, setAuthenticated] = useState(false);
   const [user, setUser] = useState(null);
+  const [showLoginTransition, setShowLoginTransition] = useState(false);
 
   useEffect(() => {
     const token = localStorage.getItem("buildsync_token");
@@ -52,6 +90,7 @@ function App() {
     localStorage.setItem("buildsync_token", payload.access_token);
     localStorage.setItem("buildsync_user", JSON.stringify(nextUser));
     setUser(nextUser);
+    setShowLoginTransition(true);
     setAuthenticated(true);
   };
 
@@ -59,6 +98,7 @@ function App() {
     localStorage.removeItem("buildsync_token");
     localStorage.removeItem("buildsync_user");
     setUser(null);
+    setShowLoginTransition(false);
     setAuthenticated(false);
   };
 
@@ -136,7 +176,9 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      {authenticated ? (
+      {showLoginTransition ? (
+        <LoginTransition onComplete={() => setShowLoginTransition(false)} />
+      ) : authenticated ? (
         <RouterProvider router={router} />
       ) : (
         <LoginPage onLogin={handleLogin} />

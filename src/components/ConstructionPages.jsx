@@ -606,7 +606,9 @@ export function ResourcesPage() {
       </Tabs>
       <AssignmentTab config={assignmentTabs[assignmentTab]} />
       <Typography variant="subtitle1" fontWeight={700} sx={{ mt: 2 }}>Asset catalog</Typography>
-      <Tabs value={catalogTab} onChange={(_, value) => setCatalogTab(value)} sx={{ mt: 1 }}>
+      <Tabs value={catalogTab} onChange={(_, value) => setCatalogTab(value)} sx={{ mt: 1, "& .MuiTab-root": { color: "#fff" },
+          "& .MuiTab-root.Mui-selected": { color: "#f47a50" },
+          "& .MuiTabs-indicator": { bgcolor: "#f47a50" }, }}>
         <Tab label="Equipment catalog" />
         <Tab label="Vehicle catalog" />
       </Tabs>
