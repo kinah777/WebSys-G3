@@ -78,6 +78,8 @@ function ApiCollectionPage({
   canEdit = true,
   canDelete = true,
   allowTaskAssignments = false,
+  tableHeight = 440,
+  hidePageSizeSelector = false,
 }) {
   const { rows, loading, error, reload } = useApiCollection(endpoint);
   const [formValues, setFormValues] = useState({});
@@ -218,13 +220,13 @@ function ApiCollectionPage({
           </Stack>
         </Paper>
       )}
-      <Box sx={{ height: 440, width: "100%" }}>
+      <Box sx={{ height: tableHeight, width: "100%" }}>
         {loading ? <CircularProgress /> : (
           <DataGrid
             rows={rows}
             columns={gridColumns}
             getRowId={(row) => row[idField]}
-            pageSizeOptions={[10, 25, 50]}
+            pageSizeOptions={hidePageSizeSelector ? [] : [10, 25, 50]}
             initialState={{ pagination: { paginationModel: { page: 0, pageSize: 10 } } }}
             disableRowSelectionOnClick
           />
@@ -249,6 +251,8 @@ ApiCollectionPage.propTypes = {
   canEdit: PropTypes.bool,
   canDelete: PropTypes.bool,
   allowTaskAssignments: PropTypes.bool,
+  tableHeight: PropTypes.number,
+  hidePageSizeSelector: PropTypes.bool,
 };
 
 function TaskAssignmentsPanel({ task, onClose }) {
@@ -369,7 +373,7 @@ const projectColumns = [
 ];
 
 export function ProjectsPage() {
-  return <ApiCollectionPage title="Projects" description="Create and manage construction projects." endpoint="/projects" idField="project_id" fields={projectFields} columns={projectColumns} />;
+  return <ApiCollectionPage title="Projects" description="Create and manage construction projects." endpoint="/projects" idField="project_id" fields={projectFields} columns={projectColumns} tableHeight={640} hidePageSizeSelector />;
 }
 
 const taskFields = [
@@ -415,7 +419,7 @@ const materialColumns = [
 ];
 
 export function MaterialsPage() {
-  return <ApiCollectionPage title="Inventory" description="Construction materials, stock levels, and reorder thresholds." endpoint="/materials" idField="material_id" fields={materialFields} columns={materialColumns} />;
+  return <ApiCollectionPage title="Inventory" description="Construction materials, stock levels, and reorder thresholds." endpoint="/materials" idField="material_id" fields={materialFields} columns={materialColumns} tableHeight={640} hidePageSizeSelector />;
 }
 
 const equipmentFields = [
