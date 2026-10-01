@@ -697,12 +697,11 @@ export function CalendarPage() {
 }
 
 export function ForecastPage() {
-  const formatCurrency = (value) => `₱${Number(value ?? 0).toLocaleString("en-PH", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
   const forecastColumns = [
     { field: "project_name", headerName: "Project", minWidth: 200, flex: 1 },
-    { field: "daily_burn_rate", headerName: "Daily spend", width: 150, valueFormatter: (params) => formatCurrency(params.value) },
-    { field: "projected_total_cost", headerName: "Projected cost", width: 170, valueFormatter: (params) => formatCurrency(params.value) },
-    { field: "projected_overrun", headerName: "Projected overrun", width: 180, valueFormatter: (params) => formatCurrency(params.value) },
+    { field: "daily_burn_rate", headerName: "Daily spend", width: 150 },
+    { field: "projected_total_cost", headerName: "Projected cost", width: 170 },
+    { field: "projected_overrun", headerName: "Projected overrun", width: 180 },
     { field: "is_overrun", headerName: "Over budget", width: 130 },
     { field: "forecast_method", headerName: "Forecast method", minWidth: 180, flex: 1 },
   ];
