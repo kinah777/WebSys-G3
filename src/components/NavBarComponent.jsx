@@ -138,7 +138,7 @@ export default function NavBarComponent({ onLogout }) {
                     </ListItemIcon>
                     Settings
                   </MenuItem>
-                  <MenuItem sx={{ color: "black" }}>
+                  <MenuItem sx={{ color: "black" }} onClick={onLogout}>
                     <ListItemIcon>
                       <Logout fontSize="small" sx={{ color: "black" }} />
                     </ListItemIcon>
