@@ -688,7 +688,7 @@ export function ConflictsPage() {
     <Stack spacing={2.5} sx={{ p: { xs: 2, md: 3 } }}>
       <Box>
         <Typography variant="h5" fontWeight={700}>Resource conflicts</Typography>
-        <Typography color="white" sx={{ mt: 0.5 }}>Overlapping active bookings detected by the backend.</Typography>
+        <Typography color="white" sx={{ mt: 0.5 }}>Overlapping active bookings detected by the system.</Typography>
       </Box>
       {error && <Alert severity="error">{error}</Alert>}
       {notice && <Alert severity="success">{notice}</Alert>}
